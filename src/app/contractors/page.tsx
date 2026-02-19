@@ -8,8 +8,12 @@ import contractorTrends from "@/../public/data/contractor-trends.json";
 import stats from "@/../public/data/stats.json";
 
 export const metadata = {
-  title: "Top Federal Contractors — OpenSpending",
-  description: "The 50 largest federal contractors and how much taxpayer money they receive.",
+  title: "Top 50 Federal Contractors — OpenSpending",
+  description: "Who gets the most federal contract dollars? The 50 largest contractors ranked, from Lockheed Martin to Booz Allen.",
+  openGraph: {
+    title: "Top 50 Federal Contractors — OpenSpending",
+    description: "Who gets the most federal contract dollars? The 50 largest contractors ranked, from Lockheed Martin to Booz Allen.",
+  },
 };
 
 const top15 = contractors.slice(0, 15).map((c) => {

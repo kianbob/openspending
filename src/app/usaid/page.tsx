@@ -5,8 +5,12 @@ import { formatDollars } from "@/lib/format";
 import usaidData from "@/../public/data/usaid-deep-dive.json";
 
 export const metadata = {
-  title: "USAID Deep Dive — OpenSpending",
-  description: "Where does $49.9B in USAID foreign aid actually go? The largest grants and contracts.",
+  title: "USAID: From $15B to $50B in 6 Years — OpenSpending",
+  description: "USAID's budget nearly doubled in six years. See the 100 largest grants and contracts — and who got the money.",
+  openGraph: {
+    title: "USAID: From $15B to $50B in 6 Years — OpenSpending",
+    description: "USAID's budget nearly doubled in six years. See the 100 largest grants and contracts — and who got the money.",
+  },
 };
 
 const totalAll = usaidData.totalGrants + usaidData.totalContracts;

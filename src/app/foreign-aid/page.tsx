@@ -5,7 +5,11 @@ import allCountries from "@/../public/data/spending-by-country.json";
 
 export const metadata = {
   title: "Where U.S. Tax Dollars Go Abroad — OpenSpending",
-  description: "Federal spending by country — tracking where American tax dollars flow internationally.",
+  description: "Billions in federal spending flow to foreign countries every year. See which nations receive the most U.S. tax dollars.",
+  openGraph: {
+    title: "Where U.S. Tax Dollars Go Abroad — OpenSpending",
+    description: "Billions in federal spending flow to foreign countries every year. See which nations receive the most U.S. tax dollars.",
+  },
 };
 
 function titleCase(str: string): string {

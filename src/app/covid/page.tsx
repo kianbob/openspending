@@ -5,9 +5,12 @@ import { formatDollars } from "@/lib/format";
 import covidData from "@/../public/data/covid-spending.json";
 
 export const metadata = {
-  title: "COVID Spending — OpenSpending",
-  description:
-    "Track $1.46 trillion in COVID emergency spending across federal agencies and recipients.",
+  title: "$1.46 Trillion: The COVID Spending Tsunami — OpenSpending",
+  description: "$1.46T in COVID emergency spending — the largest emergency outlay in U.S. history. See which agencies and recipients got the money.",
+  openGraph: {
+    title: "$1.46 Trillion: The COVID Spending Tsunami — OpenSpending",
+    description: "$1.46T in COVID emergency spending — the largest emergency outlay in U.S. history. See which agencies and recipients got the money.",
+  },
 };
 
 const top10Agencies = covidData.byAgency.slice(0, 10).map((a) => ({

@@ -113,9 +113,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const entry = slugMap.get(slug);
   const name = entry?.spending.name ?? "Agency";
+  const contracts = entry?.spending.contracts ?? 0;
+  const grants = entry && "grants" in entry.spending ? (entry.spending.grants ?? 0) : 0;
+  const total = contracts + grants;
+  const amount = total > 0 ? `$${(total / 1e9).toFixed(1)}B` : "";
+  const title = amount ? `${name}: ${amount} in Spending — OpenSpending` : `${name} — OpenSpending`;
+  const description = amount
+    ? `${name} spends ${amount} across contracts and grants. Budget trends, top contractors, and spending breakdowns.`
+    : `Budget trends, contracts, and grants for ${name}.`;
   return {
-    title: `${name} — OpenSpending`,
-    description: `Budget trends, contracts, and grants for ${name}.`,
+    title,
+    description,
+    openGraph: { title, description },
   };
 }
 

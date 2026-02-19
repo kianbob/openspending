@@ -5,9 +5,12 @@ import { formatDollars } from "@/lib/format";
 import noBidData from "@/../public/data/no-bid-contracts.json";
 
 export const metadata = {
-  title: "No-Bid Contracts — OpenSpending",
-  description:
-    "$74 billion in sole-source federal contracts awarded without competition in FY2025. See who got the money.",
+  title: "No-Bid Nation: $74B Without Competition — OpenSpending",
+  description: "$74B in sole-source federal contracts awarded without competitive bidding in FY2025. See who got the money.",
+  openGraph: {
+    title: "No-Bid Nation: $74B Without Competition — OpenSpending",
+    description: "$74B in sole-source federal contracts awarded without competitive bidding in FY2025. See who got the money.",
+  },
 };
 
 function toTitleCase(name: string): string {

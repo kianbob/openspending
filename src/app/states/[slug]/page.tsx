@@ -57,9 +57,15 @@ export async function generateMetadata({
   const { slug } = await params;
   const entry = slugMap.get(slug);
   const name = entry?.name ?? "State";
+  const amount = entry ? `$${(entry.totalAmount / 1e9).toFixed(1)}B` : "";
+  const title = entry ? `Federal Spending in ${name}: ${amount} — OpenSpending` : `${name} — Federal Spending — OpenSpending`;
+  const description = entry
+    ? `${name} receives ${amount} in federal contracts, ranking #${entry.rank} nationwide. See why and where the money flows.`
+    : `Federal contract spending data for ${name}.`;
   return {
-    title: `${name} — Federal Spending — OpenSpending`,
-    description: `Federal contract spending data for ${name}.`,
+    title,
+    description,
+    openGraph: { title, description },
   };
 }
 

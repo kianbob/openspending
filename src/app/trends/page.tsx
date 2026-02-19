@@ -5,6 +5,15 @@ import Link from "next/link";
 import contractTrends from "@/../public/data/yearly-contract-trends.json";
 import agencyTrends from "@/../public/data/agency-trends.json";
 
+export const metadata = {
+  title: "Federal Spending Trends FY2017-FY2025 — OpenSpending",
+  description: "Nine years of federal contract and agency budget data. COVID spending spike, USAID growth, and why spending never goes back down.",
+  openGraph: {
+    title: "Federal Spending Trends FY2017-FY2025 — OpenSpending",
+    description: "Nine years of federal contract and agency budget data. COVID spending spike, USAID growth, and why spending never goes back down.",
+  },
+};
+
 type AgencyTrends = Record<
   string,
   { abbr: string; years: { fy: number; budget: number; obligated: number; outlays: number }[] }

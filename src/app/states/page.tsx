@@ -5,8 +5,12 @@ import { formatDollars } from "@/lib/format";
 import states from "@/../public/data/spending-by-state.json";
 
 export const metadata = {
-  title: "Federal Contract Spending by State — OpenSpending",
-  description: "Which states receive the most federal contract dollars — and why.",
+  title: "Federal Spending by State — OpenSpending",
+  description: "Which states receive the most federal contract dollars? All 50 states and territories ranked — Virginia leads by far.",
+  openGraph: {
+    title: "Federal Spending by State — OpenSpending",
+    description: "Which states receive the most federal contract dollars? All 50 states and territories ranked — Virginia leads by far.",
+  },
 };
 
 const top20 = states.slice(0, 20).map((s) => ({

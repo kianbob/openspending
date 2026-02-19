@@ -32,9 +32,15 @@ export async function generateMetadata({
   const { slug } = await params;
   const entry = details[slug];
   const name = entry?.name ?? "Contractor";
+  const amount = entry ? `$${(entry.totalAmount / 1e9).toFixed(1)}B` : "";
+  const title = entry ? `${name}: ${amount} in Federal Contracts — OpenSpending` : `${name} — Federal Contractor — OpenSpending`;
+  const description = entry
+    ? `${name} received ${amount} in federal contracts (rank #${entry.rank}). See agencies served, spending trends, and largest contracts.`
+    : `Federal contract spending data for ${name}.`;
   return {
-    title: `${name} — Federal Contractor — OpenSpending`,
-    description: `Federal contract spending data for ${name}.`,
+    title,
+    description,
+    openGraph: { title, description },
   };
 }
 

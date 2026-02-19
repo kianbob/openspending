@@ -1,9 +1,12 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "The Federal Waste Problem — OpenSpending",
-  description:
-    "The government loses $233-521 billion per year to fraud. $2.8 trillion in improper payments since 2003. GAO data on waste, fraud, and abuse in federal spending.",
+  title: "The Federal Waste Problem: $233-521B/Year — OpenSpending",
+  description: "The GAO says the government loses $233-521B/year to fraud. $2.8T in improper payments since 2003. The data speaks for itself.",
+  openGraph: {
+    title: "The Federal Waste Problem: $233-521B/Year — OpenSpending",
+    description: "The GAO says the government loses $233-521B/year to fraud. $2.8T in improper payments since 2003. The data speaks for itself.",
+  },
 };
 
 const statCards = [
