@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { TopContractorsChart } from "@/components/charts/TopContractorsChart";
 import { ContractTrendsAreaChart } from "@/components/charts/ContractTrendsAreaChart";
+import { SearchBar } from "@/components/SearchBar";
 import { formatDollars, formatPercent } from "@/lib/format";
 import stats from "@/../public/data/stats.json";
 import contractors from "@/../public/data/top-contractors.json";
@@ -51,7 +52,7 @@ export default function HomePage() {
             Independent, data-driven analysis of how the federal government
             spends your money. Every contract. Every grant. Every agency.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 mb-8">
             <Link
               href="/contractors"
               className="px-6 py-3 bg-white text-indigo-800 font-semibold rounded-lg hover:bg-indigo-50 transition-colors"
@@ -65,6 +66,7 @@ export default function HomePage() {
               Browse Agencies
             </Link>
           </div>
+          <SearchBar />
         </div>
       </section>
 

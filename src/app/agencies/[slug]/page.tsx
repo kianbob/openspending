@@ -1,8 +1,15 @@
 import Link from "next/link";
 import { AreaSpendingChart } from "@/components/charts/AreaSpendingChart";
-import { formatDollars, formatPercent } from "@/lib/format";
+import { AgencyContractorsChart } from "@/components/charts/AgencyContractorsChart";
+import { formatDollars, formatDollarsLong, formatPercent } from "@/lib/format";
 import agencyTrends from "@/../public/data/agency-trends.json";
 import agencySpending from "@/../public/data/agency-spending.json";
+import agencyContractorsData from "@/../public/data/agency-contractors.json";
+
+const agencyContractors = agencyContractorsData as Record<
+  string,
+  { name: string; amount: number }[]
+>;
 
 type TrendEntry = {
   code: string;
@@ -191,6 +198,51 @@ export default function AgencyDetailPage({
           </table>
         </div>
       </div>
+
+      {/* Top Contractors */}
+      {agencyContractors[params.slug] && (
+        <div className="mb-12">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">
+            Top Contractors
+          </h2>
+          <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6 mb-6">
+            <AgencyContractorsChart data={agencyContractors[params.slug]} />
+          </div>
+          <div className="overflow-x-auto bg-white rounded-xl border border-gray-200">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="border-b border-gray-200 bg-gray-50">
+                  <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                    #
+                  </th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                    Contractor
+                  </th>
+                  <th className="px-4 py-3 text-right font-semibold text-gray-700">
+                    Amount
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {agencyContractors[params.slug].map((c, i) => (
+                  <tr
+                    key={`${c.name}-${i}`}
+                    className="border-b border-gray-100 hover:bg-gray-50"
+                  >
+                    <td className="px-4 py-2.5 text-gray-400 font-medium">
+                      {i + 1}
+                    </td>
+                    <td className="px-4 py-2.5 text-gray-900">{c.name}</td>
+                    <td className="px-4 py-2.5 text-right text-gray-700 font-medium">
+                      {formatDollarsLong(c.amount)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
 
       <Link
         href="/agencies"

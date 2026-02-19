@@ -18,6 +18,26 @@ export const metadata: Metadata = {
   title: "OpenSpending — Follow the Money",
   description:
     "Track $11.2 trillion in federal spending. Contracts, grants, agencies, and where your tax dollars really go.",
+  metadataBase: new URL("https://openspending.info"),
+  openGraph: {
+    title: "OpenSpending — Follow the Money",
+    description:
+      "Track $11.2 trillion in federal spending. Contracts, grants, agencies, and where your tax dollars really go.",
+    url: "https://openspending.info",
+    siteName: "OpenSpending",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OpenSpending — Follow the Money",
+    description:
+      "Track $11.2 trillion in federal spending. Contracts, grants, agencies, and where your tax dollars really go.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const navLinks = [
@@ -43,6 +63,19 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${playfair.variable} antialiased bg-white text-gray-900`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "OpenSpending",
+              url: "https://openspending.info",
+              description:
+                "Independent, data-driven analysis of federal government spending using USASpending.gov data.",
+            }),
+          }}
+        />
         <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
