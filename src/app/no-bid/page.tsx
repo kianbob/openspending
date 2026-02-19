@@ -63,6 +63,7 @@ export default function NoBidPage() {
         </h1>
         <ShareButtons title="No-Bid Nation: $74B Without Competition — OpenSpending" url="https://openspending.us/no-bid" />
       </div>
+      <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>
       <p className="text-gray-500 text-lg mb-8">
         The 50 largest sole-source federal contracts in FY2025 — awarded without
         competitive bidding.

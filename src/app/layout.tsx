@@ -53,8 +53,10 @@ const navLinks = [
   { href: "/covid", label: "COVID" },
   { href: "/trends", label: "Trends" },
   { href: "/states", label: "States" },
+  { href: "/compare", label: "Compare" },
   { href: "/spending-analysis", label: "Analysis" },
   { href: "/about", label: "About" },
+  { href: "/search", label: "Search" },
 ];
 
 export default function RootLayout({
