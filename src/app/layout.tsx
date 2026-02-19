@@ -143,6 +143,7 @@ export default function RootLayout({
                   <Link href="/trends" className="text-sm text-gray-400 hover:text-white transition-colors">Trends</Link>
                   <Link href="/covid" className="text-sm text-gray-400 hover:text-white transition-colors">COVID Spending</Link>
                   <Link href="/usaid" className="text-sm text-gray-400 hover:text-white transition-colors">USAID Deep Dive</Link>
+                  <Link href="/compare" className="text-sm text-gray-400 hover:text-white transition-colors">Compare</Link>
                 </div>
               </div>
               <div>
@@ -210,6 +211,7 @@ const mobileNavSections = [
       { href: "/trends", label: "Trends" },
       { href: "/covid", label: "COVID" },
       { href: "/usaid", label: "USAID" },
+      { href: "/compare", label: "Compare" },
     ],
   },
   {

@@ -53,10 +53,16 @@ export default function AgenciesPage() {
       <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-2">
         Federal Agencies
       </h1>
-      <p className="text-gray-500 text-lg mb-8">
+      <p className="text-gray-500 text-lg mb-4">
         All {agencies.length} federal agencies, ranked by budget authority. Sort
         by any column. Search by name or abbreviation.
       </p>
+      <Link
+        href="/compare?mode=agencies"
+        className="inline-block text-sm text-indigo-600 hover:text-indigo-800 font-medium mb-8"
+      >
+        Compare agencies →
+      </Link>
 
       {/* Top 15 Bar Chart */}
       <div className="mb-12">

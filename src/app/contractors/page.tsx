@@ -44,9 +44,15 @@ export default function ContractorsPage() {
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
         Top Federal Contractors
       </h1>
-      <p className="text-gray-500 text-lg mb-8">
+      <p className="text-gray-500 text-lg mb-4">
         The 50 companies receiving the most federal contract dollars in FY{stats.fiscalYear}.
       </p>
+      <Link
+        href="/compare?mode=contractors"
+        className="inline-block text-sm text-indigo-600 hover:text-indigo-800 font-medium mb-8"
+      >
+        Compare contractors →
+      </Link>
 
       {/* Concentration Insight */}
       <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-6 mb-10">
