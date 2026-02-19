@@ -1,12 +1,14 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
 import { formatDollars } from "@/lib/format";
 
 interface Contractor {
   name: string;
   amount: number;
   subsidiaries: number;
+  slug?: string;
 }
 
 export function ContractorsTable({ data }: { data: Contractor[] }) {
@@ -85,7 +87,13 @@ export function ContractorsTable({ data }: { data: Contractor[] }) {
                 <td className="px-4 py-3 text-sm text-gray-400">{i + 1}</td>
                 <td className="px-4 py-3 text-sm text-gray-700">
                   <span className="flex items-center gap-2">
-                    {row.name}
+                    {row.slug ? (
+                      <Link href={`/contractors/${row.slug}`} className="text-indigo-600 hover:text-indigo-800 hover:underline">
+                        {row.name}
+                      </Link>
+                    ) : (
+                      row.name
+                    )}
                     {row.subsidiaries > 1 && (
                       <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-700">
                         {row.subsidiaries} entities merged

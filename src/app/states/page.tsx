@@ -16,8 +16,12 @@ const top20 = states.slice(0, 20).map((s) => ({
 
 const allTotal = states.reduce((sum, s) => sum + s.amount, 0);
 
+function toSlug(name: string) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
 const columns = [
-  { key: "name", label: "State", format: "text" as const },
+  { key: "name", label: "State", format: "link" as const, linkKey: "href" },
   { key: "code", label: "Code", format: "text" as const },
   { key: "amount", label: "Amount", format: "dollars" as const, align: "right" as const },
 ];
@@ -26,6 +30,7 @@ const tableData = states.map((s) => ({
   name: s.name,
   code: s.code,
   amount: s.amount,
+  href: `/states/${toSlug(s.name)}`,
 }));
 
 export default function StatesPage() {

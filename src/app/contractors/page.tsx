@@ -27,10 +27,15 @@ const top15 = contractors.slice(0, 15).map((c) => {
 const top10Total = contractors.slice(0, 10).reduce((sum, c) => sum + c.amount, 0);
 const allTotal = contractors.reduce((sum, c) => sum + c.amount, 0);
 
+function toSlug(name: string) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
 const tableData = contractors.map((c) => ({
   name: c.name,
   amount: c.amount,
   subsidiaries: c.subsidiaries,
+  slug: toSlug(c.name),
 }));
 
 export default function ContractorsPage() {

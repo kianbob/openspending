@@ -1,13 +1,15 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
 import { formatDollars } from "@/lib/format";
 
 interface Column {
   key: string;
   label: string;
-  format?: "dollars" | "percent" | "text" | "date";
+  format?: "dollars" | "percent" | "text" | "date" | "link";
   align?: "left" | "right";
+  linkKey?: string;
 }
 
 interface SortableTableProps {
@@ -125,7 +127,13 @@ export function SortableTable({
                         : "text-gray-700"
                     }`}
                   >
-                    {formatValue(row[col.key], col.format)}
+                    {col.format === "link" && col.linkKey && row[col.linkKey] ? (
+                      <Link href={String(row[col.linkKey])} className="text-indigo-600 hover:text-indigo-800 hover:underline">
+                        {String(row[col.key])}
+                      </Link>
+                    ) : (
+                      formatValue(row[col.key], col.format)
+                    )}
                   </td>
                 ))}
               </tr>
