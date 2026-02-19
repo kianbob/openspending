@@ -8,6 +8,7 @@ import { formatDollars, formatPercent, toTitleCase } from "@/lib/format";
 import agencyTrends from "@/../public/data/agency-trends.json";
 import agencySpending from "@/../public/data/agency-spending.json";
 import agencyContractorsData from "@/../public/data/agency-contractors.json";
+import contractorDetails from "@/../public/data/contractor-details.json";
 
 export const dynamicParams = true;
 
@@ -129,6 +130,12 @@ const allAgencies = agencySpending
   });
 
 const slugMap = new Map(allAgencies.map((a) => [a.spending.slug, a]));
+
+const contractorSlugs = new Set(Object.keys(contractorDetails as Record<string, unknown>));
+
+function toContractorSlug(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/, "").replace(/^-+/, "");
+}
 
 const SUFFIX_RE = /\b(INC|LLC|CORP|CORPORATION|COMPANY|LTD|LP|L\.P\.|CO)\.?\b/g;
 const TRAILING_PUNCT = /[\s,.\-]+$/;
@@ -443,20 +450,32 @@ export default async function AgencyDetailPage({
                   </tr>
                 </thead>
                 <tbody>
-                  {dedupedContractors.map((c, i) => (
-                    <tr
-                      key={`${c.name}-${i}`}
-                      className="border-b border-gray-100 hover:bg-gray-50"
-                    >
-                      <td className="px-4 py-2.5 text-gray-400 font-medium">
-                        {i + 1}
-                      </td>
-                      <td className="px-4 py-2.5 text-gray-900">{toTitleCase(c.name)}</td>
-                      <td className="px-4 py-2.5 text-right text-gray-700 font-medium">
-                        {formatDollars(c.amount)}
-                      </td>
-                    </tr>
-                  ))}
+                  {dedupedContractors.map((c, i) => {
+                    const cSlug = toContractorSlug(c.name);
+                    const hasPage = contractorSlugs.has(cSlug);
+                    return (
+                      <tr
+                        key={`${c.name}-${i}`}
+                        className="border-b border-gray-100 hover:bg-gray-50"
+                      >
+                        <td className="px-4 py-2.5 text-gray-400 font-medium">
+                          {i + 1}
+                        </td>
+                        <td className="px-4 py-2.5 text-gray-900">
+                          {hasPage ? (
+                            <Link href={`/contractors/${cSlug}`} className="text-indigo-600 hover:text-indigo-800 hover:underline">
+                              {toTitleCase(c.name)}
+                            </Link>
+                          ) : (
+                            toTitleCase(c.name)
+                          )}
+                        </td>
+                        <td className="px-4 py-2.5 text-right text-gray-700 font-medium">
+                          {formatDollars(c.amount)}
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>

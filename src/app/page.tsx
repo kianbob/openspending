@@ -15,7 +15,7 @@ const statCards = [
   { label: "Total Federal Budget", value: formatDollars(stats.totalBudget), sub: `FY${stats.fiscalYear}` },
   { label: "Federal Contracts", value: formatDollars(stats.totalContracts), sub: "Awarded this year" },
   { label: "Federal Grants", value: formatDollars(stats.totalGrants), sub: "Distributed to recipients" },
-  { label: "Federal Agencies", value: String(stats.agencyCount), sub: "Tracked on this site" },
+  { label: "Federal Agencies", value: String(agencies.length), sub: "Tracked on this site" },
 ];
 
 const bigPictureCards = [
@@ -235,7 +235,7 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-        <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6 max-h-64 overflow-hidden">
+        <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6">
           <TopContractorsChart data={topContractors} />
         </div>
         <div className="mt-4">

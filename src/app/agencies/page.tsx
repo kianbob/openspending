@@ -8,6 +8,10 @@ import agencySpending from "@/../public/data/agency-spending.json";
 export const metadata = {
   title: "Federal Agencies — OpenSpending",
   description: "All 97 federal agencies ranked by budget authority, obligations, and outlays.",
+  openGraph: {
+    title: "Federal Agencies — OpenSpending",
+    description: "All 97 federal agencies ranked by budget authority, obligations, and outlays.",
+  },
 };
 
 const top15 = agencies.slice(0, 15).map((a) => ({
@@ -23,7 +27,7 @@ const spendingBySlug = new Map(
 );
 
 const columns = [
-  { key: "name", label: "Agency", format: "text" as const },
+  { key: "name", label: "Agency", format: "link" as const, linkKey: "href" },
   { key: "abbreviation", label: "Abbr", format: "text" as const },
   { key: "budgetAuthority", label: "Budget Authority", format: "dollars" as const, align: "right" as const },
   { key: "obligated", label: "Obligated", format: "dollars" as const, align: "right" as const },
@@ -37,6 +41,7 @@ const tableData = agencies.map((a) => {
   const spending = spendingBySlug.get(a.slug);
   return {
     name: a.name,
+    href: `/agencies/${a.slug}`,
     abbreviation: a.abbreviation,
     budgetAuthority: a.budgetAuthority,
     obligated: a.obligated,

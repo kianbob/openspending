@@ -18,7 +18,10 @@ export const metadata: Metadata = {
   title: "OpenSpending — Follow the Money",
   description:
     "Track $11.2 trillion in federal spending. Contracts, grants, agencies, and where your tax dollars really go.",
-  metadataBase: new URL("https://openspending.info"),
+  metadataBase: new URL("https://openspending-app.vercel.app"),
+  alternates: {
+    canonical: "./",
+  },
   openGraph: {
     title: "OpenSpending — Follow the Money",
     description:
@@ -190,6 +193,8 @@ export default function RootLayout({
               >
                 TheDataProject.ai
               </a>
+              <br />
+              <span className="text-gray-600">Data current through FY2025</span>
             </div>
           </div>
         </footer>
