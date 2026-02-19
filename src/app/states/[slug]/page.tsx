@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { formatDollars, formatPercent, toTitleCase } from "@/lib/format";
 import stateDetails from "@/../public/data/state-details.json";
@@ -80,7 +81,7 @@ export default async function StateDetailPage({
 }) {
   const { slug } = await params;
   const entry = slugMap.get(slug);
-  if (!entry) return null;
+  if (!entry) notFound();
 
   const { name, code, totalAmount, rank, pctOfTotal } = entry;
 

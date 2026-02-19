@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { AreaSpendingChart } from "@/components/charts/AreaSpendingChart";
 import { AgencyContractorsChart } from "@/components/charts/AgencyContractorsChart";
@@ -199,7 +200,7 @@ export default async function AgencyDetailPage({
 }) {
   const { slug } = await params;
   const entry = slugMap.get(slug);
-  if (!entry) return null;
+  if (!entry) notFound();
 
   const { spending, trend } = entry;
   const years = trend?.years ?? null;

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ContractorAgenciesChart } from "@/components/charts/ContractorAgenciesChart";
 import { ContractorSpendingChart } from "@/components/charts/ContractorSpendingChart";
@@ -75,7 +76,7 @@ export default async function ContractorDetailPage({
 }) {
   const { slug } = await params;
   const entry = details[slug];
-  if (!entry) return null;
+  if (!entry) notFound();
 
   const {
     name,
@@ -250,7 +251,7 @@ export default async function ContractorDetailPage({
                       {i + 1}
                     </td>
                     <td className="px-4 py-2.5 text-gray-900 max-w-md truncate">
-                      {c.description}
+                      {c.description.includes("TAS::") ? "Contract details unavailable" : c.description}
                     </td>
                     <td className="px-4 py-2.5 text-right text-gray-700 font-medium whitespace-nowrap">
                       {formatDollars(c.amount)}

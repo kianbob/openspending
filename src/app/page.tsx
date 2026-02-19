@@ -3,11 +3,13 @@ import { TopContractorsChart } from "@/components/charts/TopContractorsChart";
 import { SearchBar } from "@/components/SearchBar";
 import { formatDollars, formatPercent } from "@/lib/format";
 import stats from "@/../public/data/stats.json";
-import contractors from "@/../public/data/top-contractors.json";
+import contractors from "@/../public/data/top-contractors-deduped.json";
 import agencies from "@/../public/data/agencies.json";
 
 const topContractors = contractors.slice(0, 10);
 const topAgencies = agencies.slice(0, 5);
+const top10Total = topContractors.reduce((sum, c) => sum + c.amount, 0);
+const contractorPct = (top10Total / stats.totalContracts) * 100;
 
 const statCards = [
   { label: "Total Federal Budget", value: formatDollars(stats.totalBudget), sub: `FY${stats.fiscalYear}` },
@@ -18,7 +20,7 @@ const statCards = [
 
 const bigPictureCards = [
   {
-    title: "10 Companies, $145 Billion",
+    title: `10 Companies, ${formatDollars(top10Total)}`,
     description: "A handful of defense contractors capture the majority of federal contract dollars.",
     href: "/contractors",
     borderColor: "border-indigo-500",
@@ -41,25 +43,21 @@ const recentArticles = [
   {
     href: "/spending-analysis",
     title: "Federal Spending Analysis",
-    date: "Feb 2025",
     description: "Comprehensive breakdown of the $6.75 trillion federal budget",
   },
   {
     href: "/top-10",
     title: "Top 10 Federal Contractors",
-    date: "Feb 2025",
-    description: "How 10 companies capture $145 billion in taxpayer money",
+    description: `How 10 companies capture ${formatDollars(top10Total)} in taxpayer money`,
   },
   {
     href: "/pentagon-spending",
     title: "Pentagon Spending Deep Dive",
-    date: "Feb 2025",
     description: "Inside the Department of Defense\u2019s $886 billion budget",
   },
   {
     href: "/healthcare-spending",
     title: "Healthcare Spending Analysis",
-    date: "Feb 2025",
     description: "Medicare, Medicaid, and the $1.8 trillion healthcare budget",
   },
 ];
@@ -92,9 +90,6 @@ const deepDiveCards = [
 ];
 
 export default function HomePage() {
-  const top10Total = topContractors.reduce((sum, c) => sum + c.amount, 0);
-  const contractorPct = (top10Total / stats.totalContracts) * 100;
-
   return (
     <div>
       {/* Hero */}
@@ -116,7 +111,7 @@ export default function HomePage() {
             spends your money. Every contract. Every grant. Every agency.
           </p>
           <p className="text-indigo-200 text-base max-w-2xl mb-8">
-            10 companies receive $145 billion in federal contracts — more than the GDP of 130 countries.
+            10 companies receive {formatDollars(top10Total)} in federal contracts — more than the GDP of 130 countries.
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
             <Link
@@ -162,7 +157,7 @@ export default function HomePage() {
           </Link>
           <span className="text-indigo-300 hidden sm:inline">|</span>
           <Link href="/contractors" className="text-indigo-700 hover:text-indigo-900 font-medium">
-            50 contractor profiles
+            40 contractor profiles
           </Link>
           <span className="text-indigo-300 hidden sm:inline">|</span>
           <Link href="/states" className="text-indigo-700 hover:text-indigo-900 font-medium">
@@ -274,9 +269,10 @@ export default function HomePage() {
           </div>
           <div className="grid gap-3">
             {topAgencies.map((agency, i) => (
-              <div
+              <Link
                 key={agency.code}
-                className="bg-white rounded-lg border border-gray-200 p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+                href={`/agencies/${agency.slug}`}
+                className="block bg-white rounded-lg border border-gray-200 p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:shadow-lg hover:border-indigo-300 transition-all"
               >
                 <div className="flex items-center gap-4">
                   <span className="text-2xl font-bold text-indigo-200">
@@ -298,7 +294,7 @@ export default function HomePage() {
                   </p>
                   <p className="text-xs text-gray-400">Budget Authority</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -332,7 +328,7 @@ export default function HomePage() {
       <section className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
-            Recently Published
+            Featured Analysis
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {recentArticles.map((article) => (
@@ -341,9 +337,6 @@ export default function HomePage() {
                 href={article.href}
                 className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow group"
               >
-                <p className="text-xs text-indigo-600 font-medium mb-2">
-                  {article.date}
-                </p>
                 <h3 className="font-bold text-gray-900 mb-2">
                   {article.title}
                 </h3>
@@ -355,31 +348,6 @@ export default function HomePage() {
                 </span>
               </Link>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter CTA */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="bg-indigo-50 rounded-2xl p-8 md:p-12 text-center">
-          <h2 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-            Stay Informed
-          </h2>
-          <p className="text-gray-600 max-w-xl mx-auto mb-6">
-            Get weekly updates on federal spending, new investigations, and data releases.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="you@example.com"
-              className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-sm"
-            />
-            <button
-              type="button"
-              className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-colors text-sm"
-            >
-              Subscribe
-            </button>
           </div>
         </div>
       </section>

@@ -16,13 +16,17 @@ interface Contractor {
   amount: number;
 }
 
+function formatLabel(name: string): string {
+  const titleCase = name
+    .toLowerCase()
+    .replace(/\b\w/g, (c) => c.toUpperCase())
+    .replace(/,\s*$/, "");
+  return titleCase.length > 25 ? titleCase.slice(0, 22) + "..." : titleCase;
+}
+
 export function TopContractorsChart({ data }: { data: Contractor[] }) {
   const chartData = data.map((c) => ({
-    name: c.name
-      .split(" ")
-      .slice(0, 2)
-      .join(" ")
-      .replace(/,$/g, ""),
+    name: formatLabel(c.name),
     fullName: c.name,
     amount: c.amount,
   }));
