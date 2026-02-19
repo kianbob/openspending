@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
 import { SortableTable } from "@/components/SortableTable";
 import { formatDollars } from "@/lib/format";
@@ -139,6 +140,43 @@ export default function CovidPage() {
         data={recipientData}
         defaultSortKey="amount"
       />
+
+      {/* Explore More */}
+      <div className="mt-12 bg-gray-50 rounded-xl border border-gray-200 p-8 text-center">
+        <h2 className="font-serif text-2xl font-bold text-gray-900 mb-3">
+          Explore More
+        </h2>
+        <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+          COVID spending was the beginning. See where the rest of your tax
+          dollars go.
+        </p>
+        <div className="flex flex-wrap justify-center gap-3">
+          <Link
+            href="/waste"
+            className="px-5 py-2.5 bg-indigo-600 text-white rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
+          >
+            Federal Waste Problem
+          </Link>
+          <Link
+            href="/how-it-works"
+            className="px-5 py-2.5 bg-indigo-600 text-white rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
+          >
+            How Contracts Work
+          </Link>
+          <Link
+            href="/contractors"
+            className="px-5 py-2.5 bg-white text-indigo-700 border border-indigo-200 rounded-lg text-sm font-medium hover:bg-indigo-50 transition-colors"
+          >
+            Top Contractors
+          </Link>
+          <Link
+            href="/usaid"
+            className="px-5 py-2.5 bg-white text-indigo-700 border border-indigo-200 rounded-lg text-sm font-medium hover:bg-indigo-50 transition-colors"
+          >
+            USAID Deep Dive
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

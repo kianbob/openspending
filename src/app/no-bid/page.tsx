@@ -218,6 +218,12 @@ export default function NoBidPage() {
           >
             Agencies
           </Link>
+          <Link
+            href="/waste"
+            className="px-5 py-2.5 bg-white text-indigo-700 border border-indigo-200 rounded-lg text-sm font-medium hover:bg-indigo-50 transition-colors"
+          >
+            Federal Waste Problem
+          </Link>
         </div>
       </div>
     </div>

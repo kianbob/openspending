@@ -88,6 +88,31 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Fraud Banner */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <Link
+          href="/waste"
+          className="block bg-gradient-to-r from-red-700 to-red-600 rounded-xl p-6 md:p-8 hover:from-red-800 hover:to-red-700 transition-all group"
+        >
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <p className="text-red-200 text-sm font-medium uppercase tracking-widest mb-1">
+                Government Accountability Office
+              </p>
+              <p className="text-white text-xl md:text-2xl font-bold">
+                The government loses $233–521 billion per year to fraud.
+              </p>
+              <p className="text-red-100 text-sm mt-1">
+                3–7% of all federal spending. That is more than the entire education budget.
+              </p>
+            </div>
+            <span className="text-white font-semibold text-sm whitespace-nowrap group-hover:underline">
+              Read the full breakdown →
+            </span>
+          </div>
+        </Link>
+      </section>
+
       {/* Top 10 Contractors */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8">
@@ -342,6 +367,11 @@ export default function HomePage() {
                 href: "/industries",
                 title: "By Industry",
                 desc: "Aircraft manufacturing, engineering, and insurance dominate.",
+              },
+              {
+                href: "/waste",
+                title: "Federal Waste",
+                desc: "The government loses $233–521B/year to fraud. $2.8T in improper payments since 2003.",
               },
               {
                 href: "/agencies",
