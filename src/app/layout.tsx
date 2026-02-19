@@ -18,12 +18,12 @@ export const metadata: Metadata = {
   title: "OpenSpending — Follow the Money",
   description:
     "Track $11.2 trillion in federal spending. Contracts, grants, agencies, and where your tax dollars really go.",
-  metadataBase: new URL("https://openspending-app.vercel.app"),
+  metadataBase: new URL("https://openspending.info"),
   openGraph: {
     title: "OpenSpending — Follow the Money",
     description:
       "Track $11.2 trillion in federal spending. Contracts, grants, agencies, and where your tax dollars really go.",
-    url: "https://openspending-app.vercel.app",
+    url: "https://openspending.info",
     siteName: "OpenSpending",
     type: "website",
     locale: "en_US",
@@ -71,7 +71,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "OpenSpending",
-              url: "https://openspending-app.vercel.app",
+              url: "https://openspending.info",
               description:
                 "Independent, data-driven analysis of federal government spending using USASpending.gov data.",
             }),
@@ -229,7 +229,13 @@ const mobileNavSections = [
       { href: "/how-it-works", label: "How It Works" },
       { href: "/no-bid", label: "No-Bid Nation" },
       { href: "/waste", label: "Waste & Fraud" },
-      { href: "/about", label: "About" },
+    ],
+  },
+  {
+    label: "ABOUT",
+    links: [
+      { href: "/about", label: "About Us" },
+      { href: "/downloads", label: "Data Downloads" },
     ],
   },
 ];

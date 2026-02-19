@@ -4,7 +4,7 @@ import contractors from "@/../public/data/top-contractors.json";
 import states from "@/../public/data/spending-by-state.json";
 import industries from "@/../public/data/industry-details.json";
 
-const BASE_URL = "https://openspending.us";
+const BASE_URL = "https://openspending.info";
 
 function slugifyContractor(name: string): string {
   return name
@@ -40,6 +40,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/waste",
     "/downloads",
     "/spending-analysis",
+    "/pentagon-spending",
+    "/healthcare-spending",
+    "/top-10",
   ];
 
   const agencyPages = agencies

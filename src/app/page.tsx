@@ -37,6 +37,33 @@ const bigPictureCards = [
   },
 ];
 
+const recentArticles = [
+  {
+    href: "/spending-analysis",
+    title: "Federal Spending Analysis",
+    date: "Feb 2025",
+    description: "Comprehensive breakdown of the $6.75 trillion federal budget",
+  },
+  {
+    href: "/top-10",
+    title: "Top 10 Federal Contractors",
+    date: "Feb 2025",
+    description: "How 10 companies capture $145 billion in taxpayer money",
+  },
+  {
+    href: "/pentagon-spending",
+    title: "Pentagon Spending Deep Dive",
+    date: "Feb 2025",
+    description: "Inside the Department of Defense\u2019s $886 billion budget",
+  },
+  {
+    href: "/healthcare-spending",
+    title: "Healthcare Spending Analysis",
+    date: "Feb 2025",
+    description: "Medicare, Medicaid, and the $1.8 trillion healthcare budget",
+  },
+];
+
 const deepDiveCards = [
   {
     emoji: "\u{1F30A}",
@@ -124,6 +151,27 @@ export default function HomePage() {
               <p className="text-xs text-gray-400 mt-1">{card.sub}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Data at a Glance */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+        <div className="bg-indigo-50 rounded-lg px-6 py-3 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
+          <Link href="/agencies" className="text-indigo-700 hover:text-indigo-900 font-medium">
+            40 agency profiles
+          </Link>
+          <span className="text-indigo-300 hidden sm:inline">|</span>
+          <Link href="/contractors" className="text-indigo-700 hover:text-indigo-900 font-medium">
+            50 contractor profiles
+          </Link>
+          <span className="text-indigo-300 hidden sm:inline">|</span>
+          <Link href="/states" className="text-indigo-700 hover:text-indigo-900 font-medium">
+            54 state profiles
+          </Link>
+          <span className="text-indigo-300 hidden sm:inline">|</span>
+          <Link href="/trends" className="text-indigo-700 hover:text-indigo-900 font-medium">
+            7 deep-dive articles
+          </Link>
         </div>
       </section>
 
@@ -277,6 +325,37 @@ export default function HomePage() {
               </span>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* Recently Published */}
+      <section className="bg-gray-50 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
+            Recently Published
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {recentArticles.map((article) => (
+              <Link
+                key={article.href}
+                href={article.href}
+                className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow group"
+              >
+                <p className="text-xs text-indigo-600 font-medium mb-2">
+                  {article.date}
+                </p>
+                <h3 className="font-bold text-gray-900 mb-2">
+                  {article.title}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                  {article.description}
+                </p>
+                <span className="text-indigo-600 text-sm font-medium group-hover:underline">
+                  Read article →
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
