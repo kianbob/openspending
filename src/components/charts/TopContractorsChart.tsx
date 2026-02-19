@@ -28,6 +28,7 @@ export function TopContractorsChart({ data }: { data: Contractor[] }) {
   }));
 
   return (
+    <div role="img" aria-label="Bar chart showing top federal contractors by spending amount">
     <ResponsiveContainer width="100%" height={400}>
       <BarChart data={chartData} layout="vertical" margin={{ left: 10, right: 30, top: 5, bottom: 5 }}>
         <XAxis
@@ -68,5 +69,6 @@ export function TopContractorsChart({ data }: { data: Contractor[] }) {
         </Bar>
       </BarChart>
     </ResponsiveContainer>
+    </div>
   );
 }

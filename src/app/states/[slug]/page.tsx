@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { formatDollars, formatPercent } from "@/lib/format";
+import { formatDollars, formatPercent, toTitleCase } from "@/lib/format";
 import stateDetails from "@/../public/data/state-details.json";
+import stateContractors from "@/../public/data/state-contractors.json";
+import { StateContractorsChart } from "@/components/charts/StateContractorsChart";
 
 export const dynamicParams = true;
 
@@ -16,6 +18,7 @@ type StateEntry = {
 };
 
 const details = stateDetails as Record<string, StateEntry>;
+const contractors = stateContractors as Record<string, { name: string; amount: number }[]>;
 
 const slugMap = new Map(
   Object.values(details).map((entry) => [entry.slug, entry])
@@ -128,6 +131,44 @@ export default async function StateDetailPage({
           {getEditorialCallout(code, name)}
         </p>
       </div>
+
+      {/* Top Contractors */}
+      {(() => {
+        const raw = contractors[code];
+        if (!raw) return null;
+        const filtered = raw.filter((c) => c.name !== "MULTIPLE RECIPIENTS");
+        if (filtered.length === 0) return null;
+        const top10 = filtered.slice(0, 10);
+        const top5 = filtered.slice(0, 5);
+        return (
+          <div className="mb-10">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">
+              Top Contractors in {name}
+            </h2>
+            <div className="overflow-x-auto mb-6">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-gray-200">
+                    <th className="text-left py-2 pr-4 text-gray-500 font-medium">Rank</th>
+                    <th className="text-left py-2 pr-4 text-gray-500 font-medium">Contractor</th>
+                    <th className="text-right py-2 text-gray-500 font-medium">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {top10.map((c, i) => (
+                    <tr key={i} className="border-b border-gray-100">
+                      <td className="py-2 pr-4 text-gray-500">{i + 1}</td>
+                      <td className="py-2 pr-4 text-gray-900">{toTitleCase(c.name)}</td>
+                      <td className="py-2 text-right font-medium text-gray-900">{formatDollars(c.amount)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <StateContractorsChart data={top5.map((c) => ({ name: toTitleCase(c.name), amount: c.amount }))} />
+          </div>
+        );
+      })()}
 
       {/* Explore More */}
       <div className="mb-12">

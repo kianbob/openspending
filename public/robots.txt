@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://openspending.info/sitemap.xml
+Sitemap: https://openspending-app.vercel.app/sitemap.xml

@@ -280,6 +280,31 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Newsletter CTA */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <div className="bg-indigo-50 rounded-2xl p-8 md:p-12 text-center">
+          <h2 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+            Stay Informed
+          </h2>
+          <p className="text-gray-600 max-w-xl mx-auto mb-6">
+            Get weekly updates on federal spending, new investigations, and data releases.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+            <input
+              type="email"
+              placeholder="you@example.com"
+              className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-sm"
+            />
+            <button
+              type="button"
+              className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-colors text-sm"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }

@@ -1,0 +1,842 @@
+{
+  "VA": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 60871823581.87
+    },
+    {
+      "name": "OPTUM PUBLIC SECTOR SOLUTIONS, INC.",
+      "amount": 21155805575.53
+    },
+    {
+      "name": "VA DEPARTMENT OF MEDICAL ASSISTANCE SERVICE",
+      "amount": 17163612799
+    },
+    {
+      "name": "TRIWEST HEALTHCARE ALLIANCE CORP",
+      "amount": 9490381524.99
+    },
+    {
+      "name": "ATLANTIC DIVING SUPPLY, INC.",
+      "amount": 5792839577.79
+    },
+    {
+      "name": "HUNTINGTON INGALLS INC",
+      "amount": 4087340426.42
+    },
+    {
+      "name": "LOCKHEED MARTIN CORPORATION",
+      "amount": 3379871392.07
+    },
+    {
+      "name": "BOOZ ALLEN HAMILTON INC",
+      "amount": 2872391313.75
+    },
+    {
+      "name": "SOCIAL SERVICES, VIRGINIA DEPARTMENT OF",
+      "amount": 2429109192.76
+    },
+    {
+      "name": "ACCENTURE FEDERAL SERVICES LLC",
+      "amount": 2122568647.58
+    }
+  ],
+  "TX": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 141403577776.85
+    },
+    {
+      "name": "HEALTH & HUMAN SVC COMMN TX",
+      "amount": 40823742960.6
+    },
+    {
+      "name": "LOCKHEED MARTIN CORPORATION",
+      "amount": 30520719520.78
+    },
+    {
+      "name": "MCKESSON CORPORATION",
+      "amount": 11782809994.83
+    },
+    {
+      "name": "LOCKHEED MARTIN CORPORATION",
+      "amount": 10413180735.44
+    },
+    {
+      "name": "TEXAS DEPARTMENT OF TRANSPORTATION",
+      "amount": 5974924275.21
+    },
+    {
+      "name": "TX EDUCATION AGENCY",
+      "amount": 3946324090.71
+    },
+    {
+      "name": "TEXAS COMPTROLLER OF PUBLIC ACCOUNTS",
+      "amount": 3363257602.86
+    },
+    {
+      "name": "AGRICULTURE, TEXAS DEPARTMENT OF",
+      "amount": 3245873983.63
+    },
+    {
+      "name": "TEXAS WORKFORCE COMMISSION",
+      "amount": 2259906621.38
+    }
+  ],
+  "CA": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 220610026082.44
+    },
+    {
+      "name": "HEALTH CARE SERVICES, CALIFORNIA DEPARTMENT OF",
+      "amount": 112537529310.06
+    },
+    {
+      "name": "DEPARTMENT OF SOCIAL SERVICES CALIFORNIA",
+      "amount": 21109183691.71
+    },
+    {
+      "name": "DEPARTMENT OF EDUCATION CALIFORNIA",
+      "amount": 7510572477
+    },
+    {
+      "name": "DEPARTMENT OF TRANSPORTATION CALIFORNIA",
+      "amount": 6266483998.29
+    },
+    {
+      "name": "OFFICE OF EMERGENCY SERVICES",
+      "amount": 6207907300.16
+    },
+    {
+      "name": "LAWRENCE LIVERMORE NATIONAL SECURITY, LLC",
+      "amount": 3626934392.38
+    },
+    {
+      "name": "QTC MEDICAL SERVICES INC",
+      "amount": 2781011478.29
+    },
+    {
+      "name": "THE BOEING COMPANY",
+      "amount": 2340781277.81
+    },
+    {
+      "name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+      "amount": 2297053487.55
+    }
+  ],
+  "MD": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 34223066956.04
+    },
+    {
+      "name": "MARYLAND DEPARTMENT OF HEALTH",
+      "amount": 11775498336.32
+    },
+    {
+      "name": "NATIONAL RAILROAD PASSENGER CORPORATION",
+      "amount": 5568092363
+    },
+    {
+      "name": "THE JOHNS HOPKINS UNIVERSITY APPLIED PHYSICS LABORATORY LLC",
+      "amount": 2314079162.93
+    },
+    {
+      "name": "MARYLAND DEPARTMENT OF HUMAN SERVICES",
+      "amount": 2184887330.26
+    },
+    {
+      "name": "OPTUM PUBLIC SECTOR SOLUTIONS, INC.",
+      "amount": 1334726258.27
+    },
+    {
+      "name": "MARYLAND STATE DEPARTMENT OF EDUCATION",
+      "amount": 1291977263.25
+    },
+    {
+      "name": "THE JOHNS HOPKINS UNIVERSITY",
+      "amount": 1131061373.76
+    },
+    {
+      "name": "MARYLAND DEPARTMENT OF TRANSPORTATION",
+      "amount": 930438810.14
+    },
+    {
+      "name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+      "amount": 883044289.01
+    }
+  ],
+  "CT": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 101210152836.78
+    },
+    {
+      "name": "ELECTRIC BOAT CORPORATION",
+      "amount": 21363430401.4
+    },
+    {
+      "name": "DEPARTMENT OF SOCIAL SERVICES CONNECTICUT",
+      "amount": 8618859176.54
+    },
+    {
+      "name": "RTX CORPORATION",
+      "amount": 7277170734.16
+    },
+    {
+      "name": "SIKORSKY AIRCRAFT CORPORATION",
+      "amount": 4761304459.25
+    },
+    {
+      "name": "DEPARTMENT OF TRANSPORTATION CONNECTICUT",
+      "amount": 2206923343.15
+    },
+    {
+      "name": "NATIONAL RAILROAD PASSENGER CORPORATION",
+      "amount": 957046698
+    },
+    {
+      "name": "YALE UNIV",
+      "amount": 792835394.39
+    },
+    {
+      "name": "DEPT OF ENERGY & ENVIRONMENTAL PROTECTION",
+      "amount": 704214870.95
+    },
+    {
+      "name": "CONNECTICUT DEPARTMENT OF EDUCATION",
+      "amount": 618331585.36
+    }
+  ],
+  "FL": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 220982715008.02
+    },
+    {
+      "name": "FLORIDA AGENCY FOR HEALTH CARE ADMINISTRATION",
+      "amount": 22840284454
+    },
+    {
+      "name": "FLORIDA DEPARTMENT OF CHILDREN AND FAMILIES",
+      "amount": 7579445066.33
+    },
+    {
+      "name": "LOCKHEED MARTIN CORPORATION",
+      "amount": 6038993379.29
+    },
+    {
+      "name": "STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT",
+      "amount": 5784625271.49
+    },
+    {
+      "name": "FLORIDA DEPARTMENT OF EDUCATION",
+      "amount": 3150261266.95
+    },
+    {
+      "name": "STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION",
+      "amount": 2838487831.62
+    },
+    {
+      "name": "WRIGHT NATIONAL FLOOD INSURANCE COMPANY",
+      "amount": 2797427629.14
+    },
+    {
+      "name": "FLORIDA DEPARTMENT OF COMMERCE",
+      "amount": 2627647222.62
+    },
+    {
+      "name": "LOCKHEED MARTIN CORPORATION",
+      "amount": 1951765724.7
+    }
+  ],
+  "DC": [
+    {
+      "name": "NATIONAL RAILROAD PASSENGER CORPORATION",
+      "amount": 6745325706
+    },
+    {
+      "name": "DISTRICT OF COLUMBIA, GOVERNMENT OF",
+      "amount": 3605396330.8
+    },
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 2667782681.99
+    },
+    {
+      "name": "BOOZ ALLEN HAMILTON INC",
+      "amount": 1068110418.68
+    },
+    {
+      "name": "CHEMONICS INTERNATIONAL, INC.",
+      "amount": 1037322654.83
+    },
+    {
+      "name": "DELOITTE CONSULTING LLP",
+      "amount": 998274822.21
+    },
+    {
+      "name": "ACCENTURE FEDERAL SERVICES LLC",
+      "amount": 773550800.49
+    },
+    {
+      "name": "HARRIS CORPORATION",
+      "amount": 690057490.71
+    },
+    {
+      "name": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+      "amount": 648740395.82
+    },
+    {
+      "name": "DELL MARKETING L.P.",
+      "amount": 619601096.34
+    }
+  ],
+  "PA": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 198469362310.42
+    },
+    {
+      "name": "PA DEPARTMENT OF HUMAN SERVICES",
+      "amount": 36179414688.08
+    },
+    {
+      "name": "AMERISOURCEBERGEN DRUG CORP",
+      "amount": 7442185794.58
+    },
+    {
+      "name": "FLUOR MARINE PROPULSION, LLC",
+      "amount": 3551315617.84
+    },
+    {
+      "name": "PENNSYLVANIA DEPARTMENT OF TRANSPORTATION",
+      "amount": 2915995828.55
+    },
+    {
+      "name": "PENNSYLVANIA DEPT OF EDUATION",
+      "amount": 2570904657.95
+    },
+    {
+      "name": "BAE SYSTEMS LAND & ARMAMENTS L.P.",
+      "amount": 2164151334.13
+    },
+    {
+      "name": "BECHTEL PLANT MACHINERY, INC.",
+      "amount": 2144997042
+    },
+    {
+      "name": "THE BOEING COMPANY",
+      "amount": 1169709683.38
+    },
+    {
+      "name": "PENNSYLVANIA DEPARTMENT OF ENVIRONMENTAL PROTECTION",
+      "amount": 1043418506.48
+    }
+  ],
+  "AZ": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 57000264276.16
+    },
+    {
+      "name": "ARIZONA HEALTH CARE COST CONTAINMENT SYSTEM",
+      "amount": 16397943385.33
+    },
+    {
+      "name": "RAYTHEON COMPANY",
+      "amount": 10590855015.97
+    },
+    {
+      "name": "TRIWEST HEALTHCARE ALLIANCE CORP",
+      "amount": 3540417158.48
+    },
+    {
+      "name": "ARIZONA DEPARTMENT OF ECONOMIC SECURITY",
+      "amount": 2847534961.12
+    },
+    {
+      "name": "ARIZONA DEPARTMENT OF EDUCATION",
+      "amount": 1352615185.91
+    },
+    {
+      "name": "DEPARTMENT OF TRANSPORTATION ARIZONA",
+      "amount": 1276613840.42
+    },
+    {
+      "name": "RAYTHEON/LOCKHEED MARTIN JAVELIN JV",
+      "amount": 928170411.24
+    },
+    {
+      "name": "GENERAL DYNAMICS MISSION SYSTEMS, INC.",
+      "amount": 686470927.65
+    },
+    {
+      "name": "CSI AVIATION, INC",
+      "amount": 665603713.7
+    }
+  ],
+  "MA": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 46972982796.65
+    },
+    {
+      "name": "THE COMMONWEALTH OF MASSACHUSETTS",
+      "amount": 16788734353.38
+    },
+    {
+      "name": "DEPARTMENT OF TRANSITIONAL ASSISTAN",
+      "amount": 3044202304.92
+    },
+    {
+      "name": "RAYTHEON COMPANY",
+      "amount": 3028515307.89
+    },
+    {
+      "name": "RAYTHEON COMPANY",
+      "amount": 2314221838.28
+    },
+    {
+      "name": "GENERAL ELECTRIC COMPANY",
+      "amount": 1782544739.86
+    },
+    {
+      "name": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "amount": 1422587010.22
+    },
+    {
+      "name": "MASSACHUSETTS DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION",
+      "amount": 1390668502.03
+    },
+    {
+      "name": "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION",
+      "amount": 1177233176.36
+    },
+    {
+      "name": "RAYTHEON COMPANY",
+      "amount": 903191840.52
+    }
+  ],
+  "AL": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 35587892784.22
+    },
+    {
+      "name": "ALABAMA MEDICAID AGENCY",
+      "amount": 6628691833.8
+    },
+    {
+      "name": "DEPARTMENT OF HUMAN RESOURCES ALABAMA",
+      "amount": 2260866592.72
+    },
+    {
+      "name": "ECONOMIC AND COMMUNITY AFFAIRS, ALABAMA DEPARTMENT OF",
+      "amount": 1720683682.71
+    },
+    {
+      "name": "LOCKHEED MARTIN CORPORATION",
+      "amount": 1614133233.33
+    },
+    {
+      "name": "THE BOEING COMPANY",
+      "amount": 1476732737.26
+    },
+    {
+      "name": "ALABAMA DEPARTMENT OF TRANSPORTATION",
+      "amount": 1411544766.93
+    },
+    {
+      "name": "ALABAMA STATE DEPARTMENT OF EDUCATION",
+      "amount": 1178128371.55
+    },
+    {
+      "name": "NORTHROP GRUMMAN SYSTEMS CORPORATION",
+      "amount": 891930366.04
+    },
+    {
+      "name": "AUSTAL USA, LLC",
+      "amount": 737988994.37
+    }
+  ],
+  "CO": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 31192957715.99
+    },
+    {
+      "name": "STATE OF COLORADO - DEPT OF HEALTH CARE POLICY & FINANCING",
+      "amount": 9991304604.78
+    },
+    {
+      "name": "LOCKHEED MARTIN CORP",
+      "amount": 3052050326.41
+    },
+    {
+      "name": "SIERRA NEVADA COMPANY, LLC",
+      "amount": 2068689293.48
+    },
+    {
+      "name": "DEPARTMENT OF HUMAN SERVICES COLORADO",
+      "amount": 2015062726.89
+    },
+    {
+      "name": "COLORADO DEPARTMENT OF TRANSPORTATION",
+      "amount": 1092343759.08
+    },
+    {
+      "name": "ALLIANCE FOR ENERGY INNOVATION, LLC",
+      "amount": 894961395.34
+    },
+    {
+      "name": "BOARD OF EDUCATION COLORADO",
+      "amount": 789505521.45
+    },
+    {
+      "name": "TRI-STATE GENERATION AND TRANSMISSION ASSOCIATION, INC.",
+      "amount": 624002339.37
+    },
+    {
+      "name": "DAVITA INC.",
+      "amount": 532685469.94
+    }
+  ],
+  "WA": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 43931534683.91
+    },
+    {
+      "name": "DEPARTMENT OF SOCIAL & HEALTH SERVICES",
+      "amount": 15820326598.16
+    },
+    {
+      "name": "THE BOEING COMPANY",
+      "amount": 4422378801.63
+    },
+    {
+      "name": "BATTELLE MEMORIAL INSTITUTE",
+      "amount": 1654638055.33
+    },
+    {
+      "name": "WASHINGTON ST DEPARTMENT OF TRANSPORTATION",
+      "amount": 1335894964.68
+    },
+    {
+      "name": "SUPERINTENDENT OF PUBLIC INSTRUCTION",
+      "amount": 1138226038.81
+    },
+    {
+      "name": "BECHTEL NATIONAL, INC.",
+      "amount": 1057192611.19
+    },
+    {
+      "name": "UNIVERSITY OF WASHINGTON",
+      "amount": 889157948.9
+    },
+    {
+      "name": "HANFORD TANK WASTE OPERATIONS & CLOSURE, LLC",
+      "amount": 796035009.24
+    },
+    {
+      "name": "BLUE ORIGIN WASHINGTON, LLC",
+      "amount": 767062330.07
+    }
+  ],
+  "MO": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 55831572778.14
+    },
+    {
+      "name": "DEPARTMENT OF SOCIAL SERVICES MISSO",
+      "amount": 14475403786.98
+    },
+    {
+      "name": "THE BOEING COMPANY",
+      "amount": 5774571135.27
+    },
+    {
+      "name": "HONEYWELL FEDERAL MANUFACTURING & TECHNOLOGIES, LLC",
+      "amount": 2113530440.22
+    },
+    {
+      "name": "MISSOURI DEPARTMENT OF TRANSPORTATION",
+      "amount": 1732367322.6
+    },
+    {
+      "name": "THE BOEING COMPANY",
+      "amount": 1468398093.27
+    },
+    {
+      "name": "ELEMENTARY & SECONDARY EDUCATION MISSOURI DEPARTMENT OF",
+      "amount": 1181883372.84
+    },
+    {
+      "name": "OLIN WINCHESTER LLC",
+      "amount": 874218335.37
+    },
+    {
+      "name": "WASHINGTON UNIVERSITY, THE",
+      "amount": 816195654.04
+    },
+    {
+      "name": "REDACTED DUE TO PII",
+      "amount": 797163559.05
+    }
+  ],
+  "NM": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 13312199125.79
+    },
+    {
+      "name": "DEPARTMENT OF HUMAN SERVICES NEW MEXICO",
+      "amount": 9559956920.72
+    },
+    {
+      "name": "NATIONAL TECHNOLOGY & ENGINEERING SOLUTIONS OF SANDIA, LLC",
+      "amount": 5674129361.92
+    },
+    {
+      "name": "TRIAD NATIONAL SECURITY, LLC",
+      "amount": 5203605576.11
+    },
+    {
+      "name": "NEW MEXICO DEPARTMENT OF TRANSPORTATION",
+      "amount": 698038880.86
+    },
+    {
+      "name": "STATE OF NEW MEXICO PUBLIC EDUCATION DEPARTMENT",
+      "amount": 548042379.53
+    },
+    {
+      "name": "NEW MEXICO DEPARTMENT OF HOMELAND SECURITY AND EMERGENCY MANAGEMENT",
+      "amount": 480805973.23
+    },
+    {
+      "name": "APPLIED RESEARCH ASSOCIATES, INC.",
+      "amount": 186742679.82
+    },
+    {
+      "name": "STATE OF NEW MEXICO FINANCE AND ADMINISTRATION",
+      "amount": 181814160.65
+    },
+    {
+      "name": "UNIVERSITY OF NEW MEXICO",
+      "amount": 146638937.87
+    }
+  ],
+  "IL": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 72342702462.13
+    },
+    {
+      "name": "ILLINOIS DEPARTMENT OF HEALTHCARE & FAMILY SERVICES",
+      "amount": 21850596861.57
+    },
+    {
+      "name": "ILLINOIS DEPARTMENT OF HUMAN SERVICE",
+      "amount": 5878092659.28
+    },
+    {
+      "name": "ILLINOIS DEPARTMENT OF TRANSPORTATION",
+      "amount": 2577805485.17
+    },
+    {
+      "name": "ILLINOIS STATE BOARD OF EDUCATION",
+      "amount": 2443849350.8
+    },
+    {
+      "name": "FERMI FORWARD DISCOVERY GROUP, LLC",
+      "amount": 1733790762.82
+    },
+    {
+      "name": "CHICAGO TRANSIT AUTHORITY",
+      "amount": 1709651958
+    },
+    {
+      "name": "W S DARLEY & CO",
+      "amount": 1470458970.66
+    },
+    {
+      "name": "ILLINOIS ENVIRONMENTAL PROTECTION AGENCY",
+      "amount": 1406098641.03
+    },
+    {
+      "name": "CHICAGO HOUSING AUTHORITY",
+      "amount": 1331754558.93
+    }
+  ],
+  "NY": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 118350113895.95
+    },
+    {
+      "name": "NYS DEPARTMENT OF HEALTH",
+      "amount": 76564662721.05
+    },
+    {
+      "name": "NEW YORK STATE OFFICE OF TEMPORARY & DISABILITY ASSISTANCE",
+      "amount": 10958624157.5
+    },
+    {
+      "name": "NEW YORK STATE EDUCATION DEPARTMENT",
+      "amount": 4640464010.67
+    },
+    {
+      "name": "NEW YORK CITY HOUSING AUTHORITY",
+      "amount": 4588200711.58
+    },
+    {
+      "name": "METROPOLITAN TRANSPORTATION AUTHORITY",
+      "amount": 3383229560.04
+    },
+    {
+      "name": "DEPARTMENT OF TRANSPORTATION NEW YORK",
+      "amount": 3337495594.56
+    },
+    {
+      "name": "NATIONAL RAILROAD PASSENGER CORPORATION",
+      "amount": 1385740377.9
+    },
+    {
+      "name": "NEW YORK STATE DIVISION OF HOMELAND SECURITY & EMERGENCY SERVICES",
+      "amount": 1370359815.41
+    },
+    {
+      "name": "CHILDREN & FAMILY SERVICES, NEW YORK OFFICE OF",
+      "amount": 1264066105.03
+    }
+  ],
+  "GA": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 58764462379.32
+    },
+    {
+      "name": "GEORGIA DEPARTMENT OF COMMUNITY HEALTH",
+      "amount": 13005080626.64
+    },
+    {
+      "name": "DEPARTMENT OF HUMAN SERVICES",
+      "amount": 3567794772.5
+    },
+    {
+      "name": "LOCKHEED MARTIN CORP",
+      "amount": 2569936092.57
+    },
+    {
+      "name": "GEORGIA DEPT OF EDUCATION",
+      "amount": 2234316079.62
+    },
+    {
+      "name": "GEORGIA DEPARTMENT OF TRANSPORTATION",
+      "amount": 1983412455.2
+    },
+    {
+      "name": "GEORGIA EMERGENCY MANAGEMENT AND HOMELAND SECURITY AGENCY",
+      "amount": 1331702262.25
+    },
+    {
+      "name": "STATE OF GEORGIA",
+      "amount": 1330611317.87
+    },
+    {
+      "name": "DEPARTMENT OF INSURANCE OF THE STATE OF GEORGIA",
+      "amount": 1016196442
+    },
+    {
+      "name": "REDACTED DUE TO PII",
+      "amount": 791387087.83
+    }
+  ],
+  "TN": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 85779958107.99
+    },
+    {
+      "name": "FINANCE & ADMINISTRATION TENNESSEE DEPAR",
+      "amount": 11934408934.42
+    },
+    {
+      "name": "UT-BATTELLE LLC",
+      "amount": 2679775140.73
+    },
+    {
+      "name": "CONSOLIDATED NUCLEAR SECURITY, LLC",
+      "amount": 2537032357.81
+    },
+    {
+      "name": "TENNESSEE DEPARTMENT OF HUMAN SERVICES",
+      "amount": 2530267773.31
+    },
+    {
+      "name": "TENNESSEE DEPARTMENT OF TRANSPORTATION",
+      "amount": 1645572980.38
+    },
+    {
+      "name": "DEPARTMENT OF EDUCATION TENNESSEE",
+      "amount": 1403954859.98
+    },
+    {
+      "name": "UNITED CLEANUP OAK RIDGE LLC",
+      "amount": 630252943.49
+    },
+    {
+      "name": "DEPARTMENT OF ENVIRONMENT & CONSERVATION TENNESSEE",
+      "amount": 542804780.14
+    },
+    {
+      "name": "VANDERBILT UNIVERSITY MEDICAL CENTER",
+      "amount": 533607971.24
+    }
+  ],
+  "KY": [
+    {
+      "name": "MULTIPLE RECIPIENTS",
+      "amount": 136378774226.17
+    },
+    {
+      "name": "HEALTH SERVICES KENTUCKY CABINET FOR",
+      "amount": 18232384982.43
+    },
+    {
+      "name": "HUMANA GOVERNMENT BUSINESS INC",
+      "amount": 6513706438.99
+    },
+    {
+      "name": "EXECUTIVE OFFICE OF THE COMMONWEALTH OF KENTUCKY",
+      "amount": 1423759052.76
+    },
+    {
+      "name": "KENTUCKY DEPARTMENT OF EDUCATION",
+      "amount": 1228492089.77
+    },
+    {
+      "name": "LOCKHEED MARTIN CORPORATION",
+      "amount": 837491603.42
+    },
+    {
+      "name": "EAST KENTUCKY POWER COOPERATIVE, INC.",
+      "amount": 670996673.1
+    },
+    {
+      "name": "ENERGY & ENVIRONMENT CABINET",
+      "amount": 318113114.73
+    },
+    {
+      "name": "KENTUCKY DEPARTMENT OF MILITARY AFFAIRS",
+      "amount": 317015251.77
+    },
+    {
+      "name": "BECHTEL PARSONS BLUE GRASS, A JOINT VENTURE",
+      "amount": 289456114.93
+    }
+  ]
+}

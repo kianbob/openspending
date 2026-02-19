@@ -18,7 +18,7 @@ interface ContractorTrend {
 
 export function ContractorTrends({ data }: { data: ContractorTrend[] }) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6" role="group" aria-label="Contractor spending trends over time">
       {data.map((contractor) => {
         const chartData = Object.entries(contractor.years)
           .filter((entry): entry is [string, number] => entry[1] != null)

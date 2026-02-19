@@ -11,26 +11,22 @@ import {
 } from "recharts";
 import { formatDollars } from "@/lib/format";
 
-interface BarDatum {
-  name: string;
-  amount: number;
+interface StateContractorsChartProps {
+  data: { name: string; amount: number }[];
 }
 
-export function HorizontalBarChart({
-  data,
-  height = 500,
-  color = "#6366f1",
-  labelWidth = 150,
-}: {
-  data: BarDatum[];
-  height?: number;
-  color?: string;
-  labelWidth?: number;
-}) {
+export function StateContractorsChart({ data }: StateContractorsChartProps) {
+  const filtered = data.filter((d) => d.name !== "MULTIPLE RECIPIENTS");
+  const top5 = filtered.slice(0, 5);
+
   return (
-    <div style={{ width: "100%", height }} role="img" aria-label="Horizontal bar chart of federal spending data">
+    <div style={{ width: "100%", height: 300 }}>
       <ResponsiveContainer width="100%" height="100%">
-        <BarChart data={data} layout="vertical" margin={{ left: 10, right: 30, top: 5, bottom: 5 }}>
+        <BarChart
+          data={top5}
+          layout="vertical"
+          margin={{ left: 10, right: 30, top: 5, bottom: 5 }}
+        >
           <XAxis
             type="number"
             tickFormatter={(v) => formatDollars(v)}
@@ -40,7 +36,7 @@ export function HorizontalBarChart({
           <YAxis
             type="category"
             dataKey="name"
-            width={labelWidth}
+            width={180}
             fontSize={11}
             tick={{ fill: "#374151" }}
           />
@@ -55,11 +51,11 @@ export function HorizontalBarChart({
             }}
           />
           <Bar dataKey="amount" radius={[0, 4, 4, 0]}>
-            {data.map((_, index) => (
+            {top5.map((_, index) => (
               <Cell
                 key={index}
-                fill={color}
-                fillOpacity={1 - index * 0.03}
+                fill="#6366f1"
+                fillOpacity={1 - index * 0.05}
               />
             ))}
           </Bar>

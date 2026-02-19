@@ -21,6 +21,7 @@ interface YearData {
 
 export function AreaSpendingChart({ data }: { data: YearData[] }) {
   return (
+    <div role="img" aria-label="Area chart showing budget authority, obligations, and outlays over time">
     <ResponsiveContainer width="100%" height={350}>
       <AreaChart data={data} margin={{ left: 10, right: 30, top: 5, bottom: 5 }}>
         <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
@@ -78,5 +79,6 @@ export function AreaSpendingChart({ data }: { data: YearData[] }) {
         />
       </AreaChart>
     </ResponsiveContainer>
+    </div>
   );
 }
