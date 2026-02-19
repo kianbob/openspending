@@ -139,6 +139,22 @@ export default function UsaidPage() {
         defaultSortKey="amount"
       />
 
+      {/* Cross-link */}
+      <div className="mt-10 bg-indigo-50 border border-indigo-200 rounded-xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <p className="font-bold text-indigo-900">Foreign Aid by Country</p>
+          <p className="text-indigo-800 text-sm">
+            See which countries receive the most U.S. tax dollars — all federal international spending, not just USAID.
+          </p>
+        </div>
+        <Link
+          href="/foreign-aid"
+          className="px-5 py-2.5 bg-indigo-600 text-white rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors whitespace-nowrap"
+        >
+          View Foreign Aid Data →
+        </Link>
+      </div>
+
       {/* Explore More */}
       <div className="mt-12 bg-gray-50 rounded-xl border border-gray-200 p-8 text-center">
         <h2 className="font-serif text-2xl font-bold text-gray-900 mb-3">

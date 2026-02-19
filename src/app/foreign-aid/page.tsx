@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
 import { SortableTable } from "@/components/SortableTable";
 import { formatDollars } from "@/lib/format";
@@ -92,6 +93,22 @@ export default function ForeignAidPage() {
         data={tableData}
         defaultSortKey="amount"
       />
+
+      {/* Cross-link */}
+      <div className="mt-10 bg-indigo-50 border border-indigo-200 rounded-xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <p className="font-bold text-indigo-900">USAID Deep Dive</p>
+          <p className="text-indigo-800 text-sm">
+            See the 100 largest USAID grants and contracts — and the budget explosion from $15B to $50B.
+          </p>
+        </div>
+        <Link
+          href="/usaid"
+          className="px-5 py-2.5 bg-indigo-600 text-white rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors whitespace-nowrap"
+        >
+          Explore USAID →
+        </Link>
+      </div>
     </div>
   );
 }
