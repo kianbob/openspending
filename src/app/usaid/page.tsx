@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ShareButtons } from "@/components/ShareButtons";
 import { UsaidGrantsChart } from "@/components/charts/UsaidGrantsChart";
 import { SortableTable } from "@/components/SortableTable";
 import { formatDollars } from "@/lib/format";
@@ -52,10 +54,15 @@ const columns = [
 export default function UsaidPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <Breadcrumbs items={[{ label: "Editorial" }, { label: "Where Does Foreign Aid Actually Go?" }]} />
+
       {/* Hero */}
-      <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-        Where Does Foreign Aid Actually Go?
-      </h1>
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-2">
+        <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900">
+          Where Does Foreign Aid Actually Go?
+        </h1>
+        <ShareButtons title="USAID: From $15B to $50B in 6 Years — OpenSpending" url="https://openspending.us/usaid" />
+      </div>
       <p className="text-gray-500 text-lg mb-8">
         {formatDollars(totalAll)} in USAID awards (FY2020–2025). The 50 largest
         grants and 50 largest contracts — who got the money?

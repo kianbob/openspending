@@ -1,3 +1,5 @@
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ShareButtons } from "@/components/ShareButtons";
 import { ContractTrendsAreaChart } from "@/components/charts/ContractTrendsAreaChart";
 import { AgencyComparisonLineChart } from "@/components/charts/AgencyComparisonLineChart";
 import { formatDollars } from "@/lib/format";
@@ -67,12 +69,16 @@ export default function TrendsPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-indigo-900 via-indigo-800 to-indigo-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+          <Breadcrumbs items={[{ label: "Editorial" }, { label: "Federal Spending Over Time" }]} />
           <p className="text-indigo-200 font-medium text-sm uppercase tracking-widest mb-4">
             Historical Analysis
           </p>
-          <h1 className="font-serif text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Federal Spending Over Time
-          </h1>
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold leading-tight">
+              Federal Spending Over Time
+            </h1>
+            <ShareButtons title="Federal Spending Trends FY2017-FY2025 — OpenSpending" url="https://openspending.us/trends" />
+          </div>
           <p className="text-lg text-indigo-100 max-w-2xl">
             Nine years of contract and budget data reveal a government that keeps
             growing — with COVID as the accelerant and no sign of slowing down.

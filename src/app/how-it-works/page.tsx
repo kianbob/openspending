@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ShareButtons } from "@/components/ShareButtons";
 
 export const metadata = {
   title: "How Government Contracts Actually Work — OpenSpending",
@@ -21,10 +23,15 @@ const flowSteps = [
 export default function HowItWorksPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <Breadcrumbs items={[{ label: "Editorial" }, { label: "How Government Contracts Actually Work" }]} />
+
       {/* Hero */}
-      <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-        How Government Contracts Actually Work
-      </h1>
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-2">
+        <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900">
+          How Government Contracts Actually Work
+        </h1>
+        <ShareButtons title="How Government Contracts Actually Work — OpenSpending" url="https://openspending.us/how-it-works" />
+      </div>
       <p className="text-gray-500 text-lg mb-10">
         Your money, their contracts.
       </p>

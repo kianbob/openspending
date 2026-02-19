@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ShareButtons } from "@/components/ShareButtons";
 import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
 import { SortableTable } from "@/components/SortableTable";
 import { formatDollars, toTitleCase } from "@/lib/format";
@@ -52,10 +54,15 @@ const contractRows = noBidData.contracts.map((c) => ({
 export default function NoBidPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <Breadcrumbs items={[{ label: "Editorial" }, { label: "No-Bid Nation" }]} />
+
       {/* Hero */}
-      <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-        No-Bid Nation: {formatDollars(noBidData.total)} Without Competition
-      </h1>
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-2">
+        <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900">
+          No-Bid Nation: {formatDollars(noBidData.total)} Without Competition
+        </h1>
+        <ShareButtons title="No-Bid Nation: $74B Without Competition — OpenSpending" url="https://openspending.us/no-bid" />
+      </div>
       <p className="text-gray-500 text-lg mb-8">
         The 50 largest sole-source federal contracts in FY2025 — awarded without
         competitive bidding.

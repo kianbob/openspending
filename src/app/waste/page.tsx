@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ShareButtons } from "@/components/ShareButtons";
 
 export const metadata = {
   title: "The Federal Waste Problem: $233-521B/Year — OpenSpending",
@@ -39,10 +41,15 @@ const top5Programs = [
 export default function WastePage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <Breadcrumbs items={[{ label: "Editorial" }, { label: "The Federal Waste Problem" }]} />
+
       {/* Hero */}
-      <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-        The Federal Waste Problem
-      </h1>
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-2">
+        <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900">
+          The Federal Waste Problem
+        </h1>
+        <ShareButtons title="The Federal Waste Problem: $233-521B/Year — OpenSpending" url="https://openspending.us/waste" />
+      </div>
       <p className="text-gray-500 text-lg mb-10">
         These are not our estimates — this is the government&apos;s own auditor
         saying this.

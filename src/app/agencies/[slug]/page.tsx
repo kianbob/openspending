@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { AreaSpendingChart } from "@/components/charts/AreaSpendingChart";
 import { AgencyContractorsChart } from "@/components/charts/AgencyContractorsChart";
 import { ContractsGrantsDonut } from "@/components/charts/ContractsGrantsDonut";
@@ -146,12 +147,7 @@ export default async function AgencyDetailPage({
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <Link
-        href="/agencies"
-        className="text-indigo-600 hover:text-indigo-800 text-sm mb-6 inline-block"
-      >
-        &larr; All Agencies
-      </Link>
+      <Breadcrumbs items={[{ label: "Agencies", href: "/agencies" }, { label: spending.name }]} />
 
       <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-2">
         {spending.name}
