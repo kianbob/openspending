@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import agencies from "@/../public/data/agencies.json";
 import contractors from "@/../public/data/top-contractors.json";
 import states from "@/../public/data/spending-by-state.json";
+import industries from "@/../public/data/industry-details.json";
 
 const BASE_URL = "https://openspending.us";
 
@@ -58,6 +59,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const statePages = states.map((s) => `/states/${slugifyState(s.name)}`);
 
+  const industryPages = (industries as Array<{ slug: string }>).map(
+    (i) => `/industries/${i.slug}`
+  );
+
   return [
     ...staticPages.map((path) => ({
       url: `${BASE_URL}${path}`,
@@ -78,6 +83,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     })),
     ...statePages.map((path) => ({
+      url: `${BASE_URL}${path}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+    ...industryPages.map((path) => ({
       url: `${BASE_URL}${path}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
