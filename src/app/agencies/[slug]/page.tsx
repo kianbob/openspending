@@ -6,6 +6,8 @@ import agencyTrends from "@/../public/data/agency-trends.json";
 import agencySpending from "@/../public/data/agency-spending.json";
 import agencyContractorsData from "@/../public/data/agency-contractors.json";
 
+export const dynamicParams = true;
+
 const agencyContractors = agencyContractorsData as Record<
   string,
   { name: string; amount: number }[]
@@ -27,20 +29,20 @@ const codeToTrendKey: Record<string, string> = {
   DOC: "Commerce",
 };
 
-// Build list of agencies that have trend data with non-empty years
-const agenciesWithTrends = agencySpending
+// Build list of ALL agencies with slugs
+const allAgencies = agencySpending
   .filter((a): a is typeof a & { slug: string } => a.slug != null)
   .map((a) => {
     const trendKey = codeToTrendKey[a.code] ?? a.code;
     const trend = trends[trendKey];
-    return { spending: a, trend };
-  })
-  .filter((a) => a.trend && a.trend.years.length > 0);
+    const hasTrend = trend && trend.years.length > 0;
+    return { spending: a, trend: hasTrend ? trend : null };
+  });
 
-const slugMap = new Map(agenciesWithTrends.map((a) => [a.spending.slug, a]));
+const slugMap = new Map(allAgencies.map((a) => [a.spending.slug, a]));
 
 export function generateStaticParams() {
-  return agenciesWithTrends.map((a) => ({ slug: a.spending.slug }));
+  return allAgencies.map((a) => ({ slug: a.spending.slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }) {
@@ -61,10 +63,11 @@ export default function AgencyDetailPage({
   if (!entry) return null;
 
   const { spending, trend } = entry;
-  const years = trend.years;
-  const latest = years[years.length - 1];
+  const years = trend?.years ?? null;
+  const latest = years ? years[years.length - 1] : null;
   const contracts = spending.contracts || 0;
   const grants = "grants" in spending ? (spending.grants ?? 0) : 0;
+  const budget = latest ? latest.budget : contracts + grants;
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -80,18 +83,19 @@ export default function AgencyDetailPage({
       </h1>
       <p className="text-gray-500 mb-8">
         <span className="font-medium text-indigo-700">{spending.code}</span>
-        {" · "}
-        FY{years[0].fy}&ndash;FY{latest.fy} budget trends
+        {years && latest
+          ? ` · FY${years[0].fy}\u2013FY${latest.fy} budget trends`
+          : " · FY2025 spending data"}
       </p>
 
       {/* Stat cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
         <div className="bg-white rounded-xl border border-gray-200 p-5">
           <p className="text-xs font-medium text-gray-500 uppercase tracking-wide">
-            Budget Authority (FY{latest.fy})
+            {latest ? `Budget Authority (FY${latest.fy})` : "Total Spending"}
           </p>
           <p className="text-2xl font-bold text-gray-900 mt-1">
-            {formatDollars(latest.budget)}
+            {formatDollars(budget)}
           </p>
         </div>
         <div className="bg-white rounded-xl border border-gray-200 p-5">
@@ -113,91 +117,99 @@ export default function AgencyDetailPage({
       </div>
 
       {/* Budget trend chart */}
-      <div className="mb-12">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">Budget Trend</h2>
-        <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6">
-          <AreaSpendingChart data={years} />
+      {years ? (
+        <div className="mb-12">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Budget Trend</h2>
+          <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6">
+            <AreaSpendingChart data={years} />
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="mb-12 bg-gray-50 border border-gray-200 rounded-xl p-6 text-center text-gray-500">
+          Historical trend data not available for this agency.
+        </div>
+      )}
 
       {/* Year-over-year table */}
-      <div className="mb-12">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          Year-over-Year Changes
-        </h2>
-        <div className="overflow-x-auto bg-white rounded-xl border border-gray-200">
-          <table className="min-w-full text-sm">
-            <thead>
-              <tr className="border-b border-gray-200 bg-gray-50">
-                <th className="px-4 py-3 text-left font-semibold text-gray-700">
-                  FY
-                </th>
-                <th className="px-4 py-3 text-right font-semibold text-gray-700">
-                  Budget
-                </th>
-                <th className="px-4 py-3 text-right font-semibold text-gray-700">
-                  YoY
-                </th>
-                <th className="px-4 py-3 text-right font-semibold text-gray-700">
-                  Obligated
-                </th>
-                <th className="px-4 py-3 text-right font-semibold text-gray-700">
-                  YoY
-                </th>
-                <th className="px-4 py-3 text-right font-semibold text-gray-700">
-                  Outlays
-                </th>
-                <th className="px-4 py-3 text-right font-semibold text-gray-700">
-                  YoY
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {years.map((yr, i) => {
-                const prev = i > 0 ? years[i - 1] : null;
-                const budgetChg = prev
-                  ? ((yr.budget - prev.budget) / prev.budget) * 100
-                  : null;
-                const obligatedChg = prev
-                  ? ((yr.obligated - prev.obligated) / prev.obligated) * 100
-                  : null;
-                const outlaysChg = prev
-                  ? ((yr.outlays - prev.outlays) / prev.outlays) * 100
-                  : null;
+      {years && (
+        <div className="mb-12">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">
+            Year-over-Year Changes
+          </h2>
+          <div className="overflow-x-auto bg-white rounded-xl border border-gray-200">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="border-b border-gray-200 bg-gray-50">
+                  <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                    FY
+                  </th>
+                  <th className="px-4 py-3 text-right font-semibold text-gray-700">
+                    Budget
+                  </th>
+                  <th className="px-4 py-3 text-right font-semibold text-gray-700">
+                    YoY
+                  </th>
+                  <th className="px-4 py-3 text-right font-semibold text-gray-700">
+                    Obligated
+                  </th>
+                  <th className="px-4 py-3 text-right font-semibold text-gray-700">
+                    YoY
+                  </th>
+                  <th className="px-4 py-3 text-right font-semibold text-gray-700">
+                    Outlays
+                  </th>
+                  <th className="px-4 py-3 text-right font-semibold text-gray-700">
+                    YoY
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {years.map((yr, i) => {
+                  const prev = i > 0 ? years[i - 1] : null;
+                  const budgetChg = prev
+                    ? ((yr.budget - prev.budget) / prev.budget) * 100
+                    : null;
+                  const obligatedChg = prev
+                    ? ((yr.obligated - prev.obligated) / prev.obligated) * 100
+                    : null;
+                  const outlaysChg = prev
+                    ? ((yr.outlays - prev.outlays) / prev.outlays) * 100
+                    : null;
 
-                return (
-                  <tr
-                    key={yr.fy}
-                    className="border-b border-gray-100 hover:bg-gray-50"
-                  >
-                    <td className="px-4 py-2.5 font-medium text-gray-900">
-                      {yr.fy}
-                    </td>
-                    <td className="px-4 py-2.5 text-right text-gray-700">
-                      {formatDollars(yr.budget)}
-                    </td>
-                    <td className="px-4 py-2.5 text-right">
-                      <YoyBadge value={budgetChg} />
-                    </td>
-                    <td className="px-4 py-2.5 text-right text-gray-700">
-                      {formatDollars(yr.obligated)}
-                    </td>
-                    <td className="px-4 py-2.5 text-right">
-                      <YoyBadge value={obligatedChg} />
-                    </td>
-                    <td className="px-4 py-2.5 text-right text-gray-700">
-                      {formatDollars(yr.outlays)}
-                    </td>
-                    <td className="px-4 py-2.5 text-right">
-                      <YoyBadge value={outlaysChg} />
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+                  return (
+                    <tr
+                      key={yr.fy}
+                      className="border-b border-gray-100 hover:bg-gray-50"
+                    >
+                      <td className="px-4 py-2.5 font-medium text-gray-900">
+                        {yr.fy}
+                      </td>
+                      <td className="px-4 py-2.5 text-right text-gray-700">
+                        {formatDollars(yr.budget)}
+                      </td>
+                      <td className="px-4 py-2.5 text-right">
+                        <YoyBadge value={budgetChg} />
+                      </td>
+                      <td className="px-4 py-2.5 text-right text-gray-700">
+                        {formatDollars(yr.obligated)}
+                      </td>
+                      <td className="px-4 py-2.5 text-right">
+                        <YoyBadge value={obligatedChg} />
+                      </td>
+                      <td className="px-4 py-2.5 text-right text-gray-700">
+                        {formatDollars(yr.outlays)}
+                      </td>
+                      <td className="px-4 py-2.5 text-right">
+                        <YoyBadge value={outlaysChg} />
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Top Contractors */}
       {agencyContractors[params.slug] && (

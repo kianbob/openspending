@@ -1,8 +1,7 @@
 import { MetadataRoute } from "next";
 import agencySpending from "@/../public/data/agency-spending.json";
-import agencyTrends from "@/../public/data/agency-trends.json";
 
-const BASE_URL = "https://openspending.info";
+const BASE_URL = "https://openspending-app.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
@@ -19,20 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
   ];
 
-  const trends = agencyTrends as Record<string, { years: unknown[] }>;
-  const codeToTrendKey: Record<string, string> = {
-    DOS: "State",
-    TREAS: "Treasury",
-    DOC: "Commerce",
-  };
-
   const agencyPages = agencySpending
-    .filter((a) => {
-      if (!a.slug) return false;
-      const trendKey = codeToTrendKey[a.code] ?? a.code;
-      const trend = trends[trendKey];
-      return trend && Array.isArray(trend.years) && trend.years.length > 0;
-    })
+    .filter((a) => !!a.slug)
     .map((a) => `/agencies/${a.slug}`);
 
   return [

@@ -8,10 +8,24 @@ export const metadata = {
   description: "Federal spending by country — tracking where American tax dollars flow internationally.",
 };
 
+function titleCase(str: string): string {
+  return str
+    .split(/([,]\s*)/)
+    .map((segment) =>
+      segment.includes(",")
+        ? segment
+        : segment
+            .split(/\s+/)
+            .map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
+            .join(" ")
+    )
+    .join("");
+}
+
 const countries = allCountries.filter((c) => c.name !== "UNITED STATES");
 
 const top20 = countries.slice(0, 20).map((c) => ({
-  name: c.name.charAt(0) + c.name.slice(1).toLowerCase(),
+  name: titleCase(c.name),
   amount: c.amount,
 }));
 
@@ -24,7 +38,7 @@ const columns = [
 ];
 
 const tableData = countries.map((c) => ({
-  name: c.name.charAt(0) + c.name.slice(1).toLowerCase(),
+  name: titleCase(c.name),
   code: c.code,
   amount: c.amount,
 }));

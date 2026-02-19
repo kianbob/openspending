@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
 import { SortableTable } from "@/components/SortableTable";
 import { formatDollars } from "@/lib/format";
@@ -75,6 +76,21 @@ export default function StatesPage() {
         data={tableData}
         defaultSortKey="amount"
       />
+
+      {/* Explore More */}
+      <div className="mt-12">
+        <h2 className="font-serif text-2xl font-bold text-gray-900 mb-4">Explore More</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/agencies" className="block border border-gray-200 rounded-xl p-6 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors">
+            <h3 className="font-bold text-gray-900 mb-1">Agency Budgets</h3>
+            <p className="text-gray-600 text-sm">See how 97 federal agencies spend their budgets — from Defense to Education.</p>
+          </Link>
+          <Link href="/contractors" className="block border border-gray-200 rounded-xl p-6 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors">
+            <h3 className="font-bold text-gray-900 mb-1">Top Contractors</h3>
+            <p className="text-gray-600 text-sm">The 50 companies receiving the most federal contract dollars.</p>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

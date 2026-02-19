@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SortableTable } from "@/components/SortableTable";
 import awards from "@/../public/data/top-awards.json";
 
@@ -47,6 +48,21 @@ export default function ContractsPage() {
         data={tableData}
         defaultSortKey="amount"
       />
+
+      {/* Explore More */}
+      <div className="mt-12">
+        <h2 className="font-serif text-2xl font-bold text-gray-900 mb-4">Explore More</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/no-bid" className="block border border-gray-200 rounded-xl p-6 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors">
+            <h3 className="font-bold text-gray-900 mb-1">No-Bid Contracts</h3>
+            <p className="text-gray-600 text-sm">Billions in sole-source awards with no competitive bidding. Who benefits?</p>
+          </Link>
+          <Link href="/contractors" className="block border border-gray-200 rounded-xl p-6 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors">
+            <h3 className="font-bold text-gray-900 mb-1">Top Contractors</h3>
+            <p className="text-gray-600 text-sm">A handful of companies capture the lion&apos;s share of federal contracts.</p>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

@@ -88,9 +88,13 @@ export default function UsaidPage() {
           USAID&apos;s budget went from{" "}
           <span className="font-bold">$25.8 billion in FY2019</span> to{" "}
           <span className="font-bold">$50.1 billion in FY2025</span> — nearly
-          doubling in six years. Billions flowed to international organizations,
-          foreign governments, and DC consulting firms. Now DOGE is cutting deep.
-          The question taxpayers should ask:{" "}
+          doubling in six years. A single grant to GAVI Alliance totals{" "}
+          <span className="font-bold">$2.5 billion</span>. Chemonics
+          International holds contracts worth{" "}
+          <span className="font-bold">$6.7 billion</span>. Many awards go to
+          &ldquo;Miscellaneous Foreign Awardees&rdquo; — obscuring who actually
+          received the funds. Now DOGE is cutting deep. The question taxpayers
+          should ask:{" "}
           <span className="font-bold italic">
             who was watching where $50 billion a year was going?
           </span>
@@ -107,23 +111,6 @@ export default function UsaidPage() {
         </div>
         <p className="mt-2 text-xs text-gray-400">
           Largest individual grant awards from USAID. Source: USASpending.gov
-        </p>
-      </div>
-
-      {/* Editorial: Who Is Watching */}
-      <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-6 mb-10">
-        <h2 className="text-lg font-bold text-indigo-900 mb-2">
-          Who Is Watching Where $50B/Year Goes?
-        </h2>
-        <p className="text-indigo-800">
-          A single grant to GAVI Alliance totals{" "}
-          <span className="font-bold">$2.5 billion</span>. Chemonics
-          International holds contracts worth{" "}
-          <span className="font-bold">$6.7 billion</span>. Many awards go to
-          &ldquo;Miscellaneous Foreign Awardees&rdquo; — a label that
-          obscures who actually received the funds. When billions go out the
-          door with vague descriptions and opaque recipients, oversight
-          isn&apos;t optional — it&apos;s essential.
         </p>
       </div>
 
