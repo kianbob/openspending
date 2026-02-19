@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useMemo } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { formatDollars } from "@/lib/format";
 import agencySpending from "@/../public/data/agency-spending.json";
@@ -65,6 +66,7 @@ export function SearchBar() {
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const router = useRouter();
   const index = useMemo(() => buildIndex(), []);
 
   const results = useMemo(() => {
@@ -85,9 +87,17 @@ export function SearchBar() {
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (query.trim()) {
+      setOpen(false);
+      router.push(`/search?q=${encodeURIComponent(query.trim())}`);
+    }
+  }
+
   return (
     <div ref={ref} className="relative w-full max-w-xl mx-auto">
-      <div className="relative">
+      <form onSubmit={handleSubmit} className="relative">
         <svg
           className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
           fill="none"
@@ -112,7 +122,7 @@ export function SearchBar() {
           placeholder="Search agencies, contractors, industries..."
           className="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-sm"
         />
-      </div>
+      </form>
       {open && results.length > 0 && (
         <div className="absolute z-50 top-full mt-1 w-full bg-white rounded-lg shadow-lg border border-gray-200 max-h-80 overflow-y-auto">
           {results.map((r, i) => (
