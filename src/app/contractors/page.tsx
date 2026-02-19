@@ -2,7 +2,7 @@ import Link from "next/link";
 import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
 import { ContractorTrends } from "@/components/charts/ContractorTrends";
 import { ContractorsTable } from "@/components/ContractorsTable";
-import { formatDollars, formatPercent } from "@/lib/format";
+import { formatDollars, formatPercent, toTitleCase } from "@/lib/format";
 import contractors from "@/../public/data/top-contractors-deduped.json";
 import contractorTrends from "@/../public/data/contractor-trends.json";
 import stats from "@/../public/data/stats.json";

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
 import { SortableTable } from "@/components/SortableTable";
-import { formatDollars } from "@/lib/format";
+import { formatDollars, toTitleCase } from "@/lib/format";
 import noBidData from "@/../public/data/no-bid-contracts.json";
 
 export const metadata = {
@@ -12,13 +12,6 @@ export const metadata = {
     description: "$74B in sole-source federal contracts awarded without competitive bidding in FY2025. See who got the money.",
   },
 };
-
-function toTitleCase(name: string): string {
-  return name
-    .split(" ")
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
-    .join(" ");
-}
 
 const top10Recipients = noBidData.byRecipient.slice(0, 10).map((r) => ({
   name: toTitleCase(r.name).slice(0, 30),

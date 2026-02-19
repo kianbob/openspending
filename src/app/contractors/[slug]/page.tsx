@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ContractorAgenciesChart } from "@/components/charts/ContractorAgenciesChart";
 import { ContractorSpendingChart } from "@/components/charts/ContractorSpendingChart";
-import { formatDollars, formatPercent } from "@/lib/format";
+import { formatDollars, formatPercent, toTitleCase } from "@/lib/format";
 import contractorDetails from "@/../public/data/contractor-details.json";
 
 export const dynamicParams = true;
@@ -77,7 +77,7 @@ export default async function ContractorDetailPage({
       </Link>
 
       <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-        {name}
+        {toTitleCase(name)}
       </h1>
       <p className="text-gray-500 mb-8">
         Rank #{rank} federal contractor &middot; {formatPercent(pctOfTotal)} of
@@ -124,7 +124,7 @@ export default async function ContractorDetailPage({
                 key={sub}
                 className="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700"
               >
-                {sub}
+                {toTitleCase(sub)}
               </span>
             ))}
           </div>

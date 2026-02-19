@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { formatDollars } from "@/lib/format";
+import { formatDollars, toTitleCase } from "@/lib/format";
 
 interface Contractor {
   name: string;
@@ -89,10 +89,10 @@ export function ContractorsTable({ data }: { data: Contractor[] }) {
                   <span className="flex items-center gap-2">
                     {row.slug ? (
                       <Link href={`/contractors/${row.slug}`} className="text-indigo-600 hover:text-indigo-800 hover:underline">
-                        {row.name}
+                        {toTitleCase(row.name)}
                       </Link>
                     ) : (
-                      row.name
+                      toTitleCase(row.name)
                     )}
                     {row.subsidiaries > 1 && (
                       <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-700">

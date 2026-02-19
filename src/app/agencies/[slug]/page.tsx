@@ -2,7 +2,7 @@ import Link from "next/link";
 import { AreaSpendingChart } from "@/components/charts/AreaSpendingChart";
 import { AgencyContractorsChart } from "@/components/charts/AgencyContractorsChart";
 import { ContractsGrantsDonut } from "@/components/charts/ContractsGrantsDonut";
-import { formatDollars, formatPercent } from "@/lib/format";
+import { formatDollars, formatPercent, toTitleCase } from "@/lib/format";
 import agencyTrends from "@/../public/data/agency-trends.json";
 import agencySpending from "@/../public/data/agency-spending.json";
 import agencyContractorsData from "@/../public/data/agency-contractors.json";
@@ -339,7 +339,7 @@ export default async function AgencyDetailPage({
                       <td className="px-4 py-2.5 text-gray-400 font-medium">
                         {i + 1}
                       </td>
-                      <td className="px-4 py-2.5 text-gray-900">{c.name}</td>
+                      <td className="px-4 py-2.5 text-gray-900">{toTitleCase(c.name)}</td>
                       <td className="px-4 py-2.5 text-right text-gray-700 font-medium">
                         {formatDollars(c.amount)}
                       </td>

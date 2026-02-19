@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
 import { SortableTable } from "@/components/SortableTable";
-import { formatDollars } from "@/lib/format";
+import { formatDollars, toTitleCase } from "@/lib/format";
 import covidData from "@/../public/data/covid-spending.json";
 
 export const metadata = {
@@ -32,13 +32,7 @@ const recipientData = covidData.byRecipient.map((r) => ({
   name:
     r.name.length > 50
       ? r.name.slice(0, 50) + "..."
-      : r.name
-          .split(" ")
-          .map(
-            (w) =>
-              w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()
-          )
-          .join(" "),
+      : toTitleCase(r.name),
   amount: r.amount,
 }));
 

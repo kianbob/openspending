@@ -20,3 +20,28 @@ export function formatDollarsLong(amount: number): string {
 export function formatPercent(pct: number): string {
   return `${pct.toFixed(1)}%`;
 }
+
+const TITLE_CASE_PRESERVE = new Set([
+  'LLC', 'DOD', 'USA', 'RTX', 'LP', 'LLP', 'U.S.',
+]);
+
+const TITLE_CASE_REPLACE: Record<string, string> = {
+  'INC': 'Inc.',
+};
+
+export function toTitleCase(str: string): string {
+  if (str.toUpperCase() !== str || str.length <= 3) return str;
+
+  return str
+    .toLowerCase()
+    .split(' ')
+    .map((word) => {
+      const capitalized = word.charAt(0).toUpperCase() + word.slice(1);
+      const upper = word.toUpperCase();
+      const stripped = upper.replace(/[.,]+$/g, '');
+      if (TITLE_CASE_PRESERVE.has(upper) || TITLE_CASE_PRESERVE.has(stripped)) return upper;
+      if (TITLE_CASE_REPLACE[stripped]) return TITLE_CASE_REPLACE[stripped];
+      return capitalized;
+    })
+    .join(' ');
+}
