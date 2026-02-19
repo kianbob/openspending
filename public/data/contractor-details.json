@@ -1,0 +1,1247 @@
+{
+  "lockheed-martin-corporation": {
+    "name": "LOCKHEED MARTIN CORPORATION",
+    "slug": "lockheed-martin-corporation",
+    "totalAmount": 58775947590,
+    "rank": 1,
+    "subsidiaries": [
+      "LOCKHEED MARTIN CORPORATION",
+      "LOCKHEED MARTIN CORP"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Defense",
+        "slug": "department-of-defense",
+        "amount": 55659229937
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2020,
+        "amount": 3275743137
+      },
+      {
+        "fy": 2021,
+        "amount": 4668906592
+      },
+      {
+        "fy": 2022,
+        "amount": 7066100341
+      },
+      {
+        "fy": 2023,
+        "amount": 8704271340
+      },
+      {
+        "fy": 2024,
+        "amount": 4833655273
+      },
+      {
+        "fy": 2025,
+        "amount": 6064969774
+      }
+    ],
+    "topContracts": [
+      {
+        "description": "LRIP 9 AIRCRAFT AAC",
+        "amount": 6998362071,
+        "agency": "Department of Defense"
+      },
+      {
+        "description": "SUPPORT EQUIPMENT, AUTONOMIC LOGISTICS INFORMATION SYSTEM HARDWARE, TRAINING SYSTEMS, SITE ACTIVATIONS, INTEGRATED CONTRACTOR SUPPORT, AND THE RELIABILITY AND MAINTAINABILITY IMPROVEMENT PROGRAM FOR T",
+        "amount": 1824077667,
+        "agency": "Department of Defense"
+      },
+      {
+        "description": "GUIDED MULTIPLE LAUNCH ROCKET SYSTEM (GMLRS) AND LOW COST REDUCED RANGE PRACTICE ROCKET (LCRRPR) FY 21 FULL RATE PRODUCTION DELIVERY ORDER",
+        "amount": 1146435983,
+        "agency": "Department of Defense"
+      },
+      {
+        "description": "TAS::57 3010::TAS 200511!000157!5700!FA8615!ASC/YPK !FA861505C6002 !A!N! !N! ! !20050719!20060712!008016958!008016958!834951691!N!LOCKHEED MARTIN CORPORATION !LOCKHEED BLVD !FORT WORTH !TX!76101!27000",
+        "amount": 683120480,
+        "agency": "Department of Defense"
+      },
+      {
+        "description": "FY19 AV INITIAL SPARES (ASP/DSP)",
+        "amount": 364745841,
+        "agency": "Department of Defense"
+      },
+      {
+        "description": "FMS JAOS TL-29A ARRAY PRODUCTION AND ENGINEERING SERVICES; IGF::OT::IGF",
+        "amount": 137631604,
+        "agency": "Department of Defense"
+      },
+      {
+        "description": "COUNTER FIRE TARGET ACQUISITION RADAR SYSTEM (AN/TPQ-53) CONTRACTOR SUPPORT SERVICES (CSS) AND INTERIM CONTRACTOR SUPPORT (ICS) #4 SERVICES AND SUPPORT.",
+        "amount": 78798262,
+        "agency": "Department of Defense"
+      },
+      {
+        "description": "HALO SUPPORT - PHASE 1",
+        "amount": 62003908,
+        "agency": "Department of Defense"
+      },
+      {
+        "description": "C-5 GALAXY CONTRACTOR LOGISTICS SUPPORT (CLS)",
+        "amount": 52351971,
+        "agency": "Department of Defense"
+      },
+      {
+        "description": "THIS CONTRACT IS FOR PATRIOT ADVANCED CAPABILITIES-3 (PAC-3) MISSILE SUPPORT CENTER (P3MSC) FOR THE UNITED STATES AND FOREIGN MILITARY SALES (FMS) CUSTOMERS.",
+        "amount": 37420166,
+        "agency": "Department of Defense"
+      },
+      {
+        "description": "RECEIVER, COUNTERMEA",
+        "amount": 33410620,
+        "agency": "Department of Defense"
+      },
+      {
+        "description": "ITT-2A UPGRADE",
+        "amount": 33068202,
+        "agency": "Department of Defense"
+      }
+    ],
+    "pctOfTotal": 20.63
+  },
+  "optum-public-sector-solutions-inc": {
+    "name": "OPTUM PUBLIC SECTOR SOLUTIONS, INC.",
+    "slug": "optum-public-sector-solutions-inc",
+    "totalAmount": 22490531834,
+    "rank": 2,
+    "subsidiaries": [
+      "OPTUM PUBLIC SECTOR SOLUTIONS, INC."
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Veterans Affairs",
+        "slug": "department-of-veterans-affairs",
+        "amount": 22490531834
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2021,
+        "amount": 8873807086
+      },
+      {
+        "fy": 2022,
+        "amount": 14525102355
+      },
+      {
+        "fy": 2023,
+        "amount": 16220323256
+      },
+      {
+        "fy": 2024,
+        "amount": 20141580022
+      },
+      {
+        "fy": 2025,
+        "amount": 22490531834
+      }
+    ],
+    "topContracts": [
+      {
+        "description": "EXPRESS REPORT: R2 FY25 4TH QTR SEPTEMBER",
+        "amount": 572459192,
+        "agency": "Department of Veterans Affairs"
+      },
+      {
+        "description": "EXPRESS REPORT: R1 FY25 2ND QTR FEBRUARY",
+        "amount": 483200660,
+        "agency": "Department of Veterans Affairs"
+      }
+    ],
+    "pctOfTotal": 7.89
+  },
+  "electric-boat-corporation": {
+    "name": "ELECTRIC BOAT CORPORATION",
+    "slug": "electric-boat-corporation",
+    "totalAmount": 21366142819,
+    "rank": 3,
+    "subsidiaries": [
+      "ELECTRIC BOAT CORPORATION"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Defense",
+        "slug": "department-of-defense",
+        "amount": 21366142819
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2020,
+        "amount": 11628482758
+      },
+      {
+        "fy": 2021,
+        "amount": 8680217652
+      },
+      {
+        "fy": 2022,
+        "amount": 9426835904
+      },
+      {
+        "fy": 2023,
+        "amount": 10832262198
+      },
+      {
+        "fy": 2024,
+        "amount": 8584959335
+      },
+      {
+        "fy": 2025,
+        "amount": 21366142819
+      }
+    ],
+    "topContracts": [],
+    "pctOfTotal": 7.5
+  },
+  "raytheon-company": {
+    "name": "RAYTHEON COMPANY",
+    "slug": "raytheon-company",
+    "totalAmount": 16472942438,
+    "rank": 4,
+    "subsidiaries": [
+      "RAYTHEON COMPANY"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Defense",
+        "slug": "department-of-defense",
+        "amount": 14112439323
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2020,
+        "amount": 3292288556
+      },
+      {
+        "fy": 2021,
+        "amount": 5906908641
+      },
+      {
+        "fy": 2022,
+        "amount": 7351535132
+      },
+      {
+        "fy": 2023,
+        "amount": 7591585000
+      },
+      {
+        "fy": 2024,
+        "amount": 7750173035
+      },
+      {
+        "fy": 2025,
+        "amount": 10727347267
+      }
+    ],
+    "topContracts": [
+      {
+        "description": "BASE AWARD - DUAL FREQUENCY OPERATIONS (DFO).THIS SF26 IS BEING GENERATED EXCLUSIVELY TO COMPLETE THE AWARD IN PRISM/DELPHI. PRISM IS UNABLE TO PRODUCE A SF26 THAT REFLECTS THE CORRECT AWARD VALUE. IG",
+        "amount": 197322096,
+        "agency": "Department of Transportation"
+      },
+      {
+        "description": "IGF::CL,CT::IGF  MODE 5 ATCBI-6M UPGRADE",
+        "amount": 60754310,
+        "agency": "Department of Transportation"
+      },
+      {
+        "description": "MISSION VIDEO DISTRIBUTION SYSTEM (MVDS)",
+        "amount": 42519427,
+        "agency": "Department of Defense"
+      }
+    ],
+    "pctOfTotal": 5.78
+  },
+  "the-boeing-company": {
+    "name": "THE BOEING COMPANY",
+    "slug": "the-boeing-company",
+    "totalAmount": 15444072108,
+    "rank": 5,
+    "subsidiaries": [
+      "THE BOEING COMPANY"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Defense",
+        "slug": "department-of-defense",
+        "amount": 10670707373
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2020,
+        "amount": 3387866091
+      },
+      {
+        "fy": 2021,
+        "amount": 5993540941
+      },
+      {
+        "fy": 2022,
+        "amount": 3899174689
+      },
+      {
+        "fy": 2023,
+        "amount": 7812469739
+      },
+      {
+        "fy": 2024,
+        "amount": 4978236520
+      },
+      {
+        "fy": 2025,
+        "amount": 4443848430
+      }
+    ],
+    "topContracts": [
+      {
+        "description": "KC-X MODERNIZATION PROGRAM",
+        "amount": 29485980901,
+        "agency": "Department of Defense"
+      }
+    ],
+    "pctOfTotal": 5.42
+  },
+  "triwest-healthcare-alliance-corp": {
+    "name": "TRIWEST HEALTHCARE ALLIANCE CORP",
+    "slug": "triwest-healthcare-alliance-corp",
+    "totalAmount": 13374744670,
+    "rank": 6,
+    "subsidiaries": [
+      "TRIWEST HEALTHCARE ALLIANCE CORP"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Veterans Affairs",
+        "slug": "department-of-veterans-affairs",
+        "amount": 9834327512
+      },
+      {
+        "name": "Department Of Defense",
+        "slug": "department-of-defense",
+        "amount": 3540417158
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2020,
+        "amount": 9014320165
+      },
+      {
+        "fy": 2021,
+        "amount": 6738577677
+      },
+      {
+        "fy": 2022,
+        "amount": 7382751989
+      },
+      {
+        "fy": 2023,
+        "amount": 7984754268
+      },
+      {
+        "fy": 2024,
+        "amount": 8383006981
+      },
+      {
+        "fy": 2025,
+        "amount": 13374744670
+      }
+    ],
+    "topContracts": [],
+    "pctOfTotal": 4.69
+  },
+  "mckesson-corporation": {
+    "name": "MCKESSON CORPORATION",
+    "slug": "mckesson-corporation",
+    "totalAmount": 11870431649,
+    "rank": 7,
+    "subsidiaries": [
+      "MCKESSON CORPORATION"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Veterans Affairs",
+        "slug": "department-of-veterans-affairs",
+        "amount": 11450566560
+      },
+      {
+        "name": "Department Of Health And Human Services",
+        "slug": "department-of-health-and-human-services",
+        "amount": 206387508
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2020,
+        "amount": 6704889269
+      },
+      {
+        "fy": 2021,
+        "amount": 7666924230
+      },
+      {
+        "fy": 2022,
+        "amount": 8364899987
+      },
+      {
+        "fy": 2023,
+        "amount": 9529383500
+      },
+      {
+        "fy": 2024,
+        "amount": 9003907275
+      },
+      {
+        "fy": 2025,
+        "amount": 11870431649
+      }
+    ],
+    "topContracts": [
+      {
+        "description": "EXPRESS REPORT: PHARMACEUTICAL PRIME VENDOR (PPV)FY2025 JUNE",
+        "amount": 1020312793,
+        "agency": "Department of Veterans Affairs"
+      }
+    ],
+    "pctOfTotal": 4.17
+  },
+  "amerisourcebergen-drug-corp": {
+    "name": "AMERISOURCEBERGEN DRUG CORP",
+    "slug": "amerisourcebergen-drug-corp",
+    "totalAmount": 7442204303,
+    "rank": 8,
+    "subsidiaries": [
+      "AMERISOURCEBERGEN DRUG CORP"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Defense",
+        "slug": "department-of-defense",
+        "amount": 7441478527
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2023,
+        "amount": 4379237686
+      },
+      {
+        "fy": 2024,
+        "amount": 6091754916
+      },
+      {
+        "fy": 2025,
+        "amount": 7442204303
+      }
+    ],
+    "topContracts": [],
+    "pctOfTotal": 2.61
+  },
+  "rtx-corporation": {
+    "name": "RTX CORPORATION",
+    "slug": "rtx-corporation",
+    "totalAmount": 7280700848,
+    "rank": 9,
+    "subsidiaries": [
+      "RTX CORPORATION"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Defense",
+        "slug": "department-of-defense",
+        "amount": 7279065881
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2020,
+        "amount": 5720229692
+      },
+      {
+        "fy": 2021,
+        "amount": 3701330807
+      },
+      {
+        "fy": 2022,
+        "amount": 7982634805
+      },
+      {
+        "fy": 2023,
+        "amount": 8221953552
+      },
+      {
+        "fy": 2024,
+        "amount": 5039155836
+      },
+      {
+        "fy": 2025,
+        "amount": 7280700848
+      }
+    ],
+    "topContracts": [],
+    "pctOfTotal": 2.56
+  },
+  "booz-allen-hamilton-inc": {
+    "name": "BOOZ ALLEN HAMILTON INC",
+    "slug": "booz-allen-hamilton-inc",
+    "totalAmount": 6563770954,
+    "rank": 10,
+    "subsidiaries": [
+      "BOOZ ALLEN HAMILTON INC"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Defense",
+        "slug": "department-of-defense",
+        "amount": 3014519411
+      },
+      {
+        "name": "Department Of Veterans Affairs",
+        "slug": "department-of-veterans-affairs",
+        "amount": 680822145
+      },
+      {
+        "name": "Department Of Health And Human Services",
+        "slug": "department-of-health-and-human-services",
+        "amount": 391842378
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2020,
+        "amount": 5121695010
+      },
+      {
+        "fy": 2021,
+        "amount": 5056434202
+      },
+      {
+        "fy": 2022,
+        "amount": 5563495168
+      },
+      {
+        "fy": 2023,
+        "amount": 6421232387
+      },
+      {
+        "fy": 2024,
+        "amount": 6942742313
+      },
+      {
+        "fy": 2025,
+        "amount": 6563770954
+      }
+    ],
+    "topContracts": [
+      {
+        "description": "THE CONTRACTOR WILL PROVIDE ALL PERSONNEL, EQUIPMENT, SUPPLIES, FACILITIES, TRANSPORTATION, TOOLS, MATERIALS, SUPERVISION, AND OTHER ITEMS AND NON-PERSONAL SERVICES NECESSARY TO PERFORM SUPPORT AND MA",
+        "amount": 76960626,
+        "agency": "Department of Defense"
+      }
+    ],
+    "pctOfTotal": 2.3
+  },
+  "humana-government-business-inc": {
+    "name": "HUMANA GOVERNMENT BUSINESS INC",
+    "slug": "humana-government-business-inc",
+    "totalAmount": 6513706439,
+    "rank": 11,
+    "subsidiaries": [
+      "HUMANA GOVERNMENT BUSINESS INC"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Defense",
+        "slug": "department-of-defense",
+        "amount": 6513706439
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2020,
+        "amount": 6922421962
+      },
+      {
+        "fy": 2021,
+        "amount": 7144989966
+      },
+      {
+        "fy": 2022,
+        "amount": 7739712978
+      },
+      {
+        "fy": 2023,
+        "amount": 7779551423
+      },
+      {
+        "fy": 2024,
+        "amount": 8029206899
+      },
+      {
+        "fy": 2025,
+        "amount": 6513706439
+      }
+    ],
+    "topContracts": [],
+    "pctOfTotal": 2.29
+  },
+  "atlantic-diving-supply-inc": {
+    "name": "ATLANTIC DIVING SUPPLY, INC.",
+    "slug": "atlantic-diving-supply-inc",
+    "totalAmount": 5993126834,
+    "rank": 12,
+    "subsidiaries": [
+      "ATLANTIC DIVING SUPPLY, INC."
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Defense",
+        "slug": "department-of-defense",
+        "amount": 5710931302
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2020,
+        "amount": 3191092105
+      },
+      {
+        "fy": 2023,
+        "amount": 4554277006
+      },
+      {
+        "fy": 2024,
+        "amount": 4826017819
+      },
+      {
+        "fy": 2025,
+        "amount": 5993126834
+      }
+    ],
+    "topContracts": [],
+    "pctOfTotal": 2.1
+  },
+  "national-technology-engineering-solutions-of-sandia-llc": {
+    "name": "NATIONAL TECHNOLOGY & ENGINEERING SOLUTIONS OF SANDIA, LLC",
+    "slug": "national-technology-engineering-solutions-of-sandia-llc",
+    "totalAmount": 5673408174,
+    "rank": 13,
+    "subsidiaries": [
+      "NATIONAL TECHNOLOGY & ENGINEERING SOLUTIONS OF SANDIA, LLC"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Energy",
+        "slug": "department-of-energy",
+        "amount": 5673408174
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2020,
+        "amount": 3844196779
+      },
+      {
+        "fy": 2021,
+        "amount": 4265778108
+      },
+      {
+        "fy": 2022,
+        "amount": 4311822808
+      },
+      {
+        "fy": 2023,
+        "amount": 4699978217
+      },
+      {
+        "fy": 2024,
+        "amount": 5011800883
+      },
+      {
+        "fy": 2025,
+        "amount": 5673408174
+      }
+    ],
+    "topContracts": [],
+    "pctOfTotal": 1.99
+  },
+  "triad-national-security-llc": {
+    "name": "TRIAD NATIONAL SECURITY, LLC",
+    "slug": "triad-national-security-llc",
+    "totalAmount": 5199738723,
+    "rank": 14,
+    "subsidiaries": [
+      "TRIAD NATIONAL SECURITY, LLC"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Energy",
+        "slug": "department-of-energy",
+        "amount": 5199738723
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2021,
+        "amount": 3955937324
+      },
+      {
+        "fy": 2022,
+        "amount": 3963962408
+      },
+      {
+        "fy": 2023,
+        "amount": 4578543066
+      },
+      {
+        "fy": 2024,
+        "amount": 5162951247
+      },
+      {
+        "fy": 2025,
+        "amount": 5199738723
+      }
+    ],
+    "topContracts": [],
+    "pctOfTotal": 1.83
+  },
+  "sikorsky-aircraft-corporation": {
+    "name": "SIKORSKY AIRCRAFT CORPORATION",
+    "slug": "sikorsky-aircraft-corporation",
+    "totalAmount": 4790056345,
+    "rank": 15,
+    "subsidiaries": [
+      "SIKORSKY AIRCRAFT CORPORATION"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Defense",
+        "slug": "department-of-defense",
+        "amount": 4718659400
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2020,
+        "amount": 4221522366
+      },
+      {
+        "fy": 2021,
+        "amount": 4940112362
+      },
+      {
+        "fy": 2023,
+        "amount": 5346374672
+      },
+      {
+        "fy": 2024,
+        "amount": 4805539712
+      },
+      {
+        "fy": 2025,
+        "amount": 4790056345
+      }
+    ],
+    "topContracts": [],
+    "pctOfTotal": 1.68
+  },
+  "general-dynamics-information-technology-inc": {
+    "name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+    "slug": "general-dynamics-information-technology-inc",
+    "totalAmount": 4635820603,
+    "rank": 16,
+    "subsidiaries": [
+      "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC."
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Health And Human Services",
+        "slug": "department-of-health-and-human-services",
+        "amount": 839322393
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2022,
+        "amount": 4098896869
+      },
+      {
+        "fy": 2023,
+        "amount": 4290082500
+      },
+      {
+        "fy": 2024,
+        "amount": 4852253247
+      },
+      {
+        "fy": 2025,
+        "amount": 4635820603
+      }
+    ],
+    "topContracts": [
+      {
+        "description": "IGF::OT::IGF INFORMATION TECHNOLOGY (IT) SUPPORT OF NEW AND EXISTING APPLICATIONS AND PROGRAMS SUPPORT OF THE RESEARCH, DEVELOPMENT, TEST, AND EVALUATION (RDT&E) AND BOUNDARY THREE COMMUNITIES OF INTE",
+        "amount": 92114195,
+        "agency": "Department of Defense"
+      },
+      {
+        "description": "IGF::CL::IGF FUNDING SOURCE 1",
+        "amount": 89547376,
+        "agency": "Department of Defense"
+      }
+    ],
+    "pctOfTotal": 1.63
+  },
+  "huntington-ingalls-incorporated": {
+    "name": "HUNTINGTON INGALLS INCORPORATED",
+    "slug": "huntington-ingalls-incorporated",
+    "totalAmount": 4370166805,
+    "rank": 17,
+    "subsidiaries": [
+      "HUNTINGTON INGALLS INCORPORATED"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Defense",
+        "slug": "department-of-defense",
+        "amount": 8824701223
+      }
+    ],
+    "trends": [
+      {
+        "fy": 2020,
+        "amount": 4059211031
+      },
+      {
+        "fy": 2023,
+        "amount": 5943848025
+      },
+      {
+        "fy": 2025,
+        "amount": 4370166805
+      }
+    ],
+    "topContracts": [
+      {
+        "description": "PLANNING YEAR 1 OF CVN 74 RCOH ADVANCE PLANNING AND CVN 74 RCOH MATERIAL",
+        "amount": 853909180,
+        "agency": "Department of Defense"
+      }
+    ],
+    "pctOfTotal": 1.53
+  },
+  "science-applications-international-corporation": {
+    "name": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+    "slug": "science-applications-international-corporation",
+    "totalAmount": 4360395756,
+    "rank": 18,
+    "subsidiaries": [
+      "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION"
+    ],
+    "agencies": [],
+    "trends": [
+      {
+        "fy": 2021,
+        "amount": 3303269463
+      },
+      {
+        "fy": 2022,
+        "amount": 3853597857
+      },
+      {
+        "fy": 2023,
+        "amount": 4364869483
+      },
+      {
+        "fy": 2024,
+        "amount": 4453676633
+      }
+    ],
+    "topContracts": [],
+    "pctOfTotal": 1.53
+  },
+  "huntington-ingalls-inc": {
+    "name": "HUNTINGTON INGALLS INC",
+    "slug": "huntington-ingalls-inc",
+    "totalAmount": 4195762708,
+    "rank": 19,
+    "subsidiaries": [
+      "HUNTINGTON INGALLS INC"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Defense",
+        "slug": "department-of-defense",
+        "amount": 8824701223
+      }
+    ],
+    "trends": [],
+    "topContracts": [
+      {
+        "description": "PLANNING YEAR 1 OF CVN 74 RCOH ADVANCE PLANNING AND CVN 74 RCOH MATERIAL",
+        "amount": 853909180,
+        "agency": "Department of Defense"
+      }
+    ],
+    "pctOfTotal": 1.47
+  },
+  "lawrence-livermore-national-security-llc": {
+    "name": "LAWRENCE LIVERMORE NATIONAL SECURITY, LLC",
+    "slug": "lawrence-livermore-national-security-llc",
+    "totalAmount": 3625335907,
+    "rank": 20,
+    "subsidiaries": [
+      "LAWRENCE LIVERMORE NATIONAL SECURITY, LLC"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Energy",
+        "slug": "department-of-energy",
+        "amount": 3625335907
+      }
+    ],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 1.27
+  },
+  "amentum-services-inc": {
+    "name": "AMENTUM SERVICES, INC.",
+    "slug": "amentum-services-inc",
+    "totalAmount": 3583167409,
+    "rank": 21,
+    "subsidiaries": [
+      "AMENTUM SERVICES, INC."
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Defense",
+        "slug": "department-of-defense",
+        "amount": 3028431945
+      }
+    ],
+    "trends": [],
+    "topContracts": [
+      {
+        "description": "T-44/T-54 AIRCRAFT MAINTENANCE NAS CC",
+        "amount": 90710033,
+        "agency": "Department of Defense"
+      }
+    ],
+    "pctOfTotal": 1.26
+  },
+  "caci-inc-federal": {
+    "name": "CACI, INC. - FEDERAL",
+    "slug": "caci-inc-federal",
+    "totalAmount": 3552890621,
+    "rank": 22,
+    "subsidiaries": [
+      "CACI, INC. - FEDERAL"
+    ],
+    "agencies": [],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 1.25
+  },
+  "fluor-marine-propulsion-llc": {
+    "name": "FLUOR MARINE PROPULSION, LLC",
+    "slug": "fluor-marine-propulsion-llc",
+    "totalAmount": 3551315618,
+    "rank": 23,
+    "subsidiaries": [
+      "FLUOR MARINE PROPULSION, LLC"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Energy",
+        "slug": "department-of-energy",
+        "amount": 1724558771
+      }
+    ],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 1.25
+  },
+  "accenture-federal-services-llc": {
+    "name": "ACCENTURE FEDERAL SERVICES LLC",
+    "slug": "accenture-federal-services-llc",
+    "totalAmount": 3235465824,
+    "rank": 24,
+    "subsidiaries": [
+      "ACCENTURE FEDERAL SERVICES LLC"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Health And Human Services",
+        "slug": "department-of-health-and-human-services",
+        "amount": 225328896
+      }
+    ],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 1.14
+  },
+  "bccg-a-joint-venture": {
+    "name": "BCCG A JOINT VENTURE",
+    "slug": "bccg-a-joint-venture",
+    "totalAmount": 3127100299,
+    "rank": 25,
+    "subsidiaries": [
+      "BCCG A JOINT VENTURE"
+    ],
+    "agencies": [],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 1.1
+  },
+  "leidos-inc": {
+    "name": "LEIDOS, INC.",
+    "slug": "leidos-inc",
+    "totalAmount": 3037225603,
+    "rank": 26,
+    "subsidiaries": [
+      "LEIDOS, INC."
+    ],
+    "agencies": [],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 1.07
+  },
+  "space-exploration-technologies-corp": {
+    "name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+    "slug": "space-exploration-technologies-corp",
+    "totalAmount": 2999808160,
+    "rank": 27,
+    "subsidiaries": [
+      "SPACE EXPLORATION TECHNOLOGIES CORP."
+    ],
+    "agencies": [],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 1.05
+  },
+  "deloitte-consulting-llp": {
+    "name": "DELOITTE CONSULTING LLP",
+    "slug": "deloitte-consulting-llp",
+    "totalAmount": 2921968273,
+    "rank": 28,
+    "subsidiaries": [
+      "DELOITTE CONSULTING LLP"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Health And Human Services",
+        "slug": "department-of-health-and-human-services",
+        "amount": 407386674
+      },
+      {
+        "name": "Department Of Veterans Affairs",
+        "slug": "department-of-veterans-affairs",
+        "amount": 261413898
+      }
+    ],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 1.03
+  },
+  "qtc-medical-services-inc": {
+    "name": "QTC MEDICAL SERVICES INC",
+    "slug": "qtc-medical-services-inc",
+    "totalAmount": 2886404916,
+    "rank": 29,
+    "subsidiaries": [
+      "QTC MEDICAL SERVICES INC"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Veterans Affairs",
+        "slug": "department-of-veterans-affairs",
+        "amount": 2775778967
+      }
+    ],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 1.01
+  },
+  "ut-battelle-llc": {
+    "name": "UT-BATTELLE LLC",
+    "slug": "ut-battelle-llc",
+    "totalAmount": 2679775141,
+    "rank": 30,
+    "subsidiaries": [
+      "UT-BATTELLE LLC"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Energy",
+        "slug": "department-of-energy",
+        "amount": 2679775141
+      }
+    ],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 0.94
+  },
+  "consolidated-nuclear-security-llc": {
+    "name": "CONSOLIDATED NUCLEAR SECURITY, LLC",
+    "slug": "consolidated-nuclear-security-llc",
+    "totalAmount": 2537032358,
+    "rank": 31,
+    "subsidiaries": [
+      "CONSOLIDATED NUCLEAR SECURITY, LLC"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Energy",
+        "slug": "department-of-energy",
+        "amount": 2537032358
+      }
+    ],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 0.89
+  },
+  "optumserve-health-services-inc": {
+    "name": "OPTUMSERVE HEALTH SERVICES, INC.",
+    "slug": "optumserve-health-services-inc",
+    "totalAmount": 2535929720,
+    "rank": 32,
+    "subsidiaries": [
+      "OPTUMSERVE HEALTH SERVICES, INC."
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Veterans Affairs",
+        "slug": "department-of-veterans-affairs",
+        "amount": 2501192978
+      }
+    ],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 0.89
+  },
+  "bath-iron-works-corporation": {
+    "name": "BATH IRON WORKS CORPORATION",
+    "slug": "bath-iron-works-corporation",
+    "totalAmount": 2370441137,
+    "rank": 33,
+    "subsidiaries": [
+      "BATH IRON WORKS CORPORATION"
+    ],
+    "agencies": [],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 0.83
+  },
+  "the-johns-hopkins-university-applied-physics-laboratory-llc": {
+    "name": "THE JOHNS HOPKINS UNIVERSITY APPLIED PHYSICS LABORATORY LLC",
+    "slug": "the-johns-hopkins-university-applied-physics-laboratory-llc",
+    "totalAmount": 2359804109,
+    "rank": 34,
+    "subsidiaries": [
+      "THE JOHNS HOPKINS UNIVERSITY APPLIED PHYSICS LABORATORY LLC"
+    ],
+    "agencies": [],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 0.83
+  },
+  "california-institute-of-technology": {
+    "name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+    "slug": "california-institute-of-technology",
+    "totalAmount": 2297053488,
+    "rank": 35,
+    "subsidiaries": [
+      "CALIFORNIA INSTITUTE OF TECHNOLOGY"
+    ],
+    "agencies": [],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 0.81
+  },
+  "sierra-nevada-company-llc": {
+    "name": "SIERRA NEVADA COMPANY, LLC",
+    "slug": "sierra-nevada-company-llc",
+    "totalAmount": 2243556112,
+    "rank": 36,
+    "subsidiaries": [
+      "SIERRA NEVADA COMPANY, LLC"
+    ],
+    "agencies": [],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 0.79
+  },
+  "bae-systems-land-armaments-l-p": {
+    "name": "BAE SYSTEMS LAND & ARMAMENTS L.P.",
+    "slug": "bae-systems-land-armaments-l-p",
+    "totalAmount": 2164547913,
+    "rank": 37,
+    "subsidiaries": [
+      "BAE SYSTEMS LAND & ARMAMENTS L.P."
+    ],
+    "agencies": [],
+    "trends": [],
+    "topContracts": [
+      {
+        "description": "IGF::OT::IGF BRADLEY SYSTEM TECHNICAL SUPPORT AND SUSTAINMENT SYSTEM TECHNICAL SUPPORT",
+        "amount": 633778735,
+        "agency": "Department of Defense"
+      }
+    ],
+    "pctOfTotal": 0.76
+  },
+  "bechtel-plant-machinery-inc": {
+    "name": "BECHTEL PLANT MACHINERY, INC.",
+    "slug": "bechtel-plant-machinery-inc",
+    "totalAmount": 2144997042,
+    "rank": 38,
+    "subsidiaries": [
+      "BECHTEL PLANT MACHINERY, INC."
+    ],
+    "agencies": [],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 0.75
+  },
+  "honeywell-federal-manufacturing-technologies-llc": {
+    "name": "HONEYWELL FEDERAL MANUFACTURING & TECHNOLOGIES, LLC",
+    "slug": "honeywell-federal-manufacturing-technologies-llc",
+    "totalAmount": 2113530440,
+    "rank": 39,
+    "subsidiaries": [
+      "HONEYWELL FEDERAL MANUFACTURING & TECHNOLOGIES, LLC"
+    ],
+    "agencies": [
+      {
+        "name": "Department Of Energy",
+        "slug": "department-of-energy",
+        "amount": 2113530440
+      }
+    ],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 0.74
+  },
+  "peraton-inc": {
+    "name": "PERATON INC.",
+    "slug": "peraton-inc",
+    "totalAmount": 2093655049,
+    "rank": 40,
+    "subsidiaries": [
+      "PERATON INC."
+    ],
+    "agencies": [],
+    "trends": [],
+    "topContracts": [],
+    "pctOfTotal": 0.73
+  }
+}

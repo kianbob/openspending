@@ -1,0 +1,488 @@
+{
+  "VA": {
+    "name": "Virginia",
+    "code": "VA",
+    "slug": "virginia",
+    "totalAmount": 120413017973,
+    "rank": 1,
+    "pctOfTotal": 16.19,
+    "perCapita": null
+  },
+  "TX": {
+    "name": "Texas",
+    "code": "TX",
+    "slug": "texas",
+    "totalAmount": 86383235852,
+    "rank": 2,
+    "pctOfTotal": 11.61,
+    "perCapita": null
+  },
+  "CA": {
+    "name": "California",
+    "code": "CA",
+    "slug": "california",
+    "totalAmount": 62104227653,
+    "rank": 3,
+    "pctOfTotal": 8.35,
+    "perCapita": null
+  },
+  "MD": {
+    "name": "Maryland",
+    "code": "MD",
+    "slug": "maryland",
+    "totalAmount": 39675346033,
+    "rank": 4,
+    "pctOfTotal": 5.33,
+    "perCapita": null
+  },
+  "CT": {
+    "name": "Connecticut",
+    "code": "CT",
+    "slug": "connecticut",
+    "totalAmount": 35097968288,
+    "rank": 5,
+    "pctOfTotal": 4.72,
+    "perCapita": null
+  },
+  "FL": {
+    "name": "Florida",
+    "code": "FL",
+    "slug": "florida",
+    "totalAmount": 32376126140,
+    "rank": 6,
+    "pctOfTotal": 4.35,
+    "perCapita": null
+  },
+  "DC": {
+    "name": "District Of Columbia",
+    "code": "DC",
+    "slug": "district-of-columbia",
+    "totalAmount": 31593319491,
+    "rank": 7,
+    "pctOfTotal": 4.25,
+    "perCapita": null
+  },
+  "PA": {
+    "name": "Pennsylvania",
+    "code": "PA",
+    "slug": "pennsylvania",
+    "totalAmount": 26954371170,
+    "rank": 8,
+    "pctOfTotal": 3.62,
+    "perCapita": null
+  },
+  "AZ": {
+    "name": "Arizona",
+    "code": "AZ",
+    "slug": "arizona",
+    "totalAmount": 23314303199,
+    "rank": 9,
+    "pctOfTotal": 3.13,
+    "perCapita": null
+  },
+  "MA": {
+    "name": "Massachusetts",
+    "code": "MA",
+    "slug": "massachusetts",
+    "totalAmount": 19296210462,
+    "rank": 10,
+    "pctOfTotal": 2.59,
+    "perCapita": null
+  },
+  "AL": {
+    "name": "Alabama",
+    "code": "AL",
+    "slug": "alabama",
+    "totalAmount": 18136537270,
+    "rank": 11,
+    "pctOfTotal": 2.44,
+    "perCapita": null
+  },
+  "CO": {
+    "name": "Colorado",
+    "code": "CO",
+    "slug": "colorado",
+    "totalAmount": 16097237372,
+    "rank": 12,
+    "pctOfTotal": 2.16,
+    "perCapita": null
+  },
+  "WA": {
+    "name": "Washington",
+    "code": "WA",
+    "slug": "washington",
+    "totalAmount": 15884821764,
+    "rank": 13,
+    "pctOfTotal": 2.14,
+    "perCapita": null
+  },
+  "MO": {
+    "name": "Missouri",
+    "code": "MO",
+    "slug": "missouri",
+    "totalAmount": 13742526383,
+    "rank": 14,
+    "pctOfTotal": 1.85,
+    "perCapita": null
+  },
+  "NM": {
+    "name": "New Mexico",
+    "code": "NM",
+    "slug": "new-mexico",
+    "totalAmount": 13329347665,
+    "rank": 15,
+    "pctOfTotal": 1.79,
+    "perCapita": null
+  },
+  "IL": {
+    "name": "Illinois",
+    "code": "IL",
+    "slug": "illinois",
+    "totalAmount": 12400636530,
+    "rank": 16,
+    "pctOfTotal": 1.67,
+    "perCapita": null
+  },
+  "NY": {
+    "name": "New York",
+    "code": "NY",
+    "slug": "new-york",
+    "totalAmount": 12049364610,
+    "rank": 17,
+    "pctOfTotal": 1.62,
+    "perCapita": null
+  },
+  "GA": {
+    "name": "Georgia",
+    "code": "GA",
+    "slug": "georgia",
+    "totalAmount": 11649305836,
+    "rank": 18,
+    "pctOfTotal": 1.57,
+    "perCapita": null
+  },
+  "TN": {
+    "name": "Tennessee",
+    "code": "TN",
+    "slug": "tennessee",
+    "totalAmount": 10750960567,
+    "rank": 19,
+    "pctOfTotal": 1.45,
+    "perCapita": null
+  },
+  "KY": {
+    "name": "Kentucky",
+    "code": "KY",
+    "slug": "kentucky",
+    "totalAmount": 10421141362,
+    "rank": 20,
+    "pctOfTotal": 1.4,
+    "perCapita": null
+  },
+  "OH": {
+    "name": "Ohio",
+    "code": "OH",
+    "slug": "ohio",
+    "totalAmount": 9824186217,
+    "rank": 21,
+    "pctOfTotal": 1.32,
+    "perCapita": null
+  },
+  "NC": {
+    "name": "North Carolina",
+    "code": "NC",
+    "slug": "north-carolina",
+    "totalAmount": 9330495393,
+    "rank": 22,
+    "pctOfTotal": 1.25,
+    "perCapita": null
+  },
+  "NJ": {
+    "name": "New Jersey",
+    "code": "NJ",
+    "slug": "new-jersey",
+    "totalAmount": 9328108714,
+    "rank": 23,
+    "pctOfTotal": 1.25,
+    "perCapita": null
+  },
+  "SC": {
+    "name": "South Carolina",
+    "code": "SC",
+    "slug": "south-carolina",
+    "totalAmount": 8326926176,
+    "rank": 24,
+    "pctOfTotal": 1.12,
+    "perCapita": null
+  },
+  "MS": {
+    "name": "Mississippi",
+    "code": "MS",
+    "slug": "mississippi",
+    "totalAmount": 8003499472,
+    "rank": 25,
+    "pctOfTotal": 1.08,
+    "perCapita": null
+  },
+  "IN": {
+    "name": "Indiana",
+    "code": "IN",
+    "slug": "indiana",
+    "totalAmount": 7002631966,
+    "rank": 26,
+    "pctOfTotal": 0.94,
+    "perCapita": null
+  },
+  "OK": {
+    "name": "Oklahoma",
+    "code": "OK",
+    "slug": "oklahoma",
+    "totalAmount": 6888219098,
+    "rank": 27,
+    "pctOfTotal": 0.93,
+    "perCapita": null
+  },
+  "MI": {
+    "name": "Michigan",
+    "code": "MI",
+    "slug": "michigan",
+    "totalAmount": 6598447485,
+    "rank": 28,
+    "pctOfTotal": 0.89,
+    "perCapita": null
+  },
+  "WI": {
+    "name": "Wisconsin",
+    "code": "WI",
+    "slug": "wisconsin",
+    "totalAmount": 6262950261,
+    "rank": 29,
+    "pctOfTotal": 0.84,
+    "perCapita": null
+  },
+  "HI": {
+    "name": "Hawaii",
+    "code": "HI",
+    "slug": "hawaii",
+    "totalAmount": 6145498007,
+    "rank": 30,
+    "pctOfTotal": 0.83,
+    "perCapita": null
+  },
+  "UT": {
+    "name": "Utah",
+    "code": "UT",
+    "slug": "utah",
+    "totalAmount": 5144776821,
+    "rank": 31,
+    "pctOfTotal": 0.69,
+    "perCapita": null
+  },
+  "LA": {
+    "name": "Louisiana",
+    "code": "LA",
+    "slug": "louisiana",
+    "totalAmount": 4754640039,
+    "rank": 32,
+    "pctOfTotal": 0.64,
+    "perCapita": null
+  },
+  "NV": {
+    "name": "Nevada",
+    "code": "NV",
+    "slug": "nevada",
+    "totalAmount": 4082697822,
+    "rank": 33,
+    "pctOfTotal": 0.55,
+    "perCapita": null
+  },
+  "ME": {
+    "name": "Maine",
+    "code": "ME",
+    "slug": "maine",
+    "totalAmount": 3927690929,
+    "rank": 34,
+    "pctOfTotal": 0.53,
+    "perCapita": null
+  },
+  "AK": {
+    "name": "Alaska",
+    "code": "AK",
+    "slug": "alaska",
+    "totalAmount": 3847204286,
+    "rank": 35,
+    "pctOfTotal": 0.52,
+    "perCapita": null
+  },
+  "ID": {
+    "name": "Idaho",
+    "code": "ID",
+    "slug": "idaho",
+    "totalAmount": 3819378988,
+    "rank": 36,
+    "pctOfTotal": 0.51,
+    "perCapita": null
+  },
+  "IA": {
+    "name": "Iowa",
+    "code": "IA",
+    "slug": "iowa",
+    "totalAmount": 3597140922,
+    "rank": 37,
+    "pctOfTotal": 0.48,
+    "perCapita": null
+  },
+  "KS": {
+    "name": "Kansas",
+    "code": "KS",
+    "slug": "kansas",
+    "totalAmount": 3581985487,
+    "rank": 38,
+    "pctOfTotal": 0.48,
+    "perCapita": null
+  },
+  "GU": {
+    "name": "Guam",
+    "code": "GU",
+    "slug": "guam",
+    "totalAmount": 3317113951,
+    "rank": 39,
+    "pctOfTotal": 0.45,
+    "perCapita": null
+  },
+  "NH": {
+    "name": "New Hampshire",
+    "code": "NH",
+    "slug": "new-hampshire",
+    "totalAmount": 2914470724,
+    "rank": 40,
+    "pctOfTotal": 0.39,
+    "perCapita": null
+  },
+  "MN": {
+    "name": "Minnesota",
+    "code": "MN",
+    "slug": "minnesota",
+    "totalAmount": 2484742377,
+    "rank": 41,
+    "pctOfTotal": 0.33,
+    "perCapita": null
+  },
+  "OR": {
+    "name": "Oregon",
+    "code": "OR",
+    "slug": "oregon",
+    "totalAmount": 2080957192,
+    "rank": 42,
+    "pctOfTotal": 0.28,
+    "perCapita": null
+  },
+  "WV": {
+    "name": "West Virginia",
+    "code": "WV",
+    "slug": "west-virginia",
+    "totalAmount": 1878040155,
+    "rank": 43,
+    "pctOfTotal": 0.25,
+    "perCapita": null
+  },
+  "NE": {
+    "name": "Nebraska",
+    "code": "NE",
+    "slug": "nebraska",
+    "totalAmount": 1265837698,
+    "rank": 44,
+    "pctOfTotal": 0.17,
+    "perCapita": null
+  },
+  "AR": {
+    "name": "Arkansas",
+    "code": "AR",
+    "slug": "arkansas",
+    "totalAmount": 1252534504,
+    "rank": 45,
+    "pctOfTotal": 0.17,
+    "perCapita": null
+  },
+  "MT": {
+    "name": "Montana",
+    "code": "MT",
+    "slug": "montana",
+    "totalAmount": 1146319073,
+    "rank": 46,
+    "pctOfTotal": 0.15,
+    "perCapita": null
+  },
+  "SD": {
+    "name": "South Dakota",
+    "code": "SD",
+    "slug": "south-dakota",
+    "totalAmount": 976129599,
+    "rank": 47,
+    "pctOfTotal": 0.13,
+    "perCapita": null
+  },
+  "PR": {
+    "name": "Puerto Rico",
+    "code": "PR",
+    "slug": "puerto-rico",
+    "totalAmount": 919787441,
+    "rank": 48,
+    "pctOfTotal": 0.12,
+    "perCapita": null
+  },
+  "RI": {
+    "name": "Rhode Island",
+    "code": "RI",
+    "slug": "rhode-island",
+    "totalAmount": 905640683,
+    "rank": 49,
+    "pctOfTotal": 0.12,
+    "perCapita": null
+  },
+  "VT": {
+    "name": "Vermont",
+    "code": "VT",
+    "slug": "vermont",
+    "totalAmount": 877134073,
+    "rank": 50,
+    "pctOfTotal": 0.12,
+    "perCapita": null
+  },
+  "ND": {
+    "name": "North Dakota",
+    "code": "ND",
+    "slug": "north-dakota",
+    "totalAmount": 813792773,
+    "rank": 51,
+    "pctOfTotal": 0.11,
+    "perCapita": null
+  },
+  "WY": {
+    "name": "Wyoming",
+    "code": "WY",
+    "slug": "wyoming",
+    "totalAmount": 496517266,
+    "rank": 52,
+    "pctOfTotal": 0.07,
+    "perCapita": null
+  },
+  "DE": {
+    "name": "Delaware",
+    "code": "DE",
+    "slug": "delaware",
+    "totalAmount": 367921231,
+    "rank": 53,
+    "pctOfTotal": 0.05,
+    "perCapita": null
+  },
+  "VI": {
+    "name": "U.S. Virgin Islands",
+    "code": "VI",
+    "slug": "us-virgin-islands",
+    "totalAmount": 48776046,
+    "rank": 54,
+    "pctOfTotal": 0.01,
+    "perCapita": null
+  }
+}
