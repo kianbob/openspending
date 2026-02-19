@@ -1,0 +1,84 @@
+import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
+import { SortableTable } from "@/components/SortableTable";
+import { formatDollars, formatPercent } from "@/lib/format";
+import contractors from "@/../public/data/top-contractors.json";
+import stats from "@/../public/data/stats.json";
+
+export const metadata = {
+  title: "Top Federal Contractors — OpenSpending",
+  description: "The 50 largest federal contractors and how much taxpayer money they receive.",
+};
+
+const top15 = contractors.slice(0, 15).map((c) => ({
+  name: c.name
+    .split(" ")
+    .slice(0, 2)
+    .join(" ")
+    .replace(/,$/g, ""),
+  amount: c.amount,
+}));
+
+const top10Total = contractors.slice(0, 10).reduce((sum, c) => sum + c.amount, 0);
+const allTotal = contractors.reduce((sum, c) => sum + c.amount, 0);
+
+const columns = [
+  { key: "name", label: "Contractor", format: "text" as const },
+  { key: "amount", label: "Amount", format: "dollars" as const, align: "right" as const },
+];
+
+const tableData = contractors.map((c) => ({
+  name: c.name,
+  amount: c.amount,
+}));
+
+export default function ContractorsPage() {
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+        Top Federal Contractors
+      </h1>
+      <p className="text-gray-500 text-lg mb-8">
+        The 50 companies receiving the most federal contract dollars in FY{stats.fiscalYear}.
+      </p>
+
+      {/* Concentration Insight */}
+      <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-6 mb-10">
+        <h2 className="text-lg font-bold text-indigo-900 mb-2">
+          Contractor Concentration
+        </h2>
+        <p className="text-indigo-800">
+          The <span className="font-bold">top 10 contractors</span> receive{" "}
+          <span className="font-bold">{formatDollars(top10Total)}</span> —{" "}
+          <span className="font-bold">
+            {formatPercent((top10Total / stats.totalContracts) * 100)}
+          </span>{" "}
+          of all federal contracts. The top 50 listed here account for{" "}
+          <span className="font-bold">{formatDollars(allTotal)}</span> (
+          {formatPercent((allTotal / stats.totalContracts) * 100)}). A handful
+          of companies dominate federal procurement, raising questions about
+          competition and taxpayer value.
+        </p>
+      </div>
+
+      {/* Bar Chart */}
+      <div className="mb-12">
+        <h2 className="text-xl font-bold text-gray-900 mb-4">
+          Top 15 Contractors by Contract Value
+        </h2>
+        <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6">
+          <HorizontalBarChart data={top15} height={550} color="#4338ca" />
+        </div>
+      </div>
+
+      {/* Full Table */}
+      <h2 className="text-xl font-bold text-gray-900 mb-4">
+        All 50 Contractors
+      </h2>
+      <SortableTable
+        columns={columns}
+        data={tableData}
+        defaultSortKey="amount"
+      />
+    </div>
+  );
+}

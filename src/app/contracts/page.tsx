@@ -1,0 +1,52 @@
+import { SortableTable } from "@/components/SortableTable";
+import awards from "@/../public/data/top-awards.json";
+
+export const metadata = {
+  title: "Largest Federal Contracts — OpenSpending",
+  description: "The 100 biggest individual federal contracts — many are no-bid, sole-source awards.",
+};
+
+const columns = [
+  { key: "recipient", label: "Recipient", format: "text" as const },
+  { key: "amount", label: "Amount", format: "dollars" as const, align: "right" as const },
+  { key: "agency", label: "Agency", format: "text" as const },
+  { key: "description", label: "Description", format: "text" as const },
+  { key: "startDate", label: "Start Date", format: "date" as const },
+];
+
+const tableData = awards.map((a) => ({
+  recipient: a.recipient,
+  amount: a.amount,
+  agency: a.agency,
+  description: a.description,
+  startDate: a.startDate,
+}));
+
+export default function ContractsPage() {
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+        100 Largest Federal Contracts
+      </h1>
+      <p className="text-gray-500 text-lg mb-4">
+        The biggest individual contract awards in the federal system. Sort by
+        amount, recipient, or agency.
+      </p>
+
+      <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
+        <p className="text-amber-900 text-sm">
+          <span className="font-bold">Worth noting:</span> Many of the largest
+          contracts are sole-source or no-bid awards — meaning the government
+          chose a single vendor without competitive bidding. This reduces price
+          competition and can lead to inflated costs for taxpayers.
+        </p>
+      </div>
+
+      <SortableTable
+        columns={columns}
+        data={tableData}
+        defaultSortKey="amount"
+      />
+    </div>
+  );
+}
