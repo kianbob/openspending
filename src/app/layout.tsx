@@ -101,54 +101,80 @@ export default function RootLayout({
           </div>
         </nav>
         <main>{children}</main>
-        <footer className="border-t border-gray-200 bg-gray-50 mt-16">
+        <footer className="bg-gray-900 mt-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div>
-                <h3 className="font-serif text-lg font-bold text-gray-900">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+              <div className="col-span-2 md:col-span-1">
+                <h3 className="font-serif text-lg font-bold text-white">
                   OpenSpending
                 </h3>
-                <p className="mt-2 text-sm text-gray-500">
+                <p className="mt-2 text-sm text-gray-400">
                   Your tax dollars, tracked. Independent analysis of federal
                   spending data.
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold text-sm text-gray-900 uppercase tracking-wider">
-                  Explore
+                <h4 className="font-semibold text-sm text-white uppercase tracking-wider">
+                  Data
                 </h4>
-                <div className="mt-2 flex flex-col gap-1">
-                  {navLinks.slice(0, 4).map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="text-sm text-gray-500 hover:text-indigo-700"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
+                <div className="mt-3 flex flex-col gap-2">
+                  <Link href="/contractors" className="text-sm text-gray-400 hover:text-white transition-colors">Contractors</Link>
+                  <Link href="/agencies" className="text-sm text-gray-400 hover:text-white transition-colors">Agencies</Link>
+                  <Link href="/contracts" className="text-sm text-gray-400 hover:text-white transition-colors">Contracts</Link>
+                  <Link href="/industries" className="text-sm text-gray-400 hover:text-white transition-colors">Industries</Link>
+                  <Link href="/states" className="text-sm text-gray-400 hover:text-white transition-colors">States</Link>
+                  <Link href="/foreign-aid" className="text-sm text-gray-400 hover:text-white transition-colors">Foreign Aid</Link>
                 </div>
               </div>
               <div>
-                <h4 className="font-semibold text-sm text-gray-900 uppercase tracking-wider">
-                  Data Source
+                <h4 className="font-semibold text-sm text-white uppercase tracking-wider">
+                  Analysis
                 </h4>
-                <p className="mt-2 text-sm text-gray-500">
-                  All data sourced from{" "}
-                  <a
-                    href="https://www.usaspending.gov"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-indigo-600 hover:text-indigo-800 underline"
-                  >
-                    USASpending.gov
-                  </a>
-                  , the official source for federal spending data. FY2025.
-                </p>
+                <div className="mt-3 flex flex-col gap-2">
+                  <Link href="/trends" className="text-sm text-gray-400 hover:text-white transition-colors">Trends</Link>
+                  <Link href="/covid" className="text-sm text-gray-400 hover:text-white transition-colors">COVID Spending</Link>
+                  <Link href="/usaid" className="text-sm text-gray-400 hover:text-white transition-colors">USAID Deep Dive</Link>
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-sm text-white uppercase tracking-wider">
+                  Editorial
+                </h4>
+                <div className="mt-3 flex flex-col gap-2">
+                  <Link href="/how-it-works" className="text-sm text-gray-400 hover:text-white transition-colors">How It Works</Link>
+                  <Link href="/no-bid" className="text-sm text-gray-400 hover:text-white transition-colors">No-Bid Nation</Link>
+                  <Link href="/waste" className="text-sm text-gray-400 hover:text-white transition-colors">Waste &amp; Fraud</Link>
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-sm text-white uppercase tracking-wider">
+                  About
+                </h4>
+                <div className="mt-3 flex flex-col gap-2">
+                  <Link href="/about" className="text-sm text-gray-400 hover:text-white transition-colors">About Us</Link>
+                  <Link href="/downloads" className="text-sm text-gray-400 hover:text-white transition-colors">Data Downloads</Link>
+                </div>
               </div>
             </div>
-            <div className="mt-8 pt-8 border-t border-gray-200 text-center text-xs text-gray-400">
-              Built by TheDataProject.ai &middot; Data from USASpending.gov
+            <div className="mt-10 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+              Data from{" "}
+              <a
+                href="https://www.usaspending.gov"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white underline"
+              >
+                USASpending.gov
+              </a>
+              {" "}&middot; Built by{" "}
+              <a
+                href="https://thedataproject.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white underline"
+              >
+                TheDataProject.ai
+              </a>
             </div>
           </div>
         </footer>
