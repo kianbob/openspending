@@ -183,6 +183,37 @@ export default function RootLayout({
   );
 }
 
+const mobileNavSections = [
+  {
+    label: "DATA",
+    links: [
+      { href: "/agencies", label: "Agencies" },
+      { href: "/contractors", label: "Contractors" },
+      { href: "/contracts", label: "Contracts" },
+      { href: "/industries", label: "Industries" },
+      { href: "/states", label: "States" },
+      { href: "/foreign-aid", label: "Foreign Aid" },
+    ],
+  },
+  {
+    label: "ANALYSIS",
+    links: [
+      { href: "/trends", label: "Trends" },
+      { href: "/covid", label: "COVID" },
+      { href: "/usaid", label: "USAID" },
+    ],
+  },
+  {
+    label: "EDITORIAL",
+    links: [
+      { href: "/how-it-works", label: "How It Works" },
+      { href: "/no-bid", label: "No-Bid Nation" },
+      { href: "/waste", label: "Waste & Fraud" },
+      { href: "/about", label: "About" },
+    ],
+  },
+];
+
 function MobileMenu() {
   return (
     <div className="md:hidden">
@@ -202,15 +233,23 @@ function MobileMenu() {
             />
           </svg>
         </summary>
-        <div className="absolute right-0 top-full mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-700"
-            >
-              {link.label}
-            </Link>
+        <div className="absolute right-0 top-full mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-1 z-50">
+          {mobileNavSections.map((section, i) => (
+            <div key={section.label}>
+              {i > 0 && <hr className="border-gray-200 my-1" />}
+              <p className="px-4 pt-2 pb-1 text-[10px] font-semibold text-gray-400 uppercase tracking-wider">
+                {section.label}
+              </p>
+              {section.links.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="block px-4 py-1.5 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-700"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           ))}
         </div>
       </details>

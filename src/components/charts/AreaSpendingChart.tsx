@@ -8,6 +8,7 @@ import {
   Tooltip,
   ResponsiveContainer,
   CartesianGrid,
+  Legend,
 } from "recharts";
 import { formatDollars } from "@/lib/format";
 
@@ -42,19 +43,36 @@ export function AreaSpendingChart({ data }: { data: YearData[] }) {
             fontSize: "13px",
           }}
         />
+        <Legend
+          verticalAlign="bottom"
+          height={36}
+          iconType="line"
+          wrapperStyle={{ fontSize: "13px" }}
+        />
         <Area
           type="monotone"
           dataKey="budget"
-          stroke="#4338ca"
-          fill="#c7d2fe"
+          stroke="#4f46e5"
+          fill="#e0e7ff"
+          fillOpacity={0.3}
           strokeWidth={2}
           name="Budget Authority"
         />
         <Area
           type="monotone"
+          dataKey="obligated"
+          stroke="#059669"
+          fill="#d1fae5"
+          fillOpacity={0.3}
+          strokeWidth={2}
+          name="Obligated"
+        />
+        <Area
+          type="monotone"
           dataKey="outlays"
-          stroke="#dc2626"
-          fill="#fecaca"
+          stroke="#f59e0b"
+          fill="#fef3c7"
+          fillOpacity={0.3}
           strokeWidth={2}
           name="Outlays"
         />
