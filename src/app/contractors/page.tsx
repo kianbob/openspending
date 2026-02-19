@@ -2,6 +2,7 @@ import Link from "next/link";
 import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
 import { ContractorTrends } from "@/components/charts/ContractorTrends";
 import { ContractorsTable } from "@/components/ContractorsTable";
+import { FiscalYearSelector } from "@/components/FiscalYearSelector";
 import { formatDollars, formatPercent, toTitleCase } from "@/lib/format";
 import contractors from "@/../public/data/top-contractors-deduped.json";
 import contractorTrends from "@/../public/data/contractor-trends.json";
@@ -48,9 +49,12 @@ export default function ContractorsPage() {
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
         Top Federal Contractors
       </h1>
-      <p className="text-gray-500 text-lg mb-4">
-        The 50 companies receiving the most federal contract dollars in FY{stats.fiscalYear}.
-      </p>
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+        <p className="text-gray-500 text-lg">
+          The 50 companies receiving the most federal contract dollars in FY{stats.fiscalYear}.
+        </p>
+        <FiscalYearSelector />
+      </div>
       <Link
         href="/compare?mode=contractors"
         className="inline-block text-sm text-indigo-600 hover:text-indigo-800 font-medium mb-8"

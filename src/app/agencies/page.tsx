@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
 import { SortableTable } from "@/components/SortableTable";
+import { FiscalYearSelector } from "@/components/FiscalYearSelector";
 import { formatDollars } from "@/lib/format";
 import agencies from "@/../public/data/agencies.json";
 import agencySpending from "@/../public/data/agency-spending.json";
@@ -58,10 +59,13 @@ export default function AgenciesPage() {
       <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-2">
         Federal Agencies
       </h1>
-      <p className="text-gray-500 text-lg mb-4">
-        All {agencies.length} federal agencies, ranked by budget authority. Sort
-        by any column. Search by name or abbreviation.
-      </p>
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+        <p className="text-gray-500 text-lg">
+          All {agencies.length} federal agencies, ranked by budget authority. Sort
+          by any column. Search by name or abbreviation.
+        </p>
+        <FiscalYearSelector />
+      </div>
       <Link
         href="/compare?mode=agencies"
         className="inline-block text-sm text-indigo-600 hover:text-indigo-800 font-medium mb-8"

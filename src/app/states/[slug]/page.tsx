@@ -8,6 +8,23 @@ import { StateContractorsChart } from "@/components/charts/StateContractorsChart
 
 export const dynamicParams = true;
 
+const statePopulations: Record<string, number> = {
+  "California": 39.5, "Texas": 30.0, "Florida": 22.2, "New York": 19.7,
+  "Pennsylvania": 13.0, "Illinois": 12.6, "Ohio": 11.8, "Georgia": 10.9,
+  "Virginia": 8.6, "Maryland": 6.2, "District of Columbia": 0.7,
+  "Washington": 7.7, "Massachusetts": 7.0, "Arizona": 7.4, "Colorado": 5.8,
+  "Minnesota": 5.7, "Wisconsin": 5.9, "Missouri": 6.2, "Indiana": 6.8,
+  "Tennessee": 7.1, "North Carolina": 10.7, "Michigan": 10.0,
+  "New Jersey": 9.3, "South Carolina": 5.3, "Alabama": 5.1, "Louisiana": 4.6,
+  "Kentucky": 4.5, "Oregon": 4.2, "Oklahoma": 4.0, "Connecticut": 3.6,
+  "Utah": 3.4, "Iowa": 3.2, "Nevada": 3.2, "Arkansas": 3.0,
+  "Mississippi": 2.9, "Kansas": 2.9, "New Mexico": 2.1, "Nebraska": 2.0,
+  "Idaho": 1.9, "West Virginia": 1.8, "Hawaii": 1.4, "New Hampshire": 1.4,
+  "Maine": 1.4, "Montana": 1.1, "Rhode Island": 1.1, "Delaware": 1.0,
+  "South Dakota": 0.9, "North Dakota": 0.8, "Alaska": 0.7, "Vermont": 0.6,
+  "Wyoming": 0.6,
+};
+
 type StateEntry = {
   name: string;
   code: string;
@@ -84,6 +101,8 @@ export default async function StateDetailPage({
   if (!entry) notFound();
 
   const { name, code, totalAmount, rank, pctOfTotal } = entry;
+  const populationM = statePopulations[name];
+  const perCapita = populationM ? Math.round(totalAmount / (populationM * 1e6)) : null;
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -98,7 +117,7 @@ export default async function StateDetailPage({
       </p>
 
       {/* Stat cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+      <div className={`grid grid-cols-1 gap-4 mb-10 ${perCapita ? "sm:grid-cols-4" : "sm:grid-cols-3"}`}>
         <div className="bg-white rounded-xl border border-gray-200 p-5">
           <p className="text-xs font-medium text-gray-500 uppercase tracking-wide">
             Total Contract Spending
@@ -121,6 +140,16 @@ export default async function StateDetailPage({
             {formatPercent(pctOfTotal)}
           </p>
         </div>
+        {perCapita && (
+          <div className="bg-white rounded-xl border border-gray-200 p-5">
+            <p className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+              Per Capita
+            </p>
+            <p className="text-2xl font-bold text-indigo-700 mt-1">
+              ${perCapita.toLocaleString()} per resident
+            </p>
+          </div>
+        )}
       </div>
 
       {/* Editorial callout */}
