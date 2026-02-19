@@ -45,8 +45,9 @@ export function generateStaticParams() {
   return allAgencies.map((a) => ({ slug: a.spending.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const entry = slugMap.get(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const entry = slugMap.get(slug);
   const name = entry?.spending.name ?? "Agency";
   return {
     title: `${name} — OpenSpending`,
@@ -54,12 +55,13 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default function AgencyDetailPage({
+export default async function AgencyDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const entry = slugMap.get(params.slug);
+  const { slug } = await params;
+  const entry = slugMap.get(slug);
   if (!entry) return null;
 
   const { spending, trend } = entry;
@@ -212,13 +214,13 @@ export default function AgencyDetailPage({
       )}
 
       {/* Top Contractors */}
-      {agencyContractors[params.slug] && (
+      {agencyContractors[slug] && (
         <div className="mb-12">
           <h2 className="text-xl font-bold text-gray-900 mb-4">
             Top Contractors
           </h2>
           <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6 mb-6">
-            <AgencyContractorsChart data={agencyContractors[params.slug]} />
+            <AgencyContractorsChart data={agencyContractors[slug]} />
           </div>
           <div className="overflow-x-auto bg-white rounded-xl border border-gray-200">
             <table className="min-w-full text-sm">
@@ -236,7 +238,7 @@ export default function AgencyDetailPage({
                 </tr>
               </thead>
               <tbody>
-                {agencyContractors[params.slug].map((c, i) => (
+                {agencyContractors[slug].map((c, i) => (
                   <tr
                     key={`${c.name}-${i}`}
                     className="border-b border-gray-100 hover:bg-gray-50"
