@@ -50,6 +50,7 @@ const navLinks = [
   { href: "/covid", label: "COVID" },
   { href: "/trends", label: "Trends" },
   { href: "/states", label: "States" },
+  { href: "/spending-analysis", label: "Analysis" },
   { href: "/about", label: "About" },
 ];
 
@@ -151,6 +152,10 @@ export default function RootLayout({
                   Editorial
                 </h4>
                 <div className="mt-3 flex flex-col gap-2">
+                  <Link href="/spending-analysis" className="text-sm text-gray-400 hover:text-white transition-colors">Spending Analysis</Link>
+                  <Link href="/top-10" className="text-sm text-gray-400 hover:text-white transition-colors">Top 10 Contractors</Link>
+                  <Link href="/pentagon-spending" className="text-sm text-gray-400 hover:text-white transition-colors">Pentagon Spending</Link>
+                  <Link href="/healthcare-spending" className="text-sm text-gray-400 hover:text-white transition-colors">Healthcare Spending</Link>
                   <Link href="/how-it-works" className="text-sm text-gray-400 hover:text-white transition-colors">How It Works</Link>
                   <Link href="/no-bid" className="text-sm text-gray-400 hover:text-white transition-colors">No-Bid Nation</Link>
                   <Link href="/waste" className="text-sm text-gray-400 hover:text-white transition-colors">Waste &amp; Fraud</Link>
@@ -217,6 +222,10 @@ const mobileNavSections = [
   {
     label: "EDITORIAL",
     links: [
+      { href: "/spending-analysis", label: "Spending Analysis" },
+      { href: "/top-10", label: "Top 10 Contractors" },
+      { href: "/pentagon-spending", label: "Pentagon Spending" },
+      { href: "/healthcare-spending", label: "Healthcare Spending" },
       { href: "/how-it-works", label: "How It Works" },
       { href: "/no-bid", label: "No-Bid Nation" },
       { href: "/waste", label: "Waste & Fraud" },

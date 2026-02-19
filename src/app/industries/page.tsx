@@ -2,7 +2,7 @@ import Link from "next/link";
 import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
 import { SortableTable } from "@/components/SortableTable";
 import { formatDollars } from "@/lib/format";
-import industries from "@/../public/data/top-industries.json";
+import industries from "@/../public/data/industry-details.json";
 
 export const metadata = {
   title: "Federal Spending by Industry — OpenSpending",
@@ -23,7 +23,7 @@ const allTotal = industries.reduce((sum, i) => sum + i.amount, 0);
 
 const columns = [
   { key: "code", label: "NAICS Code", format: "text" as const },
-  { key: "name", label: "Industry", format: "text" as const },
+  { key: "name", label: "Industry", format: "link" as const, linkKey: "href" },
   { key: "amount", label: "Amount", format: "dollars" as const, align: "right" as const },
 ];
 
@@ -31,6 +31,7 @@ const tableData = industries.map((ind) => ({
   code: ind.code,
   name: ind.name,
   amount: ind.amount,
+  href: `/industries/${ind.slug}`,
 }));
 
 export default function IndustriesPage() {
