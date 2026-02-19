@@ -28,6 +28,7 @@ const navLinks = [
   { href: "/foreign-aid", label: "Foreign Aid" },
   { href: "/usaid", label: "USAID" },
   { href: "/covid", label: "COVID" },
+  { href: "/trends", label: "Trends" },
   { href: "/states", label: "States" },
   { href: "/about", label: "About" },
 ];

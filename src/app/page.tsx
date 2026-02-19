@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { TopContractorsChart } from "@/components/charts/TopContractorsChart";
+import { ContractTrendsAreaChart } from "@/components/charts/ContractTrendsAreaChart";
 import { formatDollars, formatPercent } from "@/lib/format";
 import stats from "@/../public/data/stats.json";
 import contractors from "@/../public/data/top-contractors.json";
 import agencies from "@/../public/data/agencies.json";
 import agencyTrends from "@/../public/data/agency-trends.json";
+import contractTrends from "@/../public/data/yearly-contract-trends.json";
 
 const topContractors = contractors.slice(0, 10);
 const topAgencies = agencies.slice(0, 5);
@@ -12,6 +14,11 @@ const topAgencies = agencies.slice(0, 5);
 const usaidTrend = (agencyTrends as Record<string, { years: { fy: number; budget: number }[] }>)["USAID"];
 const usaidFirst = usaidTrend?.years?.[0];
 const usaidPeak = usaidTrend?.years?.reduce((max, y) => (y.budget > max.budget ? y : max), usaidTrend.years[0]);
+
+const miniTrendData = contractTrends.map((y) => ({
+  fy: y.fy,
+  totalContracts: y.totalContracts,
+}));
 
 const statCards = [
   { label: "Total Federal Budget", value: formatDollars(stats.totalBudget), sub: `FY${stats.fiscalYear}` },
@@ -157,6 +164,66 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Spending Trends Mini Chart */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+              Spending Trends
+            </h2>
+            <p className="text-gray-500 mt-2">
+              Federal contract spending FY2017–FY2025 — up{" "}
+              {Math.round(
+                ((contractTrends[contractTrends.length - 1].totalContracts -
+                  contractTrends[0].totalContracts) /
+                  contractTrends[0].totalContracts) *
+                  100
+              )}
+              % in nine years.
+            </p>
+          </div>
+          <Link
+            href="/trends"
+            className="text-indigo-600 hover:text-indigo-800 font-medium text-sm mt-4 md:mt-0"
+          >
+            Full trends analysis →
+          </Link>
+        </div>
+        <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6">
+          <ContractTrendsAreaChart
+            data={miniTrendData}
+            height={280}
+            showCovidLine={true}
+          />
+        </div>
+      </section>
+
+      {/* COVID Spending Callout */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        <div className="bg-red-50 border border-red-200 rounded-xl p-8 md:p-10 flex flex-col md:flex-row md:items-center gap-6">
+          <div className="flex-1">
+            <div className="flex items-start gap-3 mb-3">
+              <span className="text-2xl">&#x1F4B8;</span>
+              <h2 className="text-2xl font-bold text-gray-900">
+                $1.46 Trillion in COVID Spending
+              </h2>
+            </div>
+            <p className="text-gray-700 text-sm leading-relaxed">
+              The pandemic triggered the largest emergency spending surge in
+              history. Trillions flowed through HHS, Education, Defense, and
+              Homeland Security — much of it bypassing competitive bidding.
+              Where did the money go?
+            </p>
+          </div>
+          <Link
+            href="/covid"
+            className="inline-block px-5 py-2.5 bg-red-700 text-white font-semibold rounded-lg hover:bg-red-800 transition-colors text-sm whitespace-nowrap"
+          >
+            Explore COVID Spending →
+          </Link>
+        </div>
+      </section>
+
       {/* USAID Editorial Callout */}
       {usaidFirst && usaidPeak && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -199,6 +266,43 @@ export default function HomePage() {
         </section>
       )}
 
+      {/* Key Findings */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
+          Key Findings
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {[
+            {
+              title: "10 companies control the majority of contract dollars",
+              body: `The top 10 federal contractors receive ${formatDollars(topContractors.reduce((s, c) => s + c.amount, 0))} — that's ${formatPercent((topContractors.reduce((s, c) => s + c.amount, 0) / stats.totalContracts) * 100)} of all contracts flowing to just a handful of firms.`,
+            },
+            {
+              title: "USAID's budget tripled in under a decade",
+              body: "From $25.8B in FY2017 to a peak of $50.1B in FY2023 — with minimal public scrutiny. Now DOGE is cutting it back. The question: who was watching while it grew?",
+            },
+            {
+              title: "COVID spending never fully unwound",
+              body: "Emergency pandemic spending pushed contract levels to new highs. Even after the crisis passed, spending didn't return to pre-COVID baselines — the ratchet effect in action.",
+            },
+            {
+              title: "Virginia gets more federal contracts than any other state",
+              body: "Pentagon-adjacent contractors in Northern Virginia pull in over $120B in federal contracts annually — more than California and Texas combined.",
+            },
+          ].map((finding) => (
+            <div
+              key={finding.title}
+              className="bg-indigo-50 border border-indigo-100 rounded-xl p-6"
+            >
+              <h3 className="font-bold text-gray-900 mb-2">{finding.title}</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                {finding.body}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* CTA Grid */}
       <section className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -216,6 +320,21 @@ export default function HomePage() {
                 href: "/contracts",
                 title: "Largest Contracts",
                 desc: "The 100 biggest individual contracts — many are no-bid.",
+              },
+              {
+                href: "/trends",
+                title: "Spending Trends",
+                desc: "Nine years of contract and budget data. See the COVID spike, the ratchet effect, and where it's heading.",
+              },
+              {
+                href: "/usaid",
+                title: "The USAID Story",
+                desc: "Budget tripled in 6 years. Now it's being gutted. A deep dive into foreign aid spending.",
+              },
+              {
+                href: "/covid",
+                title: "COVID Spending",
+                desc: "$1.46 trillion in pandemic spending — who got the money and where did it go?",
               },
               {
                 href: "/industries",
