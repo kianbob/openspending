@@ -21,6 +21,29 @@ type ContractorEntry = {
 
 const details = contractorDetails as Record<string, ContractorEntry>;
 
+const contractorDescriptions: Record<string, string> = {
+  "lockheed-martin-corporation":
+    "F-35 program ($1.7T lifetime cost), fighter jets, missile defense — the #1 federal contractor for decades. More revenue from the Pentagon than many countries' entire military budgets.",
+  "optum-public-sector-solutions-inc":
+    "UnitedHealth subsidiary handling healthcare IT and VA health claims processing. A single company processing billions in veterans' healthcare — what could go wrong?",
+  "electric-boat-corporation":
+    "General Dynamics subsidiary and sole source for U.S. Navy submarines. No competition means no price pressure — and taxpayers foot the bill.",
+  "raytheon-company":
+    "Missiles, radar systems, the Patriot missile system. Every conflict drives their stock price up. War is good business.",
+  "the-boeing-company":
+    "Aircraft, satellites, the Space Launch System (billions over budget and years behind schedule). SpaceX does it cheaper — and on time.",
+  "mckesson-corporation":
+    "Pharmaceutical distribution for the VA. A middleman taking a cut of the drug supply chain between manufacturers and veterans.",
+  "amerisourcebergen-drug-corp":
+    "Drug distribution — another pharmaceutical middleman extracting value from the taxpayer-funded supply chain.",
+  "rtx-corporation":
+    "Parent company of Raytheon and Pratt & Whitney. Defense industry consolidation means fewer competitors and higher prices for taxpayers.",
+  "triwest-healthcare-alliance-corp":
+    "Military and VA health insurance administrator. Processes claims but doesn't actually provide care — a bureaucratic layer between veterans and their doctors.",
+  "humana-government-business-inc":
+    "Government healthcare plans for military families and retirees. Profits from managing taxpayer-funded health benefits.",
+};
+
 export function generateStaticParams() {
   return Object.keys(details).map((slug) => ({ slug }));
 }
@@ -75,10 +98,14 @@ export default async function ContractorDetailPage({
       <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-2">
         {toTitleCase(name)}
       </h1>
-      <p className="text-gray-500 mb-8">
+      <p className="text-gray-500 mb-4">
         Rank #{rank} federal contractor &middot; {formatPercent(pctOfTotal)} of
         all federal contracts
       </p>
+
+      {contractorDescriptions[slug] && (
+        <p className="text-gray-500 mb-8">{contractorDescriptions[slug]}</p>
+      )}
 
       {/* Stat cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
