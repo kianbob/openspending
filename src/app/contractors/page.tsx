@@ -1,7 +1,9 @@
 import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
 import { SortableTable } from "@/components/SortableTable";
+import { ContractorTrends } from "@/components/charts/ContractorTrends";
 import { formatDollars, formatPercent } from "@/lib/format";
 import contractors from "@/../public/data/top-contractors.json";
+import contractorTrends from "@/../public/data/contractor-trends.json";
 import stats from "@/../public/data/stats.json";
 
 export const metadata = {
@@ -79,6 +81,18 @@ export default function ContractorsPage() {
         data={tableData}
         defaultSortKey="amount"
       />
+
+      {/* Contractor Trends */}
+      <div className="mt-16">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">
+          Contractor Spending Over Time
+        </h2>
+        <p className="text-gray-500 mb-6">
+          Multi-year spending trends for {contractorTrends.length} contractors
+          with 3+ years of data. Are the biggest winners growing even bigger?
+        </p>
+        <ContractorTrends data={contractorTrends} />
+      </div>
     </div>
   );
 }

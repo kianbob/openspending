@@ -30,9 +30,10 @@ export function AreaSpendingChart({ data }: { data: YearData[] }) {
           tick={{ fill: "#6b7280" }}
         />
         <Tooltip
-          formatter={(value: number | undefined, name: string) => [
-            formatDollars(value ?? 0),
-            name.charAt(0).toUpperCase() + name.slice(1),
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          formatter={(value: any, name: any) => [
+            formatDollars(Number(value) || 0),
+            String(name).charAt(0).toUpperCase() + String(name).slice(1),
           ]}
           contentStyle={{
             backgroundColor: "#fff",

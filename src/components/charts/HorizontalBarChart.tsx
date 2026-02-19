@@ -44,7 +44,8 @@ export function HorizontalBarChart({
           tick={{ fill: "#374151" }}
         />
         <Tooltip
-          formatter={(value: number) => [formatDollars(value), "Amount"]}
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          formatter={(value: any) => [formatDollars(Number(value) || 0), "Amount"]}
           contentStyle={{
             backgroundColor: "#fff",
             border: "1px solid #e5e7eb",

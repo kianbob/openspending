@@ -44,8 +44,10 @@ export function TopContractorsChart({ data }: { data: Contractor[] }) {
           tick={{ fill: "#374151" }}
         />
         <Tooltip
-          formatter={(value: number) => [formatDollars(value), "Amount"]}
-          labelFormatter={(label: string, payload: Array<{ payload: { fullName: string } }>) =>
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          formatter={(value: any) => [formatDollars(Number(value) || 0), "Amount"]}
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          labelFormatter={(label: any, payload: any) =>
             payload?.[0]?.payload?.fullName || label
           }
           contentStyle={{
