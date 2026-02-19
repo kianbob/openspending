@@ -1,8 +1,8 @@
 import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
-import { SortableTable } from "@/components/SortableTable";
 import { ContractorTrends } from "@/components/charts/ContractorTrends";
+import { ContractorsTable } from "@/components/ContractorsTable";
 import { formatDollars, formatPercent } from "@/lib/format";
-import contractors from "@/../public/data/top-contractors.json";
+import contractors from "@/../public/data/top-contractors-deduped.json";
 import contractorTrends from "@/../public/data/contractor-trends.json";
 import stats from "@/../public/data/stats.json";
 
@@ -11,26 +11,25 @@ export const metadata = {
   description: "The 50 largest federal contractors and how much taxpayer money they receive.",
 };
 
-const top15 = contractors.slice(0, 15).map((c) => ({
-  name: c.name
+const top15 = contractors.slice(0, 15).map((c) => {
+  const shortName = c.name
     .split(" ")
     .slice(0, 2)
     .join(" ")
-    .replace(/,$/g, ""),
-  amount: c.amount,
-}));
+    .replace(/,$/g, "");
+  return {
+    name: c.subsidiaries > 1 ? `${shortName} (${c.subsidiaries})` : shortName,
+    amount: c.amount,
+  };
+});
 
 const top10Total = contractors.slice(0, 10).reduce((sum, c) => sum + c.amount, 0);
 const allTotal = contractors.reduce((sum, c) => sum + c.amount, 0);
 
-const columns = [
-  { key: "name", label: "Contractor", format: "text" as const },
-  { key: "amount", label: "Amount", format: "dollars" as const, align: "right" as const },
-];
-
 const tableData = contractors.map((c) => ({
   name: c.name,
   amount: c.amount,
+  subsidiaries: c.subsidiaries,
 }));
 
 export default function ContractorsPage() {
@@ -76,11 +75,7 @@ export default function ContractorsPage() {
       <h2 className="text-xl font-bold text-gray-900 mb-4">
         All 50 Contractors
       </h2>
-      <SortableTable
-        columns={columns}
-        data={tableData}
-        defaultSortKey="amount"
-      />
+      <ContractorsTable data={tableData} />
 
       {/* Contractor Trends */}
       <div className="mt-16">
