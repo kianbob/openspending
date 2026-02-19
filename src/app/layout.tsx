@@ -25,7 +25,6 @@ const navLinks = [
   { href: "/contractors", label: "Contractors" },
   { href: "/contracts", label: "Contracts" },
   { href: "/industries", label: "Industries" },
-  { href: "/grants", label: "Grants" },
   { href: "/foreign-aid", label: "Foreign Aid" },
   { href: "/states", label: "States" },
   { href: "/about", label: "About" },

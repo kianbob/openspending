@@ -1,0 +1,80 @@
+import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
+import { SortableTable } from "@/components/SortableTable";
+import { formatDollars } from "@/lib/format";
+import states from "@/../public/data/spending-by-state.json";
+
+export const metadata = {
+  title: "Federal Contract Spending by State — OpenSpending",
+  description: "Which states receive the most federal contract dollars — and why.",
+};
+
+const top20 = states.slice(0, 20).map((s) => ({
+  name: s.name,
+  amount: s.amount,
+}));
+
+const allTotal = states.reduce((sum, s) => sum + s.amount, 0);
+
+const columns = [
+  { key: "name", label: "State", format: "text" as const },
+  { key: "code", label: "Code", format: "text" as const },
+  { key: "amount", label: "Amount", format: "dollars" as const, align: "right" as const },
+];
+
+const tableData = states.map((s) => ({
+  name: s.name,
+  code: s.code,
+  amount: s.amount,
+}));
+
+export default function StatesPage() {
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 font-serif">
+        Federal Contract Spending by State
+      </h1>
+      <p className="text-gray-500 text-lg mb-8">
+        {formatDollars(allTotal)} in federal contracts distributed across all 50 states and territories.
+      </p>
+
+      {/* Virginia Insight */}
+      <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-6 mb-10">
+        <h2 className="text-lg font-bold text-indigo-900 mb-2">
+          Why Virginia Leads
+        </h2>
+        <p className="text-indigo-800">
+          Virginia receives <span className="font-bold">{formatDollars(states[0].amount)}</span> in
+          federal contracts — more than any other state. The reason: proximity to the Pentagon.
+          Northern Virginia is home to the headquarters of major defense contractors, military
+          installations, and the intelligence community. The D.C. metro area (Virginia, Maryland,
+          and D.C. combined) captures over{" "}
+          <span className="font-bold">
+            {formatDollars(states[0].amount + states[3].amount + states[6].amount)}
+          </span>{" "}
+          in contracts — a concentration that raises questions about whether federal
+          spending truly benefits the broader country.
+        </p>
+      </div>
+
+      {/* Bar Chart */}
+      <div className="mb-12">
+        <h2 className="text-xl font-bold text-gray-900 mb-4">
+          Top 20 States by Contract Value
+        </h2>
+        <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6">
+          <HorizontalBarChart data={top20} height={650} color="#4338ca" />
+        </div>
+      </div>
+
+      {/* Full Table */}
+      <h2 className="text-xl font-bold text-gray-900 mb-4">
+        All States &amp; Territories
+      </h2>
+      <SortableTable
+        columns={columns}
+        data={tableData}
+        defaultSortKey="amount"
+      />
+    </div>
+  );
+}

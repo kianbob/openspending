@@ -223,9 +223,9 @@ export default function HomePage() {
                 desc: "Aircraft manufacturing, engineering, and insurance dominate.",
               },
               {
-                href: "/grants",
-                title: "Grant Recipients",
-                desc: "State health programs receive the most — California alone gets $112B.",
+                href: "/agencies",
+                title: "Agency Budgets",
+                desc: "97 agencies control $11.2 trillion. See who spends what — and how fast it's growing.",
               },
               {
                 href: "/foreign-aid",
