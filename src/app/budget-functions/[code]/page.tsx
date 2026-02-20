@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedPages } from "@/components/RelatedPages";
+import { SourceCitation } from "@/components/SourceCitation";
 import { ShareButtons } from "@/components/ShareButtons";
 import { BudgetFunctionLineChart } from "@/components/charts/BudgetFunctionLineChart";
 import { formatDollars, formatDollarsLong } from "@/lib/format";
@@ -250,6 +251,8 @@ export default async function BudgetFunctionDetailPage({
       ]} />
 
       <ShareButtons title={`${fn.name} — Federal Budget Function — OpenSpending`} />
+
+      <SourceCitation />
     </div>
   );
 }

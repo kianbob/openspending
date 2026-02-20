@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedPages } from "@/components/RelatedPages";
+import { SourceCitation } from "@/components/SourceCitation";
 import { formatDollars, formatPercent, toTitleCase } from "@/lib/format";
 import stateDetails from "@/../public/data/state-details.json";
 import stateContractors from "@/../public/data/state-contractors.json";
@@ -247,6 +248,8 @@ export default async function StateDetailPage({
       >
         &larr; Back to all states
       </Link>
+
+      <SourceCitation />
     </div>
   );
 }

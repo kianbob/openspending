@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedPages } from "@/components/RelatedPages";
+import { SourceCitation } from "@/components/SourceCitation";
 import { ContractorAgenciesChart } from "@/components/charts/ContractorAgenciesChart";
 import { ContractorSpendingChart } from "@/components/charts/ContractorSpendingChart";
 import { formatDollars, formatPercent, toTitleCase } from "@/lib/format";
@@ -307,6 +308,8 @@ export default async function ContractorDetailPage({
       >
         &larr; Back to all contractors
       </Link>
+
+      <SourceCitation />
     </div>
   );
 }

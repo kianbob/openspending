@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedPages } from "@/components/RelatedPages";
+import { SourceCitation } from "@/components/SourceCitation";
 import { ShareButtons } from "@/components/ShareButtons";
 import { formatDollars, formatDollarsLong } from "@/lib/format";
 import programs from "@/../public/data/federal-programs.json";
@@ -226,6 +227,8 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
         { href: "/budget-functions", title: "Budget Functions", description: "Federal spending categorized by purpose and function." },
         { href: "/healthcare-spending", title: "Healthcare Spending", description: "How the government spends on Medicare, Medicaid, and more." },
       ]} />
+
+      <SourceCitation />
     </main>
   );
 }

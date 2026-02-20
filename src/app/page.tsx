@@ -55,34 +55,13 @@ const interactiveTools = [
 
 const deepDiveCards = [
   { emoji: "\u{1F50D}", title: "DOGE Reality Check", href: "/doge-reality", description: "What DOGE actually cut vs. what they claimed" },
-  { emoji: "\u{1F3E2}", title: "Contractor Monopoly", href: "/contractor-monopoly", description: "10 companies hold 64% of all contracts" },
-  { emoji: "\u{1F4A3}", title: "Interest Time Bomb", href: "/interest", description: "$952B in interest \u2014 now larger than defense" },
   { emoji: "\u{1F5FA}\uFE0F", title: "State Dependency", href: "/state-dependency", description: "Which states take more than they give?" },
-  { emoji: "\u{1F4C8}", title: "Spending Explosion", href: "/spending-explosion", description: "Federal spending growth since 2015" },
-  { emoji: "\u{1F4B0}", title: "Your Tax Bill", href: "/your-tax-bill", description: "Personalized breakdown of your tax dollars" },
-  { emoji: "\u{1F30D}", title: "US vs World", href: "/global-comparison", description: "How US spending compares globally" },
-  { emoji: "\u{1F4B3}", title: "National Debt", href: "/national-debt", description: "The $36 trillion debt clock" },
-  { emoji: "\u{1F396}\uFE0F", title: "Pentagon Spending", href: "/pentagon-spending", description: "Inside the $886B defense budget" },
-  { emoji: "\u{1F3E5}", title: "Healthcare Spending", href: "/healthcare-spending", description: "Medicare, Medicaid & the $1.8T health budget" },
-  { emoji: "\u{1F6AB}", title: "No-Bid Nation", href: "/no-bid", description: "33% of large contracts awarded without competition" },
-  { emoji: "\u{1F534}", title: "Waste & Fraud", href: "/waste", description: "$233\u2013521B lost to waste every year" },
-  { emoji: "\u{1F30A}", title: "COVID Spending", href: "/covid", description: "The $5.2 trillion emergency spending tsunami" },
-  { emoji: "\u{1F310}", title: "USAID", href: "/usaid", description: "Budget tripled, then gutted by DOGE" },
-  { emoji: "\u2708\uFE0F", title: "Foreign Aid", href: "/foreign-aid", description: "US foreign assistance spending breakdown" },
-  { emoji: "\u26A1", title: "Efficiency", href: "/efficiency", description: "Agency efficiency and performance metrics" },
-  { emoji: "🏛️", title: "Sub-Agencies", href: "/subagencies", description: "Where the money really goes — 100 offices writing the checks" },
-  { emoji: "🌍", title: "Foreign Aid Deep Dive", href: "/foreign-aid-deep-dive", description: "Where does foreign aid actually go?" },
+  { emoji: "\u{1F4A3}", title: "Interest Time Bomb", href: "/interest", description: "$952B in interest \u2014 now larger than defense" },
+  { emoji: "\u{1F3E2}", title: "Contractor Monopoly", href: "/contractor-monopoly", description: "10 companies hold 64% of all contracts" },
   { emoji: "✈️", title: "Pentagon Deep Dive", href: "/pentagon-deep-dive", description: "The Pentagon's blank check — never audited" },
+  { emoji: "🌍", title: "Foreign Aid Deep Dive", href: "/foreign-aid-deep-dive", description: "Where does foreign aid actually go?" },
   { emoji: "🤝", title: "Welfare Queens", href: "/welfare-queens", description: "Which states take more than they give?" },
-  { emoji: "🏭", title: "Products & Services", href: "/products", description: "What the government actually buys" },
-  { emoji: "🏘️", title: "Counties", href: "/counties", description: "Federal spending by county" },
-  { emoji: "🌐", title: "Countries", href: "/countries", description: "Where U.S. dollars go abroad" },
-  { emoji: "🎓", title: "Grant Recipients", href: "/grants/recipients", description: "$1.24T in grants — who gets the money" },
-  { emoji: "⏱️", title: "Spending Speed", href: "/spending-speed", description: "$169K every second — watch it tick" },
-  { emoji: "📈", title: "Entitlement Explosion", href: "/program-growth", description: "Programs that grew 100%+" },
-  { emoji: "🏦", title: "Federal Accounts", href: "/federal-accounts", description: "Where your money actually sits" },
-  { emoji: "📊", title: "Monthly Pulse", href: "/monthly-pulse", description: "Real-time spending dashboard" },
-  { emoji: "🏭", title: "Industry Breakdown", href: "/industries", description: "Federal contracts by NAICS sector" },
+  { emoji: "\u{1F4B0}", title: "Your Dollar", href: "/your-tax-bill", description: "Personalized breakdown of your tax dollars" },
 ];
 
 const dataPages = [
@@ -122,26 +101,37 @@ export default function HomePage() {
             Independent, data-driven analysis of how the federal government
             spends your money. Every contract. Every grant. Every agency.
           </p>
-          <p className="text-indigo-200 text-base max-w-2xl mb-8">
+          <p className="text-indigo-200 text-base max-w-2xl mb-4">
             10 companies receive {formatDollars(top10Total)} in federal contracts — more than the GDP of 130 countries.
+          </p>
+          <p className="text-sm text-gray-400 mt-2 flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 inline">
+              <path fillRule="evenodd" d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 00-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08zm3.094 8.016a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clipRule="evenodd" />
+            </svg>
+            No ads. No government funding. Built entirely on public data.
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
             <Link
-              href="/contractors"
+              href="/tax-calculator"
               className="px-6 py-3 bg-white text-indigo-800 font-semibold rounded-lg hover:bg-indigo-50 transition-colors"
             >
-              Explore Contractors
+              Where Do Your Tax Dollars Go? →
             </Link>
             <Link
               href="/agencies"
               className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg border border-indigo-400 hover:bg-indigo-500 transition-colors"
             >
-              Browse Agencies
+              Explore Agencies
             </Link>
           </div>
           <SearchBar />
         </div>
       </section>
+
+      {/* Last Updated Banner */}
+      <div className="bg-gray-100 border-b border-gray-200 py-2 text-center text-sm text-gray-600">
+        Data current as of FY2025 · Last updated February 2026
+      </div>
 
       {/* Stat Cards */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-10">
@@ -418,6 +408,11 @@ export default function HomePage() {
                 </p>
               </Link>
             ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link href="/investigations" className="text-blue-600 hover:text-blue-800 font-medium">
+              View all investigations →
+            </Link>
           </div>
         </div>
       </section>

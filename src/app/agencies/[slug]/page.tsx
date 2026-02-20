@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedPages } from "@/components/RelatedPages";
+import { SourceCitation } from "@/components/SourceCitation";
 import { AreaSpendingChart } from "@/components/charts/AreaSpendingChart";
 import { AgencyContractorsChart } from "@/components/charts/AgencyContractorsChart";
 import { ContractsGrantsDonut } from "@/components/charts/ContractsGrantsDonut";
@@ -526,6 +527,8 @@ export default async function AgencyDetailPage({
           View on USASpending.gov &rarr;
         </a>
       </div>
+
+      <SourceCitation />
     </div>
   );
 }
