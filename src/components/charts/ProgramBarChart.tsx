@@ -53,8 +53,8 @@ export function ProgramBarChart({ data }: { data: Program[] }) {
             tick={{ fontSize: 12 }}
           />
           <Tooltip
-            formatter={(value: number) => [formatBillions(value), "Amount"]}
-            labelFormatter={(label: string) => label}
+            formatter={(value: number | undefined) => [formatBillions(value ?? 0), "Amount"]}
+            labelFormatter={(label: any) => label}
           />
           <Bar dataKey="amount" radius={[0, 4, 4, 0]}>
             {chartData.map((_, i) => (
