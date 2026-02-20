@@ -43,6 +43,32 @@ const contractorDescriptions: Record<string, string> = {
     "Military and VA health insurance administrator. Processes claims but doesn't actually provide care — a bureaucratic layer between veterans and their doctors.",
   "humana-government-business-inc":
     "Government healthcare plans for military families and retirees. Profits from managing taxpayer-funded health benefits.",
+  "booz-allen-hamilton-inc":
+    "The government's favorite consulting firm — $7B+ in contracts for IT, analytics, and defense consulting. When the government can't figure something out, they pay Booz Allen to figure it out for them.",
+  "atlantic-diving-supply-inc":
+    "Equipment supplier to the military — everything from tactical gear to office supplies. A middleman that's built a $6B business reselling products to the Pentagon at markup.",
+  "national-technology-engineering-solutions-of-sandia-llc":
+    "Operates Sandia National Laboratories for the DOE. Nuclear weapons maintenance and national security R&D — critical work, but with little competitive pressure on costs.",
+  "triad-national-security-llc":
+    "Operates Los Alamos National Laboratory. Nuclear weapons design and science research funded by billions in taxpayer dollars with minimal public oversight.",
+  "sikorsky-aircraft-corporation":
+    "Lockheed Martin subsidiary making Black Hawk helicopters and Marine One. Another defense monopoly where the government has few alternatives.",
+  "general-dynamics-information-technology-inc":
+    "IT services arm of General Dynamics. $5B+ in contracts for government IT systems — the kind of work Silicon Valley does faster and cheaper.",
+  "huntington-ingalls-incorporated":
+    "America's largest military shipbuilder — aircraft carriers and destroyers. Sole source for carriers means taxpayers pay whatever they charge.",
+  "science-applications-international-corporation":
+    "SAIC — defense and government IT services. $4B+ in contracts for systems integration and technical services that could often be done in-house.",
+  "accenture-federal-services-llc":
+    "Federal consulting arm of Accenture. Billions in IT modernization contracts — because apparently the government needs a consultant to set up a website.",
+  "leidos-inc":
+    "Defense, intelligence, and health IT. Spun off from SAIC and immediately became another multi-billion dollar government contractor. The defense consulting hydra grows new heads.",
+  "space-exploration-technologies-corp":
+    "SpaceX — Elon Musk's rocket company. $3B+ in NASA and DOD launch contracts. Actually delivers innovation and lower costs, unlike most defense contractors.",
+  "deloitte-consulting-llp":
+    "Big Four consulting firm collecting billions from federal agencies for IT and management consulting. The government's dependency on outside consultants is itself a spending problem.",
+  "caci-inc-federal":
+    "Intelligence and IT services for defense and intelligence agencies. $4B in contracts for the kind of work that's hard to audit and easy to overspend on.",
 };
 
 export function generateStaticParams() {
