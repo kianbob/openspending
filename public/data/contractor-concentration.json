@@ -1,0 +1,187 @@
+{
+  "topContractorsShare": [
+    {
+      "name": "LOCKHEED MARTIN CORPORATION",
+      "amount": 58775947590,
+      "pctOfTotal": 20.63
+    },
+    {
+      "name": "OPTUM PUBLIC SECTOR SOLUTIONS, INC.",
+      "amount": 22490531834,
+      "pctOfTotal": 7.89
+    },
+    {
+      "name": "ELECTRIC BOAT CORPORATION",
+      "amount": 21366142819,
+      "pctOfTotal": 7.5
+    },
+    {
+      "name": "RAYTHEON COMPANY",
+      "amount": 16472942438,
+      "pctOfTotal": 5.78
+    },
+    {
+      "name": "THE BOEING COMPANY",
+      "amount": 15444072108,
+      "pctOfTotal": 5.42
+    },
+    {
+      "name": "TRIWEST HEALTHCARE ALLIANCE CORP",
+      "amount": 13374744670,
+      "pctOfTotal": 4.69
+    },
+    {
+      "name": "MCKESSON CORPORATION",
+      "amount": 11870431649,
+      "pctOfTotal": 4.17
+    },
+    {
+      "name": "HUNTINGTON INGALLS INCORPORATED",
+      "amount": 8565929513,
+      "pctOfTotal": 3.01
+    },
+    {
+      "name": "AMERISOURCEBERGEN DRUG CORP",
+      "amount": 7442204303,
+      "pctOfTotal": 2.61
+    },
+    {
+      "name": "RTX CORPORATION",
+      "amount": 7280700848,
+      "pctOfTotal": 2.56
+    }
+  ],
+  "top10PctTotal": 64.26,
+  "hhiIndex": 719.28,
+  "hhiInterpretation": "Unconcentrated market (HHI < 1500)",
+  "byAgency": {
+    "department-of-defense": {
+      "agencyName": "Department Of Defense",
+      "top5Contractors": [
+        {
+          "name": "LOCKHEED MARTIN CORPORATION",
+          "amount": 53077570615,
+          "pct": 34.95
+        },
+        {
+          "name": "ELECTRIC BOAT CORPORATION",
+          "amount": 21366142819,
+          "pct": 14.07
+        },
+        {
+          "name": "RAYTHEON COMPANY",
+          "amount": 14112439323,
+          "pct": 9.29
+        },
+        {
+          "name": "THE BOEING COMPANY",
+          "amount": 10670707373,
+          "pct": 7.03
+        },
+        {
+          "name": "AMERISOURCEBERGEN DRUG CORP",
+          "amount": 7441478527,
+          "pct": 4.9
+        }
+      ],
+      "top5ConcentrationPct": 70.24,
+      "totalContractSpending": 151880430738
+    },
+    "department-of-energy": {
+      "agencyName": "Department Of Energy",
+      "top5Contractors": [
+        {
+          "name": "NATIONAL TECHNOLOGY & ENGINEERING SOLUTIONS OF SANDIA, LLC",
+          "amount": 5673408174,
+          "pct": 13.86
+        },
+        {
+          "name": "TRIAD NATIONAL SECURITY, LLC",
+          "amount": 5199738723,
+          "pct": 12.7
+        },
+        {
+          "name": "LAWRENCE LIVERMORE NATIONAL SECURITY, LLC",
+          "amount": 3625335907,
+          "pct": 8.85
+        },
+        {
+          "name": "UT-BATTELLE LLC",
+          "amount": 2679775141,
+          "pct": 6.54
+        },
+        {
+          "name": "CONSOLIDATED NUCLEAR SECURITY, LLC",
+          "amount": 2537032358,
+          "pct": 6.2
+        }
+      ],
+      "top5ConcentrationPct": 48.15,
+      "totalContractSpending": 40946512223
+    },
+    "department-of-health-and-human-services": {
+      "agencyName": "Department Of Health And Human Services",
+      "top5Contractors": [
+        {
+          "name": "MAXIMUS FEDERAL SERVICES, INC.",
+          "amount": 949709498,
+          "pct": 14.7
+        },
+        {
+          "name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+          "amount": 839322393,
+          "pct": 12.99
+        },
+        {
+          "name": "LEIDOS BIOMEDICAL RESEARCH INC",
+          "amount": 559562925,
+          "pct": 8.66
+        },
+        {
+          "name": "DELOITTE CONSULTING LLP",
+          "amount": 407386674,
+          "pct": 6.31
+        },
+        {
+          "name": "BOOZ ALLEN HAMILTON INC",
+          "amount": 391842378,
+          "pct": 6.07
+        }
+      ],
+      "top5ConcentrationPct": 48.73,
+      "totalContractSpending": 6460384722
+    },
+    "department-of-veterans-affairs": {
+      "agencyName": "Department Of Veterans Affairs",
+      "top5Contractors": [
+        {
+          "name": "OPTUM PUBLIC SECTOR SOLUTIONS, INC.",
+          "amount": 22490531834,
+          "pct": 38.73
+        },
+        {
+          "name": "MCKESSON CORPORATION",
+          "amount": 11450566560,
+          "pct": 19.72
+        },
+        {
+          "name": "TRIWEST HEALTHCARE ALLIANCE CORP",
+          "amount": 9834327512,
+          "pct": 16.94
+        },
+        {
+          "name": "QTC MEDICAL SERVICES INC",
+          "amount": 2775778967,
+          "pct": 4.78
+        },
+        {
+          "name": "OPTUMSERVE HEALTH SERVICES, INC.",
+          "amount": 2501192978,
+          "pct": 4.31
+        }
+      ],
+      "top5ConcentrationPct": 84.48,
+      "totalContractSpending": 58069206789
+    }
+  }
+}
