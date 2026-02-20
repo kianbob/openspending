@@ -58,6 +58,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/grants",
     "/spending-speed",
     "/program-growth",
+    "/federal-accounts",
+    "/monthly-pulse",
   ];
 
   const agencyPages = agencies

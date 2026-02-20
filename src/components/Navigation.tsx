@@ -43,6 +43,9 @@ const dropdowns: DropdownSection[] = [
       { href: '/global-comparison', title: 'US vs The World', desc: 'How American spending compares globally' },
       { href: '/national-debt', title: 'National Debt Clock', desc: 'The $36 trillion debt tracker' },
       { href: '/international-spending', title: 'International Spending', desc: 'Where US dollars go abroad' },
+      { href: '/program-growth', title: 'Entitlement Explosion', desc: 'Programs that grew 100%+' },
+      { href: '/federal-accounts', title: 'Federal Accounts', desc: 'Where your money actually goes' },
+      { href: '/monthly-pulse', title: 'Monthly Pulse', desc: 'Real-time spending dashboard' },
     ],
   },
   {
