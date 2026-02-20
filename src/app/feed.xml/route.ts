@@ -103,6 +103,54 @@ const items = [
     description:
       "For every $1 in federal taxes, West Virginia gets $4.22 back. New Jersey gets $0.71. See which states are donors and which are takers.",
   },
+  {
+    path: "/spending-explosion",
+    title: "The Spending Explosion",
+    description:
+      "Federal spending grew 63% since 2017 — a deep dive into where the growth happened and why.",
+  },
+  {
+    path: "/your-tax-bill",
+    title: "Your Tax Bill Breakdown",
+    description:
+      "$33,135 per taxpayer — see exactly where your federal tax dollars go.",
+  },
+  {
+    path: "/doge-reality",
+    title: "The DOGE Reality Check",
+    description:
+      "DOGE promised $2 trillion in savings. Federal spending increased $392 billion. The data tells the real story.",
+  },
+  {
+    path: "/foreign-aid-deep-dive",
+    title: "Where Does Foreign Aid Actually Go?",
+    description:
+      "An investigation into U.S. foreign aid — which countries get the most, what categories dominate, and whether it's working.",
+  },
+  {
+    path: "/pentagon-deep-dive",
+    title: "The Pentagon's Blank Check",
+    description:
+      "The DOD has never passed a full audit. $501B in spending, cost-plus contracts, and the revolving door between Pentagon and contractors.",
+  },
+  {
+    path: "/welfare-queens",
+    title: "Which States Are Federal Welfare Queens?",
+    description:
+      "For every $1 in federal taxes, West Virginia gets $4.22 back. See which states are donors and which are takers.",
+  },
+  {
+    path: "/grants",
+    title: "The Grant Machine: $1.24T in Federal Grants",
+    description:
+      "$1.24 trillion in federal grants — who gets the money and where does it go?",
+  },
+  {
+    path: "/spending-speed",
+    title: "Federal Spending by the Second",
+    description:
+      "Watch federal spending tick up in real time — $355,000 per second, $21.3 million per minute.",
+  },
 ];
 
 function escapeXml(str: string): string {

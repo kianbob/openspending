@@ -13,9 +13,39 @@ const articles = [
     description: 'A comprehensive breakdown of federal spending across all major categories and agencies.',
   },
   {
+    href: '/spending-explosion',
+    title: 'The Spending Explosion',
+    description: 'Federal spending grew 63% since 2017.',
+  },
+  {
+    href: '/your-tax-bill',
+    title: 'Your Tax Bill Breakdown',
+    description: '$33,135 per taxpayer — where does it all go?',
+  },
+  {
+    href: '/doge-reality',
+    title: 'The DOGE Reality Check',
+    description: 'Claims vs actual spending — DOGE promised $2T in savings while spending increased $392B.',
+  },
+  {
+    href: '/contractor-monopoly',
+    title: 'The Contractor Monopoly',
+    description: '10 companies control 64% of all federal contracts.',
+  },
+  {
     href: '/top-10',
     title: 'The 10 Companies That Run the Government',
     description: 'Meet the contractors who receive billions in taxpayer dollars every year.',
+  },
+  {
+    href: '/interest',
+    title: 'The Interest Time Bomb',
+    description: '$952B in annual interest — now larger than the defense budget.',
+  },
+  {
+    href: '/national-debt',
+    title: 'The $36 Trillion Debt Clock',
+    description: 'Watch the national debt tick up in real time.',
   },
   {
     href: '/pentagon-spending',
@@ -23,14 +53,39 @@ const articles = [
     description: 'How the Department of Defense spends more than most countries earn.',
   },
   {
+    href: '/pentagon-deep-dive',
+    title: "The Pentagon's Blank Check",
+    description: "DOD has never passed an audit. Here's what $501B looks like without accountability.",
+  },
+  {
     href: '/healthcare-spending',
     title: 'The Healthcare Spending Machine',
     description: 'Medicare, Medicaid, and the growing cost of keeping America healthy.',
   },
   {
-    href: '/how-it-works',
-    title: 'How Federal Spending Actually Works',
-    description: 'From appropriations to outlays — the complete guide to government spending.',
+    href: '/state-dependency',
+    title: 'State Dependency: Donors vs Takers',
+    description: 'Which states take more federal money than they contribute in taxes?',
+  },
+  {
+    href: '/welfare-queens',
+    title: 'Which States Are Federal Welfare Queens?',
+    description: 'Red states, blue states — who really depends on federal money?',
+  },
+  {
+    href: '/foreign-aid-deep-dive',
+    title: 'Where Does Foreign Aid Actually Go?',
+    description: 'An investigation into where U.S. foreign aid dollars end up.',
+  },
+  {
+    href: '/global-comparison',
+    title: 'US vs The World',
+    description: 'How American spending compares to other nations.',
+  },
+  {
+    href: '/grants',
+    title: 'The Grant Machine',
+    description: '$1.24 trillion in federal grants — who gets the money?',
   },
   {
     href: '/no-bid',
@@ -46,6 +101,16 @@ const articles = [
     href: '/efficiency',
     title: 'Government Efficiency & Accountability',
     description: 'Measuring how well agencies spend taxpayer dollars.',
+  },
+  {
+    href: '/how-it-works',
+    title: 'How Federal Spending Actually Works',
+    description: 'From appropriations to outlays — the complete guide to government spending.',
+  },
+  {
+    href: '/shutdown-calculator',
+    title: 'Government Shutdown Calculator',
+    description: 'What a shutdown really costs taxpayers.',
   },
 ];
 
