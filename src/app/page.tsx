@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { TopContractorsChart } from "@/components/charts/TopContractorsChart";
-import { SearchBar } from "@/components/SearchBar";
 import { formatDollars, formatPercent } from "@/lib/format";
 import stats from "@/../public/data/stats.json";
 import contractors from "@/../public/data/top-contractors-deduped.json";
@@ -85,56 +84,51 @@ export default function HomePage() {
       }} />
       {/* Hero */}
       <section className="bg-gradient-to-br from-indigo-900 via-indigo-800 to-indigo-700 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-          <p className="text-indigo-200 font-medium text-sm uppercase tracking-widest mb-4">
-            Your tax dollars, tracked
-          </p>
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Follow the Money.
-            <br />
-            <span className="text-indigo-200">
-              {formatDollars(stats.totalBudget)}
-            </span>{" "}
-            in Federal Spending.
-          </h1>
-          <p className="text-lg md:text-xl text-indigo-100 max-w-2xl mb-4">
-            Independent, data-driven analysis of how the federal government
-            spends your money. Every contract. Every grant. Every agency.
-          </p>
-          <p className="text-indigo-200 text-base max-w-2xl mb-4">
-            10 companies receive {formatDollars(top10Total)} in federal contracts — more than the GDP of 130 countries.
-          </p>
-          <p className="text-sm text-gray-400 mt-2 flex items-center gap-1.5">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 inline">
-              <path fillRule="evenodd" d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 00-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08zm3.094 8.016a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clipRule="evenodd" />
-            </svg>
-            No ads. No government funding. Built entirely on public data.
-          </p>
-          <div className="flex flex-wrap gap-3 mb-8">
-            <Link
-              href="/tax-calculator"
-              className="px-6 py-3 bg-white text-indigo-800 font-semibold rounded-lg hover:bg-indigo-50 transition-colors"
-            >
-              Where Do Your Tax Dollars Go? →
-            </Link>
-            <Link
-              href="/agencies"
-              className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg border border-indigo-400 hover:bg-indigo-500 transition-colors"
-            >
-              Explore Agencies
-            </Link>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-10">
+            <div className="max-w-2xl">
+              <p className="text-indigo-300 font-medium text-sm uppercase tracking-widest mb-3">
+                Your tax dollars, tracked
+              </p>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+                Follow the Money.
+                <br />
+                <span className="text-indigo-200">
+                  {formatDollars(stats.totalBudget)}
+                </span>{" "}
+                in Federal Spending.
+              </h1>
+              <p className="text-lg text-indigo-100 mb-6">
+                Independent, data-driven analysis of how the federal government
+                spends your money. Every contract. Every grant. Every agency.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-4">
+                <Link
+                  href="/tax-calculator"
+                  className="px-6 py-3 bg-white text-indigo-800 font-semibold rounded-lg hover:bg-indigo-50 transition-colors"
+                >
+                  Where Do Your Tax Dollars Go? →
+                </Link>
+                <Link
+                  href="/agencies"
+                  className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg border border-indigo-400 hover:bg-indigo-500 transition-colors"
+                >
+                  Explore Agencies
+                </Link>
+              </div>
+              <p className="text-xs text-indigo-300 flex items-center gap-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5 inline flex-shrink-0">
+                  <path fillRule="evenodd" d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 00-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08zm3.094 8.016a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clipRule="evenodd" />
+                </svg>
+                No ads. No government funding. Built entirely on public data. · Data current as of FY2025 · Updated Feb 2026
+              </p>
+            </div>
           </div>
-          <SearchBar />
         </div>
       </section>
 
-      {/* Last Updated Banner */}
-      <div className="bg-gray-100 border-b border-gray-200 py-2 text-center text-sm text-gray-600">
-        Data current as of FY2025 · Last updated February 2026
-      </div>
-
       {/* Stat Cards */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-10">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {statCards.map((card) => (
             <div
