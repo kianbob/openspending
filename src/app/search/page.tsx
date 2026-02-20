@@ -3,7 +3,7 @@
 import { Suspense, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { formatDollars } from "@/lib/format";
+import { formatDollars, toTitleCase } from "@/lib/format";
 import agencies from "@/../public/data/agencies.json";
 import contractorDetails from "@/../public/data/contractor-details.json";
 import stateDetails from "@/../public/data/state-details.json";
@@ -35,7 +35,7 @@ function buildIndex(): SearchResult[] {
   )) {
     results.push({
       category: "contractor",
-      name: c.name,
+      name: toTitleCase(c.name),
       amount: c.totalAmount,
       href: `/contractors/${slug}`,
     });

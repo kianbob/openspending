@@ -9,6 +9,21 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    href: '/where-tax-dollars-go',
+    title: 'Where Do Your Tax Dollars Go in 2025?',
+    description: 'Medicare gets 18¢, Defense gets 14¢, Interest gets 12¢ — more than veterans benefits. See every cent of your tax dollar.',
+  },
+  {
+    href: '/doge-savings-reality',
+    title: 'Is DOGE Actually Saving Money? A Data-Driven Reality Check',
+    description: 'DOGE claimed $55B in savings. Spending increased $392B. That\'s 0.81% of the budget — like saving $8.10 on a $1,000 grocery bill.',
+  },
+  {
+    href: '/biggest-government-contractors-2025',
+    title: 'The 10 Companies That Get the Most Government Money in 2025',
+    description: 'Lockheed Martin: $58.8B. The top 10 hold 23.5% of all contracts. Who they are and why this concentration matters.',
+  },
+  {
     href: '/spending-analysis',
     title: 'Where $11.2 Trillion Really Goes',
     description: 'A comprehensive breakdown of federal spending across all major categories and agencies.',

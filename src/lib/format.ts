@@ -22,11 +22,14 @@ export function formatPercent(pct: number): string {
 }
 
 const TITLE_CASE_PRESERVE = new Set([
-  'LLC', 'DOD', 'USA', 'RTX', 'LP', 'LLP', 'U.S.',
+  'LLC', 'DOD', 'USA', 'IBM', 'RTX', 'LP', 'LLP', 'PC', 'NA',
+  'II', 'III', 'IV', 'VI', 'VII', 'VIII', 'IX', 'XI', 'XII',
+  'U.S.', 'SAIC', 'IT',
 ]);
 
 const TITLE_CASE_REPLACE: Record<string, string> = {
   'INC': 'Inc.',
+  'CORP': 'Corp.',
 };
 
 export function toTitleCase(str: string): string {
@@ -36,12 +39,12 @@ export function toTitleCase(str: string): string {
     .toLowerCase()
     .split(' ')
     .map((word) => {
-      const capitalized = word.charAt(0).toUpperCase() + word.slice(1);
       const upper = word.toUpperCase();
       const stripped = upper.replace(/[.,]+$/g, '');
-      if (TITLE_CASE_PRESERVE.has(upper) || TITLE_CASE_PRESERVE.has(stripped)) return upper;
+      const suffix = upper.slice(stripped.length);
+      if (TITLE_CASE_PRESERVE.has(upper) || TITLE_CASE_PRESERVE.has(stripped)) return stripped + suffix;
       if (TITLE_CASE_REPLACE[stripped]) return TITLE_CASE_REPLACE[stripped];
-      return capitalized;
+      return word.charAt(0).toUpperCase() + word.slice(1);
     })
     .join(' ');
 }

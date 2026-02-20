@@ -9,7 +9,7 @@ import {
   ResponsiveContainer,
   CartesianGrid,
 } from "recharts";
-import { formatDollars } from "@/lib/format";
+import { formatDollars, toTitleCase } from "@/lib/format";
 
 interface ContractorTrend {
   name: string;
@@ -25,7 +25,7 @@ export function ContractorTrends({ data }: { data: ContractorTrend[] }) {
           .map(([year, amount]) => ({ year, amount }))
           .sort((a, b) => a.year.localeCompare(b.year));
 
-        const shortName = contractor.name
+        const shortName = toTitleCase(contractor.name)
           .split(" ")
           .slice(0, 3)
           .join(" ")

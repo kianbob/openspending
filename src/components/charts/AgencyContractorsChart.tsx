@@ -9,7 +9,7 @@ import {
   ResponsiveContainer,
   Cell,
 } from "recharts";
-import { formatDollars } from "@/lib/format";
+import { formatDollars, toTitleCase } from "@/lib/format";
 
 interface Contractor {
   name: string;
@@ -18,12 +18,12 @@ interface Contractor {
 
 export function AgencyContractorsChart({ data }: { data: Contractor[] }) {
   const chartData = data.slice(0, 10).map((c) => ({
-    name: c.name
+    name: toTitleCase(c.name)
       .split(" ")
       .slice(0, 2)
       .join(" ")
       .replace(/,$/g, ""),
-    fullName: c.name,
+    fullName: toTitleCase(c.name),
     amount: c.amount,
   }));
 

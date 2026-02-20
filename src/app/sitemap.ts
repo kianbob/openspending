@@ -95,6 +95,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/report-cards",
     "/presidents",
     "/earmarks",
+    "/where-tax-dollars-go",
+    "/doge-savings-reality",
+    "/biggest-government-contractors-2025",
   ];
 
   function slugifyProgram(name: string): string {

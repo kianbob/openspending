@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { formatDollars } from "@/lib/format";
+import { formatDollars, toTitleCase } from "@/lib/format";
 import agencySpending from "@/../public/data/agency-spending.json";
 import contractors from "@/../public/data/top-contractors-deduped.json";
 import industries from "@/../public/data/top-industries.json";
@@ -32,7 +32,7 @@ function buildIndex(): SearchResult[] {
   for (const c of contractors) {
     results.push({
       type: "contractor",
-      name: c.name,
+      name: toTitleCase(c.name),
       amount: c.amount,
       href: "/contractors",
     });

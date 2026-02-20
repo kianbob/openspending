@@ -20,7 +20,7 @@ export const metadata = {
 };
 
 const top15 = contractors.slice(0, 15).map((c) => {
-  const shortName = c.name
+  const shortName = toTitleCase(c.name)
     .split(" ")
     .slice(0, 2)
     .join(" ")

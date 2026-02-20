@@ -32,8 +32,8 @@ const recipientColumns = [
 
 const recipientData = covidData.byRecipient.map((r) => ({
   name:
-    r.name.length > 50
-      ? r.name.slice(0, 50) + "..."
+    toTitleCase(r.name).length > 50
+      ? toTitleCase(r.name).slice(0, 50) + "..."
       : toTitleCase(r.name),
   amount: r.amount,
 }));

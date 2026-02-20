@@ -84,7 +84,8 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const entry = details[slug];
-  const name = entry?.name ?? "Contractor";
+  const rawName = entry?.name ?? "Contractor";
+  const name = toTitleCase(rawName);
   const amount = entry ? `$${(entry.totalAmount / 1e9).toFixed(1)}B` : "";
   const title = entry ? `${name}: ${amount} in Federal Contracts — OpenSpending` : `${name} — Federal Contractor — OpenSpending`;
   const description = entry

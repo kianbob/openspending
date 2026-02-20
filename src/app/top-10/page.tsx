@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { toTitleCase } from "@/lib/format";
 
 export const metadata: Metadata = {
   title: "The 10 Companies That Run the Government | OpenSpending",
@@ -70,7 +71,7 @@ export default function Top10Page() {
                 <span className="text-2xl font-bold text-gray-400 leading-none">#{c.rank}</span>
                 <div className="flex-1">
                   <div className="flex justify-between items-start flex-wrap gap-2">
-                    <h3 className="font-bold text-gray-900">{c.name}</h3>
+                    <h3 className="font-bold text-gray-900">{toTitleCase(c.name)}</h3>
                     <span className="font-bold text-lg text-gray-900">{c.amount}</span>
                   </div>
                   <p className="text-gray-700 text-sm mt-1">{c.role}</p>

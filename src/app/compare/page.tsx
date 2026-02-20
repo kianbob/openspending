@@ -12,7 +12,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { formatDollars, formatDollarsLong } from "@/lib/format";
+import { formatDollars, formatDollarsLong, toTitleCase } from "@/lib/format";
 import agencySpending from "@/../public/data/agency-spending.json";
 import agencyTrends from "@/../public/data/agency-trends.json";
 import contractorDetails from "@/../public/data/contractor-details.json";
@@ -305,7 +305,7 @@ export default function ComparePage() {
               <select value={contractorA} onChange={(e) => setContractorA(e.target.value)} className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-indigo-500 focus:ring-indigo-500">
                 <option value="">Select a contractor…</option>
                 {contractorList.map((c) => (
-                  <option key={c.slug} value={c.slug} disabled={c.slug === contractorB}>{c.name}</option>
+                  <option key={c.slug} value={c.slug} disabled={c.slug === contractorB}>{toTitleCase(c.name)}</option>
                 ))}
               </select>
             </div>
@@ -314,7 +314,7 @@ export default function ComparePage() {
               <select value={contractorB} onChange={(e) => setContractorB(e.target.value)} className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-indigo-500 focus:ring-indigo-500">
                 <option value="">Select a contractor…</option>
                 {contractorList.map((c) => (
-                  <option key={c.slug} value={c.slug} disabled={c.slug === contractorA}>{c.name}</option>
+                  <option key={c.slug} value={c.slug} disabled={c.slug === contractorA}>{toTitleCase(c.name)}</option>
                 ))}
               </select>
             </div>
@@ -694,7 +694,7 @@ function ContractorStatCard({ contractor, color }: { contractor: ContractorEntry
   const accent = color === "indigo" ? "text-indigo-700" : "text-emerald-700";
   return (
     <div className={`rounded-xl border ${border} ${bg} p-6`}>
-      <h3 className={`font-semibold text-lg ${accent} mb-1`}>{contractor.name}</h3>
+      <h3 className={`font-semibold text-lg ${accent} mb-1`}>{toTitleCase(contractor.name)}</h3>
       <p className="text-xs text-gray-500 mb-4">Rank #{contractor.rank}</p>
       <div className="grid grid-cols-2 gap-4">
         <Stat label="Total Amount" value={formatDollars(contractor.totalAmount)} />

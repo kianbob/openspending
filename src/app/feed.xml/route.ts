@@ -151,6 +151,24 @@ const items = [
     description:
       "Watch federal spending tick up in real time — $355,000 per second, $21.3 million per minute.",
   },
+  {
+    path: "/where-tax-dollars-go",
+    title: "Where Do Your Tax Dollars Go in 2025? A Complete Breakdown",
+    description:
+      "Medicare gets 18¢ of every dollar. Interest on debt gets 12¢ — more than veterans benefits. See the full breakdown of where your federal taxes go.",
+  },
+  {
+    path: "/doge-savings-reality",
+    title: "Is DOGE Actually Saving Money? A Data-Driven Reality Check",
+    description:
+      "DOGE claimed $55B in savings while federal spending increased $392B. That's 0.81% of the budget. Here's what the data shows.",
+  },
+  {
+    path: "/biggest-government-contractors-2025",
+    title: "The 10 Companies That Get the Most Government Money in 2025",
+    description:
+      "Lockheed Martin: $58.8B. The top 10 hold 23.5% of all federal contracts. See who they are and what they do with your money.",
+  },
 ];
 
 function escapeXml(str: string): string {

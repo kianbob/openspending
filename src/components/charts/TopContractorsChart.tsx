@@ -9,7 +9,7 @@ import {
   ResponsiveContainer,
   Cell,
 } from "recharts";
-import { formatDollars } from "@/lib/format";
+import { formatDollars, toTitleCase } from "@/lib/format";
 
 interface Contractor {
   name: string;
@@ -17,17 +17,14 @@ interface Contractor {
 }
 
 function formatLabel(name: string): string {
-  const titleCase = name
-    .toLowerCase()
-    .replace(/\b\w/g, (c) => c.toUpperCase())
-    .replace(/,\s*$/, "");
+  const titleCase = toTitleCase(name).replace(/,\s*$/, "");
   return titleCase.length > 25 ? titleCase.slice(0, 22) + "..." : titleCase;
 }
 
 export function TopContractorsChart({ data }: { data: Contractor[] }) {
   const chartData = data.map((c) => ({
     name: formatLabel(c.name),
-    fullName: c.name,
+    fullName: toTitleCase(c.name),
     amount: c.amount,
   }));
 
