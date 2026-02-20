@@ -204,6 +204,19 @@ export default async function AgencyDetailPage({
             {formatDollars(grants)}
           </p>
         </div>
+        {growth && (
+          <div className="bg-white rounded-xl border border-gray-200 p-5">
+            <p className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+              Budget Growth (FY17→25)
+            </p>
+            <p className={`text-2xl font-bold mt-1 ${growth.growth_pct >= 0 ? "text-red-600" : "text-emerald-600"}`}>
+              {growth.growth_pct >= 0 ? "+" : ""}{formatPercent(growth.growth_pct)}
+            </p>
+            <p className="text-sm text-gray-500 mt-0.5">
+              {growth.growth_dollars >= 0 ? "+" : ""}{formatDollars(growth.growth_dollars)}
+            </p>
+          </div>
+        )}
       </div>
 
       {/* Contracts vs Grants donut */}
@@ -350,6 +363,59 @@ export default async function AgencyDetailPage({
                     </tr>
                   );
                 })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+
+      {/* Growth Comparison */}
+      {growth && growthRank && (
+        <div className="mb-12">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">
+            How This Agency&apos;s Growth Compares
+          </h2>
+          <div className="bg-white rounded-xl border border-gray-200 p-5 mb-4">
+            <p className="text-gray-700">
+              <span className="font-bold text-gray-900">{spending.name}</span> grew{" "}
+              <span className={`font-bold ${growth.growth_pct >= 0 ? "text-red-600" : "text-emerald-600"}`}>
+                {growth.growth_pct >= 0 ? "+" : ""}{formatPercent(growth.growth_pct)}
+              </span>{" "}
+              from FY2017 to FY2025 —{" "}
+              <span className="font-bold text-indigo-700">
+                #{growthRank} {growthRank === 1 ? "fastest" : growthRank <= 3 ? "fastest" : ""} growing
+              </span>{" "}
+              of {growthRanked.length} major agencies.
+            </p>
+          </div>
+          <div className="overflow-x-auto bg-white rounded-xl border border-gray-200">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="border-b border-gray-200 bg-gray-50">
+                  <th className="px-4 py-3 text-left font-semibold text-gray-700">#</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-700">Agency</th>
+                  <th className="px-4 py-3 text-right font-semibold text-gray-700">Growth %</th>
+                  <th className="px-4 py-3 text-right font-semibold text-gray-700">Growth $</th>
+                </tr>
+              </thead>
+              <tbody>
+                {growthRanked.map((g, i) => (
+                  <tr
+                    key={g.name}
+                    className={`border-b border-gray-100 ${g.name === spending.name ? "bg-indigo-50 font-semibold" : "hover:bg-gray-50"}`}
+                  >
+                    <td className="px-4 py-2.5 text-gray-500">{i + 1}</td>
+                    <td className="px-4 py-2.5 text-gray-900">
+                      {g.name === spending.name ? `→ ${g.name}` : g.name}
+                    </td>
+                    <td className={`px-4 py-2.5 text-right ${g.growth_pct >= 0 ? "text-red-600" : "text-emerald-600"}`}>
+                      {g.growth_pct >= 0 ? "+" : ""}{formatPercent(g.growth_pct)}
+                    </td>
+                    <td className="px-4 py-2.5 text-right text-gray-700">
+                      {g.growth_dollars >= 0 ? "+" : ""}{formatDollars(g.growth_dollars)}
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>

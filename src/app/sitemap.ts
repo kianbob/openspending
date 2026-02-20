@@ -60,6 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/program-growth",
     "/federal-accounts",
     "/monthly-pulse",
+    "/subagencies",
   ];
 
   const agencyPages = agencies
