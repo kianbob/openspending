@@ -103,7 +103,10 @@
         "agency": "Department of Defense"
       }
     ],
-    "pctOfTotal": 20.63
+    "pctOfTotal": 20.63,
+    "pctOfAllContracts": 20.63,
+    "costPerTaxpayer": 365.07,
+    "category": "Defense"
   },
   "optum-public-sector-solutions-inc": {
     "name": "OPTUM PUBLIC SECTOR SOLUTIONS, INC.",
@@ -154,7 +157,10 @@
         "agency": "Department of Veterans Affairs"
       }
     ],
-    "pctOfTotal": 7.89
+    "pctOfTotal": 7.89,
+    "pctOfAllContracts": 7.89,
+    "costPerTaxpayer": 139.69,
+    "category": "Healthcare"
   },
   "electric-boat-corporation": {
     "name": "ELECTRIC BOAT CORPORATION",
@@ -198,7 +204,10 @@
       }
     ],
     "topContracts": [],
-    "pctOfTotal": 7.5
+    "pctOfTotal": 7.5,
+    "pctOfAllContracts": 7.5,
+    "costPerTaxpayer": 132.71,
+    "category": "Defense"
   },
   "raytheon-company": {
     "name": "RAYTHEON COMPANY",
@@ -258,7 +267,10 @@
         "agency": "Department of Defense"
       }
     ],
-    "pctOfTotal": 5.78
+    "pctOfTotal": 5.78,
+    "pctOfAllContracts": 5.78,
+    "costPerTaxpayer": 102.32,
+    "category": "Defense"
   },
   "the-boeing-company": {
     "name": "THE BOEING COMPANY",
@@ -308,7 +320,10 @@
         "agency": "Department of Defense"
       }
     ],
-    "pctOfTotal": 5.42
+    "pctOfTotal": 5.42,
+    "pctOfAllContracts": 5.42,
+    "costPerTaxpayer": 95.93,
+    "category": "Defense"
   },
   "triwest-healthcare-alliance-corp": {
     "name": "TRIWEST HEALTHCARE ALLIANCE CORP",
@@ -357,7 +372,10 @@
       }
     ],
     "topContracts": [],
-    "pctOfTotal": 4.69
+    "pctOfTotal": 4.69,
+    "pctOfAllContracts": 4.69,
+    "costPerTaxpayer": 83.07,
+    "category": "Other"
   },
   "mckesson-corporation": {
     "name": "MCKESSON CORPORATION",
@@ -412,7 +430,10 @@
         "agency": "Department of Veterans Affairs"
       }
     ],
-    "pctOfTotal": 4.17
+    "pctOfTotal": 4.17,
+    "pctOfAllContracts": 4.17,
+    "costPerTaxpayer": 73.73,
+    "category": "Healthcare"
   },
   "amerisourcebergen-drug-corp": {
     "name": "AMERISOURCEBERGEN DRUG CORP",
@@ -444,7 +465,10 @@
       }
     ],
     "topContracts": [],
-    "pctOfTotal": 2.61
+    "pctOfTotal": 2.61,
+    "pctOfAllContracts": 2.61,
+    "costPerTaxpayer": 46.22,
+    "category": "Other"
   },
   "rtx-corporation": {
     "name": "RTX CORPORATION",
@@ -488,7 +512,10 @@
       }
     ],
     "topContracts": [],
-    "pctOfTotal": 2.56
+    "pctOfTotal": 2.56,
+    "pctOfAllContracts": 2.56,
+    "costPerTaxpayer": 45.22,
+    "category": "Other"
   },
   "booz-allen-hamilton-inc": {
     "name": "BOOZ ALLEN HAMILTON INC",
@@ -548,7 +575,10 @@
         "agency": "Department of Defense"
       }
     ],
-    "pctOfTotal": 2.3
+    "pctOfTotal": 2.3,
+    "pctOfAllContracts": 2.3,
+    "costPerTaxpayer": 40.77,
+    "category": "IT/Consulting"
   },
   "humana-government-business-inc": {
     "name": "HUMANA GOVERNMENT BUSINESS INC",
@@ -592,7 +622,10 @@
       }
     ],
     "topContracts": [],
-    "pctOfTotal": 2.29
+    "pctOfTotal": 2.29,
+    "pctOfAllContracts": 2.29,
+    "costPerTaxpayer": 40.46,
+    "category": "Healthcare"
   },
   "atlantic-diving-supply-inc": {
     "name": "ATLANTIC DIVING SUPPLY, INC.",
@@ -628,7 +661,10 @@
       }
     ],
     "topContracts": [],
-    "pctOfTotal": 2.1
+    "pctOfTotal": 2.1,
+    "pctOfAllContracts": 2.1,
+    "costPerTaxpayer": 37.22,
+    "category": "Other"
   },
   "national-technology-engineering-solutions-of-sandia-llc": {
     "name": "NATIONAL TECHNOLOGY & ENGINEERING SOLUTIONS OF SANDIA, LLC",
@@ -672,7 +708,10 @@
       }
     ],
     "topContracts": [],
-    "pctOfTotal": 1.99
+    "pctOfTotal": 1.99,
+    "pctOfAllContracts": 1.99,
+    "costPerTaxpayer": 35.24,
+    "category": "Other"
   },
   "triad-national-security-llc": {
     "name": "TRIAD NATIONAL SECURITY, LLC",
@@ -712,7 +751,10 @@
       }
     ],
     "topContracts": [],
-    "pctOfTotal": 1.83
+    "pctOfTotal": 1.83,
+    "pctOfAllContracts": 1.83,
+    "costPerTaxpayer": 32.3,
+    "category": "Other"
   },
   "sikorsky-aircraft-corporation": {
     "name": "SIKORSKY AIRCRAFT CORPORATION",
@@ -752,7 +794,10 @@
       }
     ],
     "topContracts": [],
-    "pctOfTotal": 1.68
+    "pctOfTotal": 1.68,
+    "pctOfAllContracts": 1.68,
+    "costPerTaxpayer": 29.75,
+    "category": "Other"
   },
   "general-dynamics-information-technology-inc": {
     "name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
@@ -799,7 +844,10 @@
         "agency": "Department of Defense"
       }
     ],
-    "pctOfTotal": 1.63
+    "pctOfTotal": 1.63,
+    "pctOfAllContracts": 1.63,
+    "costPerTaxpayer": 28.79,
+    "category": "Defense"
   },
   "huntington-ingalls-incorporated": {
     "name": "HUNTINGTON INGALLS INCORPORATED",
@@ -837,7 +885,10 @@
         "agency": "Department of Defense"
       }
     ],
-    "pctOfTotal": 1.53
+    "pctOfTotal": 1.53,
+    "pctOfAllContracts": 1.53,
+    "costPerTaxpayer": 27.14,
+    "category": "Other"
   },
   "science-applications-international-corporation": {
     "name": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
@@ -867,7 +918,10 @@
       }
     ],
     "topContracts": [],
-    "pctOfTotal": 1.53
+    "pctOfTotal": 1.53,
+    "pctOfAllContracts": 1.53,
+    "costPerTaxpayer": 27.08,
+    "category": "Other"
   },
   "huntington-ingalls-inc": {
     "name": "HUNTINGTON INGALLS INC",
@@ -892,7 +946,10 @@
         "agency": "Department of Defense"
       }
     ],
-    "pctOfTotal": 1.47
+    "pctOfTotal": 1.47,
+    "pctOfAllContracts": 1.47,
+    "costPerTaxpayer": 26.06,
+    "category": "Other"
   },
   "lawrence-livermore-national-security-llc": {
     "name": "LAWRENCE LIVERMORE NATIONAL SECURITY, LLC",
@@ -911,7 +968,10 @@
     ],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 1.27
+    "pctOfTotal": 1.27,
+    "pctOfAllContracts": 1.27,
+    "costPerTaxpayer": 22.52,
+    "category": "Other"
   },
   "amentum-services-inc": {
     "name": "AMENTUM SERVICES, INC.",
@@ -936,7 +996,10 @@
         "agency": "Department of Defense"
       }
     ],
-    "pctOfTotal": 1.26
+    "pctOfTotal": 1.26,
+    "pctOfAllContracts": 1.26,
+    "costPerTaxpayer": 22.26,
+    "category": "Other"
   },
   "caci-inc-federal": {
     "name": "CACI, INC. - FEDERAL",
@@ -949,7 +1012,10 @@
     "agencies": [],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 1.25
+    "pctOfTotal": 1.25,
+    "pctOfAllContracts": 1.25,
+    "costPerTaxpayer": 22.07,
+    "category": "IT/Consulting"
   },
   "fluor-marine-propulsion-llc": {
     "name": "FLUOR MARINE PROPULSION, LLC",
@@ -968,7 +1034,10 @@
     ],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 1.25
+    "pctOfTotal": 1.25,
+    "pctOfAllContracts": 1.25,
+    "costPerTaxpayer": 22.06,
+    "category": "Energy"
   },
   "accenture-federal-services-llc": {
     "name": "ACCENTURE FEDERAL SERVICES LLC",
@@ -987,7 +1056,10 @@
     ],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 1.14
+    "pctOfTotal": 1.14,
+    "pctOfAllContracts": 1.14,
+    "costPerTaxpayer": 20.1,
+    "category": "IT/Consulting"
   },
   "bccg-a-joint-venture": {
     "name": "BCCG A JOINT VENTURE",
@@ -1000,7 +1072,10 @@
     "agencies": [],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 1.1
+    "pctOfTotal": 1.1,
+    "pctOfAllContracts": 1.1,
+    "costPerTaxpayer": 19.42,
+    "category": "Other"
   },
   "leidos-inc": {
     "name": "LEIDOS, INC.",
@@ -1013,7 +1088,10 @@
     "agencies": [],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 1.07
+    "pctOfTotal": 1.07,
+    "pctOfAllContracts": 1.07,
+    "costPerTaxpayer": 18.86,
+    "category": "IT/Consulting"
   },
   "space-exploration-technologies-corp": {
     "name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
@@ -1026,7 +1104,10 @@
     "agencies": [],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 1.05
+    "pctOfTotal": 1.05,
+    "pctOfAllContracts": 1.05,
+    "costPerTaxpayer": 18.63,
+    "category": "Other"
   },
   "deloitte-consulting-llp": {
     "name": "DELOITTE CONSULTING LLP",
@@ -1050,7 +1131,10 @@
     ],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 1.03
+    "pctOfTotal": 1.03,
+    "pctOfAllContracts": 1.03,
+    "costPerTaxpayer": 18.15,
+    "category": "IT/Consulting"
   },
   "qtc-medical-services-inc": {
     "name": "QTC MEDICAL SERVICES INC",
@@ -1069,7 +1153,10 @@
     ],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 1.01
+    "pctOfTotal": 1.01,
+    "pctOfAllContracts": 1.01,
+    "costPerTaxpayer": 17.93,
+    "category": "Other"
   },
   "ut-battelle-llc": {
     "name": "UT-BATTELLE LLC",
@@ -1088,7 +1175,10 @@
     ],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 0.94
+    "pctOfTotal": 0.94,
+    "pctOfAllContracts": 0.94,
+    "costPerTaxpayer": 16.64,
+    "category": "Other"
   },
   "consolidated-nuclear-security-llc": {
     "name": "CONSOLIDATED NUCLEAR SECURITY, LLC",
@@ -1107,7 +1197,10 @@
     ],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 0.89
+    "pctOfTotal": 0.89,
+    "pctOfAllContracts": 0.89,
+    "costPerTaxpayer": 15.76,
+    "category": "Other"
   },
   "optumserve-health-services-inc": {
     "name": "OPTUMSERVE HEALTH SERVICES, INC.",
@@ -1126,7 +1219,10 @@
     ],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 0.89
+    "pctOfTotal": 0.89,
+    "pctOfAllContracts": 0.89,
+    "costPerTaxpayer": 15.75,
+    "category": "Healthcare"
   },
   "bath-iron-works-corporation": {
     "name": "BATH IRON WORKS CORPORATION",
@@ -1139,7 +1235,10 @@
     "agencies": [],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 0.83
+    "pctOfTotal": 0.83,
+    "pctOfAllContracts": 0.83,
+    "costPerTaxpayer": 14.72,
+    "category": "Other"
   },
   "the-johns-hopkins-university-applied-physics-laboratory-llc": {
     "name": "THE JOHNS HOPKINS UNIVERSITY APPLIED PHYSICS LABORATORY LLC",
@@ -1152,7 +1251,10 @@
     "agencies": [],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 0.83
+    "pctOfTotal": 0.83,
+    "pctOfAllContracts": 0.83,
+    "costPerTaxpayer": 14.66,
+    "category": "Other"
   },
   "california-institute-of-technology": {
     "name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
@@ -1165,7 +1267,10 @@
     "agencies": [],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 0.81
+    "pctOfTotal": 0.81,
+    "pctOfAllContracts": 0.81,
+    "costPerTaxpayer": 14.27,
+    "category": "Other"
   },
   "sierra-nevada-company-llc": {
     "name": "SIERRA NEVADA COMPANY, LLC",
@@ -1178,7 +1283,10 @@
     "agencies": [],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 0.79
+    "pctOfTotal": 0.79,
+    "pctOfAllContracts": 0.79,
+    "costPerTaxpayer": 13.94,
+    "category": "Other"
   },
   "bae-systems-land-armaments-l-p": {
     "name": "BAE SYSTEMS LAND & ARMAMENTS L.P.",
@@ -1197,7 +1305,10 @@
         "agency": "Department of Defense"
       }
     ],
-    "pctOfTotal": 0.76
+    "pctOfTotal": 0.76,
+    "pctOfAllContracts": 0.76,
+    "costPerTaxpayer": 13.44,
+    "category": "Defense"
   },
   "bechtel-plant-machinery-inc": {
     "name": "BECHTEL PLANT MACHINERY, INC.",
@@ -1210,7 +1321,10 @@
     "agencies": [],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 0.75
+    "pctOfTotal": 0.75,
+    "pctOfAllContracts": 0.75,
+    "costPerTaxpayer": 13.32,
+    "category": "Energy"
   },
   "honeywell-federal-manufacturing-technologies-llc": {
     "name": "HONEYWELL FEDERAL MANUFACTURING & TECHNOLOGIES, LLC",
@@ -1229,7 +1343,10 @@
     ],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 0.74
+    "pctOfTotal": 0.74,
+    "pctOfAllContracts": 0.74,
+    "costPerTaxpayer": 13.13,
+    "category": "Other"
   },
   "peraton-inc": {
     "name": "PERATON INC.",
@@ -1242,6 +1359,9 @@
     "agencies": [],
     "trends": [],
     "topContracts": [],
-    "pctOfTotal": 0.73
+    "pctOfTotal": 0.73,
+    "pctOfAllContracts": 0.73,
+    "costPerTaxpayer": 13,
+    "category": "Other"
   }
 }

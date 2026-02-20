@@ -1,0 +1,65 @@
+[
+  {
+    "fy": 2017,
+    "total": 3257798800178.9707,
+    "per_person": 9725,
+    "per_household": 24869,
+    "per_taxpayer": 20235
+  },
+  {
+    "fy": 2018,
+    "total": 3384696058923.6,
+    "per_person": 10104,
+    "per_household": 25837,
+    "per_taxpayer": 21023
+  },
+  {
+    "fy": 2019,
+    "total": 3558350244367.418,
+    "per_person": 10622,
+    "per_household": 27163,
+    "per_taxpayer": 22102
+  },
+  {
+    "fy": 2020,
+    "total": 5006638090609.9,
+    "per_person": 14945,
+    "per_household": 38219,
+    "per_taxpayer": 31097
+  },
+  {
+    "fy": 2021,
+    "total": 5308159573763.011,
+    "per_person": 15845,
+    "per_household": 40520,
+    "per_taxpayer": 32970
+  },
+  {
+    "fy": 2022,
+    "total": 4609720135453.721,
+    "per_person": 13760,
+    "per_household": 35189,
+    "per_taxpayer": 28632
+  },
+  {
+    "fy": 2023,
+    "total": 4829628573111.07,
+    "per_person": 14417,
+    "per_household": 36867,
+    "per_taxpayer": 29998
+  },
+  {
+    "fy": 2024,
+    "total": 4942295489065.919,
+    "per_person": 14753,
+    "per_household": 37727,
+    "per_taxpayer": 30697
+  },
+  {
+    "fy": 2025,
+    "total": 5334740032322.53,
+    "per_person": 15925,
+    "per_household": 40723,
+    "per_taxpayer": 33135
+  }
+]

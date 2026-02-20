@@ -34,6 +34,9 @@ const dropdowns: DropdownSection[] = [
       { href: '/usaid', title: 'USAID Deep Dive', desc: 'Foreign aid spending' },
       { href: '/foreign-aid', title: 'Foreign Aid', desc: 'Global spending map' },
       { href: '/efficiency', title: 'Government Efficiency', desc: 'Accountability tracker' },
+      { href: '/doge-reality', title: 'DOGE Reality Check', desc: 'Claims vs actual spending data' },
+      { href: '/your-tax-bill', title: 'Your Tax Bill', desc: '$33,135 per taxpayer breakdown' },
+      { href: '/spending-explosion', title: 'Spending Explosion', desc: 'Which agencies grew fastest' },
     ],
   },
   {

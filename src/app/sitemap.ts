@@ -43,6 +43,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/pentagon-spending",
     "/healthcare-spending",
     "/top-10",
+    "/doge-reality",
+    "/your-tax-bill",
+    "/spending-explosion",
   ];
 
   const agencyPages = agencies

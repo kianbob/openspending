@@ -1,0 +1,56 @@
+{
+  "claims": {
+    "original_target": 2000000000000,
+    "revised_target": 1000000000000,
+    "final_target": 150000000000,
+    "claimed_savings": 55000000000
+  },
+  "reality": {
+    "fy2024_spending": 4942295489065.919,
+    "fy2025_spending": 5334740032322.53,
+    "spending_increase": 392444543256.6113,
+    "workforce_cut_pct": 9,
+    "workforce_cut_savings_estimate": 40000000000,
+    "cato_finding": "DOGE did not reduce spending",
+    "senate_waste_finding": 21700000000
+  },
+  "context": {
+    "total_budget_fy2025": 6750000000000,
+    "claimed_savings_pct_of_budget": 0.81,
+    "mandatory_spending_pct": 63,
+    "interest_pct": 13,
+    "discretionary_pct": 24
+  },
+  "program_growth": [
+    {
+      "name": "Social Security Retirement",
+      "fy2020": 854000000000.0,
+      "fy2025": 1296000000000.0,
+      "growth_pct": 52
+    },
+    {
+      "name": "Medicaid",
+      "fy2020": 460000000000.0,
+      "fy2025": 666000000000.0,
+      "growth_pct": 45
+    },
+    {
+      "name": "Medicare Part B",
+      "fy2020": 410000000000.0,
+      "fy2025": 569000000000.0,
+      "growth_pct": 39
+    },
+    {
+      "name": "VA Disability Compensation",
+      "fy2020": 94000000000.0,
+      "fy2025": 174000000000.0,
+      "growth_pct": 85
+    },
+    {
+      "name": "Medicare Prescription Drugs",
+      "fy2020": 89000000000.0,
+      "fy2025": 162000000000.0,
+      "growth_pct": 82
+    }
+  ]
+}

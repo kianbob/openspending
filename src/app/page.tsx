@@ -99,6 +99,24 @@ const deepDiveCards = [
     href: "/trends",
     borderColor: "border-indigo-500",
   },
+  {
+    emoji: "\u{1F50D}",
+    title: "The DOGE Reality Check",
+    href: "/doge-reality",
+    borderColor: "border-red-500",
+  },
+  {
+    emoji: "\u{1F4B0}",
+    title: "Your Tax Bill Breakdown",
+    href: "/your-tax-bill",
+    borderColor: "border-green-500",
+  },
+  {
+    emoji: "\u{1F4CA}",
+    title: "The Spending Explosion",
+    href: "/spending-explosion",
+    borderColor: "border-amber-500",
+  },
 ];
 
 export default function HomePage() {
