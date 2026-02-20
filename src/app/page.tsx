@@ -5,11 +5,23 @@ import { formatDollars, formatPercent } from "@/lib/format";
 import stats from "@/../public/data/stats.json";
 import contractors from "@/../public/data/top-contractors-deduped.json";
 import agencies from "@/../public/data/agencies.json";
+import stateDetailsData from "@/../public/data/state-details.json";
 
 const topContractors = contractors.slice(0, 10);
 const topAgencies = agencies.slice(0, 5);
 const top10Total = topContractors.reduce((sum, c) => sum + c.amount, 0);
 const contractorPct = (top10Total / stats.totalContracts) * 100;
+
+const topStates = Object.values(stateDetailsData as Record<string, { name: string; slug: string; totalAmount: number; rank: number; pctOfTotal: number; perCapita: number | null }>)
+  .sort((a, b) => b.totalAmount - a.totalAmount)
+  .slice(0, 5);
+
+const keyNumbers = [
+  { stat: "$233–521B", description: "Lost to fraud, waste, and abuse every year", href: "/waste" },
+  { stat: "33%", description: "Of large contracts awarded without competition", href: "/no-bid" },
+  { stat: "$34B", description: "Lockheed Martin alone — more than NASA\u2019s entire budget", href: "/top-10" },
+  { stat: "$5.2T", description: "Spent on COVID relief — the largest emergency expenditure in history", href: "/covid" },
+];
 
 const statCards = [
   { label: "Total Federal Budget", value: formatDollars(stats.totalBudget), sub: `FY${stats.fiscalYear}` },
@@ -170,6 +182,28 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Tax CTA Banner */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <Link
+          href="/compare"
+          className="block bg-gradient-to-r from-indigo-600 via-purple-600 to-purple-700 rounded-xl p-8 md:p-10 hover:from-indigo-700 hover:via-purple-700 hover:to-purple-800 transition-all group"
+        >
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <h2 className="text-white text-2xl md:text-3xl font-bold mb-2">
+                How Much of YOUR Taxes Go Here?
+              </h2>
+              <p className="text-purple-100 text-base md:text-lg">
+                See exactly where your federal tax dollars are spent
+              </p>
+            </div>
+            <span className="inline-flex items-center px-6 py-3 bg-white text-indigo-700 font-semibold rounded-lg group-hover:bg-indigo-50 transition-colors whitespace-nowrap">
+              Calculate Now →
+            </span>
+          </div>
+        </Link>
+      </section>
+
       {/* Fraud Banner */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         <Link
@@ -300,6 +334,44 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Top States by Federal Spending */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-6">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+              Top States by Federal Spending
+            </h2>
+            <p className="text-gray-500 mt-2">
+              Where do federal contract dollars flow?
+            </p>
+          </div>
+          <Link
+            href="/states"
+            className="text-indigo-600 hover:text-indigo-800 font-medium text-sm mt-4 md:mt-0"
+          >
+            View all states →
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          {topStates.map((state, i) => (
+            <Link
+              key={state.slug}
+              href={`/states/${state.slug}`}
+              className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-lg hover:border-indigo-300 transition-all group"
+            >
+              <span className="text-sm font-bold text-indigo-400">#{i + 1}</span>
+              <h3 className="font-semibold text-gray-900 mt-1">{state.name}</h3>
+              <p className="text-xl font-bold text-gray-900 mt-2">
+                {formatDollars(state.totalAmount)}
+              </p>
+              <p className="text-xs text-gray-400 mt-1">
+                {state.pctOfTotal}% of all contracts
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* Deep Dives */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
@@ -318,6 +390,32 @@ export default function HomePage() {
               </h3>
               <span className="text-indigo-600 text-sm font-medium group-hover:underline">
                 Explore →
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Key Numbers */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
+          Key Numbers
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {keyNumbers.map((item) => (
+            <Link
+              key={item.stat}
+              href={item.href}
+              className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-indigo-300 transition-all group"
+            >
+              <p className="text-3xl md:text-4xl font-bold text-indigo-700">
+                {item.stat}
+              </p>
+              <p className="text-sm text-gray-600 mt-3 leading-relaxed">
+                {item.description}
+              </p>
+              <span className="text-indigo-600 text-sm font-medium mt-4 inline-block group-hover:underline">
+                Learn more →
               </span>
             </Link>
           ))}
