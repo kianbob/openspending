@@ -52,7 +52,7 @@ export default function SubAgenciesPage() {
         "creator": { "@type": "Organization", "name": "OpenSpending" },
         "distribution": { "@type": "DataDownload", "contentUrl": "https://www.openspending.us/data/subagencies.json", "encodingFormat": "application/json" }
       }} />
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Sub-Agencies" }]} />
+      <Breadcrumbs items={[{ label: "Sub-Agencies" }]} />
 
       <h1 className="font-serif text-4xl sm:text-5xl font-bold text-gray-900 mb-4 leading-tight">
         Where the Money Really Goes: Sub-Agency Spending

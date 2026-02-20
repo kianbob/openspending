@@ -64,7 +64,6 @@ export default function YourDollarPage() {
   const taxNum = parseFloat(taxAmount.replace(/[^0-9.]/g, "")) || 0;
 
   const breadcrumbs = [
-    { label: "Home", href: "/" },
     { label: "Your Dollar", href: "/your-dollar" },
   ];
 

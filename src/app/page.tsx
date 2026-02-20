@@ -17,10 +17,10 @@ const topStates = Object.values(stateDetailsData as Record<string, { name: strin
   .slice(0, 5);
 
 const statCards = [
-  { label: "Total Federal Budget", value: formatDollars(stats.totalBudget), sub: `FY${stats.fiscalYear}` },
-  { label: "Federal Contracts", value: formatDollars(stats.totalContracts), sub: "Awarded this year" },
-  { label: "Federal Grants", value: formatDollars(stats.totalGrants), sub: "Distributed to recipients" },
-  { label: "Federal Agencies", value: String(agencies.length), sub: "Tracked on this site" },
+  { label: "Total Federal Budget", value: formatDollars(stats.totalBudget), sub: `FY${stats.fiscalYear}`, href: "/spending-analysis" },
+  { label: "Federal Contracts", value: formatDollars(stats.totalContracts), sub: "Awarded this year", href: "/contractors" },
+  { label: "Federal Grants", value: formatDollars(stats.totalGrants), sub: "Distributed to recipients", href: "/grants" },
+  { label: "Federal Agencies", value: String(agencies.length), sub: "Tracked on this site", href: "/agencies" },
 ];
 
 const bigPictureCards = [
@@ -59,18 +59,10 @@ const deepDiveCards = [
   { emoji: "\u{1F3E2}", title: "Contractor Monopoly", href: "/contractor-monopoly", description: "10 companies hold 64% of all contracts" },
   { emoji: "✈️", title: "Pentagon Deep Dive", href: "/pentagon-deep-dive", description: "The Pentagon's blank check — never audited" },
   { emoji: "🌍", title: "Foreign Aid Deep Dive", href: "/foreign-aid-deep-dive", description: "Where does foreign aid actually go?" },
-  { emoji: "🤝", title: "Welfare Queens", href: "/welfare-queens", description: "Which states take more than they give?" },
+  { emoji: "🤝", title: "Welfare Queens", href: "/welfare-queens", description: "Red states, blue states — who really depends on federal money?" },
   { emoji: "\u{1F4B0}", title: "Your Dollar", href: "/your-tax-bill", description: "Personalized breakdown of your tax dollars" },
 ];
 
-const dataPages = [
-  { emoji: "\u{1F4CA}", title: "Federal Spending Analysis", href: "/spending-analysis" },
-  { emoji: "\u{1F3C6}", title: "Top 10 Contractors", href: "/top-10" },
-  { emoji: "\u{1F4C8}", title: "Spending Trends", href: "/trends" },
-  { emoji: "\u{1F4CB}", title: "How Contracts Work", href: "/how-it-works" },
-  { emoji: "\u{1F3DB}\uFE0F", title: "All Agencies", href: "/agencies" },
-  { emoji: "\u{1F5C2}\uFE0F", title: "All Industries", href: "/industries" },
-];
 
 export default function HomePage() {
   return (
@@ -131,16 +123,17 @@ export default function HomePage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {statCards.map((card) => (
-            <div
+            <Link
               key={card.label}
-              className="bg-white rounded-xl shadow-lg border border-gray-100 p-6"
+              href={card.href}
+              className="block bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl hover:border-indigo-300 transition-all"
             >
               <p className="text-sm text-gray-500 font-medium">{card.label}</p>
               <p className="text-3xl font-bold text-gray-900 mt-1">
                 {card.value}
               </p>
               <p className="text-xs text-gray-400 mt-1">{card.sub}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
@@ -160,8 +153,8 @@ export default function HomePage() {
             54 state profiles
           </Link>
           <span className="text-indigo-300 hidden sm:inline">|</span>
-          <Link href="/trends" className="text-indigo-700 hover:text-indigo-900 font-medium">
-            7 deep-dive articles
+          <Link href="/investigations" className="text-indigo-700 hover:text-indigo-900 font-medium">
+            21+ investigations
           </Link>
         </div>
       </section>
@@ -411,26 +404,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* The Data */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
-          The Data
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
-          {dataPages.map((page) => (
-            <Link
-              key={page.href}
-              href={page.href}
-              className="block bg-white rounded-xl shadow border border-gray-200 p-6 hover:shadow-lg hover:border-indigo-300 transition-all group"
-            >
-              <span className="text-2xl">{page.emoji}</span>
-              <h3 className="font-bold text-gray-900 mt-3 group-hover:text-indigo-700 transition-colors">
-                {page.title}
-              </h3>
-            </Link>
-          ))}
-        </div>
-      </section>
 
     </div>
   );
