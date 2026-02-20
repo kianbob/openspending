@@ -52,6 +52,7 @@ const dropdowns: DropdownSection[] = [
   {
     label: 'Tools',
     items: [
+      { href: '/tax-calculator', title: 'Tax Calculator', desc: 'Where your tax dollars go' },
       { href: '/compare', title: 'Compare', desc: 'Side-by-side analysis' },
       { href: '/search', title: 'Search', desc: 'Search everything' },
       { href: '/downloads', title: 'Downloads', desc: 'Data files' },

@@ -182,23 +182,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Tax CTA Banner */}
+      {/* Tax Calculator CTA Banner */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         <Link
-          href="/compare"
+          href="/tax-calculator"
           className="block bg-gradient-to-r from-indigo-600 via-purple-600 to-purple-700 rounded-xl p-8 md:p-10 hover:from-indigo-700 hover:via-purple-700 hover:to-purple-800 transition-all group"
         >
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
               <h2 className="text-white text-2xl md:text-3xl font-bold mb-2">
-                How Much of YOUR Taxes Go Here?
+                Where Do YOUR Tax Dollars Go?
               </h2>
               <p className="text-purple-100 text-base md:text-lg">
-                See exactly where your federal tax dollars are spent
+                Enter your income and see exactly how much you pay to Lockheed Martin, Social Security, and more
               </p>
             </div>
             <span className="inline-flex items-center px-6 py-3 bg-white text-indigo-700 font-semibold rounded-lg group-hover:bg-indigo-50 transition-colors whitespace-nowrap">
-              Calculate Now →
+              Try the Calculator →
             </span>
           </div>
         </Link>
