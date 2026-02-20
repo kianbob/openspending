@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import agencies from "@/../public/data/agencies.json";
+import budgetFunctionsData from "@/../public/data/budget-functions.json";
 import contractors from "@/../public/data/top-contractors.json";
 import states from "@/../public/data/spending-by-state.json";
 import industries from "@/../public/data/industry-details.json";
@@ -85,7 +86,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/counties",
     "/products",
     "/tax-calculator",
+    "/small-business",
+    "/recipients",
+    "/budget-functions",
   ];
+
+  const budgetFunctionPages = budgetFunctionsData.map(
+    (f) => `/budget-functions/${f.code}`
+  );
 
   const agencyPages = agencies
     .filter((a) => !!a.slug)
@@ -151,6 +159,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: path === "" ? 1 : 0.8,
+    })),
+    ...budgetFunctionPages.map((path) => ({
+      url: `${BASE_URL}${path}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
     })),
     ...agencyPages.map((path) => ({
       url: `${BASE_URL}${path}`,

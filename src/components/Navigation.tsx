@@ -31,6 +31,8 @@ const dropdowns: DropdownSection[] = [
       { href: '/counties', title: 'Counties', desc: 'Federal spending by county' },
       { href: '/subagencies', title: 'Sub-Agencies', desc: 'Where the money really goes' },
       { href: '/countries', title: 'Countries', desc: 'Spending by country' },
+      { href: '/small-business', title: 'Small Business', desc: 'Top small business recipients' },
+      { href: '/recipients', title: 'Top Recipients', desc: 'Top 42 recipients of federal money' },
     ],
   },
   {
@@ -50,6 +52,7 @@ const dropdowns: DropdownSection[] = [
       { href: '/program-growth', title: 'Entitlement Explosion', desc: 'Programs that grew 100%+' },
       { href: '/federal-accounts', title: 'Federal Accounts', desc: 'Where your money actually goes' },
       { href: '/monthly-pulse', title: 'Monthly Pulse', desc: 'Real-time spending dashboard' },
+      { href: '/budget-functions', title: 'Budget Functions', desc: '18 major spending categories' },
     ],
   },
   {

@@ -1,0 +1,44 @@
+[
+  {
+    "code": "40",
+    "name": "Grants and fixed charges",
+    "amount": 7386422817943.48,
+    "rank": 1,
+    "pct": 71.47534404879899
+  },
+  {
+    "code": "20",
+    "name": "Contractual services and supplies",
+    "amount": 1199265296978.37,
+    "rank": 2,
+    "pct": 11.604791902662779
+  },
+  {
+    "code": "10",
+    "name": "Personnel compensation and benefits",
+    "amount": 872315928481.63,
+    "rank": 3,
+    "pct": 8.441038733392086
+  },
+  {
+    "code": "90",
+    "name": "Other",
+    "amount": 350469928654.58,
+    "rank": 4,
+    "pct": 3.3913518555276156
+  },
+  {
+    "code": "30",
+    "name": "Acquisition of assets",
+    "amount": 298612397646.31,
+    "rank": 5,
+    "pct": 2.889548078287399
+  },
+  {
+    "code": "00",
+    "name": "Unknown",
+    "amount": 20215842661.31,
+    "rank": 6,
+    "pct": 0.1956203083776102
+  }
+]

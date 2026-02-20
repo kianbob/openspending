@@ -1,0 +1,226 @@
+[
+  {
+    "name": "Department of Health and Human Services",
+    "contracts": 21297808710.45,
+    "grants": 825542909789.89,
+    "total": 846840718500.34,
+    "rank": 1
+  },
+  {
+    "name": "Department of Defense",
+    "contracts": 491418818200.61,
+    "grants": 9250020760.73,
+    "total": 500668838961.33997,
+    "rank": 2
+  },
+  {
+    "name": "Department of Transportation",
+    "contracts": 9022537335.37,
+    "grants": 123858085871.51,
+    "total": 132880623206.87999,
+    "rank": 3
+  },
+  {
+    "name": "Department of Veterans Affairs",
+    "contracts": 78283377566.95,
+    "grants": 3120245246.94,
+    "total": 81403622813.89,
+    "rank": 4
+  },
+  {
+    "name": "Department of Energy",
+    "contracts": 48549331419.53,
+    "grants": 28869505215.18,
+    "total": 77418836634.70999,
+    "rank": 5
+  },
+  {
+    "name": "Department of Agriculture",
+    "contracts": 9568814269.89,
+    "grants": 56813410034.24,
+    "total": 66382224304.13,
+    "rank": 6
+  },
+  {
+    "name": "Department of Homeland Security",
+    "contracts": 28315135178.87,
+    "grants": 32758364515.87,
+    "total": 61073499694.74,
+    "rank": 7
+  },
+  {
+    "name": "Department of Education",
+    "contracts": 2502566550.89,
+    "grants": 51447583488.62,
+    "total": 53950150039.51,
+    "rank": 8
+  },
+  {
+    "name": "Department of Housing and Urban Development",
+    "contracts": 0,
+    "grants": 28137680068.98,
+    "total": 28137680068.98,
+    "rank": 9
+  },
+  {
+    "name": "Environmental Protection Agency",
+    "contracts": 1697433936.71,
+    "grants": 25557912350,
+    "total": 27255346286.71,
+    "rank": 10
+  },
+  {
+    "name": "Department of Commerce",
+    "contracts": 4153094266.58,
+    "grants": 21238413243.18,
+    "total": 25391507509.760002,
+    "rank": 11
+  },
+  {
+    "name": "General Services Administration",
+    "contracts": 24375434009.52,
+    "grants": 0,
+    "total": 24375434009.52,
+    "rank": 12
+  },
+  {
+    "name": "National Aeronautics and Space Administration",
+    "contracts": 15792303841.17,
+    "grants": 1523101403.14,
+    "total": 17315405244.31,
+    "rank": 13
+  },
+  {
+    "name": "Department of the Interior",
+    "contracts": 6439929129.61,
+    "grants": 7722784488.14,
+    "total": 14162713617.75,
+    "rank": 14
+  },
+  {
+    "name": "Department of Labor",
+    "contracts": 1753633033.95,
+    "grants": 9775316544.97,
+    "total": 11528949578.92,
+    "rank": 15
+  },
+  {
+    "name": "Department of Justice",
+    "contracts": 8503389432.86,
+    "grants": 2664760634.11,
+    "total": 11168150066.97,
+    "rank": 16
+  },
+  {
+    "name": "Department of State",
+    "contracts": 9815891111.81,
+    "grants": 1265044046.04,
+    "total": 11080935157.849998,
+    "rank": 17
+  },
+  {
+    "name": "Department of the Treasury",
+    "contracts": 8554465034.91,
+    "grants": 635197032.1,
+    "total": 9189662067.01,
+    "rank": 18
+  },
+  {
+    "name": "National Science Foundation",
+    "contracts": 711037984.7,
+    "grants": 8177404879,
+    "total": 8888442863.7,
+    "rank": 19
+  },
+  {
+    "name": "Agency for International Development",
+    "contracts": 4101216285.37,
+    "grants": 2319136665,
+    "total": 6420352950.37,
+    "rank": 20
+  },
+  {
+    "name": "Social Security Administration",
+    "contracts": 1746308710.84,
+    "grants": 0,
+    "total": 1746308710.84,
+    "rank": 21
+  },
+  {
+    "name": "Corporation for National and Community Service",
+    "contracts": 0,
+    "grants": 669988559.47,
+    "total": 669988559.47,
+    "rank": 22
+  },
+  {
+    "name": "U.S. Agency for Global Media",
+    "contracts": 0,
+    "grants": 304000355,
+    "total": 304000355,
+    "rank": 23
+  },
+  {
+    "name": "Executive Office of the President",
+    "contracts": 0,
+    "grants": 288613674.6,
+    "total": 288613674.6,
+    "rank": 24
+  },
+  {
+    "name": "Appalachian Regional Commission",
+    "contracts": 0,
+    "grants": 269899619,
+    "total": 269899619,
+    "rank": 25
+  },
+  {
+    "name": "Millennium Challenge Corporation",
+    "contracts": 0,
+    "grants": 251601109.38,
+    "total": 251601109.38,
+    "rank": 26
+  },
+  {
+    "name": "Institute of Museum and Library Services",
+    "contracts": 0,
+    "grants": 245842574.1,
+    "total": 245842574.1,
+    "rank": 27
+  },
+  {
+    "name": "Small Business Administration",
+    "contracts": 0,
+    "grants": 213719697.18,
+    "total": 213719697.18,
+    "rank": 28
+  },
+  {
+    "name": "Denali Commission",
+    "contracts": 0,
+    "grants": 177858558.69,
+    "total": 177858558.69,
+    "rank": 29
+  },
+  {
+    "name": "Gulf Coast Ecosystem Restoration Council",
+    "contracts": 0,
+    "grants": 174511701.02,
+    "total": 174511701.02,
+    "rank": 30
+  },
+  {
+    "name": "National Endowment for the Arts",
+    "contracts": 0,
+    "grants": 116320336.16,
+    "total": 116320336.16,
+    "rank": 31
+  },
+  {
+    "name": "National Endowment for the Humanities",
+    "contracts": 0,
+    "grants": 70985832.71,
+    "total": 70985832.71,
+    "rank": 32
+  }
+]

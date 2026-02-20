@@ -1,0 +1,458 @@
+[
+  {
+    "state": "California",
+    "code": "CA",
+    "amount": 486383014796.59,
+    "rank": 1,
+    "population": 39538223,
+    "per_capita": 12301.59
+  },
+  {
+    "state": "Florida",
+    "code": "FL",
+    "amount": 323550997646.76,
+    "rank": 2,
+    "population": 21538187,
+    "per_capita": 15022.2
+  },
+  {
+    "state": "Texas",
+    "code": "TX",
+    "amount": 315321405961.56,
+    "rank": 3,
+    "population": 29145505,
+    "per_capita": 10818.87
+  },
+  {
+    "state": "Pennsylvania",
+    "code": "PA",
+    "amount": 279081101850.24,
+    "rank": 4,
+    "population": 13002700,
+    "per_capita": 21463.32
+  },
+  {
+    "state": "New York",
+    "code": "NY",
+    "amount": 265966341281.59,
+    "rank": 5,
+    "population": 20201249,
+    "per_capita": 13165.84
+  },
+  {
+    "state": "Minnesota",
+    "code": "MN",
+    "amount": 243024036895.53,
+    "rank": 6,
+    "population": 5706494,
+    "per_capita": 42587.28
+  },
+  {
+    "state": "Virginia",
+    "code": "VA",
+    "amount": 237559859525.84,
+    "rank": 7,
+    "population": 8631393,
+    "per_capita": 27522.77
+  },
+  {
+    "state": "Indiana",
+    "code": "IN",
+    "amount": 205345365149.38,
+    "rank": 8,
+    "population": 6785528,
+    "per_capita": 30262.25
+  },
+  {
+    "state": "Kentucky",
+    "code": "KY",
+    "amount": 172774999600.33,
+    "rank": 9,
+    "population": 4505836,
+    "per_capita": 38344.72
+  },
+  {
+    "state": "Connecticut",
+    "code": "CT",
+    "amount": 153282033963.62,
+    "rank": 10,
+    "population": 3605944,
+    "per_capita": 42508.16
+  },
+  {
+    "state": "South Carolina",
+    "code": "SC",
+    "amount": 137837004359.72,
+    "rank": 11,
+    "population": 5118425,
+    "per_capita": 26929.57
+  },
+  {
+    "state": "Wisconsin",
+    "code": "WI",
+    "amount": 136931745460.77,
+    "rank": 12,
+    "population": 5893718,
+    "per_capita": 23233.51
+  },
+  {
+    "state": "Illinois",
+    "code": "IL",
+    "amount": 136199299006.24,
+    "rank": 13,
+    "population": 12812508,
+    "per_capita": 10630.18
+  },
+  {
+    "state": "Ohio",
+    "code": "OH",
+    "amount": 135415850495.29,
+    "rank": 14,
+    "population": 11799448,
+    "per_capita": 11476.46
+  },
+  {
+    "state": "Michigan",
+    "code": "MI",
+    "amount": 132172040202.23,
+    "rank": 15,
+    "population": 10077331,
+    "per_capita": 13115.78
+  },
+  {
+    "state": "North Carolina",
+    "code": "NC",
+    "amount": 125954010383.22,
+    "rank": 16,
+    "population": 10439388,
+    "per_capita": 12065.27
+  },
+  {
+    "state": "Tennessee",
+    "code": "TN",
+    "amount": 121449853354.44,
+    "rank": 17,
+    "population": 6910840,
+    "per_capita": 17573.82
+  },
+  {
+    "state": "Arizona",
+    "code": "AZ",
+    "amount": 120692798530.27,
+    "rank": 18,
+    "population": 7151502,
+    "per_capita": 16876.57
+  },
+  {
+    "state": "Massachusetts",
+    "code": "MA",
+    "amount": 104965067668.2,
+    "rank": 19,
+    "population": 7029917,
+    "per_capita": 14931.2
+  },
+  {
+    "state": "Georgia",
+    "code": "GA",
+    "amount": 104321868382.86,
+    "rank": 20,
+    "population": 10711908,
+    "per_capita": 9738.87
+  },
+  {
+    "state": "North Dakota",
+    "code": "ND",
+    "amount": 100482830567.6,
+    "rank": 21,
+    "population": 779094,
+    "per_capita": 128973.95
+  },
+  {
+    "state": "New Jersey",
+    "code": "NJ",
+    "amount": 100451616277.85,
+    "rank": 22,
+    "population": 9288994,
+    "per_capita": 10814.05
+  },
+  {
+    "state": "Maryland",
+    "code": "MD",
+    "amount": 100181996034.43,
+    "rank": 23,
+    "population": 6177224,
+    "per_capita": 16217.96
+  },
+  {
+    "state": "Missouri",
+    "code": "MO",
+    "amount": 96373873199.3,
+    "rank": 24,
+    "population": 6154913,
+    "per_capita": 15658.04
+  },
+  {
+    "state": "Washington",
+    "code": "WA",
+    "amount": 87571624668.72,
+    "rank": 25,
+    "population": 7705281,
+    "per_capita": 11365.14
+  },
+  {
+    "state": "Colorado",
+    "code": "CO",
+    "amount": 75147672401.6,
+    "rank": 26,
+    "population": 5773714,
+    "per_capita": 13015.48
+  },
+  {
+    "state": "Alabama",
+    "code": "AL",
+    "amount": 73270338439.01,
+    "rank": 27,
+    "population": 5024279,
+    "per_capita": 14583.25
+  },
+  {
+    "state": "Louisiana",
+    "code": "LA",
+    "amount": 59127161953.74,
+    "rank": 28,
+    "population": 4657757,
+    "per_capita": 12694.34
+  },
+  {
+    "state": "Oregon",
+    "code": "OR",
+    "amount": 57692825081.5,
+    "rank": 29,
+    "population": 4237256,
+    "per_capita": 13615.61
+  },
+  {
+    "state": "Oklahoma",
+    "code": "OK",
+    "amount": 49122447709,
+    "rank": 30,
+    "population": 3959353,
+    "per_capita": 12406.69
+  },
+  {
+    "state": "District Of Columbia",
+    "code": "DC",
+    "amount": 40685779671.49,
+    "rank": 31,
+    "population": 689545,
+    "per_capita": 59003.81
+  },
+  {
+    "state": "Mississippi",
+    "code": "MS",
+    "amount": 38166219130.55,
+    "rank": 32,
+    "population": 2961279,
+    "per_capita": 12888.42
+  },
+  {
+    "state": "Puerto Rico",
+    "code": "PR",
+    "amount": 37986232408.5,
+    "rank": 33,
+    "population": 3285874,
+    "per_capita": 11560.47
+  },
+  {
+    "state": "Iowa",
+    "code": "IA",
+    "amount": 35978981721.45,
+    "rank": 34,
+    "population": 3190369,
+    "per_capita": 11277.37
+  },
+  {
+    "state": "New Mexico",
+    "code": "NM",
+    "amount": 35559975989.11,
+    "rank": 35,
+    "population": 2117522,
+    "per_capita": 16793.2
+  },
+  {
+    "state": "Arkansas",
+    "code": "AR",
+    "amount": 34272808141.63,
+    "rank": 36,
+    "population": 3011524,
+    "per_capita": 11380.55
+  },
+  {
+    "state": "Alaska",
+    "code": "AK",
+    "amount": 33440515715.92,
+    "rank": 37,
+    "population": 733391,
+    "per_capita": 45597.12
+  },
+  {
+    "state": "Nevada",
+    "code": "NV",
+    "amount": 32813599380.33,
+    "rank": 38,
+    "population": 3104614,
+    "per_capita": 10569.3
+  },
+  {
+    "state": "Kansas",
+    "code": "KS",
+    "amount": 31550103192.16,
+    "rank": 39,
+    "population": 2937880,
+    "per_capita": 10739.07
+  },
+  {
+    "state": "Utah",
+    "code": "UT",
+    "amount": 29066860968.24,
+    "rank": 40,
+    "population": 3271616,
+    "per_capita": 8884.56
+  },
+  {
+    "state": "Nebraska",
+    "code": "NE",
+    "amount": 28225023611.59,
+    "rank": 41,
+    "population": 1961504,
+    "per_capita": 14389.48
+  },
+  {
+    "state": "West Virginia",
+    "code": "WV",
+    "amount": 22837407463.72,
+    "rank": 42,
+    "population": 1793716,
+    "per_capita": 12731.9
+  },
+  {
+    "state": "Idaho",
+    "code": "ID",
+    "amount": 21947670404.16,
+    "rank": 43,
+    "population": 1839106,
+    "per_capita": 11933.88
+  },
+  {
+    "state": "Hawaii",
+    "code": "HI",
+    "amount": 21306248621.89,
+    "rank": 44,
+    "population": 1455271,
+    "per_capita": 14640.74
+  },
+  {
+    "state": "Maine",
+    "code": "ME",
+    "amount": 21289077910.75,
+    "rank": 45,
+    "population": 1362359,
+    "per_capita": 15626.63
+  },
+  {
+    "state": "Montana",
+    "code": "MT",
+    "amount": 17486851938.08,
+    "rank": 46,
+    "population": 1084225,
+    "per_capita": 16128.43
+  },
+  {
+    "state": "New Hampshire",
+    "code": "NH",
+    "amount": 17135938296.12,
+    "rank": 47,
+    "population": 1377529,
+    "per_capita": 12439.62
+  },
+  {
+    "state": "Rhode Island",
+    "code": "RI",
+    "amount": 14678158582.97,
+    "rank": 48,
+    "population": 1097379,
+    "per_capita": 13375.65
+  },
+  {
+    "state": "Delaware",
+    "code": "DE",
+    "amount": 12183870774.17,
+    "rank": 49,
+    "population": 989948,
+    "per_capita": 12307.59
+  },
+  {
+    "state": "South Dakota",
+    "code": "SD",
+    "amount": 11460672591.74,
+    "rank": 50,
+    "population": 886667,
+    "per_capita": 12925.57
+  },
+  {
+    "state": "U.S. Virgin Islands",
+    "code": "VI",
+    "amount": 10746796561.98,
+    "rank": 51,
+    "population": 87146,
+    "per_capita": 123319.45
+  },
+  {
+    "state": "Vermont",
+    "code": "VT",
+    "amount": 9301273741.49,
+    "rank": 52,
+    "population": 643077,
+    "per_capita": 14463.7
+  },
+  {
+    "state": "Wyoming",
+    "code": "WY",
+    "amount": 6700100357.45,
+    "rank": 53,
+    "population": 576851,
+    "per_capita": 11614.96
+  },
+  {
+    "state": "Guam",
+    "code": "GU",
+    "amount": 3065373026.53,
+    "rank": 54,
+    "population": 153836,
+    "per_capita": 19926.24
+  },
+  {
+    "state": "American Samoa",
+    "code": "AS",
+    "amount": 574367300.79,
+    "rank": 55,
+    "population": 49710,
+    "per_capita": 11554.36
+  },
+  {
+    "state": "Northern Mariana Islands",
+    "code": "MP",
+    "amount": 178191151.05,
+    "rank": 56,
+    "population": 47329,
+    "per_capita": 3764.95
+  },
+  {
+    "state": null,
+    "code": "",
+    "amount": 49396.25,
+    "rank": 57,
+    "population": null,
+    "per_capita": null
+  }
+]
