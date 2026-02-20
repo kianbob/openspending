@@ -132,7 +132,7 @@ export default function YourDollarPage() {
                 innerRadius={80}
                 outerRadius={160}
                 paddingAngle={1}
-                label={({ name, cents }) => cents >= 3 ? `${name.split(" ")[0]} ${cents}¢` : ""}
+                label={({ name, cents }: any) => cents >= 3 ? `${(name ?? "").split(" ")[0]} ${cents}¢` : ""}
                 labelLine={false}
               >
                 {data.breakdown.map((_, i) => (
@@ -140,7 +140,7 @@ export default function YourDollarPage() {
                 ))}
               </Pie>
               <Tooltip
-                formatter={(value: number, name: string) => [`${value}¢`, name]}
+                formatter={(value: any, name: any) => [`${value}¢`, name]}
               />
             </PieChart>
           </ResponsiveContainer>
