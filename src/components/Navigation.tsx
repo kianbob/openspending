@@ -22,39 +22,28 @@ const dropdowns: DropdownSection[] = [
       { href: '/agencies', title: 'Agencies', desc: '97 federal agency profiles' },
       { href: '/contractors', title: 'Contractors', desc: 'Top federal contractors' },
       { href: '/states', title: 'States', desc: 'Spending by state' },
-      { href: '/contracts', title: 'Contracts', desc: 'Largest contracts' },
-      { href: '/grants', title: 'Grants', desc: '$1.24T to states & orgs' },
-      { href: '/programs', title: 'Federal Programs', desc: '200 assistance programs ranked' },
-      { href: '/industries', title: 'Industries', desc: 'By NAICS sector' },
-      { href: '/what-they-buy', title: 'What They Buy', desc: 'Products & services purchased' },
-      { href: '/products', title: 'Products & Services', desc: 'Top 100 PSC categories' },
-      { href: '/local-spending', title: 'Local Spending', desc: 'County & district spending' },
-      { href: '/counties', title: 'Counties', desc: 'Federal spending by county' },
       { href: '/subagencies', title: 'Sub-Agencies', desc: 'Where the money really goes' },
+      { href: '/industries', title: 'Industries', desc: 'By NAICS sector' },
+      { href: '/programs', title: 'Programs', desc: '200 assistance programs ranked' },
       { href: '/countries', title: 'Countries', desc: 'Spending by country' },
-      { href: '/small-business', title: 'Small Business', desc: 'Top small business recipients' },
-      { href: '/recipients', title: 'Top Recipients', desc: 'Top 42 recipients of federal money' },
+      { href: '/counties', title: 'Counties', desc: 'Federal spending by county' },
+      { href: '/products', title: 'Products & Services', desc: 'Top 100 PSC categories' },
+      { href: '/grants', title: 'Grants', desc: '$1.24T to states & orgs' },
     ],
   },
   {
     label: 'Analysis',
     items: [
       { href: '/trends', title: 'Spending Trends', desc: 'Year-over-year analysis' },
-      { href: '/covid', title: 'COVID Spending', desc: '$1.46T pandemic response' },
-      { href: '/usaid', title: 'USAID Deep Dive', desc: 'Foreign aid spending' },
-      { href: '/foreign-aid', title: 'Foreign Aid', desc: 'Global spending map' },
-      { href: '/efficiency', title: 'Government Efficiency', desc: 'Accountability tracker' },
-      { href: '/doge-reality', title: 'DOGE Reality Check', desc: 'Claims vs actual spending data' },
-      { href: '/your-tax-bill', title: 'Your Tax Bill', desc: '$33,135 per taxpayer breakdown' },
-      { href: '/spending-explosion', title: 'Spending Explosion', desc: 'Which agencies grew fastest' },
-      { href: '/global-comparison', title: 'US vs The World', desc: 'How American spending compares globally' },
-      { href: '/national-debt', title: 'National Debt Clock', desc: 'The $36 trillion debt tracker' },
-      { href: '/international-spending', title: 'International Spending', desc: 'Where US dollars go abroad' },
-      { href: '/program-growth', title: 'Entitlement Explosion', desc: 'Programs that grew 100%+' },
-      { href: '/federal-accounts', title: 'Federal Accounts', desc: 'Where your money actually goes' },
-      { href: '/monthly-pulse', title: 'Monthly Pulse', desc: 'Real-time spending dashboard' },
       { href: '/budget-functions', title: 'Budget Functions', desc: '18 major spending categories' },
-      { href: '/report-cards', title: 'Agency Report Cards', desc: '24 agencies graded A-F' },
+      { href: '/doge-reality', title: 'DOGE Reality Check', desc: 'Claims vs actual spending data' },
+      { href: '/spending-explosion', title: 'Spending Explosion', desc: 'Which agencies grew fastest' },
+      { href: '/your-tax-bill', title: 'Your Tax Bill', desc: '$33,135 per taxpayer breakdown' },
+      { href: '/global-comparison', title: 'US vs The World', desc: 'How American spending compares globally' },
+      { href: '/interest', title: 'Interest Time Bomb', desc: '$952B in debt interest' },
+      { href: '/presidents', title: 'Presidents', desc: 'Obama vs Trump vs Biden' },
+      { href: '/report-cards', title: 'Report Cards', desc: '24 agencies graded A-F' },
+      { href: '/monthly-pulse', title: 'Monthly Pulse', desc: 'Real-time spending dashboard' },
     ],
   },
   {
@@ -62,19 +51,13 @@ const dropdowns: DropdownSection[] = [
     items: [
       { href: '/investigations', title: 'All Investigations', desc: 'Editorial hub' },
       { href: '/spending-analysis', title: 'Spending Analysis', desc: 'Where the money goes' },
-      { href: '/top-10', title: 'Top 10 Contractors', desc: 'Companies that run government' },
-      { href: '/pentagon-spending', title: 'Pentagon Spending', desc: 'Defense budget deep dive' },
+      { href: '/pentagon-deep-dive', title: 'Pentagon Deep Dive', desc: "The Pentagon's blank check" },
       { href: '/healthcare-spending', title: 'Healthcare Spending', desc: 'The healthcare machine' },
+      { href: '/contractor-monopoly', title: 'Contractor Monopoly', desc: '10 companies, 64% of contracts' },
+      { href: '/welfare-queens', title: 'Welfare Queens', desc: 'Which states are federal welfare queens?' },
+      { href: '/foreign-aid-deep-dive', title: 'Foreign Aid Deep Dive', desc: 'Where does foreign aid actually go?' },
       { href: '/no-bid', title: 'No-Bid Nation', desc: 'When competition dies' },
       { href: '/waste', title: 'Waste & Fraud', desc: 'Tracking government waste' },
-      { href: '/contractor-monopoly', title: 'Contractor Monopoly', desc: '10 companies, 64% of contracts' },
-      { href: '/interest', title: 'Interest Time Bomb', desc: '$952B in debt interest' },
-      { href: '/state-dependency', title: 'State Dependency', desc: 'Donors vs takers' },
-      { href: '/how-it-works', title: 'How It Works', desc: 'Federal spending explained' },
-      { href: '/foreign-aid-deep-dive', title: 'Foreign Aid Deep Dive', desc: 'Where does foreign aid actually go?' },
-      { href: '/pentagon-deep-dive', title: 'Pentagon Deep Dive', desc: "The Pentagon's blank check" },
-      { href: '/welfare-queens', title: 'Welfare Queens', desc: 'Which states are federal welfare queens?' },
-      { href: '/presidents', title: 'Presidential Spending', desc: 'Obama vs Trump vs Biden' },
       { href: '/earmarks', title: 'Earmarks Tracker', desc: '$14.6B in congressional pork' },
     ],
   },
@@ -82,12 +65,12 @@ const dropdowns: DropdownSection[] = [
     label: 'Tools',
     items: [
       { href: '/tax-calculator', title: 'Tax Calculator', desc: 'Where your tax dollars go' },
+      { href: '/your-dollar', title: 'Your Dollar', desc: 'Where does $1 go?' },
       { href: '/compare', title: 'Compare', desc: 'Side-by-side analysis' },
-      { href: '/search', title: 'Search', desc: 'Search everything' },
-      { href: '/downloads', title: 'Downloads', desc: 'Data files' },
       { href: '/shutdown-calculator', title: 'Shutdown Calculator', desc: 'Cost of government shutdowns' },
       { href: '/spending-speed', title: 'Spending Speed', desc: '$169K every second' },
-      { href: '/your-dollar', title: 'Your Dollar', desc: 'Where does $1 go?' },
+      { href: '/search', title: 'Search', desc: 'Search everything' },
+      { href: '/downloads', title: 'Downloads', desc: 'Data files' },
     ],
   },
 ];
@@ -100,7 +83,7 @@ function ChevronDown({ className }: { className?: string }) {
   );
 }
 
-function DesktopDropdown({ section }: { section: DropdownSection }) {
+function DesktopDropdown({ section, isLast }: { section: DropdownSection; isLast?: boolean }) {
   const [open, setOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -130,8 +113,8 @@ function DesktopDropdown({ section }: { section: DropdownSection }) {
         <ChevronDown className={`w-3.5 h-3.5 transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
       {open && (
-        <div className="absolute left-0 top-full pt-1 z-50">
-          <div className="min-w-[280px] bg-white rounded-lg shadow-lg border border-gray-200 py-1">
+        <div className={`absolute ${isLast ? 'right-0' : 'left-0'} top-full pt-1 z-50`}>
+          <div className={`min-w-[280px] ${section.items.length > 8 ? 'min-w-[560px] grid grid-cols-2' : ''} bg-white rounded-lg shadow-lg border border-gray-200 py-1 max-h-[70vh] overflow-y-auto`}>
             {section.items.map((item) => (
               <Link
                 key={item.href}
@@ -203,8 +186,8 @@ export default function Navigation() {
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-0.5">
-            {dropdowns.map((section) => (
-              <DesktopDropdown key={section.label} section={section} />
+            {dropdowns.map((section, i) => (
+              <DesktopDropdown key={section.label} section={section} isLast={i === dropdowns.length - 1} />
             ))}
             <Link
               href="/about"
