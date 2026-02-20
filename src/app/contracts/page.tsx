@@ -11,9 +11,13 @@ const columns = [
   { key: "recipient", label: "Recipient", format: "text" as const },
   { key: "amount", label: "Amount", format: "dollars" as const, align: "right" as const },
   { key: "agency", label: "Agency", format: "text" as const },
-  { key: "description", label: "Description", format: "text" as const },
+  { key: "description", label: "Description", format: "link" as const, linkKey: "href" },
   { key: "startDate", label: "Start Date", format: "date" as const },
 ];
+
+function slugify(awardId: string): string {
+  return awardId.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/g, "").replace(/^-+/, "");
+}
 
 const tableData = awards.map((a) => ({
   recipient: a.recipient,
@@ -21,6 +25,7 @@ const tableData = awards.map((a) => ({
   agency: a.agency,
   description: a.description,
   startDate: a.startDate,
+  href: `/contracts/${slugify(a.awardId)}`,
 }));
 
 export default function ContractsPage() {
