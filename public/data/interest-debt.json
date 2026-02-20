@@ -1,0 +1,123 @@
+{
+  "historical": [
+    {
+      "fy": 2017,
+      "interest": 263000000000,
+      "debt": 20244900000000,
+      "per_taxpayer": 1634,
+      "per_citizen": 785,
+      "debt_per_citizen": 60433,
+      "debt_per_taxpayer": 125745,
+      "interest_pct_of_revenue": 6.0
+    },
+    {
+      "fy": 2018,
+      "interest": 325000000000,
+      "debt": 21516100000000,
+      "per_taxpayer": 2019,
+      "per_citizen": 970,
+      "debt_per_citizen": 64227,
+      "debt_per_taxpayer": 133640,
+      "interest_pct_of_revenue": 7.4
+    },
+    {
+      "fy": 2019,
+      "interest": 375000000000,
+      "debt": 22719400000000,
+      "per_taxpayer": 2329,
+      "per_citizen": 1119,
+      "debt_per_citizen": 67819,
+      "debt_per_taxpayer": 141114,
+      "interest_pct_of_revenue": 8.5
+    },
+    {
+      "fy": 2020,
+      "interest": 345000000000,
+      "debt": 27747800000000,
+      "per_taxpayer": 2143,
+      "per_citizen": 1030,
+      "debt_per_citizen": 82829,
+      "debt_per_taxpayer": 172347,
+      "interest_pct_of_revenue": 7.8
+    },
+    {
+      "fy": 2021,
+      "interest": 352000000000,
+      "debt": 28428900000000,
+      "per_taxpayer": 2186,
+      "per_citizen": 1051,
+      "debt_per_citizen": 84862,
+      "debt_per_taxpayer": 176577,
+      "interest_pct_of_revenue": 8.0
+    },
+    {
+      "fy": 2022,
+      "interest": 475000000000,
+      "debt": 30928900000000,
+      "per_taxpayer": 2950,
+      "per_citizen": 1418,
+      "debt_per_citizen": 92325,
+      "debt_per_taxpayer": 192105,
+      "interest_pct_of_revenue": 10.8
+    },
+    {
+      "fy": 2023,
+      "interest": 659000000000,
+      "debt": 33167300000000,
+      "per_taxpayer": 4093,
+      "per_citizen": 1967,
+      "debt_per_citizen": 99007,
+      "debt_per_taxpayer": 206008,
+      "interest_pct_of_revenue": 15.0
+    },
+    {
+      "fy": 2024,
+      "interest": 882000000000,
+      "debt": 35460000000000,
+      "per_taxpayer": 5478,
+      "per_citizen": 2633,
+      "debt_per_citizen": 105851,
+      "debt_per_taxpayer": 220248,
+      "interest_pct_of_revenue": 20.0
+    },
+    {
+      "fy": 2025,
+      "interest": 952000000000,
+      "debt": 36200000000000,
+      "per_taxpayer": 5913,
+      "per_citizen": 2842,
+      "debt_per_citizen": 108060,
+      "debt_per_taxpayer": 224845,
+      "interest_pct_of_revenue": 21.6
+    }
+  ],
+  "projections": [
+    {
+      "fy": 2026,
+      "interest": 1020000000000
+    },
+    {
+      "fy": 2027,
+      "interest": 1080000000000
+    },
+    {
+      "fy": 2028,
+      "interest": 1150000000000
+    },
+    {
+      "fy": 2029,
+      "interest": 1230000000000
+    },
+    {
+      "fy": 2030,
+      "interest": 1350000000000
+    }
+  ],
+  "context": {
+    "defense_budget_fy2025": 886000000000,
+    "medicare_fy2025": 1163000000000,
+    "social_security_fy2025": 1568000000000,
+    "interest_exceeds_defense": true,
+    "interest_growth_since_2017": 262.0
+  }
+}

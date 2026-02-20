@@ -21,19 +21,23 @@ export function HorizontalBarChart({
   height = 500,
   color = "#6366f1",
   labelWidth = 150,
+  valueFormat,
 }: {
   data: BarDatum[];
   height?: number;
   color?: string;
   labelWidth?: number;
+  formatValue?: never;
+  valueFormat?: "dollars" | "ratio";
 }) {
+  const fmt = valueFormat === "ratio" ? (v: number) => `$${v.toFixed(2)}` : formatDollars;
   return (
     <div style={{ width: "100%", height }} role="img" aria-label="Horizontal bar chart of federal spending data">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={data} layout="vertical" margin={{ left: 10, right: 30, top: 5, bottom: 5 }}>
           <XAxis
             type="number"
-            tickFormatter={(v) => formatDollars(v)}
+            tickFormatter={(v) => fmt(v)}
             fontSize={12}
             tick={{ fill: "#6b7280" }}
           />
@@ -46,7 +50,7 @@ export function HorizontalBarChart({
           />
           <Tooltip
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            formatter={(value: any) => [formatDollars(Number(value) || 0), "Amount"]}
+            formatter={(value: any) => [fmt(Number(value) || 0), "Amount"]}
             contentStyle={{
               backgroundColor: "#fff",
               border: "1px solid #e5e7eb",

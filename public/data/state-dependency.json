@@ -1,0 +1,312 @@
+{
+  "states": [
+    {
+      "state": "WV",
+      "name": "West Virginia",
+      "received": 38000000000,
+      "paid": 9000000000,
+      "ratio": 4.22,
+      "net": 29000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "MS",
+      "name": "Mississippi",
+      "received": 55000000000,
+      "paid": 14000000000,
+      "ratio": 3.93,
+      "net": 41000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "NM",
+      "name": "New Mexico",
+      "received": 47000000000,
+      "paid": 12000000000,
+      "ratio": 3.92,
+      "net": 35000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "AL",
+      "name": "Alabama",
+      "received": 86000000000,
+      "paid": 29000000000,
+      "ratio": 2.97,
+      "net": 57000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "KY",
+      "name": "Kentucky",
+      "received": 87000000000,
+      "paid": 30000000000,
+      "ratio": 2.9,
+      "net": 57000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "AK",
+      "name": "Alaska",
+      "received": 17000000000,
+      "paid": 6000000000,
+      "ratio": 2.83,
+      "net": 11000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "SC",
+      "name": "South Carolina",
+      "received": 73000000000,
+      "paid": 30000000000,
+      "ratio": 2.43,
+      "net": 43000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "ME",
+      "name": "Maine",
+      "received": 24000000000,
+      "paid": 10000000000,
+      "ratio": 2.4,
+      "net": 14000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "AZ",
+      "name": "Arizona",
+      "received": 96000000000,
+      "paid": 56000000000,
+      "ratio": 1.71,
+      "net": 40000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "VA",
+      "name": "Virginia",
+      "received": 201000000000,
+      "paid": 119000000000,
+      "ratio": 1.69,
+      "net": 82000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "TN",
+      "name": "Tennessee",
+      "received": 92000000000,
+      "paid": 55000000000,
+      "ratio": 1.67,
+      "net": 37000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "MO",
+      "name": "Missouri",
+      "received": 86000000000,
+      "paid": 52000000000,
+      "ratio": 1.65,
+      "net": 34000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "MD",
+      "name": "Maryland",
+      "received": 113000000000,
+      "paid": 75000000000,
+      "ratio": 1.51,
+      "net": 38000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "OH",
+      "name": "Ohio",
+      "received": 140000000000,
+      "paid": 98000000000,
+      "ratio": 1.43,
+      "net": 42000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "MI",
+      "name": "Michigan",
+      "received": 110000000000,
+      "paid": 78000000000,
+      "ratio": 1.41,
+      "net": 32000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "DC",
+      "name": "District of Columbia",
+      "received": 45000000000,
+      "paid": 32000000000,
+      "ratio": 1.41,
+      "net": 13000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "NC",
+      "name": "North Carolina",
+      "received": 120000000000,
+      "paid": 86000000000,
+      "ratio": 1.4,
+      "net": 34000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "FL",
+      "name": "Florida",
+      "received": 268000000000,
+      "paid": 195000000000,
+      "ratio": 1.37,
+      "net": 73000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "IN",
+      "name": "Indiana",
+      "received": 71000000000,
+      "paid": 52000000000,
+      "ratio": 1.37,
+      "net": 19000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "GA",
+      "name": "Georgia",
+      "received": 117000000000,
+      "paid": 87000000000,
+      "ratio": 1.34,
+      "net": 30000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "PA",
+      "name": "Pennsylvania",
+      "received": 167000000000,
+      "paid": 128000000000,
+      "ratio": 1.3,
+      "net": 39000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "WI",
+      "name": "Wisconsin",
+      "received": 59000000000,
+      "paid": 50000000000,
+      "ratio": 1.18,
+      "net": 9000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "TX",
+      "name": "Texas",
+      "received": 304000000000,
+      "paid": 280000000000,
+      "ratio": 1.09,
+      "net": 24000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "IL",
+      "name": "Illinois",
+      "received": 131000000000,
+      "paid": 140000000000,
+      "ratio": 0.94,
+      "net": -9000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "CA",
+      "name": "California",
+      "received": 436000000000,
+      "paid": 472000000000,
+      "ratio": 0.92,
+      "net": -36000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "NY",
+      "name": "New York",
+      "received": 282000000000,
+      "paid": 320000000000,
+      "ratio": 0.88,
+      "net": -38000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "WA",
+      "name": "Washington",
+      "received": 90000000000,
+      "paid": 102000000000,
+      "ratio": 0.88,
+      "net": -12000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "MN",
+      "name": "Minnesota",
+      "received": 60000000000,
+      "paid": 68000000000,
+      "ratio": 0.88,
+      "net": -8000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "CO",
+      "name": "Colorado",
+      "received": 63000000000,
+      "paid": 72000000000,
+      "ratio": 0.88,
+      "net": -9000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "MA",
+      "name": "Massachusetts",
+      "received": 99000000000,
+      "paid": 116000000000,
+      "ratio": 0.85,
+      "net": -17000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "CT",
+      "name": "Connecticut",
+      "received": 53000000000,
+      "paid": 68000000000,
+      "ratio": 0.78,
+      "net": -15000000000,
+      "net_per_capita": 0
+    },
+    {
+      "state": "NJ",
+      "name": "New Jersey",
+      "received": 97000000000,
+      "paid": 136000000000,
+      "ratio": 0.71,
+      "net": -39000000000,
+      "net_per_capita": 0
+    }
+  ],
+  "donors_count": 9,
+  "takers_count": 23,
+  "biggest_taker": {
+    "state": "WV",
+    "name": "West Virginia",
+    "received": 38000000000,
+    "paid": 9000000000,
+    "ratio": 4.22,
+    "net": 29000000000,
+    "net_per_capita": 0
+  },
+  "biggest_donor": {
+    "state": "NJ",
+    "name": "New Jersey",
+    "received": 97000000000,
+    "paid": 136000000000,
+    "ratio": 0.71,
+    "net": -39000000000,
+    "net_per_capita": 0
+  }
+}

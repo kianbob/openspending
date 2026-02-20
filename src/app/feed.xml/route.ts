@@ -67,6 +67,42 @@ const items = [
     description:
       "A plain-English guide to how the federal government awards contracts, spends money, and (sometimes) holds itself accountable.",
   },
+  {
+    path: "/global-comparison",
+    title: "US vs The World: How American Spending Compares",
+    description:
+      "The US spends less of GDP than France or Germany — but more per person on healthcare than anyone. A global comparison of government spending.",
+  },
+  {
+    path: "/national-debt",
+    title: "The $36 Trillion Debt Clock",
+    description:
+      "The national debt nearly doubled in 8 years. At $108,060 per citizen, the math is getting harder to ignore.",
+  },
+  {
+    path: "/shutdown-calculator",
+    title: "Government Shutdown Cost Calculator",
+    description:
+      "Calculate the real cost of a government shutdown — $400M per day in direct costs, 800,000 workers furloughed, and billions in economic damage.",
+  },
+  {
+    path: "/contractor-monopoly",
+    title: "The Contractor Monopoly: How 10 Companies Control Federal Spending",
+    description:
+      "The top 10 federal contractors hold 64% of all contract dollars. HHI index, agency dependency, and why competition is broken.",
+  },
+  {
+    path: "/interest",
+    title: "The Interest Time Bomb: $952B and Counting",
+    description:
+      "Interest on the national debt hit $952B in FY2025 — now larger than the defense budget. The compounding cost of decades of borrowing.",
+  },
+  {
+    path: "/state-dependency",
+    title: "Federal Dependency by State: Who Takes More Than They Give?",
+    description:
+      "For every $1 in federal taxes, West Virginia gets $4.22 back. New Jersey gets $0.71. See which states are donors and which are takers.",
+  },
 ];
 
 function escapeXml(str: string): string {

@@ -1,0 +1,128 @@
+{
+  "us": {
+    "spending_total": 6750000000000,
+    "spending_pct_gdp": 24.2,
+    "gdp": 27900000000000,
+    "population": 335000000,
+    "spending_per_capita": 20149,
+    "healthcare_spending": 1800000000000,
+    "healthcare_per_capita": 5373,
+    "defense_spending": 886000000000,
+    "defense_per_capita": 2645,
+    "defense_pct_gdp": 3.4
+  },
+  "countries": [
+    {
+      "name": "United States",
+      "spending_pct_gdp": 24.2,
+      "healthcare_per_capita": 5373,
+      "defense_pct_gdp": 3.4,
+      "spending_per_capita": 20149
+    },
+    {
+      "name": "France",
+      "spending_pct_gdp": 58.3,
+      "healthcare_per_capita": 3956,
+      "defense_pct_gdp": 2.1,
+      "spending_per_capita": 25800
+    },
+    {
+      "name": "Germany",
+      "spending_pct_gdp": 49.3,
+      "healthcare_per_capita": 5200,
+      "defense_pct_gdp": 2.0,
+      "spending_per_capita": 24100
+    },
+    {
+      "name": "United Kingdom",
+      "spending_pct_gdp": 44.6,
+      "healthcare_per_capita": 4200,
+      "defense_pct_gdp": 2.3,
+      "spending_per_capita": 20500
+    },
+    {
+      "name": "Canada",
+      "spending_pct_gdp": 43.6,
+      "healthcare_per_capita": 4500,
+      "defense_pct_gdp": 1.4,
+      "spending_per_capita": 19200
+    },
+    {
+      "name": "Japan",
+      "spending_pct_gdp": 44.4,
+      "healthcare_per_capita": 3800,
+      "defense_pct_gdp": 1.6,
+      "spending_per_capita": 17600
+    },
+    {
+      "name": "Australia",
+      "spending_pct_gdp": 38.2,
+      "healthcare_per_capita": 4100,
+      "defense_pct_gdp": 2.0,
+      "spending_per_capita": 21400
+    },
+    {
+      "name": "South Korea",
+      "spending_pct_gdp": 35.8,
+      "healthcare_per_capita": 2600,
+      "defense_pct_gdp": 2.8,
+      "spending_per_capita": 12800
+    },
+    {
+      "name": "Switzerland",
+      "spending_pct_gdp": 34.0,
+      "healthcare_per_capita": 7200,
+      "defense_pct_gdp": 0.8,
+      "spending_per_capita": 31700
+    },
+    {
+      "name": "Sweden",
+      "spending_pct_gdp": 49.2,
+      "healthcare_per_capita": 5100,
+      "defense_pct_gdp": 2.2,
+      "spending_per_capita": 27400
+    }
+  ],
+  "defense_comparison": [
+    {
+      "name": "United States",
+      "amount": 886000000000
+    },
+    {
+      "name": "China",
+      "amount": 296000000000
+    },
+    {
+      "name": "Russia",
+      "amount": 109000000000
+    },
+    {
+      "name": "India",
+      "amount": 83000000000
+    },
+    {
+      "name": "Saudi Arabia",
+      "amount": 76000000000
+    },
+    {
+      "name": "United Kingdom",
+      "amount": 75000000000
+    },
+    {
+      "name": "Germany",
+      "amount": 68000000000
+    },
+    {
+      "name": "France",
+      "amount": 61000000000
+    },
+    {
+      "name": "Japan",
+      "amount": 50000000000
+    },
+    {
+      "name": "South Korea",
+      "amount": 48000000000
+    }
+  ]
+}

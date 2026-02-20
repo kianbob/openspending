@@ -72,6 +72,21 @@ const recentArticles = [
     title: "Healthcare Spending Analysis",
     description: "Medicare, Medicaid, and the $1.8 trillion healthcare budget",
   },
+  {
+    href: "/contractor-monopoly",
+    title: "The Contractor Monopoly",
+    description: "10 companies hold 64% of all federal contracts",
+  },
+  {
+    href: "/interest",
+    title: "The Interest Time Bomb",
+    description: "$952B in interest — now larger than the defense budget",
+  },
+  {
+    href: "/state-dependency",
+    title: "Federal Dependency by State",
+    description: "Which states take more than they give?",
+  },
 ];
 
 const deepDiveCards = [

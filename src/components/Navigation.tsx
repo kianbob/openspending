@@ -37,6 +37,8 @@ const dropdowns: DropdownSection[] = [
       { href: '/doge-reality', title: 'DOGE Reality Check', desc: 'Claims vs actual spending data' },
       { href: '/your-tax-bill', title: 'Your Tax Bill', desc: '$33,135 per taxpayer breakdown' },
       { href: '/spending-explosion', title: 'Spending Explosion', desc: 'Which agencies grew fastest' },
+      { href: '/global-comparison', title: 'US vs The World', desc: 'How American spending compares globally' },
+      { href: '/national-debt', title: 'National Debt Clock', desc: 'The $36 trillion debt tracker' },
     ],
   },
   {
@@ -49,6 +51,9 @@ const dropdowns: DropdownSection[] = [
       { href: '/healthcare-spending', title: 'Healthcare Spending', desc: 'The healthcare machine' },
       { href: '/no-bid', title: 'No-Bid Nation', desc: 'When competition dies' },
       { href: '/waste', title: 'Waste & Fraud', desc: 'Tracking government waste' },
+      { href: '/contractor-monopoly', title: 'Contractor Monopoly', desc: '10 companies, 64% of contracts' },
+      { href: '/interest', title: 'Interest Time Bomb', desc: '$952B in debt interest' },
+      { href: '/state-dependency', title: 'State Dependency', desc: 'Donors vs takers' },
       { href: '/how-it-works', title: 'How It Works', desc: 'Federal spending explained' },
     ],
   },
@@ -59,6 +64,7 @@ const dropdowns: DropdownSection[] = [
       { href: '/compare', title: 'Compare', desc: 'Side-by-side analysis' },
       { href: '/search', title: 'Search', desc: 'Search everything' },
       { href: '/downloads', title: 'Downloads', desc: 'Data files' },
+      { href: '/shutdown-calculator', title: 'Shutdown Calculator', desc: 'Cost of government shutdowns' },
     ],
   },
 ];

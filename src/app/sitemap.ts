@@ -46,6 +46,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/doge-reality",
     "/your-tax-bill",
     "/spending-explosion",
+    "/global-comparison",
+    "/national-debt",
+    "/shutdown-calculator",
+    "/contractor-monopoly",
+    "/interest",
+    "/state-dependency",
   ];
 
   const agencyPages = agencies
