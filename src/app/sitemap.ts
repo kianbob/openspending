@@ -127,6 +127,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  const productPages = (productCodes as Array<{ code: string }>).map(
+    (p) => `/products/${p.code}`
+  );
+
+  function slugifyGrantRecipient(name: string): string {
+    return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/g, "");
+  }
+
+  const grantRecipientPages = (grantRecipients as Array<{ name: string }>).map(
+    (r) => `/grants/recipients/${slugifyGrantRecipient(r.name)}`
+  );
+
   const countryPages = (countriesRaw as Array<{ name: string }>).map((c) => {
     const slug = c.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/g, "").replace(/^-+/, "");
     return `/countries/${slug}`;
@@ -182,6 +194,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     })),
     ...countryPages.map((path) => ({
+      url: `${BASE_URL}${path}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+    ...productPages.map((path) => ({
+      url: `${BASE_URL}${path}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+    ...grantRecipientPages.map((path) => ({
       url: `${BASE_URL}${path}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
