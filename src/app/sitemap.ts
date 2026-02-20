@@ -10,6 +10,7 @@ import productCodes from "@/../public/data/product-service-codes.json";
 import grantRecipients from "@/../public/data/top-grant-recipients-detailed.json";
 import countySpending from "@/../public/data/county-spending.json";
 import countriesRaw from "@/../public/data/spending-by-country.json";
+import federalPrograms from "@/../public/data/federal-programs.json";
 
 const BASE_URL = "https://openspending-app.vercel.app";
 
@@ -89,7 +90,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/small-business",
     "/recipients",
     "/budget-functions",
+    "/programs",
   ];
+
+  function slugifyProgram(name: string): string {
+    return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/g, "").replace(/^-+/, "");
+  }
+
+  const programPages = federalPrograms.map(
+    (p: { name: string }) => `/programs/${slugifyProgram(p.name)}`
+  );
 
   const budgetFunctionPages = budgetFunctionsData.map(
     (f) => `/budget-functions/${f.code}`
@@ -221,6 +231,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     })),
     ...grantRecipientPages.map((path) => ({
+      url: `${BASE_URL}${path}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+    ...programPages.map((path) => ({
       url: `${BASE_URL}${path}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,

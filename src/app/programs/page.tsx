@@ -44,7 +44,7 @@ const tableData = programs.map((p) => ({
 export default function ProgramsPage() {
   return (
     <main className="max-w-6xl mx-auto px-4 py-10">
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Federal Programs" }]} />
+      <Breadcrumbs items={[{ label: "Federal Programs" }]} />
 
       <h1 className="text-4xl font-serif font-bold text-gray-900 mt-6">
         Federal Programs: Where $1.24 Trillion in Grants Goes
