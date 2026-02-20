@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedPages } from "@/components/RelatedPages";
 import { ContractorAgenciesChart } from "@/components/charts/ContractorAgenciesChart";
 import { ContractorSpendingChart } from "@/components/charts/ContractorSpendingChart";
 import { formatDollars, formatPercent, toTitleCase } from "@/lib/format";
@@ -293,39 +294,12 @@ export default async function ContractorDetailPage({
         </div>
       )}
 
-      {/* Explore More */}
-      <div className="mb-12">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">Explore More</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <Link
-            href="/contractors"
-            className="bg-white rounded-xl border border-gray-200 p-5 hover:border-indigo-300 hover:shadow-sm transition-all"
-          >
-            <p className="font-semibold text-gray-900">All Contractors</p>
-            <p className="text-sm text-gray-500 mt-1">
-              Top 50 federal contractors ranked by spending
-            </p>
-          </Link>
-          <Link
-            href="/no-bid"
-            className="bg-white rounded-xl border border-gray-200 p-5 hover:border-indigo-300 hover:shadow-sm transition-all"
-          >
-            <p className="font-semibold text-gray-900">No-Bid Contracts</p>
-            <p className="text-sm text-gray-500 mt-1">
-              Sole-source contracts and contractor concentration
-            </p>
-          </Link>
-          <Link
-            href="/industries"
-            className="bg-white rounded-xl border border-gray-200 p-5 hover:border-indigo-300 hover:shadow-sm transition-all"
-          >
-            <p className="font-semibold text-gray-900">Industries</p>
-            <p className="text-sm text-gray-500 mt-1">
-              Top industries by federal contract spending
-            </p>
-          </Link>
-        </div>
-      </div>
+      <RelatedPages items={[
+        { href: "/contractor-monopoly", title: "Contractor Monopoly", description: "How a handful of companies dominate federal contracting." },
+        { href: "/no-bid", title: "No-Bid Contracts", description: "Sole-source contracts awarded without competition." },
+        { href: "/small-business", title: "Small Business", description: "How small businesses fare in federal contracting." },
+        { href: "/industries", title: "Industries", description: "Top industries by federal contract spending." },
+      ]} />
 
       <Link
         href="/contractors"

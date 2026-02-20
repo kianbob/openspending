@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
 import { formatDollars, toTitleCase } from "@/lib/format";
 import countyData from "@/../public/data/county-spending.json";
 
@@ -55,6 +56,14 @@ export default function CountiesListingPage() {
 
   return (
     <main className="max-w-5xl mx-auto px-4 py-8">
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Federal Spending by County FY2025",
+        "description": "Federal contract spending distributed by U.S. county",
+        "url": "https://openspending-app.vercel.app/counties",
+        "creator": { "@type": "Organization", "name": "OpenSpending" }
+      }} />
       <Breadcrumbs items={[{ label: "Counties" }]} />
 
       <h1 className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-2">

@@ -3,6 +3,7 @@ import { SortableTable } from "@/components/SortableTable";
 import { ProgramBarChart } from "@/components/charts/ProgramBarChart";
 import { ShareButtons } from "@/components/ShareButtons";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
 import { formatDollars } from "@/lib/format";
 import programs from "@/../public/data/federal-programs.json";
 
@@ -44,6 +45,15 @@ const tableData = programs.map((p) => ({
 export default function ProgramsPage() {
   return (
     <main className="max-w-6xl mx-auto px-4 py-10">
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Federal Programs FY2025",
+        "description": "Federal assistance programs ranked by total spending",
+        "url": "https://openspending-app.vercel.app/programs",
+        "creator": { "@type": "Organization", "name": "OpenSpending" },
+        "distribution": { "@type": "DataDownload", "contentUrl": "https://openspending-app.vercel.app/data/federal-programs.json", "encodingFormat": "application/json" }
+      }} />
       <Breadcrumbs items={[{ label: "Federal Programs" }]} />
 
       <h1 className="text-4xl font-serif font-bold text-gray-900 mt-6">

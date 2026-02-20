@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
 import { SortableTable } from "@/components/SortableTable";
 import { FiscalYearSelector } from "@/components/FiscalYearSelector";
@@ -56,6 +58,16 @@ const tableData = agencies.map((a) => {
 export default function AgenciesPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Federal Agency Spending FY2025",
+        "description": "Budget authority, obligations, and outlays for 97 federal agencies",
+        "url": "https://openspending-app.vercel.app/agencies",
+        "creator": { "@type": "Organization", "name": "OpenSpending" },
+        "distribution": { "@type": "DataDownload", "contentUrl": "https://openspending-app.vercel.app/data/agencies.json", "encodingFormat": "application/json" }
+      }} />
+      <Breadcrumbs items={[{ label: "Agencies" }]} />
       <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-2">
         Federal Agencies
       </h1>

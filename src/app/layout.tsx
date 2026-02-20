@@ -67,7 +67,8 @@ export default function RootLayout({
               name: "OpenSpending",
               url: "https://openspending-app.vercel.app",
               description:
-                "Independent, data-driven analysis of federal government spending using USASpending.gov data.",
+                "Independent, data-driven analysis of federal government spending",
+              sameAs: ["https://twitter.com/TheDataProject0"],
             }),
           }}
         />

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
 import { ShareButtons } from "@/components/ShareButtons";
 import { BudgetFunctionBarChart } from "@/components/charts/BudgetFunctionBarChart";
 import { SortableTable } from "@/components/SortableTable";
@@ -44,6 +45,15 @@ const tableData = sorted.map((f) => ({
 export default function BudgetFunctionsPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Federal Budget Functions FY2025",
+        "description": "Federal spending organized by budget function categories",
+        "url": "https://openspending-app.vercel.app/budget-functions",
+        "creator": { "@type": "Organization", "name": "OpenSpending" },
+        "distribution": { "@type": "DataDownload", "contentUrl": "https://openspending-app.vercel.app/data/budget-functions.json", "encodingFormat": "application/json" }
+      }} />
       <Breadcrumbs items={[{ label: "Budget Functions" }]} />
 
       <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-2">

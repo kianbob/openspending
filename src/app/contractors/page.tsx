@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
 import { ContractorTrends } from "@/components/charts/ContractorTrends";
 import { ContractorsTable } from "@/components/ContractorsTable";
@@ -46,6 +48,16 @@ const tableData = contractors.map((c) => ({
 export default function ContractorsPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Top Federal Contractors FY2025",
+        "description": "Federal contract awards ranked by total obligated amount",
+        "url": "https://openspending-app.vercel.app/contractors",
+        "creator": { "@type": "Organization", "name": "OpenSpending" },
+        "distribution": { "@type": "DataDownload", "contentUrl": "https://openspending-app.vercel.app/data/top-contractors-deduped.json", "encodingFormat": "application/json" }
+      }} />
+      <Breadcrumbs items={[{ label: "Contractors" }]} />
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
         Top Federal Contractors
       </h1>

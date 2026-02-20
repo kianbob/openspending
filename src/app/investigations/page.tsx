@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: 'Investigations — OpenSpending',
@@ -117,6 +118,9 @@ const articles = [
 export default function InvestigationsPage() {
   return (
     <>
+      <div className="max-w-5xl mx-auto px-4 pt-6">
+        <Breadcrumbs items={[{ label: "Investigations" }]} />
+      </div>
       <section className="bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 py-20 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-white">

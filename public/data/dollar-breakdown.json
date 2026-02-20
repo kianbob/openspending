@@ -1,0 +1,150 @@
+{
+  "totalBudget": 10127302212365.684,
+  "perTaxpayer": 63296,
+  "breakdown": [
+    {
+      "name": "Medicare",
+      "amount": 1836688276389.77,
+      "cents": 18.14,
+      "pct": "18.1",
+      "perDollar": "0.1814",
+      "display": "18¢"
+    },
+    {
+      "name": "Social Security",
+      "amount": 1667788719716.72,
+      "cents": 16.47,
+      "pct": "16.5",
+      "perDollar": "0.1647",
+      "display": "16¢"
+    },
+    {
+      "name": "National Defense",
+      "amount": 1416433029076.37,
+      "cents": 13.99,
+      "pct": "14.0",
+      "perDollar": "0.1399",
+      "display": "14¢"
+    },
+    {
+      "name": "Net Interest",
+      "amount": 1250796514304.93,
+      "cents": 12.35,
+      "pct": "12.4",
+      "perDollar": "0.1235",
+      "display": "12¢"
+    },
+    {
+      "name": "Health",
+      "amount": 1145485923479.83,
+      "cents": 11.31,
+      "pct": "11.3",
+      "perDollar": "0.1131",
+      "display": "11¢"
+    },
+    {
+      "name": "Income Security",
+      "amount": 759048551195.99,
+      "cents": 7.5,
+      "pct": "7.5",
+      "perDollar": "0.0750",
+      "display": "8¢"
+    },
+    {
+      "name": "General Government",
+      "amount": 511426383430.57,
+      "cents": 5.05,
+      "pct": "5.0",
+      "perDollar": "0.0505",
+      "display": "5¢"
+    },
+    {
+      "name": "Veterans Benefits and Services",
+      "amount": 413322282986.17,
+      "cents": 4.08,
+      "pct": "4.1",
+      "perDollar": "0.0408",
+      "display": "4¢"
+    },
+    {
+      "name": "Education, Training, Employment, and Social Services",
+      "amount": 221514008215.09,
+      "cents": 2.19,
+      "pct": "2.2",
+      "perDollar": "0.0219",
+      "display": "2¢"
+    },
+    {
+      "name": "Transportation",
+      "amount": 197806022689.98,
+      "cents": 1.95,
+      "pct": "2.0",
+      "perDollar": "0.0195",
+      "display": "2¢"
+    },
+    {
+      "name": "Natural Resources and Environment",
+      "amount": 133406050475.69,
+      "cents": 1.32,
+      "pct": "1.3",
+      "perDollar": "0.0132",
+      "display": "1¢"
+    },
+    {
+      "name": "Administration of Justice",
+      "amount": 115354127604.21,
+      "cents": 1.14,
+      "pct": "1.1",
+      "perDollar": "0.0114",
+      "display": "1¢"
+    },
+    {
+      "name": "Community and Regional Development",
+      "amount": 106470038438.98,
+      "cents": 1.05,
+      "pct": "1.1",
+      "perDollar": "0.0105",
+      "display": "1¢"
+    },
+    {
+      "name": "Commerce and Housing Credit",
+      "amount": 95854563162.6,
+      "cents": 0.95,
+      "pct": "0.9",
+      "perDollar": "0.0095",
+      "display": "<1¢"
+    },
+    {
+      "name": "Agriculture",
+      "amount": 73447290508.83,
+      "cents": 0.73,
+      "pct": "0.7",
+      "perDollar": "0.0073",
+      "display": "<1¢"
+    },
+    {
+      "name": "International Affairs",
+      "amount": 71578245633.92,
+      "cents": 0.71,
+      "pct": "0.7",
+      "perDollar": "0.0071",
+      "display": "<1¢"
+    },
+    {
+      "name": "Energy",
+      "amount": 63239998705.64,
+      "cents": 0.62,
+      "pct": "0.6",
+      "perDollar": "0.0062",
+      "display": "<1¢"
+    },
+    {
+      "name": "General Science, Space, and Technology",
+      "amount": 47642186350.39,
+      "cents": 0.47,
+      "pct": "0.5",
+      "perDollar": "0.0047",
+      "display": "<1¢"
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedPages } from "@/components/RelatedPages";
 import { ShareButtons } from "@/components/ShareButtons";
 import { formatDollars, formatDollarsLong, toTitleCase } from "@/lib/format";
 import countriesData from "@/../public/data/spending-by-country.json";
@@ -89,24 +90,12 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         </p>
       </div>
 
-      {/* Related Links */}
-      <div className="mb-8">
-        <h2 className="text-xl font-semibold mb-3">Related Pages</h2>
-        <div className="flex flex-wrap gap-3">
-          <Link href="/foreign-aid" className="text-indigo-600 hover:underline text-sm bg-indigo-50 px-3 py-1.5 rounded-full">
-            🌍 Foreign Aid Overview
-          </Link>
-          <Link href="/foreign-aid-deep-dive" className="text-indigo-600 hover:underline text-sm bg-indigo-50 px-3 py-1.5 rounded-full">
-            🔍 Foreign Aid Deep Dive
-          </Link>
-          <Link href="/international-spending" className="text-indigo-600 hover:underline text-sm bg-indigo-50 px-3 py-1.5 rounded-full">
-            🌐 International Spending
-          </Link>
-          <Link href="/countries" className="text-indigo-600 hover:underline text-sm bg-indigo-50 px-3 py-1.5 rounded-full">
-            📊 All Countries
-          </Link>
-        </div>
-      </div>
+      <RelatedPages items={[
+        { href: "/foreign-aid", title: "Foreign Aid Overview", description: "Where U.S. foreign aid dollars go around the world." },
+        { href: "/foreign-aid-deep-dive", title: "Foreign Aid Deep Dive", description: "Detailed analysis of U.S. foreign assistance programs." },
+        { href: "/international-spending", title: "International Spending", description: "All federal spending on international affairs." },
+        { href: "/usaid", title: "USAID", description: "The U.S. Agency for International Development's budget and programs." },
+      ]} />
 
       <ShareButtons title={`U.S. Spending in ${name} — ${formatDollars(country.amount)} in FY2025`} />
     </main>

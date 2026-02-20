@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
 import { ShareButtons } from "@/components/ShareButtons";
 import { formatDollars, formatDollarsLong, toTitleCase } from "@/lib/format";
 import countriesData from "@/../public/data/spending-by-country.json";
@@ -43,6 +44,14 @@ export default function CountriesPage() {
 
   return (
     <main className="max-w-5xl mx-auto px-4 py-8">
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "U.S. Federal Spending by Country FY2025",
+        "description": "Foreign aid and federal spending distributed by recipient country",
+        "url": "https://openspending-app.vercel.app/countries",
+        "creator": { "@type": "Organization", "name": "OpenSpending" }
+      }} />
       <Breadcrumbs items={[{ label: "Foreign Aid", href: "/foreign-aid" }, { label: "Countries" }]} />
 
       <h1 className="text-3xl md:text-4xl font-serif font-bold mb-2">

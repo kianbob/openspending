@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedPages } from "@/components/RelatedPages";
 import { ShareButtons } from "@/components/ShareButtons";
 import awards from "@/../public/data/top-awards.json";
 import contractors from "@/../public/data/top-contractors.json";
@@ -217,35 +218,12 @@ export default async function ContractDetailPage({
         url={`https://openspending-app.vercel.app/contracts/${slug}`}
       />
 
-      {/* Related Links */}
-      <div className="mt-12 border-t border-gray-200 pt-8">
-        <h2 className="font-serif text-xl font-bold text-gray-900 mb-4">
-          Explore More
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <Link
-            href="/contracts"
-            className="block border border-gray-200 rounded-xl p-5 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors"
-          >
-            <h3 className="font-bold text-gray-900 mb-1">All Contracts</h3>
-            <p className="text-gray-600 text-sm">Browse the 100 largest federal contracts.</p>
-          </Link>
-          <Link
-            href="/contractors"
-            className="block border border-gray-200 rounded-xl p-5 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors"
-          >
-            <h3 className="font-bold text-gray-900 mb-1">Top Contractors</h3>
-            <p className="text-gray-600 text-sm">Who captures the most federal dollars?</p>
-          </Link>
-          <Link
-            href="/no-bid"
-            className="block border border-gray-200 rounded-xl p-5 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors"
-          >
-            <h3 className="font-bold text-gray-900 mb-1">No-Bid Contracts</h3>
-            <p className="text-gray-600 text-sm">Sole-source awards without competition.</p>
-          </Link>
-        </div>
-      </div>
+      <RelatedPages items={[
+        { href: "/contracts", title: "All Contracts", description: "Browse the 100 largest federal contracts." },
+        { href: "/no-bid", title: "No-Bid Contracts", description: "Sole-source awards without competition." },
+        { href: "/contractors", title: "Top Contractors", description: "Who captures the most federal dollars." },
+        { href: "/agencies", title: "Federal Agencies", description: "Agency budgets and spending breakdowns." },
+      ]} />
     </div>
   );
 }

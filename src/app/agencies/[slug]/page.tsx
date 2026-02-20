@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedPages } from "@/components/RelatedPages";
 import { AreaSpendingChart } from "@/components/charts/AreaSpendingChart";
 import { AgencyContractorsChart } from "@/components/charts/AgencyContractorsChart";
 import { ContractsGrantsDonut } from "@/components/charts/ContractsGrantsDonut";
@@ -501,6 +502,13 @@ export default async function AgencyDetailPage({
           </div>
         </div>
       )}
+
+      <RelatedPages items={[
+        { href: "/budget-functions", title: "Budget Functions", description: "How federal spending is categorized by purpose and function." },
+        { href: "/contractors", title: "Top Contractors", description: "Which companies receive the most federal contract dollars." },
+        { href: "/spending-explosion", title: "Spending Explosion", description: "How federal spending has grown dramatically since 2017." },
+        { href: "/subagencies", title: "Sub-Agencies", description: "Detailed spending by sub-agencies and bureaus." },
+      ]} />
 
       <div className="flex items-center justify-between mt-4">
         <Link

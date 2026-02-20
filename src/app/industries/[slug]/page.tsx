@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedPages } from "@/components/RelatedPages";
 import { ShareButtons } from "@/components/ShareButtons";
 import { formatDollars } from "@/lib/format";
 import industries from "@/../public/data/industry-details.json";
@@ -206,41 +207,12 @@ export default async function IndustryDetailPage({
         </div>
       </div>
 
-      {/* Related Links */}
-      <div>
-        <h2 className="font-serif text-xl font-bold text-gray-900 mb-4">
-          Explore More
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <Link
-            href="/industries"
-            className="block border border-gray-200 rounded-xl p-5 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors"
-          >
-            <h3 className="font-bold text-gray-900 mb-1">All Industries</h3>
-            <p className="text-gray-600 text-sm">
-              See how all 50 industries compare by federal contract spending.
-            </p>
-          </Link>
-          <Link
-            href="/contractors"
-            className="block border border-gray-200 rounded-xl p-5 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors"
-          >
-            <h3 className="font-bold text-gray-900 mb-1">Top Contractors</h3>
-            <p className="text-gray-600 text-sm">
-              Which companies dominate federal contracting dollars.
-            </p>
-          </Link>
-          <Link
-            href="/contracts"
-            className="block border border-gray-200 rounded-xl p-5 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors"
-          >
-            <h3 className="font-bold text-gray-900 mb-1">Largest Contracts</h3>
-            <p className="text-gray-600 text-sm">
-              The biggest individual federal contracts by dollar value.
-            </p>
-          </Link>
-        </div>
-      </div>
+      <RelatedPages items={[
+        { href: "/industries", title: "All Industries", description: "Compare 50+ industries by federal contract spending." },
+        { href: "/contractors", title: "Top Contractors", description: "Which companies dominate federal contracting dollars." },
+        { href: "/products", title: "Products & Services", description: "What the government actually buys with your tax dollars." },
+        { href: "/what-they-buy", title: "What They Buy", description: "The surprising things the federal government purchases." },
+      ]} />
     </div>
   );
 }

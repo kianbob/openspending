@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedPages } from "@/components/RelatedPages";
 import { formatDollars, formatPercent, toTitleCase } from "@/lib/format";
 import stateDetails from "@/../public/data/state-details.json";
 import stateContractors from "@/../public/data/state-contractors.json";
@@ -233,39 +234,12 @@ export default async function StateDetailPage({
         );
       })()}
 
-      {/* Explore More */}
-      <div className="mb-12">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">Explore More</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <Link
-            href="/states"
-            className="bg-white rounded-xl border border-gray-200 p-5 hover:border-indigo-300 hover:shadow-sm transition-all"
-          >
-            <p className="font-semibold text-gray-900">All States</p>
-            <p className="text-sm text-gray-500 mt-1">
-              Federal contract spending by state
-            </p>
-          </Link>
-          <Link
-            href="/contractors"
-            className="bg-white rounded-xl border border-gray-200 p-5 hover:border-indigo-300 hover:shadow-sm transition-all"
-          >
-            <p className="font-semibold text-gray-900">Top Contractors</p>
-            <p className="text-sm text-gray-500 mt-1">
-              Top 50 federal contractors ranked by spending
-            </p>
-          </Link>
-          <Link
-            href="/agencies"
-            className="bg-white rounded-xl border border-gray-200 p-5 hover:border-indigo-300 hover:shadow-sm transition-all"
-          >
-            <p className="font-semibold text-gray-900">Agencies</p>
-            <p className="text-sm text-gray-500 mt-1">
-              Federal agency budgets and spending breakdowns
-            </p>
-          </Link>
-        </div>
-      </div>
+      <RelatedPages items={[
+        { href: "/state-dependency", title: "State Dependency", description: "Which states depend most on federal spending." },
+        { href: "/counties", title: "Counties", description: "Federal spending at the county level across America." },
+        { href: "/welfare-queens", title: "Welfare Queens", description: "Which states receive more federal money than they pay in taxes." },
+        { href: "/tax-calculator", title: "Tax Calculator", description: "See exactly where your federal tax dollars go." },
+      ]} />
 
       <Link
         href="/states"

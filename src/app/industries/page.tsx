@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
 import { SortableTable } from "@/components/SortableTable";
 import { formatDollars } from "@/lib/format";
@@ -37,6 +39,16 @@ const tableData = industries.map((ind) => ({
 export default function IndustriesPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Federal Spending by Industry FY2025",
+        "description": "Top industries receiving federal contract dollars, classified by NAICS code",
+        "url": "https://openspending-app.vercel.app/industries",
+        "creator": { "@type": "Organization", "name": "OpenSpending" },
+        "distribution": { "@type": "DataDownload", "contentUrl": "https://openspending-app.vercel.app/data/industry-details.json", "encodingFormat": "application/json" }
+      }} />
+      <Breadcrumbs items={[{ label: "Industries" }]} />
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 font-serif">
         Federal Spending by Industry
       </h1>

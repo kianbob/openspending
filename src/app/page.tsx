@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
 import { TopContractorsChart } from "@/components/charts/TopContractorsChart";
 import { SearchBar } from "@/components/SearchBar";
 import { formatDollars, formatPercent } from "@/lib/format";
@@ -96,6 +97,13 @@ const dataPages = [
 export default function HomePage() {
   return (
     <div>
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "OpenSpending",
+        "url": "https://openspending-app.vercel.app",
+        "description": "Track $11.2 trillion in federal spending"
+      }} />
       {/* Hero */}
       <section className="bg-gradient-to-br from-indigo-900 via-indigo-800 to-indigo-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">

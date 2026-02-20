@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
 import { formatDollars } from "@/lib/format";
 import products from "@/../public/data/product-service-codes.json";
 
@@ -19,6 +20,15 @@ export default function ProductsListingPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Federal Spending by Product & Service Code FY2025",
+        "description": "Federal contract spending categorized by product and service codes",
+        "url": "https://openspending-app.vercel.app/products",
+        "creator": { "@type": "Organization", "name": "OpenSpending" },
+        "distribution": { "@type": "DataDownload", "contentUrl": "https://openspending-app.vercel.app/data/product-service-codes.json", "encodingFormat": "application/json" }
+      }} />
       <Breadcrumbs items={[{ label: "Products & Services" }]} />
 
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 font-serif mb-2">

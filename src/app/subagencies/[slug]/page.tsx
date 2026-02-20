@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedPages } from "@/components/RelatedPages";
 import { ShareButtons } from "@/components/ShareButtons";
 import { formatDollars, formatDollarsLong } from "@/lib/format";
 import subagencies from "@/../public/data/subagencies.json";
@@ -82,23 +83,12 @@ export default async function SubAgencyDetailPage({ params }: { params: Promise<
       <ShareButtons url={pageUrl} title={`${entry.name} – ${formatDollars(entry.amount)} in Federal Spending`} />
 
       {/* Explore More */}
-      <section className="border-t border-gray-200 pt-8 mt-10">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">Explore More</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <Link href="/subagencies" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition">
-            <p className="font-semibold text-indigo-700">Sub-Agencies →</p>
-            <p className="text-sm text-gray-600">All sub-agency spending</p>
-          </Link>
-          <Link href="/agencies" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition">
-            <p className="font-semibold text-indigo-700">Agencies →</p>
-            <p className="text-sm text-gray-600">Parent agency profiles</p>
-          </Link>
-          <Link href="/contractors" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition">
-            <p className="font-semibold text-indigo-700">Contractors →</p>
-            <p className="text-sm text-gray-600">Top federal contractors</p>
-          </Link>
-        </div>
-      </section>
+      <RelatedPages items={[
+        { href: "/subagencies", title: "All Sub-Agencies", description: "Explore all sub-agency spending across the federal government." },
+        { href: "/agencies", title: "Federal Agencies", description: "Parent agency profiles and budget breakdowns." },
+        { href: "/budget-functions", title: "Budget Functions", description: "How federal spending is categorized by purpose." },
+        { href: "/programs", title: "Federal Programs", description: "200+ federal programs ranked by spending." },
+      ]} />
     </div>
   );
 }

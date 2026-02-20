@@ -1,0 +1,104 @@
+{
+  "overview": {
+    "total_fy2024": 14600000000,
+    "total_earmarks": 8000,
+    "avg_earmark": 1825000,
+    "banned_years": "2011-2020",
+    "reinstated": 2021,
+    "note": "Called Community Project Funding in the House, Congressionally Directed Spending in the Senate"
+  },
+  "historical": [
+    {
+      "year": 2006,
+      "total": 29000000000,
+      "count": 9963,
+      "note": "Peak earmarks era"
+    },
+    {
+      "year": 2008,
+      "total": 17200000000,
+      "count": 11610
+    },
+    {
+      "year": 2010,
+      "total": 16100000000,
+      "count": 9129,
+      "note": "Last year before ban"
+    },
+    {
+      "year": 2011,
+      "total": 0,
+      "count": 0,
+      "note": "Earmark moratorium begins"
+    },
+    {
+      "year": 2021,
+      "total": 9000000000,
+      "count": 4962,
+      "note": "Earmarks reinstated"
+    },
+    {
+      "year": 2022,
+      "total": 15300000000,
+      "count": 6132
+    },
+    {
+      "year": 2023,
+      "total": 15300000000,
+      "count": 7234
+    },
+    {
+      "year": 2024,
+      "total": 14600000000,
+      "count": 8000
+    }
+  ],
+  "topCategories": [
+    {
+      "name": "Transportation & Infrastructure",
+      "amount": 3500000000,
+      "pct": 24
+    },
+    {
+      "name": "Housing & Community Development",
+      "amount": 2500000000,
+      "pct": 17
+    },
+    {
+      "name": "Education",
+      "amount": 2000000000,
+      "pct": 14
+    },
+    {
+      "name": "Health & Human Services",
+      "amount": 1800000000,
+      "pct": 12
+    },
+    {
+      "name": "Defense",
+      "amount": 1500000000,
+      "pct": 10
+    },
+    {
+      "name": "Agriculture",
+      "amount": 1000000000,
+      "pct": 7
+    },
+    {
+      "name": "Science & Technology",
+      "amount": 800000000,
+      "pct": 5
+    },
+    {
+      "name": "Other",
+      "amount": 1500000000,
+      "pct": 10
+    }
+  ],
+  "controversies": [
+    "Bridge to Nowhere (Alaska, 2005) — $223M for a bridge serving 50 people",
+    "Teapot Museum (North Carolina) — $500K for a teapot-themed museum",
+    "Lobster Institute (Maine) — $188K to study lobster"
+  ],
+  "source": "Congressional Research Service, AAAS, House/Senate Appropriations Committees"
+}

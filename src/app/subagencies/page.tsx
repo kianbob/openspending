@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
 import { ShareButtons } from "@/components/ShareButtons";
 import { formatDollars } from "@/lib/format";
 import { SortableTable } from "@/components/SortableTable";
@@ -42,6 +43,15 @@ const columns = [
 export default function SubAgenciesPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Federal Sub-Agency Spending FY2025",
+        "description": "Spending data for federal sub-agencies and bureaus",
+        "url": "https://openspending-app.vercel.app/subagencies",
+        "creator": { "@type": "Organization", "name": "OpenSpending" },
+        "distribution": { "@type": "DataDownload", "contentUrl": "https://openspending-app.vercel.app/data/subagencies.json", "encodingFormat": "application/json" }
+      }} />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Sub-Agencies" }]} />
 
       <h1 className="font-serif text-4xl sm:text-5xl font-bold text-gray-900 mb-4 leading-tight">

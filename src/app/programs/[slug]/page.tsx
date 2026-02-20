@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedPages } from "@/components/RelatedPages";
 import { ShareButtons } from "@/components/ShareButtons";
 import { formatDollars, formatDollarsLong } from "@/lib/format";
 import programs from "@/../public/data/federal-programs.json";
@@ -219,23 +220,12 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
       </section>
 
       {/* Related Links */}
-      <section className="mt-12 bg-gray-50 rounded-lg p-6">
-        <h2 className="text-xl font-semibold text-gray-900 mb-4">Explore More</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <Link href="/programs" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-indigo-300 transition-colors">
-            <div className="font-semibold text-indigo-700">All Programs →</div>
-            <div className="text-sm text-gray-500 mt-1">200 federal programs ranked</div>
-          </Link>
-          <Link href="/grants" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-indigo-300 transition-colors">
-            <div className="font-semibold text-indigo-700">Grant Recipients →</div>
-            <div className="text-sm text-gray-500 mt-1">$1.24T to states & orgs</div>
-          </Link>
-          <Link href="/agencies" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-indigo-300 transition-colors">
-            <div className="font-semibold text-indigo-700">Federal Agencies →</div>
-            <div className="text-sm text-gray-500 mt-1">97 agency profiles</div>
-          </Link>
-        </div>
-      </section>
+      <RelatedPages items={[
+        { href: "/programs", title: "All Programs", description: "200+ federal programs ranked by spending." },
+        { href: "/grants", title: "Grant Recipients", description: "$1.24 trillion in grants to states and organizations." },
+        { href: "/budget-functions", title: "Budget Functions", description: "Federal spending categorized by purpose and function." },
+        { href: "/healthcare-spending", title: "Healthcare Spending", description: "How the government spends on Medicare, Medicaid, and more." },
+      ]} />
     </main>
   );
 }

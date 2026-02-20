@@ -1,0 +1,123 @@
+{
+  "yearly": [
+    {
+      "fy": 2009,
+      "total": 3517677000000,
+      "president": "Obama",
+      "note": "Inherited from Bush"
+    },
+    {
+      "fy": 2010,
+      "total": 3457079000000,
+      "president": "Obama"
+    },
+    {
+      "fy": 2011,
+      "total": 3603059000000,
+      "president": "Obama"
+    },
+    {
+      "fy": 2012,
+      "total": 3536951000000,
+      "president": "Obama"
+    },
+    {
+      "fy": 2013,
+      "total": 3454647000000,
+      "president": "Obama"
+    },
+    {
+      "fy": 2014,
+      "total": 3506089000000,
+      "president": "Obama"
+    },
+    {
+      "fy": 2015,
+      "total": 3688292000000,
+      "president": "Obama"
+    },
+    {
+      "fy": 2016,
+      "total": 3852612000000,
+      "president": "Obama"
+    },
+    {
+      "fy": 2017,
+      "total": 3981543000000,
+      "president": "Trump",
+      "note": "Transition year"
+    },
+    {
+      "fy": 2018,
+      "total": 4108853000000,
+      "president": "Trump"
+    },
+    {
+      "fy": 2019,
+      "total": 4446956000000,
+      "president": "Trump"
+    },
+    {
+      "fy": 2020,
+      "total": 6550379000000,
+      "president": "Trump",
+      "note": "COVID spending"
+    },
+    {
+      "fy": 2021,
+      "total": 6818157000000,
+      "president": "Biden",
+      "note": "Transition year"
+    },
+    {
+      "fy": 2022,
+      "total": 6271504000000,
+      "president": "Biden"
+    },
+    {
+      "fy": 2023,
+      "total": 6134178000000,
+      "president": "Biden"
+    },
+    {
+      "fy": 2024,
+      "total": 6752264000000,
+      "president": "Biden"
+    },
+    {
+      "fy": 2025,
+      "total": 7088000000000,
+      "president": "Trump 2nd",
+      "note": "Partial year estimate"
+    }
+  ],
+  "presidents": [
+    {
+      "name": "Barack Obama",
+      "party": "Democrat",
+      "terms": "FY2010-FY2017",
+      "avgSpending": 3612341000000,
+      "totalSpending": 28898728000000,
+      "deficitAdded": 7500000000000
+    },
+    {
+      "name": "Donald Trump (1st)",
+      "party": "Republican",
+      "terms": "FY2018-FY2021",
+      "avgSpending": 5481086000000,
+      "totalSpending": 21924344000000,
+      "deficitAdded": 7800000000000,
+      "note": "Includes COVID emergency spending"
+    },
+    {
+      "name": "Joe Biden",
+      "party": "Democrat",
+      "terms": "FY2022-FY2025",
+      "avgSpending": 6561486000000,
+      "totalSpending": 26245946000000,
+      "deficitAdded": 6200000000000
+    }
+  ],
+  "source": "USASpending.gov API (FY2017+), Congressional Budget Office (pre-2017)",
+  "note": "Fiscal years run Oct 1 - Sep 30. A president's first budget is typically the FY after inauguration."
+}

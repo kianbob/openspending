@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedPages } from "@/components/RelatedPages";
 import { ShareButtons } from "@/components/ShareButtons";
 import { BudgetFunctionLineChart } from "@/components/charts/BudgetFunctionLineChart";
 import { formatDollars, formatDollarsLong } from "@/lib/format";
@@ -241,38 +242,12 @@ export default async function BudgetFunctionDetailPage({
         </div>
       </div>
 
-      {/* Cross-links */}
-      <div className="bg-gray-50 rounded-xl p-6 mb-10">
-        <h2 className="text-lg font-semibold text-gray-800 mb-3">
-          Related Pages
-        </h2>
-        <div className="flex flex-wrap gap-3">
-          <Link
-            href="/budget-functions"
-            className="text-indigo-600 hover:text-indigo-800 underline"
-          >
-            ← All Budget Functions
-          </Link>
-          <Link
-            href="/agencies"
-            className="text-indigo-600 hover:text-indigo-800 underline"
-          >
-            Federal Agencies →
-          </Link>
-          <Link
-            href="/spending-explosion"
-            className="text-indigo-600 hover:text-indigo-800 underline"
-          >
-            Spending Explosion →
-          </Link>
-          <Link
-            href="/interest"
-            className="text-indigo-600 hover:text-indigo-800 underline"
-          >
-            Interest Time Bomb →
-          </Link>
-        </div>
-      </div>
+      <RelatedPages items={[
+        { href: "/budget-functions", title: "All Budget Functions", description: "Compare all federal budget functions by spending." },
+        { href: "/spending-explosion", title: "Spending Explosion", description: "How federal spending has grown dramatically since 2017." },
+        { href: "/your-tax-bill", title: "Your Tax Bill", description: "See exactly where your federal tax dollars go." },
+        { href: "/interest", title: "Interest Time Bomb", description: "The growing cost of servicing the national debt." },
+      ]} />
 
       <ShareButtons title={`${fn.name} — Federal Budget Function — OpenSpending`} />
     </div>
