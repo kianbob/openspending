@@ -262,38 +262,21 @@ export default function WastePage() {
         </div>
       </section>
 
-      {/* Explore More */}
-      <div className="bg-gray-50 rounded-xl border border-gray-200 p-8 text-center">
-        <h2 className="font-serif text-2xl font-bold text-gray-900 mb-3">
-          Explore More
-        </h2>
-        <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-          Federal waste is everywhere in the data. See it for yourself.
-        </p>
-        <div className="flex flex-wrap justify-center gap-3">
-          <Link
-            href="/covid"
-            className="px-5 py-2.5 bg-indigo-600 text-white rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
-          >
-            COVID Spending
+      {/* Related Analysis */}
+      <div className="border-t border-gray-200 mt-12 pt-8">
+        <h3 className="font-bold text-gray-900 mb-4">Related Analysis</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <Link href="/no-bid" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+            <p className="font-bold text-gray-900">No-Bid Contracts</p>
+            <p className="text-sm text-gray-600 mt-1">$74B awarded without competitive bidding</p>
           </Link>
-          <Link
-            href="/usaid"
-            className="px-5 py-2.5 bg-indigo-600 text-white rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
-          >
-            USAID Deep Dive
+          <Link href="/efficiency" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+            <p className="font-bold text-gray-900">Government Efficiency</p>
+            <p className="text-sm text-gray-600 mt-1">What works, what doesn&apos;t, and what DOGE gets wrong</p>
           </Link>
-          <Link
-            href="/contractors"
-            className="px-5 py-2.5 bg-white text-indigo-700 border border-indigo-200 rounded-lg text-sm font-medium hover:bg-indigo-50 transition-colors"
-          >
-            Top Contractors
-          </Link>
-          <Link
-            href="/how-it-works"
-            className="px-5 py-2.5 bg-white text-indigo-700 border border-indigo-200 rounded-lg text-sm font-medium hover:bg-indigo-50 transition-colors"
-          >
-            How Contracts Work
+          <Link href="/spending-analysis" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+            <p className="font-bold text-gray-900">Full Budget Breakdown</p>
+            <p className="text-sm text-gray-600 mt-1">Where $11.2 trillion in federal spending goes</p>
           </Link>
         </div>
       </div>

@@ -277,21 +277,21 @@ export default function HealthcareSpendingPage() {
           </Link>
         </p>
 
-        {/* Related */}
+        {/* Related Analysis */}
         <div className="border-t border-gray-200 mt-12 pt-8">
-          <h3 className="font-bold text-gray-900 mb-4">Continue Reading</h3>
+          <h3 className="font-bold text-gray-900 mb-4">Related Analysis</h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <Link href="/spending-analysis" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-              <p className="font-bold text-gray-900">Where Does $11.2T Go?</p>
-              <p className="text-sm text-gray-600 mt-1">The full federal budget breakdown</p>
+            <Link href="/waste" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+              <p className="font-bold text-gray-900">Government Waste</p>
+              <p className="text-sm text-gray-600 mt-1">The most egregious examples of wasteful spending</p>
             </Link>
-            <Link href="/top-10" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-              <p className="font-bold text-gray-900">The 10 Companies That Run Government</p>
-              <p className="text-sm text-gray-600 mt-1">$145B in contractor concentration</p>
+            <Link href="/agencies" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+              <p className="font-bold text-gray-900">All Federal Agencies</p>
+              <p className="text-sm text-gray-600 mt-1">Browse spending data for every federal agency</p>
             </Link>
-            <Link href="/pentagon-spending" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-              <p className="font-bold text-gray-900">The Pentagon: $1.4T and Counting</p>
-              <p className="text-sm text-gray-600 mt-1">Defense spending deep dive</p>
+            <Link href="/covid" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+              <p className="font-bold text-gray-900">COVID Spending</p>
+              <p className="text-sm text-gray-600 mt-1">Where the pandemic relief money actually went</p>
             </Link>
           </div>
         </div>

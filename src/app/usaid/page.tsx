@@ -156,38 +156,21 @@ export default function UsaidPage() {
         </Link>
       </div>
 
-      {/* Explore More */}
-      <div className="mt-12 bg-gray-50 rounded-xl border border-gray-200 p-8 text-center">
-        <h2 className="font-serif text-2xl font-bold text-gray-900 mb-3">
-          Explore More
-        </h2>
-        <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-          USAID is one piece of the federal spending puzzle. Dig deeper.
-        </p>
-        <div className="flex flex-wrap justify-center gap-3">
-          <Link
-            href="/waste"
-            className="px-5 py-2.5 bg-indigo-600 text-white rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
-          >
-            Federal Waste Problem
+      {/* Related Analysis */}
+      <div className="mt-12 border-t border-gray-200 pt-8">
+        <h3 className="font-bold text-gray-900 mb-4">Related Analysis</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <Link href="/foreign-aid" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+            <p className="font-bold text-gray-900">Foreign Aid Overview</p>
+            <p className="text-sm text-gray-600 mt-1">U.S. foreign assistance spending breakdown</p>
           </Link>
-          <Link
-            href="/foreign-aid"
-            className="px-5 py-2.5 bg-indigo-600 text-white rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
-          >
-            Foreign Aid Data
+          <Link href="/waste" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+            <p className="font-bold text-gray-900">Government Waste</p>
+            <p className="text-sm text-gray-600 mt-1">The most egregious examples of wasteful spending</p>
           </Link>
-          <Link
-            href="/contractors"
-            className="px-5 py-2.5 bg-white text-indigo-700 border border-indigo-200 rounded-lg text-sm font-medium hover:bg-indigo-50 transition-colors"
-          >
-            Top Contractors
-          </Link>
-          <Link
-            href="/agencies"
-            className="px-5 py-2.5 bg-white text-indigo-700 border border-indigo-200 rounded-lg text-sm font-medium hover:bg-indigo-50 transition-colors"
-          >
-            Agencies
+          <Link href="/efficiency" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+            <p className="font-bold text-gray-900">Government Efficiency</p>
+            <p className="text-sm text-gray-600 mt-1">What works, what doesn&apos;t, and what DOGE gets wrong</p>
           </Link>
         </div>
       </div>
