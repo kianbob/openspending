@@ -91,6 +91,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/recipients",
     "/budget-functions",
     "/programs",
+    "/your-dollar",
+    "/report-cards",
+    "/presidents",
+    "/earmarks",
   ];
 
   function slugifyProgram(name: string): string {

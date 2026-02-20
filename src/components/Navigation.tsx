@@ -54,6 +54,7 @@ const dropdowns: DropdownSection[] = [
       { href: '/federal-accounts', title: 'Federal Accounts', desc: 'Where your money actually goes' },
       { href: '/monthly-pulse', title: 'Monthly Pulse', desc: 'Real-time spending dashboard' },
       { href: '/budget-functions', title: 'Budget Functions', desc: '18 major spending categories' },
+      { href: '/report-cards', title: 'Agency Report Cards', desc: '24 agencies graded A-F' },
     ],
   },
   {
@@ -73,6 +74,8 @@ const dropdowns: DropdownSection[] = [
       { href: '/foreign-aid-deep-dive', title: 'Foreign Aid Deep Dive', desc: 'Where does foreign aid actually go?' },
       { href: '/pentagon-deep-dive', title: 'Pentagon Deep Dive', desc: "The Pentagon's blank check" },
       { href: '/welfare-queens', title: 'Welfare Queens', desc: 'Which states are federal welfare queens?' },
+      { href: '/presidents', title: 'Presidential Spending', desc: 'Obama vs Trump vs Biden' },
+      { href: '/earmarks', title: 'Earmarks Tracker', desc: '$14.6B in congressional pork' },
     ],
   },
   {
@@ -84,6 +87,7 @@ const dropdowns: DropdownSection[] = [
       { href: '/downloads', title: 'Downloads', desc: 'Data files' },
       { href: '/shutdown-calculator', title: 'Shutdown Calculator', desc: 'Cost of government shutdowns' },
       { href: '/spending-speed', title: 'Spending Speed', desc: '$169K every second' },
+      { href: '/your-dollar', title: 'Your Dollar', desc: 'Where does $1 go?' },
     ],
   },
 ];
