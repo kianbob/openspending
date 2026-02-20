@@ -30,7 +30,7 @@ export default function AboutPage() {
           as our primary data source — the U.S. Treasury&apos;s official record of
           federal spending — to bring transparency to how $11.2 trillion in
           taxpayer money is spent each year. With{" "}
-          <strong>35+ pages of analysis, tools, and data</strong>, we cover
+          <strong>47+ pages of analysis, tools, and data</strong>, we cover
           everything from individual contractor deep dives to interactive tax
           calculators.
         </p>
@@ -69,7 +69,7 @@ export default function AboutPage() {
           What You&apos;ll Find
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
-          OpenSpending covers every major angle of federal spending across 35+
+          OpenSpending covers every major angle of federal spending across 47+
           pages of interactive charts, sortable tables, and editorial analysis.
         </p>
         <div className="space-y-4">

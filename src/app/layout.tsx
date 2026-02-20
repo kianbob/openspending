@@ -76,26 +76,20 @@ export default function RootLayout({
         <footer className="bg-gray-900 mt-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
-              <div className="col-span-2 md:col-span-1">
-                <h3 className="font-serif text-lg font-bold text-white">
-                  OpenSpending
-                </h3>
-                <p className="mt-2 text-sm text-gray-400">
-                  Your tax dollars, tracked. Independent analysis of federal
-                  spending data.
-                </p>
-              </div>
               <div>
                 <h4 className="font-semibold text-sm text-white uppercase tracking-wider">
-                  Data
+                  Explore
                 </h4>
                 <div className="mt-3 flex flex-col gap-2">
+                  <Link href="/agencies" className="text-sm text-gray-400 hover:text-white transition-colors">All Agencies</Link>
                   <Link href="/contractors" className="text-sm text-gray-400 hover:text-white transition-colors">Contractors</Link>
-                  <Link href="/agencies" className="text-sm text-gray-400 hover:text-white transition-colors">Agencies</Link>
-                  <Link href="/contracts" className="text-sm text-gray-400 hover:text-white transition-colors">Contracts</Link>
-                  <Link href="/industries" className="text-sm text-gray-400 hover:text-white transition-colors">Industries</Link>
                   <Link href="/states" className="text-sm text-gray-400 hover:text-white transition-colors">States</Link>
-                  <Link href="/foreign-aid" className="text-sm text-gray-400 hover:text-white transition-colors">Foreign Aid</Link>
+                  <Link href="/contracts" className="text-sm text-gray-400 hover:text-white transition-colors">Contracts</Link>
+                  <Link href="/grants" className="text-sm text-gray-400 hover:text-white transition-colors">Grants</Link>
+                  <Link href="/industries" className="text-sm text-gray-400 hover:text-white transition-colors">Industries</Link>
+                  <Link href="/subagencies" className="text-sm text-gray-400 hover:text-white transition-colors">Sub-Agencies</Link>
+                  <Link href="/what-they-buy" className="text-sm text-gray-400 hover:text-white transition-colors">What They Buy</Link>
+                  <Link href="/local-spending" className="text-sm text-gray-400 hover:text-white transition-colors">Local Spending</Link>
                 </div>
               </div>
               <div>
@@ -103,35 +97,46 @@ export default function RootLayout({
                   Analysis
                 </h4>
                 <div className="mt-3 flex flex-col gap-2">
-                  <Link href="/trends" className="text-sm text-gray-400 hover:text-white transition-colors">Trends</Link>
+                  <Link href="/trends" className="text-sm text-gray-400 hover:text-white transition-colors">Spending Trends</Link>
+                  <Link href="/doge-reality" className="text-sm text-gray-400 hover:text-white transition-colors">DOGE Reality Check</Link>
+                  <Link href="/spending-explosion" className="text-sm text-gray-400 hover:text-white transition-colors">Spending Explosion</Link>
+                  <Link href="/your-tax-bill" className="text-sm text-gray-400 hover:text-white transition-colors">Your Tax Bill</Link>
+                  <Link href="/global-comparison" className="text-sm text-gray-400 hover:text-white transition-colors">US vs The World</Link>
+                  <Link href="/interest" className="text-sm text-gray-400 hover:text-white transition-colors">Interest Time Bomb</Link>
+                  <Link href="/state-dependency" className="text-sm text-gray-400 hover:text-white transition-colors">State Dependency</Link>
                   <Link href="/covid" className="text-sm text-gray-400 hover:text-white transition-colors">COVID Spending</Link>
-                  <Link href="/usaid" className="text-sm text-gray-400 hover:text-white transition-colors">USAID Deep Dive</Link>
-                  <Link href="/compare" className="text-sm text-gray-400 hover:text-white transition-colors">Compare</Link>
-                  <Link href="/efficiency" className="text-sm text-gray-400 hover:text-white transition-colors">Government Efficiency</Link>
+                  <Link href="/monthly-pulse" className="text-sm text-gray-400 hover:text-white transition-colors">Monthly Pulse</Link>
                 </div>
               </div>
               <div>
                 <h4 className="font-semibold text-sm text-white uppercase tracking-wider">
-                  Editorial
+                  Investigations
                 </h4>
                 <div className="mt-3 flex flex-col gap-2">
                   <Link href="/investigations" className="text-sm text-gray-400 hover:text-white transition-colors">All Investigations</Link>
                   <Link href="/spending-analysis" className="text-sm text-gray-400 hover:text-white transition-colors">Spending Analysis</Link>
-                  <Link href="/top-10" className="text-sm text-gray-400 hover:text-white transition-colors">Top 10 Contractors</Link>
                   <Link href="/pentagon-spending" className="text-sm text-gray-400 hover:text-white transition-colors">Pentagon Spending</Link>
+                  <Link href="/pentagon-deep-dive" className="text-sm text-gray-400 hover:text-white transition-colors">Pentagon Deep Dive</Link>
                   <Link href="/healthcare-spending" className="text-sm text-gray-400 hover:text-white transition-colors">Healthcare Spending</Link>
-                  <Link href="/how-it-works" className="text-sm text-gray-400 hover:text-white transition-colors">How It Works</Link>
+                  <Link href="/contractor-monopoly" className="text-sm text-gray-400 hover:text-white transition-colors">Contractor Monopoly</Link>
+                  <Link href="/foreign-aid-deep-dive" className="text-sm text-gray-400 hover:text-white transition-colors">Foreign Aid Deep Dive</Link>
+                  <Link href="/welfare-queens" className="text-sm text-gray-400 hover:text-white transition-colors">Welfare Queens</Link>
                   <Link href="/no-bid" className="text-sm text-gray-400 hover:text-white transition-colors">No-Bid Nation</Link>
                   <Link href="/waste" className="text-sm text-gray-400 hover:text-white transition-colors">Waste &amp; Fraud</Link>
                 </div>
               </div>
               <div>
                 <h4 className="font-semibold text-sm text-white uppercase tracking-wider">
-                  About
+                  Tools
                 </h4>
                 <div className="mt-3 flex flex-col gap-2">
-                  <Link href="/about" className="text-sm text-gray-400 hover:text-white transition-colors">About Us</Link>
-                  <Link href="/downloads" className="text-sm text-gray-400 hover:text-white transition-colors">Data Downloads</Link>
+                  <Link href="/tax-calculator" className="text-sm text-gray-400 hover:text-white transition-colors">Tax Calculator</Link>
+                  <Link href="/compare" className="text-sm text-gray-400 hover:text-white transition-colors">Compare</Link>
+                  <Link href="/search" className="text-sm text-gray-400 hover:text-white transition-colors">Search</Link>
+                  <Link href="/downloads" className="text-sm text-gray-400 hover:text-white transition-colors">Downloads</Link>
+                  <Link href="/shutdown-calculator" className="text-sm text-gray-400 hover:text-white transition-colors">Shutdown Calculator</Link>
+                  <Link href="/spending-speed" className="text-sm text-gray-400 hover:text-white transition-colors">Spending Speed</Link>
+                  <Link href="/about" className="text-sm text-gray-400 hover:text-white transition-colors">About</Link>
                 </div>
               </div>
             </div>
