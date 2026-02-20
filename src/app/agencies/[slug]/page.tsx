@@ -5,7 +5,7 @@ import { AreaSpendingChart } from "@/components/charts/AreaSpendingChart";
 import { AgencyContractorsChart } from "@/components/charts/AgencyContractorsChart";
 import { ContractsGrantsDonut } from "@/components/charts/ContractsGrantsDonut";
 import { formatDollars, formatPercent, toTitleCase } from "@/lib/format";
-import { agencyDescriptionsBySlug } from "@/data/agency-descriptions";
+import { agencyDescriptionsBySlug, agencyDescriptionsByCode } from "@/data/agency-descriptions";
 import agencyTrends from "@/../public/data/agency-trends.json";
 import agencySpending from "@/../public/data/agency-spending.json";
 import agencyContractorsData from "@/../public/data/agency-contractors.json";
@@ -146,19 +146,18 @@ export default async function AgencyDetailPage({
           : " · FY2025 spending data"}
       </p>
 
-      {agencyDescriptions[spending.code] && (
-        <p className="text-gray-500 text-sm leading-relaxed mb-6 max-w-3xl">
-          {agencyDescriptions[spending.code]}
-        </p>
-      )}
-
-      {agencyMissions[spending.code] && (
-        <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 mb-8 max-w-3xl">
-          <h2 className="text-sm font-bold text-gray-900 mb-1">What This Agency Does</h2>
-          <p className="text-sm text-gray-600 leading-relaxed">
-            {agencyMissions[spending.code]}
+      {agencyDescriptionsByCode[spending.code] && (
+        <>
+          <p className="text-gray-600 text-sm leading-relaxed mb-6 max-w-3xl">
+            {agencyDescriptionsByCode[spending.code].description}
           </p>
-        </div>
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8 max-w-3xl">
+            <h2 className="text-sm font-bold text-gray-900 mb-1">💰 Taxpayer Accountability</h2>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              {agencyDescriptionsByCode[spending.code].accountability}
+            </p>
+          </div>
+        </>
       )}
 
       {/* Stat cards */}
@@ -398,6 +397,26 @@ export default async function AgencyDetailPage({
           </div>
         );
       })()}
+
+      {/* Related Agencies */}
+      {agencyDescriptionsByCode[spending.code]?.relatedSlugs?.length > 0 && (
+        <div className="mb-12">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Related Agencies</h2>
+          <div className="flex flex-wrap gap-3">
+            {agencyDescriptionsByCode[spending.code].relatedSlugs
+              .filter((rs) => slugMap.has(rs))
+              .map((rs) => (
+                <Link
+                  key={rs}
+                  href={`/agencies/${rs}`}
+                  className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm text-indigo-600 hover:bg-indigo-50 hover:border-indigo-200 transition-colors"
+                >
+                  {slugMap.get(rs)!.spending.name}
+                </Link>
+              ))}
+          </div>
+        </div>
+      )}
 
       <div className="flex items-center justify-between mt-4">
         <Link
