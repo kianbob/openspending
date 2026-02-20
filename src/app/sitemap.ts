@@ -55,6 +55,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/what-they-buy",
     "/local-spending",
     "/international-spending",
+    "/grants",
+    "/spending-speed",
+    "/program-growth",
   ];
 
   const agencyPages = agencies

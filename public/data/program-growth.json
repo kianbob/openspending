@@ -1,0 +1,163 @@
+[
+  {
+    "name": "Disaster Grants - Public Assistance (Presidentially Declared Disasters)",
+    "fy2019": 7090686867.0,
+    "fy2025": 28290790377.52,
+    "growth_pct": 299.0,
+    "growth_dollars": 21200103510.52
+  },
+  {
+    "name": "Veterans Compensation for Service-Connected Disability",
+    "fy2019": 85444978899.0,
+    "fy2025": 174125861920.0,
+    "growth_pct": 103.8,
+    "growth_dollars": 88680883021.0
+  },
+  {
+    "name": "Medicare Prescription Drug Coverage",
+    "fy2019": 84675657298.0,
+    "fy2025": 162488810217.76,
+    "growth_pct": 91.9,
+    "growth_dollars": 77813152919.76001
+  },
+  {
+    "name": "Grants to States for Medicaid",
+    "fy2019": 393563523896.0,
+    "fy2025": 666131123061.05,
+    "growth_pct": 69.3,
+    "growth_dollars": 272567599165.05005
+  },
+  {
+    "name": "Section 8 Housing Choice Vouchers",
+    "fy2019": 22497879190.0,
+    "fy2025": 37575126180.7,
+    "growth_pct": 67.0,
+    "growth_dollars": 15077246990.699997
+  },
+  {
+    "name": "Social Security Retirement Insurance",
+    "fy2019": 803950141050.0,
+    "fy2025": 1296300942394.0,
+    "growth_pct": 61.2,
+    "growth_dollars": 492350801344.0
+  },
+  {
+    "name": "Medicare Supplementary Medical Insurance",
+    "fy2019": 358246671797.0,
+    "fy2025": 568590835738.81,
+    "growth_pct": 58.7,
+    "growth_dollars": 210344163941.81006
+  },
+  {
+    "name": "Supplemental Nutrition Assistance Program",
+    "fy2019": 55779493329.98,
+    "fy2025": 87123680426.75,
+    "growth_pct": 56.2,
+    "growth_dollars": 31344187096.769997
+  },
+  {
+    "name": "Highway Planning and Construction",
+    "fy2019": 44932417259.26,
+    "fy2025": 67403332424.45,
+    "growth_pct": 50.0,
+    "growth_dollars": 22470915165.189995
+  },
+  {
+    "name": "Project-Based Rental Assistance (PBRA)",
+    "fy2019": 11764286255.43,
+    "fy2025": 16680214564.31,
+    "growth_pct": 41.8,
+    "growth_dollars": 4915928308.879999
+  },
+  {
+    "name": "Federal Pell Grant Program",
+    "fy2019": 28757964043.73,
+    "fy2025": 39959352172.65,
+    "growth_pct": 39.0,
+    "growth_dollars": 11201388128.920002
+  },
+  {
+    "name": "Medicare Hospital Insurance",
+    "fy2019": 317930841301.0,
+    "fy2025": 432516213604.68,
+    "growth_pct": 36.0,
+    "growth_dollars": 114585372303.68
+  },
+  {
+    "name": "National School Lunch Program",
+    "fy2019": 21079486965.06,
+    "fy2025": 27651140309.58,
+    "growth_pct": 31.2,
+    "growth_dollars": 6571653344.52
+  },
+  {
+    "name": "Social Security Survivors Insurance",
+    "fy2019": 88566005703.0,
+    "fy2025": 114852732538.0,
+    "growth_pct": 29.7,
+    "growth_dollars": 26286726835.0
+  },
+  {
+    "name": "Children's Health Insurance Program",
+    "fy2019": 17231722688.0,
+    "fy2025": 20545165446.0,
+    "growth_pct": 19.2,
+    "growth_dollars": 3313442758.0
+  },
+  {
+    "name": "Head Start",
+    "fy2019": 10108178060.0,
+    "fy2025": 11761751679.61,
+    "growth_pct": 16.4,
+    "growth_dollars": 1653573619.6100006
+  },
+  {
+    "name": "Supplemental Security Income",
+    "fy2019": 55579186454.0,
+    "fy2025": 64493965112.0,
+    "growth_pct": 16.0,
+    "growth_dollars": 8914778658.0
+  },
+  {
+    "name": "Title I Grants to Local Educational Agencies",
+    "fy2019": 15770513684.82,
+    "fy2025": 18278309710.3,
+    "growth_pct": 15.9,
+    "growth_dollars": 2507796025.4799995
+  },
+  {
+    "name": "Special Education Grants to States",
+    "fy2019": 12410619724.02,
+    "fy2025": 14075929514.16,
+    "growth_pct": 13.4,
+    "growth_dollars": 1665309790.1399994
+  },
+  {
+    "name": "Social Insurance for Railroad Workers",
+    "fy2019": 13056728233.67,
+    "fy2025": 14511445136.77,
+    "growth_pct": 11.1,
+    "growth_dollars": 1454716903.1000004
+  },
+  {
+    "name": "Social Security Disability Insurance",
+    "fy2019": 142519229977.0,
+    "fy2025": 157270744604.0,
+    "growth_pct": 10.4,
+    "growth_dollars": 14751514627.0
+  },
+  {
+    "name": "Post-9/11 Veterans Educational Assistance",
+    "fy2019": 10853645890.0,
+    "fy2025": 10842038663.0,
+    "growth_pct": -0.1,
+    "growth_dollars": -11607227.0
+  },
+  {
+    "name": "Temporary Assistance for Needy Families",
+    "fy2019": 17073708240.01,
+    "fy2025": 17008367229.49,
+    "growth_pct": -0.4,
+    "growth_dollars": -65341010.52000046
+  }
+]

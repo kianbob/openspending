@@ -23,6 +23,7 @@ const dropdowns: DropdownSection[] = [
       { href: '/contractors', title: 'Contractors', desc: 'Top federal contractors' },
       { href: '/states', title: 'States', desc: 'Spending by state' },
       { href: '/contracts', title: 'Contracts', desc: 'Largest contracts' },
+      { href: '/grants', title: 'Grants', desc: '$1.24T to states & orgs' },
       { href: '/industries', title: 'Industries', desc: 'By NAICS sector' },
       { href: '/what-they-buy', title: 'What They Buy', desc: 'Products & services purchased' },
       { href: '/local-spending', title: 'Local Spending', desc: 'County & district spending' },
@@ -68,6 +69,7 @@ const dropdowns: DropdownSection[] = [
       { href: '/search', title: 'Search', desc: 'Search everything' },
       { href: '/downloads', title: 'Downloads', desc: 'Data files' },
       { href: '/shutdown-calculator', title: 'Shutdown Calculator', desc: 'Cost of government shutdowns' },
+      { href: '/spending-speed', title: 'Spending Speed', desc: '$169K every second' },
     ],
   },
 ];
