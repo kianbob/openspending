@@ -84,6 +84,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/countries",
     "/counties",
     "/products",
+    "/tax-calculator",
   ];
 
   const agencyPages = agencies

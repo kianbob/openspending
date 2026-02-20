@@ -70,7 +70,7 @@ export default function ForeignAidDeepDivePage() {
         <h1 className="font-serif text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
           Where Does Foreign Aid Actually Go?
         </h1>
-        <ShareButtons title="Where Does Foreign Aid Actually Go? — OpenSpending" url="https://openspending.us/foreign-aid-deep-dive" />
+        <ShareButtons title="Where Does Foreign Aid Actually Go? — OpenSpending" url="https://openspending-app.vercel.app/foreign-aid-deep-dive" />
       </div>
 
       <p className="text-sm text-gray-500 mb-8">Published February 2025 · Editorial Investigation</p>

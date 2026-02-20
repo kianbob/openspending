@@ -48,7 +48,7 @@ export default function CovidPage() {
         <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900">
           The COVID Spending Tsunami
         </h1>
-        <ShareButtons title="$1.46 Trillion: The COVID Spending Tsunami — OpenSpending" url="https://openspending.us/covid" />
+        <ShareButtons title="$1.46 Trillion: The COVID Spending Tsunami — OpenSpending" url="https://openspending-app.vercel.app/covid" />
       </div>
       <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>
       <p className="text-gray-500 text-lg mb-8">

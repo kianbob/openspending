@@ -30,9 +30,10 @@ export default function AboutPage() {
           as our primary data source — the U.S. Treasury&apos;s official record of
           federal spending — to bring transparency to how $11.2 trillion in
           taxpayer money is spent each year. With{" "}
-          <strong>47+ pages of analysis, tools, and data</strong>, we cover
-          everything from individual contractor deep dives to interactive tax
-          calculators.
+          <strong>60+ pages of analysis, tools, and data</strong>, we cover
+          everything from individual contractor deep dives to county-level
+          spending breakdowns, international spending by country, product &amp;
+          service categories, grant recipients, and interactive tax calculators.
         </p>
         <p className="text-gray-700 leading-relaxed">
           Our mission is simple: taxpayers fund the government, and they deserve
@@ -69,7 +70,7 @@ export default function AboutPage() {
           What You&apos;ll Find
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
-          OpenSpending covers every major angle of federal spending across 47+
+          OpenSpending covers every major angle of federal spending across 60+
           pages of interactive charts, sortable tables, and editorial analysis.
         </p>
         <div className="space-y-4">
@@ -210,6 +211,22 @@ export default function AboutPage() {
               <li>
                 <Link href="/contracts" className="text-indigo-600 hover:text-indigo-800 underline">Largest Contracts</Link>
                 {" "}— The 100 biggest individual federal contract awards
+              </li>
+              <li>
+                <Link href="/counties" className="text-indigo-600 hover:text-indigo-800 underline">Counties</Link>
+                {" "}— Federal spending flowing to counties across America
+              </li>
+              <li>
+                <Link href="/countries" className="text-indigo-600 hover:text-indigo-800 underline">Countries</Link>
+                {" "}— International federal spending across 50+ countries
+              </li>
+              <li>
+                <Link href="/products" className="text-indigo-600 hover:text-indigo-800 underline">Products &amp; Services</Link>
+                {" "}— Federal procurement by product and service category
+              </li>
+              <li>
+                <Link href="/grants" className="text-indigo-600 hover:text-indigo-800 underline">Grant Recipients</Link>
+                {" "}— Top federal grant recipients with detail pages
               </li>
             </ul>
           </div>

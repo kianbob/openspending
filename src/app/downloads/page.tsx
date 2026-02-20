@@ -81,6 +81,22 @@ const dataFiles = [
     filename: "yearly-contract-trends.json",
     description: "Yearly contract spending trends across fiscal years",
   },
+  {
+    filename: "county-spending.json",
+    description: "Federal spending by county — top 100 counties",
+  },
+  {
+    filename: "product-service-codes.json",
+    description: "Top 100 product/service codes by contract spending",
+  },
+  {
+    filename: "subagencies.json",
+    description: "100 federal sub-agencies with spending data",
+  },
+  {
+    filename: "industry-details.json",
+    description: "50 industries by NAICS code with contract spending",
+  },
 ];
 
 export default function DownloadsPage() {

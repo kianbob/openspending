@@ -100,7 +100,7 @@ export default function GlobalComparisonPage() {
         </h1>
         <ShareButtons
           title="US vs The World: How American Spending Compares — OpenSpending"
-          url="https://openspending.us/global-comparison"
+          url="https://openspending-app.vercel.app/global-comparison"
         />
       </div>
       <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>

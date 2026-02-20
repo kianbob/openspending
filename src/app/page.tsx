@@ -69,6 +69,19 @@ const deepDiveCards = [
   { emoji: "\u{1F310}", title: "USAID", href: "/usaid", description: "Budget tripled, then gutted by DOGE" },
   { emoji: "\u2708\uFE0F", title: "Foreign Aid", href: "/foreign-aid", description: "US foreign assistance spending breakdown" },
   { emoji: "\u26A1", title: "Efficiency", href: "/efficiency", description: "Agency efficiency and performance metrics" },
+  { emoji: "🏛️", title: "Sub-Agencies", href: "/subagencies", description: "Where the money really goes — 100 offices writing the checks" },
+  { emoji: "🌍", title: "Foreign Aid Deep Dive", href: "/foreign-aid-deep-dive", description: "Where does foreign aid actually go?" },
+  { emoji: "✈️", title: "Pentagon Deep Dive", href: "/pentagon-deep-dive", description: "The Pentagon's blank check — never audited" },
+  { emoji: "🤝", title: "Welfare Queens", href: "/welfare-queens", description: "Which states take more than they give?" },
+  { emoji: "🏭", title: "Products & Services", href: "/products", description: "What the government actually buys" },
+  { emoji: "🏘️", title: "Counties", href: "/counties", description: "Federal spending by county" },
+  { emoji: "🌐", title: "Countries", href: "/countries", description: "Where U.S. dollars go abroad" },
+  { emoji: "🎓", title: "Grant Recipients", href: "/grants/recipients", description: "$1.24T in grants — who gets the money" },
+  { emoji: "⏱️", title: "Spending Speed", href: "/spending-speed", description: "$169K every second — watch it tick" },
+  { emoji: "📈", title: "Entitlement Explosion", href: "/program-growth", description: "Programs that grew 100%+" },
+  { emoji: "🏦", title: "Federal Accounts", href: "/federal-accounts", description: "Where your money actually sits" },
+  { emoji: "📊", title: "Monthly Pulse", href: "/monthly-pulse", description: "Real-time spending dashboard" },
+  { emoji: "🏭", title: "Industry Breakdown", href: "/industries", description: "Federal contracts by NAICS sector" },
 ];
 
 const dataPages = [

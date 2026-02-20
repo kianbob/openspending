@@ -61,7 +61,7 @@ export default function NoBidPage() {
         <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900">
           No-Bid Nation: {formatDollars(noBidData.total)} Without Competition
         </h1>
-        <ShareButtons title="No-Bid Nation: $74B Without Competition — OpenSpending" url="https://openspending.us/no-bid" />
+        <ShareButtons title="No-Bid Nation: $74B Without Competition — OpenSpending" url="https://openspending-app.vercel.app/no-bid" />
       </div>
       <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>
       <p className="text-gray-500 text-lg mb-8">

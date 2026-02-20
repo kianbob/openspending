@@ -114,7 +114,7 @@ export default function FederalAccountsPage() {
         </h1>
         <ShareButtons
           title="Where Your Money Actually Goes: Federal Accounts — OpenSpending"
-          url="https://openspending.us/federal-accounts"
+          url="https://openspending-app.vercel.app/federal-accounts"
         />
       </div>
       <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>

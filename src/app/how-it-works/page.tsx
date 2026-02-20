@@ -30,7 +30,7 @@ export default function HowItWorksPage() {
         <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900">
           How Government Contracts Actually Work
         </h1>
-        <ShareButtons title="How Government Contracts Actually Work — OpenSpending" url="https://openspending.us/how-it-works" />
+        <ShareButtons title="How Government Contracts Actually Work — OpenSpending" url="https://openspending-app.vercel.app/how-it-works" />
       </div>
       <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>
       <p className="text-gray-500 text-lg mb-10">

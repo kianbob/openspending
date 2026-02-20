@@ -92,7 +92,7 @@ export default function PentagonDeepDivePage() {
         <h1 className="font-serif text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
           The Pentagon&apos;s Blank Check
         </h1>
-        <ShareButtons title="The Pentagon's Blank Check — OpenSpending" url="https://openspending.us/pentagon-deep-dive" />
+        <ShareButtons title="The Pentagon's Blank Check — OpenSpending" url="https://openspending-app.vercel.app/pentagon-deep-dive" />
       </div>
 
       <p className="text-sm text-gray-500 mb-8">Published February 2025 · Investigative Editorial</p>

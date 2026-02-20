@@ -199,7 +199,7 @@ export default function ProgramGrowthPage() {
         </h1>
         <ShareButtons
           title="The Entitlement Explosion: Programs That Grew 100%+ — OpenSpending"
-          url="https://openspending.us/program-growth"
+          url="https://openspending-app.vercel.app/program-growth"
         />
       </div>
       <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>

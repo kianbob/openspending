@@ -43,7 +43,7 @@ export default function StateDependencyPage() {
         </h1>
         <ShareButtons
           title="Federal Dependency by State — OpenSpending"
-          url="https://openspending.us/state-dependency"
+          url="https://openspending-app.vercel.app/state-dependency"
         />
       </div>
       <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>

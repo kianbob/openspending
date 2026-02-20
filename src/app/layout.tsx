@@ -90,6 +90,10 @@ export default function RootLayout({
                   <Link href="/subagencies" className="text-sm text-gray-400 hover:text-white transition-colors">Sub-Agencies</Link>
                   <Link href="/what-they-buy" className="text-sm text-gray-400 hover:text-white transition-colors">What They Buy</Link>
                   <Link href="/local-spending" className="text-sm text-gray-400 hover:text-white transition-colors">Local Spending</Link>
+                  <Link href="/counties" className="text-sm text-gray-400 hover:text-white transition-colors">Counties</Link>
+                  <Link href="/countries" className="text-sm text-gray-400 hover:text-white transition-colors">Countries</Link>
+                  <Link href="/products" className="text-sm text-gray-400 hover:text-white transition-colors">Products</Link>
+                  <Link href="/grants/recipients" className="text-sm text-gray-400 hover:text-white transition-colors">Grant Recipients</Link>
                 </div>
               </div>
               <div>

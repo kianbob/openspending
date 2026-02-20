@@ -26,8 +26,9 @@ export function generateStaticParams() {
   return Array.from(slugMap.keys()).map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const county = slugMap.get(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const county = slugMap.get(slug);
   if (!county) return { title: "County Not Found" };
   const name = toTitleCase(county.name);
   return {
@@ -36,8 +37,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function CountyDetailPage({ params }: { params: { slug: string } }) {
-  const county = slugMap.get(params.slug);
+export default async function CountyDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const county = slugMap.get(slug);
   if (!county) notFound();
 
   const name = toTitleCase(county.name);
