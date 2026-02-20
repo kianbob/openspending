@@ -471,35 +471,23 @@ export default function YourTaxBillPage() {
       </section>
 
       {/* Related Analysis */}
-      <div className="border-t border-gray-200 mt-12 pt-8">
-        <h3 className="font-bold text-gray-900 mb-4">Related Analysis</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <Link
-            href="/tax-calculator"
-            className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors"
-          >
+      <div className="bg-gray-50 rounded-xl p-8 mt-12">
+        <h2 className="text-xl font-bold text-gray-900 mb-6">Related Analysis</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <Link href="/interest" className="block bg-white rounded-lg p-4 border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all">
+            <p className="text-2xl mb-2">💣</p>
+            <p className="font-bold text-gray-900">The Interest Time Bomb</p>
+            <p className="text-sm text-gray-600 mt-1">$952B in interest — larger than the defense budget</p>
+          </Link>
+          <Link href="/spending-explosion" className="block bg-white rounded-lg p-4 border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all">
+            <p className="text-2xl mb-2">📈</p>
+            <p className="font-bold text-gray-900">The Spending Explosion</p>
+            <p className="text-sm text-gray-600 mt-1">Federal spending grew 63% since 2017</p>
+          </Link>
+          <Link href="/tax-calculator" className="block bg-white rounded-lg p-4 border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all">
+            <p className="text-2xl mb-2">🧮</p>
             <p className="font-bold text-gray-900">Tax Calculator</p>
-            <p className="text-sm text-gray-600 mt-1">
-              See where your actual taxes go based on your income
-            </p>
-          </Link>
-          <Link
-            href="/doge-reality"
-            className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors"
-          >
-            <p className="font-bold text-gray-900">The DOGE Reality Check</p>
-            <p className="text-sm text-gray-600 mt-1">
-              Spending increased $392B despite promised cuts
-            </p>
-          </Link>
-          <Link
-            href="/waste"
-            className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors"
-          >
-            <p className="font-bold text-gray-900">The Federal Waste Problem</p>
-            <p className="text-sm text-gray-600 mt-1">
-              $233–521B lost to fraud annually
-            </p>
+            <p className="text-sm text-gray-600 mt-1">See where your actual taxes go based on your income</p>
           </Link>
         </div>
       </div>

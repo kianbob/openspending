@@ -16,13 +16,6 @@ const topStates = Object.values(stateDetailsData as Record<string, { name: strin
   .sort((a, b) => b.totalAmount - a.totalAmount)
   .slice(0, 5);
 
-const keyNumbers = [
-  { stat: "$233–521B", description: "Lost to fraud, waste, and abuse every year", href: "/waste" },
-  { stat: "33%", description: "Of large contracts awarded without competition", href: "/no-bid" },
-  { stat: "$34B", description: "Lockheed Martin alone — more than NASA\u2019s entire budget", href: "/top-10" },
-  { stat: "$5.2T", description: "Spent on COVID relief — the largest emergency expenditure in history", href: "/covid" },
-];
-
 const statCards = [
   { label: "Total Federal Budget", value: formatDollars(stats.totalBudget), sub: `FY${stats.fiscalYear}` },
   { label: "Federal Contracts", value: formatDollars(stats.totalContracts), sub: "Awarded this year" },
@@ -51,87 +44,40 @@ const bigPictureCards = [
   },
 ];
 
-const recentArticles = [
-  {
-    href: "/spending-analysis",
-    title: "Federal Spending Analysis",
-    description: "Comprehensive breakdown of the $6.75 trillion federal budget",
-  },
-  {
-    href: "/top-10",
-    title: "Top 10 Federal Contractors",
-    description: `How 10 companies capture ${formatDollars(top10Total)} in taxpayer money`,
-  },
-  {
-    href: "/pentagon-spending",
-    title: "Pentagon Spending Deep Dive",
-    description: "Inside the Department of Defense\u2019s $886 billion budget",
-  },
-  {
-    href: "/healthcare-spending",
-    title: "Healthcare Spending Analysis",
-    description: "Medicare, Medicaid, and the $1.8 trillion healthcare budget",
-  },
-  {
-    href: "/contractor-monopoly",
-    title: "The Contractor Monopoly",
-    description: "10 companies hold 64% of all federal contracts",
-  },
-  {
-    href: "/interest",
-    title: "The Interest Time Bomb",
-    description: "$952B in interest — now larger than the defense budget",
-  },
-  {
-    href: "/state-dependency",
-    title: "Federal Dependency by State",
-    description: "Which states take more than they give?",
-  },
+const interactiveTools = [
+  { emoji: "\u{1F9EE}", title: "Tax Calculator", href: "/tax-calculator", description: "See exactly where your federal taxes go" },
+  { emoji: "\u{1F50C}", title: "Shutdown Calculator", href: "/shutdown-calculator", description: "What happens when the government shuts down?" },
+  { emoji: "\u2696\uFE0F", title: "Compare", href: "/compare", description: "Compare agencies, contractors, and states side by side" },
+  { emoji: "\u{1F50D}", title: "Search", href: "/search", description: "Search all federal spending data" },
+  { emoji: "\u{1F4E5}", title: "Downloads", href: "/downloads", description: "Download raw data and spreadsheets" },
 ];
 
 const deepDiveCards = [
-  {
-    emoji: "\u{1F30A}",
-    title: "The COVID Spending Tsunami",
-    href: "/covid",
-    borderColor: "border-amber-500",
-  },
-  {
-    emoji: "\u{1F534}",
-    title: "Federal Waste: $233-521B/Year",
-    href: "/waste",
-    borderColor: "border-red-500",
-  },
-  {
-    emoji: "\u{1F4CB}",
-    title: "How Government Contracts Work",
-    href: "/how-it-works",
-    borderColor: "border-indigo-500",
-  },
-  {
-    emoji: "\u{1F4C8}",
-    title: "Spending Trends Over 9 Years",
-    href: "/trends",
-    borderColor: "border-indigo-500",
-  },
-  {
-    emoji: "\u{1F50D}",
-    title: "The DOGE Reality Check",
-    href: "/doge-reality",
-    borderColor: "border-red-500",
-  },
-  {
-    emoji: "\u{1F4B0}",
-    title: "Your Tax Bill Breakdown",
-    href: "/your-tax-bill",
-    borderColor: "border-green-500",
-  },
-  {
-    emoji: "\u{1F4CA}",
-    title: "The Spending Explosion",
-    href: "/spending-explosion",
-    borderColor: "border-amber-500",
-  },
+  { emoji: "\u{1F50D}", title: "DOGE Reality Check", href: "/doge-reality", description: "What DOGE actually cut vs. what they claimed" },
+  { emoji: "\u{1F3E2}", title: "Contractor Monopoly", href: "/contractor-monopoly", description: "10 companies hold 64% of all contracts" },
+  { emoji: "\u{1F4A3}", title: "Interest Time Bomb", href: "/interest", description: "$952B in interest \u2014 now larger than defense" },
+  { emoji: "\u{1F5FA}\uFE0F", title: "State Dependency", href: "/state-dependency", description: "Which states take more than they give?" },
+  { emoji: "\u{1F4C8}", title: "Spending Explosion", href: "/spending-explosion", description: "Federal spending growth since 2015" },
+  { emoji: "\u{1F4B0}", title: "Your Tax Bill", href: "/your-tax-bill", description: "Personalized breakdown of your tax dollars" },
+  { emoji: "\u{1F30D}", title: "US vs World", href: "/global-comparison", description: "How US spending compares globally" },
+  { emoji: "\u{1F4B3}", title: "National Debt", href: "/national-debt", description: "The $36 trillion debt clock" },
+  { emoji: "\u{1F396}\uFE0F", title: "Pentagon Spending", href: "/pentagon-spending", description: "Inside the $886B defense budget" },
+  { emoji: "\u{1F3E5}", title: "Healthcare Spending", href: "/healthcare-spending", description: "Medicare, Medicaid & the $1.8T health budget" },
+  { emoji: "\u{1F6AB}", title: "No-Bid Nation", href: "/no-bid", description: "33% of large contracts awarded without competition" },
+  { emoji: "\u{1F534}", title: "Waste & Fraud", href: "/waste", description: "$233\u2013521B lost to waste every year" },
+  { emoji: "\u{1F30A}", title: "COVID Spending", href: "/covid", description: "The $5.2 trillion emergency spending tsunami" },
+  { emoji: "\u{1F310}", title: "USAID", href: "/usaid", description: "Budget tripled, then gutted by DOGE" },
+  { emoji: "\u2708\uFE0F", title: "Foreign Aid", href: "/foreign-aid", description: "US foreign assistance spending breakdown" },
+  { emoji: "\u26A1", title: "Efficiency", href: "/efficiency", description: "Agency efficiency and performance metrics" },
+];
+
+const dataPages = [
+  { emoji: "\u{1F4CA}", title: "Federal Spending Analysis", href: "/spending-analysis" },
+  { emoji: "\u{1F3C6}", title: "Top 10 Contractors", href: "/top-10" },
+  { emoji: "\u{1F4C8}", title: "Spending Trends", href: "/trends" },
+  { emoji: "\u{1F4CB}", title: "How Contracts Work", href: "/how-it-works" },
+  { emoji: "\u{1F3DB}\uFE0F", title: "All Agencies", href: "/agencies" },
+  { emoji: "\u{1F5C2}\uFE0F", title: "All Industries", href: "/industries" },
 ];
 
 export default function HomePage() {
@@ -405,81 +351,74 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Deep Dives */}
+      {/* Interactive Tools */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
-          Deep Dives
+          Interactive Tools
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {deepDiveCards.map((card) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          {interactiveTools.map((tool) => (
             <Link
-              key={card.title}
-              href={card.href}
-              className={`block bg-white rounded-lg border border-gray-200 border-l-4 ${card.borderColor} p-6 hover:shadow-lg transition-shadow group`}
+              key={tool.href}
+              href={tool.href}
+              className="block bg-white rounded-xl shadow border border-gray-200 p-6 hover:shadow-lg hover:border-indigo-300 transition-all group"
             >
-              <span className="text-2xl">{card.emoji}</span>
-              <h3 className="font-bold text-gray-900 mt-3 mb-4">
-                {card.title}
+              <span className="text-2xl">{tool.emoji}</span>
+              <h3 className="font-bold text-gray-900 mt-3 group-hover:text-indigo-700 transition-colors">
+                {tool.title}
               </h3>
-              <span className="text-indigo-600 text-sm font-medium group-hover:underline">
-                Explore →
-              </span>
+              <p className="text-sm text-gray-500 mt-1 leading-relaxed">
+                {tool.description}
+              </p>
             </Link>
           ))}
         </div>
       </section>
 
-      {/* Key Numbers */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
-          Key Numbers
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {keyNumbers.map((item) => (
-            <Link
-              key={item.stat}
-              href={item.href}
-              className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-indigo-300 transition-all group"
-            >
-              <p className="text-3xl md:text-4xl font-bold text-indigo-700">
-                {item.stat}
-              </p>
-              <p className="text-sm text-gray-600 mt-3 leading-relaxed">
-                {item.description}
-              </p>
-              <span className="text-indigo-600 text-sm font-medium mt-4 inline-block group-hover:underline">
-                Learn more →
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* Recently Published */}
+      {/* Deep Dives & Investigations */}
       <section className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
-            Featured Analysis
+            Deep Dives &amp; Investigations
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {recentArticles.map((article) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {deepDiveCards.map((card) => (
               <Link
-                key={article.href}
-                href={article.href}
-                className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow group"
+                key={card.href}
+                href={card.href}
+                className="block bg-white rounded-xl shadow border border-gray-200 p-6 hover:shadow-lg hover:border-indigo-300 transition-all group"
               >
-                <h3 className="font-bold text-gray-900 mb-2">
-                  {article.title}
+                <span className="text-2xl">{card.emoji}</span>
+                <h3 className="font-bold text-gray-900 mt-3 group-hover:text-indigo-700 transition-colors">
+                  {card.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                  {article.description}
+                <p className="text-sm text-gray-500 mt-1 leading-relaxed">
+                  {card.description}
                 </p>
-                <span className="text-indigo-600 text-sm font-medium group-hover:underline">
-                  Read article →
-                </span>
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* The Data */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
+          The Data
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
+          {dataPages.map((page) => (
+            <Link
+              key={page.href}
+              href={page.href}
+              className="block bg-white rounded-xl shadow border border-gray-200 p-6 hover:shadow-lg hover:border-indigo-300 transition-all group"
+            >
+              <span className="text-2xl">{page.emoji}</span>
+              <h3 className="font-bold text-gray-900 mt-3 group-hover:text-indigo-700 transition-colors">
+                {page.title}
+              </h3>
+            </Link>
+          ))}
         </div>
       </section>
 

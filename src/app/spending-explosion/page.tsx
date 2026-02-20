@@ -470,35 +470,23 @@ export default function SpendingExplosionPage() {
       </section>
 
       {/* Related Analysis */}
-      <div className="border-t border-gray-200 mt-12 pt-8">
-        <h3 className="font-bold text-gray-900 mb-4">Related Analysis</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <Link
-            href="/doge-reality"
-            className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors"
-          >
+      <div className="bg-gray-50 rounded-xl p-8 mt-12">
+        <h2 className="text-xl font-bold text-gray-900 mb-6">Related Analysis</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <Link href="/doge-reality" className="block bg-white rounded-lg p-4 border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all">
+            <p className="text-2xl mb-2">🔍</p>
             <p className="font-bold text-gray-900">The DOGE Reality Check</p>
-            <p className="text-sm text-gray-600 mt-1">
-              DOGE promised $2T in savings. Spending went up.
-            </p>
+            <p className="text-sm text-gray-600 mt-1">DOGE promised $2T in savings. Spending went up.</p>
           </Link>
-          <Link
-            href="/your-tax-bill"
-            className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors"
-          >
-            <p className="font-bold text-gray-900">Your Tax Bill</p>
-            <p className="text-sm text-gray-600 mt-1">
-              $33,135 per taxpayer — where every dollar goes
-            </p>
+          <Link href="/interest" className="block bg-white rounded-lg p-4 border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all">
+            <p className="text-2xl mb-2">💣</p>
+            <p className="font-bold text-gray-900">The Interest Time Bomb</p>
+            <p className="text-sm text-gray-600 mt-1">$952B in interest — larger than the defense budget</p>
           </Link>
-          <Link
-            href="/trends"
-            className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors"
-          >
-            <p className="font-bold text-gray-900">Spending Trends</p>
-            <p className="text-sm text-gray-600 mt-1">
-              Year-over-year analysis of all 18 major agencies
-            </p>
+          <Link href="/your-tax-bill" className="block bg-white rounded-lg p-4 border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all">
+            <p className="text-2xl mb-2">💰</p>
+            <p className="font-bold text-gray-900">Your Tax Bill Breakdown</p>
+            <p className="text-sm text-gray-600 mt-1">$33,135 per taxpayer — where every dollar goes</p>
           </Link>
         </div>
       </div>

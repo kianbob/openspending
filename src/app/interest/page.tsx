@@ -189,25 +189,29 @@ export default function InterestPage() {
         </div>
       </div>
 
-      {/* Related */}
-      <div className="mt-12 border-t border-gray-200 pt-8">
-        <h3 className="font-bold text-gray-900 mb-4">Related Analysis</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <Link href="/spending-analysis" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-            <p className="font-bold text-gray-900">Federal Spending Analysis</p>
-            <p className="text-sm text-gray-600 mt-1">Where the $6.75 trillion actually goes</p>
+      {/* Related Analysis */}
+      <div className="bg-gray-50 rounded-xl p-8 mt-12">
+        <h2 className="text-xl font-bold text-gray-900 mb-6">Related Analysis</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <Link href="/national-debt" className="block bg-white rounded-lg p-4 border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all">
+            <p className="text-2xl mb-2">💳</p>
+            <p className="font-bold text-gray-900">The $36T Debt Clock</p>
+            <p className="text-sm text-gray-600 mt-1">$108,060 per citizen and climbing</p>
           </Link>
-          <Link href="/contractor-monopoly" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-            <p className="font-bold text-gray-900">The Contractor Monopoly</p>
-            <p className="text-sm text-gray-600 mt-1">10 companies control 64% of federal contracts</p>
+          <Link href="/spending-explosion" className="block bg-white rounded-lg p-4 border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all">
+            <p className="text-2xl mb-2">📈</p>
+            <p className="font-bold text-gray-900">The Spending Explosion</p>
+            <p className="text-sm text-gray-600 mt-1">Federal spending grew 63% since 2017</p>
           </Link>
-          <Link href="/state-dependency" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-            <p className="font-bold text-gray-900">Federal Dependency by State</p>
-            <p className="text-sm text-gray-600 mt-1">Which states take more than they give?</p>
+          <Link href="/doge-reality" className="block bg-white rounded-lg p-4 border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all">
+            <p className="text-2xl mb-2">🔍</p>
+            <p className="font-bold text-gray-900">The DOGE Reality Check</p>
+            <p className="text-sm text-gray-600 mt-1">Spending increased $392B despite promised cuts</p>
           </Link>
-          <Link href="/waste" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-            <p className="font-bold text-gray-900">Government Waste</p>
-            <p className="text-sm text-gray-600 mt-1">$233–521B lost to fraud every year</p>
+          <Link href="/your-tax-bill" className="block bg-white rounded-lg p-4 border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all">
+            <p className="text-2xl mb-2">💰</p>
+            <p className="font-bold text-gray-900">Your Tax Bill Breakdown</p>
+            <p className="text-sm text-gray-600 mt-1">$33,135 per taxpayer — where every dollar goes</p>
           </Link>
         </div>
       </div>

@@ -415,35 +415,23 @@ export default function GlobalComparisonPage() {
       </section>
 
       {/* Related Analysis */}
-      <div className="border-t border-gray-200 mt-12 pt-8">
-        <h3 className="font-bold text-gray-900 mb-4">Related Analysis</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <Link
-            href="/spending-explosion"
-            className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors"
-          >
+      <div className="bg-gray-50 rounded-xl p-8 mt-12">
+        <h2 className="text-xl font-bold text-gray-900 mb-6">Related Analysis</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <Link href="/spending-explosion" className="block bg-white rounded-lg p-4 border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all">
+            <p className="text-2xl mb-2">📈</p>
             <p className="font-bold text-gray-900">The Spending Explosion</p>
-            <p className="text-sm text-gray-600 mt-1">
-              Federal spending grew 63% since 2017
-            </p>
+            <p className="text-sm text-gray-600 mt-1">Federal spending grew 63% since 2017</p>
           </Link>
-          <Link
-            href="/national-debt"
-            className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors"
-          >
-            <p className="font-bold text-gray-900">The $36T Debt Clock</p>
-            <p className="text-sm text-gray-600 mt-1">
-              $108,060 per citizen and climbing
-            </p>
+          <Link href="/interest" className="block bg-white rounded-lg p-4 border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all">
+            <p className="text-2xl mb-2">💣</p>
+            <p className="font-bold text-gray-900">The Interest Time Bomb</p>
+            <p className="text-sm text-gray-600 mt-1">$952B in interest — larger than the defense budget</p>
           </Link>
-          <Link
-            href="/foreign-aid"
-            className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors"
-          >
-            <p className="font-bold text-gray-900">Foreign Aid Trail</p>
-            <p className="text-sm text-gray-600 mt-1">
-              Where US money goes internationally
-            </p>
+          <Link href="/state-dependency" className="block bg-white rounded-lg p-4 border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all">
+            <p className="text-2xl mb-2">🗺️</p>
+            <p className="font-bold text-gray-900">Federal Dependency by State</p>
+            <p className="text-sm text-gray-600 mt-1">Which states take more than they give?</p>
           </Link>
         </div>
       </div>
