@@ -24,6 +24,8 @@ const dropdowns: DropdownSection[] = [
       { href: '/states', title: 'States', desc: 'Spending by state' },
       { href: '/contracts', title: 'Contracts', desc: 'Largest contracts' },
       { href: '/industries', title: 'Industries', desc: 'By NAICS sector' },
+      { href: '/what-they-buy', title: 'What They Buy', desc: 'Products & services purchased' },
+      { href: '/local-spending', title: 'Local Spending', desc: 'County & district spending' },
     ],
   },
   {

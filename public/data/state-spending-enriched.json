@@ -1,0 +1,506 @@
+[
+  {
+    "name": "California",
+    "amount": 485694956332.28,
+    "code": "CA",
+    "population": 38965193,
+    "per_capita": 12465,
+    "rank_total": 1,
+    "rank_per_capita": 36
+  },
+  {
+    "name": "Florida",
+    "amount": 324975352780.55,
+    "code": "FL",
+    "population": 22610726,
+    "per_capita": 14373,
+    "rank_total": 2,
+    "rank_per_capita": 22
+  },
+  {
+    "name": "Texas",
+    "amount": 311487972072.45,
+    "code": "TX",
+    "population": 30503301,
+    "per_capita": 10212,
+    "rank_total": 3,
+    "rank_per_capita": 53
+  },
+  {
+    "name": "Pennsylvania",
+    "amount": 281559119801.95,
+    "code": "PA",
+    "population": 12961683,
+    "per_capita": 21722,
+    "rank_total": 4,
+    "rank_per_capita": 12
+  },
+  {
+    "name": "New York",
+    "amount": 262127743411.04,
+    "code": "NY",
+    "population": 19571216,
+    "per_capita": 13394,
+    "rank_total": 5,
+    "rank_per_capita": 30
+  },
+  {
+    "name": "Minnesota",
+    "amount": 242100676317.55,
+    "code": "MN",
+    "population": 5737915,
+    "per_capita": 42193,
+    "rank_total": 6,
+    "rank_per_capita": 5
+  },
+  {
+    "name": "Virginia",
+    "amount": 213980265855.43,
+    "code": "VA",
+    "population": 8642274,
+    "per_capita": 24760,
+    "rank_total": 7,
+    "rank_per_capita": 11
+  },
+  {
+    "name": "Indiana",
+    "amount": 207060925748.51,
+    "code": "IN",
+    "population": 6862199,
+    "per_capita": 30174,
+    "rank_total": 8,
+    "rank_per_capita": 8
+  },
+  {
+    "name": "Kentucky",
+    "amount": 173279732302.68,
+    "code": "KY",
+    "population": 4526154,
+    "per_capita": 38284,
+    "rank_total": 9,
+    "rank_per_capita": 6
+  },
+  {
+    "name": "Connecticut",
+    "amount": 153597496670.1,
+    "code": "CT",
+    "population": 3617176,
+    "per_capita": 42463,
+    "rank_total": 10,
+    "rank_per_capita": 4
+  },
+  {
+    "name": "South Carolina",
+    "amount": 137105702315,
+    "code": "SC",
+    "population": 5373555,
+    "per_capita": 25515,
+    "rank_total": 11,
+    "rank_per_capita": 9
+  },
+  {
+    "name": "Illinois",
+    "amount": 134596987644.74,
+    "code": "IL",
+    "population": 12549689,
+    "per_capita": 10725,
+    "rank_total": 12,
+    "rank_per_capita": 49
+  },
+  {
+    "name": "North Carolina",
+    "amount": 129432140263.36,
+    "code": "NC",
+    "population": 10835491,
+    "per_capita": 11945,
+    "rank_total": 13,
+    "rank_per_capita": 42
+  },
+  {
+    "name": "Ohio",
+    "amount": 129043170919.91,
+    "code": "OH",
+    "population": 11785935,
+    "per_capita": 10949,
+    "rank_total": 14,
+    "rank_per_capita": 48
+  },
+  {
+    "name": "Michigan",
+    "amount": 126320569233.1,
+    "code": "MI",
+    "population": 10037261,
+    "per_capita": 12585,
+    "rank_total": 15,
+    "rank_per_capita": 35
+  },
+  {
+    "name": "Tennessee",
+    "amount": 121144319165.64,
+    "code": "TN",
+    "population": 7126489,
+    "per_capita": 16999,
+    "rank_total": 16,
+    "rank_per_capita": 16
+  },
+  {
+    "name": "Wisconsin",
+    "amount": 112969825629.9,
+    "code": "WI",
+    "population": 5910955,
+    "per_capita": 19112,
+    "rank_total": 17,
+    "rank_per_capita": 14
+  },
+  {
+    "name": "Arizona",
+    "amount": 112101274297.37,
+    "code": "AZ",
+    "population": 7431344,
+    "per_capita": 15085,
+    "rank_total": 18,
+    "rank_per_capita": 20
+  },
+  {
+    "name": "Georgia",
+    "amount": 105815642287.44,
+    "code": "GA",
+    "population": 11029227,
+    "per_capita": 9594,
+    "rank_total": 19,
+    "rank_per_capita": 54
+  },
+  {
+    "name": "Maryland",
+    "amount": 105632274473.85,
+    "code": "MD",
+    "population": 6180253,
+    "per_capita": 17092,
+    "rank_total": 20,
+    "rank_per_capita": 15
+  },
+  {
+    "name": "Massachusetts",
+    "amount": 103224819783.92,
+    "code": "MA",
+    "population": 7001399,
+    "per_capita": 14743,
+    "rank_total": 21,
+    "rank_per_capita": 21
+  },
+  {
+    "name": "North Dakota",
+    "amount": 98400812404.55,
+    "code": "ND",
+    "population": 783926,
+    "per_capita": 125523,
+    "rank_total": 22,
+    "rank_per_capita": 1
+  },
+  {
+    "name": "New Jersey",
+    "amount": 96530237184.43,
+    "code": "NJ",
+    "population": 9290841,
+    "per_capita": 10390,
+    "rank_total": 23,
+    "rank_per_capita": 52
+  },
+  {
+    "name": "Missouri",
+    "amount": 93525637801.62,
+    "code": "MO",
+    "population": 6196156,
+    "per_capita": 15094,
+    "rank_total": 24,
+    "rank_per_capita": 19
+  },
+  {
+    "name": "Washington",
+    "amount": 89604684231.55,
+    "code": "WA",
+    "population": 7812880,
+    "per_capita": 11469,
+    "rank_total": 25,
+    "rank_per_capita": 45
+  },
+  {
+    "name": "Alabama",
+    "amount": 71547095560.64,
+    "code": "AL",
+    "population": 5108468,
+    "per_capita": 14006,
+    "rank_total": 26,
+    "rank_per_capita": 24
+  },
+  {
+    "name": "Colorado",
+    "amount": 70211468526.22,
+    "code": "CO",
+    "population": 5877610,
+    "per_capita": 11946,
+    "rank_total": 27,
+    "rank_per_capita": 41
+  },
+  {
+    "name": "Louisiana",
+    "amount": 59785185282.93,
+    "code": "LA",
+    "population": 4573749,
+    "per_capita": 13071,
+    "rank_total": 28,
+    "rank_per_capita": 33
+  },
+  {
+    "name": "Oregon",
+    "amount": 57180631773.26,
+    "code": "OR",
+    "population": 4233358,
+    "per_capita": 13507,
+    "rank_total": 29,
+    "rank_per_capita": 28
+  },
+  {
+    "name": "Oklahoma",
+    "amount": 50292711752.34,
+    "code": "OK",
+    "population": 4053824,
+    "per_capita": 12406,
+    "rank_total": 30,
+    "rank_per_capita": 37
+  },
+  {
+    "name": "District Of Columbia",
+    "amount": 49082629943.74,
+    "code": "DC",
+    "population": 678972,
+    "per_capita": 72290,
+    "rank_total": 31,
+    "rank_per_capita": 3
+  },
+  {
+    "name": "New Mexico",
+    "amount": 41300687836.24,
+    "code": "NM",
+    "population": 2114371,
+    "per_capita": 19533,
+    "rank_total": 32,
+    "rank_per_capita": 13
+  },
+  {
+    "name": "Mississippi",
+    "amount": 38521205512.5,
+    "code": "MS",
+    "population": 2939690,
+    "per_capita": 13104,
+    "rank_total": 33,
+    "rank_per_capita": 32
+  },
+  {
+    "name": "Puerto Rico",
+    "amount": 38421796293.33,
+    "code": "PR",
+    "population": 3205691,
+    "per_capita": 11985,
+    "rank_total": 34,
+    "rank_per_capita": 39
+  },
+  {
+    "name": "Iowa",
+    "amount": 36550224554.15,
+    "code": "IA",
+    "population": 3207004,
+    "per_capita": 11397,
+    "rank_total": 35,
+    "rank_per_capita": 46
+  },
+  {
+    "name": "Arkansas",
+    "amount": 34909913092.81,
+    "code": "AR",
+    "population": 3067732,
+    "per_capita": 11380,
+    "rank_total": 36,
+    "rank_per_capita": 47
+  },
+  {
+    "name": "Nevada",
+    "amount": 34033318721.39,
+    "code": "NV",
+    "population": 3194176,
+    "per_capita": 10655,
+    "rank_total": 37,
+    "rank_per_capita": 50
+  },
+  {
+    "name": "Kansas",
+    "amount": 31022097405.02,
+    "code": "KS",
+    "population": 2940546,
+    "per_capita": 10550,
+    "rank_total": 38,
+    "rank_per_capita": 51
+  },
+  {
+    "name": "Utah",
+    "amount": 29025607506.5,
+    "code": "UT",
+    "population": 3417734,
+    "per_capita": 8493,
+    "rank_total": 39,
+    "rank_per_capita": 55
+  },
+  {
+    "name": "Nebraska",
+    "amount": 27730384620.79,
+    "code": "NE",
+    "population": 1978379,
+    "per_capita": 14017,
+    "rank_total": 40,
+    "rank_per_capita": 23
+  },
+  {
+    "name": "West Virginia",
+    "amount": 23818196830.18,
+    "code": "WV",
+    "population": 1770071,
+    "per_capita": 13456,
+    "rank_total": 41,
+    "rank_per_capita": 29
+  },
+  {
+    "name": "Hawaii",
+    "amount": 23255905585.42,
+    "code": "HI",
+    "population": 1435138,
+    "per_capita": 16205,
+    "rank_total": 42,
+    "rank_per_capita": 17
+  },
+  {
+    "name": "Idaho",
+    "amount": 22646527432.88,
+    "code": "ID",
+    "population": 1964726,
+    "per_capita": 11527,
+    "rank_total": 43,
+    "rank_per_capita": 44
+  },
+  {
+    "name": "Maine",
+    "amount": 22002964621.5,
+    "code": "ME",
+    "population": 1395722,
+    "per_capita": 15765,
+    "rank_total": 44,
+    "rank_per_capita": 18
+  },
+  {
+    "name": "Alaska",
+    "amount": 18439843054.21,
+    "code": "AK",
+    "population": 733406,
+    "per_capita": 25143,
+    "rank_total": 45,
+    "rank_per_capita": 10
+  },
+  {
+    "name": "New Hampshire",
+    "amount": 16979475787.79,
+    "code": "NH",
+    "population": 1402054,
+    "per_capita": 12110,
+    "rank_total": 46,
+    "rank_per_capita": 38
+  },
+  {
+    "name": "Montana",
+    "amount": 15335339481.21,
+    "code": "MT",
+    "population": 1132812,
+    "per_capita": 13537,
+    "rank_total": 47,
+    "rank_per_capita": 27
+  },
+  {
+    "name": "Rhode Island",
+    "amount": 15140076964.95,
+    "code": "RI",
+    "population": 1095962,
+    "per_capita": 13814,
+    "rank_total": 48,
+    "rank_per_capita": 25
+  },
+  {
+    "name": "Delaware",
+    "amount": 12238468105.34,
+    "code": "DE",
+    "population": 1031890,
+    "per_capita": 11860,
+    "rank_total": 49,
+    "rank_per_capita": 43
+  },
+  {
+    "name": "South Dakota",
+    "amount": 11649259439.38,
+    "code": "SD",
+    "population": 919318,
+    "per_capita": 12672,
+    "rank_total": 50,
+    "rank_per_capita": 34
+  },
+  {
+    "name": "U.S. Virgin Islands",
+    "amount": 10735923635.59,
+    "code": "VI",
+    "population": 87146,
+    "per_capita": 123195,
+    "rank_total": 51,
+    "rank_per_capita": 2
+  },
+  {
+    "name": "Vermont",
+    "amount": 8855289827,
+    "code": "VT",
+    "population": 647464,
+    "per_capita": 13677,
+    "rank_total": 52,
+    "rank_per_capita": 26
+  },
+  {
+    "name": "Wyoming",
+    "amount": 6990346391.53,
+    "code": "WY",
+    "population": 584057,
+    "per_capita": 11969,
+    "rank_total": 53,
+    "rank_per_capita": 40
+  },
+  {
+    "name": "Guam",
+    "amount": 4853686250.79,
+    "code": "GU",
+    "population": 153836,
+    "per_capita": 31551,
+    "rank_total": 54,
+    "rank_per_capita": 7
+  },
+  {
+    "name": "American Samoa",
+    "amount": 585824733.94,
+    "code": "AS",
+    "population": 43895,
+    "per_capita": 13346,
+    "rank_total": 55,
+    "rank_per_capita": 31
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "amount": 196684474.29,
+    "code": "MP",
+    "population": 47329,
+    "per_capita": 4156,
+    "rank_total": 56,
+    "rank_per_capita": 56
+  }
+]

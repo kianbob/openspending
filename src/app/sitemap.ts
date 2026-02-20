@@ -52,6 +52,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contractor-monopoly",
     "/interest",
     "/state-dependency",
+    "/what-they-buy",
+    "/local-spending",
   ];
 
   const agencyPages = agencies

@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { formatDollars, formatPercent, toTitleCase } from "@/lib/format";
 import stateDetails from "@/../public/data/state-details.json";
 import stateContractors from "@/../public/data/state-contractors.json";
+import stateEnriched from "@/../public/data/state-spending-enriched.json";
 import { StateContractorsChart } from "@/components/charts/StateContractorsChart";
 
 export const dynamicParams = true;
@@ -35,8 +36,21 @@ type StateEntry = {
   perCapita: number | null;
 };
 
+type EnrichedEntry = {
+  name: string;
+  amount: number;
+  code: string;
+  population: number | null;
+  per_capita: number | null;
+  rank_total: number;
+  rank_per_capita: number | null;
+};
+
 const details = stateDetails as Record<string, StateEntry>;
 const contractors = stateContractors as Record<string, { name: string; amount: number }[]>;
+const enrichedByCode = new Map(
+  (stateEnriched as EnrichedEntry[]).map((e) => [e.code, e])
+);
 
 const slugMap = new Map(
   Object.values(details).map((entry) => [entry.slug, entry])
@@ -103,6 +117,8 @@ export default async function StateDetailPage({
   const { name, code, totalAmount, rank, pctOfTotal } = entry;
   const populationM = statePopulations[name];
   const perCapita = populationM ? Math.round(totalAmount / (populationM * 1e6)) : null;
+  const enriched = enrichedByCode.get(code);
+  const perCapitaRank = enriched?.rank_per_capita ?? null;
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -148,9 +164,26 @@ export default async function StateDetailPage({
             <p className="text-2xl font-bold text-indigo-700 mt-1">
               ${perCapita.toLocaleString()} per resident
             </p>
+            {perCapitaRank && (
+              <p className="text-xs text-gray-500 mt-1">
+                <span className="inline-flex items-center bg-indigo-100 text-indigo-700 text-xs font-semibold px-2 py-0.5 rounded-full">
+                  #{perCapitaRank}
+                </span>
+                {" "}in per-capita spending
+              </p>
+            )}
           </div>
         )}
       </div>
+
+      {/* Per capita rank callout */}
+      {perCapitaRank && (
+        <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-4 mb-10">
+          <p className="text-indigo-900 font-medium">
+            Ranked <span className="font-bold">#{perCapitaRank}</span> in per-capita federal spending among all states and territories.
+          </p>
+        </div>
+      )}
 
       {/* Editorial callout */}
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-10">

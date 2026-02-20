@@ -1,0 +1,422 @@
+{
+  "Department of Agriculture": [
+    {
+      "name": "PERIMETER SOLUTIONS LP",
+      "amount": 252508061.4
+    },
+    {
+      "name": "TYSON FOODS INC.",
+      "amount": 226992632.47
+    },
+    {
+      "name": "PACIFIC COAST PRODUCERS",
+      "amount": 117320699.66
+    },
+    {
+      "name": "HELICOPTER TRANSPORT SERVICES, LLC",
+      "amount": 114604604.81
+    },
+    {
+      "name": "AERO-FLITE, INC.",
+      "amount": 112412917.51
+    },
+    {
+      "name": "BONGARDS CREAMERIES",
+      "amount": 103862985.41
+    },
+    {
+      "name": "HELICOPTER EXPRESS LLC",
+      "amount": 102458350.31
+    },
+    {
+      "name": "INN FOODS INC",
+      "amount": 87693052.13
+    },
+    {
+      "name": "CAVINESS BEEF PACKERS, LIMITED",
+      "amount": 81452938.37
+    },
+    {
+      "name": "BRIDGER AIR TANKER LLC",
+      "amount": 78732097.32
+    }
+  ],
+  "Department of Justice": [
+    {
+      "name": "METROPOLITAN SECURITY SERVICES, INC.",
+      "amount": 510012950.56
+    },
+    {
+      "name": "MCKESSON CORPORATION",
+      "amount": 211936253.84
+    },
+    {
+      "name": "CGI FEDERAL INC.",
+      "amount": 170725931.74
+    },
+    {
+      "name": "THE GEO GROUP, INC.",
+      "amount": 170077363.27
+    },
+    {
+      "name": "NAPHCARE INC",
+      "amount": 168396408.25
+    },
+    {
+      "name": "BRASFIELD & GORRIE LLC",
+      "amount": 158861769.92
+    },
+    {
+      "name": "AT&T ENTERPRISES, LLC",
+      "amount": 143670275.89
+    },
+    {
+      "name": "MINBURN TECHNOLOGY GROUP, LLC",
+      "amount": 137037323.85
+    },
+    {
+      "name": "THUNDERCAT TECHNOLOGY, LLC",
+      "amount": 123518330.85
+    },
+    {
+      "name": "FORFEITURE SUPPORT ASSOCIATES LLC",
+      "amount": 122354922.58
+    }
+  ],
+  "Department of State": [
+    {
+      "name": "XATOR LLC",
+      "amount": 618512991.33
+    },
+    {
+      "name": "CGI FEDERAL INC.",
+      "amount": 363774985.47
+    },
+    {
+      "name": "BL HARBERT INTERNATIONAL LLC",
+      "amount": 323929443.07
+    },
+    {
+      "name": "MISCELLANEOUS FOREIGN AWARDEES",
+      "amount": 248001780.07
+    },
+    {
+      "name": "PECKHAM VOCATIONAL INDUSTRIES, INC.",
+      "amount": 244676616.19
+    },
+    {
+      "name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+      "amount": 235175990.99
+    },
+    {
+      "name": "ACCENTURE FEDERAL SERVICES LLC",
+      "amount": 181676682.47
+    },
+    {
+      "name": "CADDELL CONSTRUCTION CO. (DE), LLC",
+      "amount": 179919356.08
+    },
+    {
+      "name": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+      "amount": 175280154.67
+    },
+    {
+      "name": "PAE GOVERNMENT SERVICES, INC.",
+      "amount": 168169734.24
+    }
+  ],
+  "Office of Personnel Management": [
+    {
+      "name": "RESEARCH MANAGEMENT CONSULTANTS INC",
+      "amount": 30425156.89
+    },
+    {
+      "name": "BERING STRAITS PROFESSIONAL SERVICES, LLC",
+      "amount": 16810950.3
+    },
+    {
+      "name": "HEALTHEQUITY, INC.",
+      "amount": 14873199.43
+    },
+    {
+      "name": "EXCELLA, LLC",
+      "amount": 12920383.46
+    },
+    {
+      "name": "DELOITTE CONSULTING LLP",
+      "amount": 11939128.04
+    },
+    {
+      "name": "POWERTRAIN, INC.",
+      "amount": 10014479.95
+    },
+    {
+      "name": "FOUR LLC",
+      "amount": 8956974.68
+    },
+    {
+      "name": "CARAHSOFT TECHNOLOGY CORP",
+      "amount": 8732196.17
+    },
+    {
+      "name": "FEDERAL MANAGEMENT PARTNERS, LLC",
+      "amount": 5659463.7
+    },
+    {
+      "name": "CYBERMEDIA TECHNOLOGIES, LLC",
+      "amount": 5651737.47
+    }
+  ],
+  "National Science Foundation": [
+    {
+      "name": "LEIDOS, INC.",
+      "amount": 319931375.41
+    },
+    {
+      "name": "BOOZ ALLEN HAMILTON INC",
+      "amount": 50030224.32
+    },
+    {
+      "name": "BATTELLE MEMORIAL INSTITUTE",
+      "amount": 41937123.59
+    },
+    {
+      "name": "DIRECTVIZ SOLUTIONS, LLC",
+      "amount": 22532733.91
+    },
+    {
+      "name": "SYNECTICS FOR MANAGEMENT DECISIONS, INC.",
+      "amount": 16833077.57
+    },
+    {
+      "name": "BY LIGHT PROFESSIONAL IT SERVICES LLC",
+      "amount": 14577753.05
+    },
+    {
+      "name": "ICF INCORPORATED, L.L.C.",
+      "amount": 13298114.29
+    },
+    {
+      "name": "SPATIAL FRONT INC",
+      "amount": 11545948.99
+    },
+    {
+      "name": "CIVICACTIONS, INC.",
+      "amount": 10769110.48
+    },
+    {
+      "name": "CARAHSOFT TECHNOLOGY CORP",
+      "amount": 9798347.29
+    }
+  ],
+  "Small Business Administration": [
+    {
+      "name": "ADVANCED TECHNOLOGY LEADERS, INC.",
+      "amount": 71956983.23
+    },
+    {
+      "name": "GOLDSCHMITT AND ASSOCIATES LLC",
+      "amount": 21527990.49
+    },
+    {
+      "name": "GOVSMART, INC.",
+      "amount": 12389640.75
+    },
+    {
+      "name": "MINBURN TECHNOLOGY GROUP, LLC",
+      "amount": 7066219.22
+    },
+    {
+      "name": "OASYS INTERNATIONAL LLC",
+      "amount": 6000247.42
+    },
+    {
+      "name": "CHENEGA SYSTEMS, LLC",
+      "amount": 5899346.86
+    },
+    {
+      "name": "KONIAG IT SYSTEMS, LLC",
+      "amount": 4578606.27
+    },
+    {
+      "name": "SKYWARD IT SOLUTIONS, LLC",
+      "amount": 3430628.13
+    },
+    {
+      "name": "I TECH AG LLC",
+      "amount": 3069235.08
+    },
+    {
+      "name": "WILLIAMS, ADLEY & COMPANY DC LLP",
+      "amount": 3051683.13
+    }
+  ],
+  "Department of the Interior": [
+    {
+      "name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+      "amount": 298564060.89
+    },
+    {
+      "name": "NW CONSTRUCTION, INC",
+      "amount": 225853814.77
+    },
+    {
+      "name": "KIEWIT INFRASTRUCTURE WEST CO.",
+      "amount": 217243435.0
+    },
+    {
+      "name": "ACACIA CENTER FOR JUSTICE",
+      "amount": 147941461.9
+    },
+    {
+      "name": "JACOBS PROJECT MANAGEMENT CO.",
+      "amount": 132562210.0
+    },
+    {
+      "name": "AMES FEDERAL CONTRACTING GROUP LLC",
+      "amount": 112100000.0
+    },
+    {
+      "name": "TEPA EC, LLC",
+      "amount": 109376451.03
+    },
+    {
+      "name": "CDM CONSTRUCTORS INC",
+      "amount": 88273588.0
+    },
+    {
+      "name": "DEEP MILE NETWORKS LLC",
+      "amount": 87876969.09
+    },
+    {
+      "name": "GUIDEHOUSE INC.",
+      "amount": 77540212.42
+    }
+  ],
+  "Department of Commerce": [
+    {
+      "name": "REED TECHNOLOGY AND INFORMATION SERVICES LLC",
+      "amount": 171796583.38
+    },
+    {
+      "name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+      "amount": 158800309.85
+    },
+    {
+      "name": "EARTH RESOURCES TECHNOLOGY, LLC",
+      "amount": 128992322.27
+    },
+    {
+      "name": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+      "amount": 122276704.37
+    },
+    {
+      "name": "JAG ALASKA INC.",
+      "amount": 109651739.3
+    },
+    {
+      "name": "ACCENTURE FEDERAL SERVICES LLC",
+      "amount": 101340970.97
+    },
+    {
+      "name": "THE MITRE CORPORATION",
+      "amount": 100485198.12
+    },
+    {
+      "name": "LYNKER CORPORATION",
+      "amount": 99968273.4
+    },
+    {
+      "name": "GAMA-1 TECHNOLOGIES, LLC",
+      "amount": 60701507.75
+    },
+    {
+      "name": "LOCKHEED MARTIN CORPORATION",
+      "amount": 59262147.0
+    }
+  ],
+  "Department of Labor": [
+    {
+      "name": "ADAMS AND ASSOCIATES INC",
+      "amount": 195228661.4
+    },
+    {
+      "name": "MANAGEMENT & TRAINING CORPORATION",
+      "amount": 159945155.81
+    },
+    {
+      "name": "EDUCATION & TRAINING RESOURCES LLC",
+      "amount": 111698633.53
+    },
+    {
+      "name": "ARBOR E & T LLC",
+      "amount": 74041040.55
+    },
+    {
+      "name": "CAREER SYSTEMS DEVELOPMENT CORPORATION",
+      "amount": 72926432.83
+    },
+    {
+      "name": "SERRATO CORPORATION",
+      "amount": 45739042.19
+    },
+    {
+      "name": "PERATON ENTERPRISE SOLUTIONS LLC",
+      "amount": 43812873.24
+    },
+    {
+      "name": "STRATEGIX MANAGEMENT LLC",
+      "amount": 38669962.11
+    },
+    {
+      "name": "THE BIZZELL GROUP LLC",
+      "amount": 38071747.8
+    },
+    {
+      "name": "ODLE MANAGEMENT GROUP, L.L.C.",
+      "amount": 36638421.37
+    }
+  ],
+  "Department of Transportation": [
+    {
+      "name": "HARRIS CORPORATION",
+      "amount": 918037659.65
+    },
+    {
+      "name": "CDW GOVERNMENT LLC",
+      "amount": 181501300.56
+    },
+    {
+      "name": "LEIDOS, INC.",
+      "amount": 164367957.62
+    },
+    {
+      "name": "THE MITRE CORPORATION",
+      "amount": 159346542.67
+    },
+    {
+      "name": "FREQUENTIS USA, INC",
+      "amount": 156029023.76
+    },
+    {
+      "name": "TOTE SERVICES, LLC",
+      "amount": 152450489.58
+    },
+    {
+      "name": "RAYTHEON COMPANY",
+      "amount": 151275735.62
+    },
+    {
+      "name": "CROWLEY GOVERNMENT SERVICES, INC.",
+      "amount": 150454334.14
+    },
+    {
+      "name": "TEXTRON AVIATION INC",
+      "amount": 147582348.42
+    },
+    {
+      "name": "INDRA AIR TRAFFIC, INC.",
+      "amount": 144356048.99
+    }
+  ]
+}
