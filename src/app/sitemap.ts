@@ -61,6 +61,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/federal-accounts",
     "/monthly-pulse",
     "/subagencies",
+    "/foreign-aid-deep-dive",
+    "/pentagon-deep-dive",
+    "/welfare-queens",
   ];
 
   const agencyPages = agencies

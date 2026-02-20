@@ -63,6 +63,9 @@ const dropdowns: DropdownSection[] = [
       { href: '/interest', title: 'Interest Time Bomb', desc: '$952B in debt interest' },
       { href: '/state-dependency', title: 'State Dependency', desc: 'Donors vs takers' },
       { href: '/how-it-works', title: 'How It Works', desc: 'Federal spending explained' },
+      { href: '/foreign-aid-deep-dive', title: 'Foreign Aid Deep Dive', desc: 'Where does foreign aid actually go?' },
+      { href: '/pentagon-deep-dive', title: 'Pentagon Deep Dive', desc: "The Pentagon's blank check" },
+      { href: '/welfare-queens', title: 'Welfare Queens', desc: 'Which states are federal welfare queens?' },
     ],
   },
   {
