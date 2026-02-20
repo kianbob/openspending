@@ -248,21 +248,25 @@ export default function PentagonSpendingPage() {
           </Link>
         </p>
 
-        {/* Related */}
+        {/* Related Analysis */}
         <div className="border-t border-gray-200 mt-12 pt-8">
-          <h3 className="font-bold text-gray-900 mb-4">Continue Reading</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <Link href="/spending-analysis" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-              <p className="font-bold text-gray-900">Where Does $11.2T Go?</p>
-              <p className="text-sm text-gray-600 mt-1">The full federal budget breakdown</p>
-            </Link>
+          <h3 className="font-bold text-gray-900 mb-4">Related Analysis</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Link href="/top-10" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-              <p className="font-bold text-gray-900">The 10 Companies That Run Government</p>
-              <p className="text-sm text-gray-600 mt-1">$145B in contractor concentration</p>
+              <p className="font-bold text-gray-900">Top 10 Contractors</p>
+              <p className="text-sm text-gray-600 mt-1">The companies capturing the most federal dollars</p>
             </Link>
-            <Link href="/healthcare-spending" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-              <p className="font-bold text-gray-900">Healthcare: The Quiet Giant</p>
-              <p className="text-sm text-gray-600 mt-1">$2.6T in HHS spending examined</p>
+            <Link href="/no-bid" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+              <p className="font-bold text-gray-900">No-Bid Contracts</p>
+              <p className="text-sm text-gray-600 mt-1">$74B awarded without competitive bidding</p>
+            </Link>
+            <Link href="/efficiency" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+              <p className="font-bold text-gray-900">Government Efficiency</p>
+              <p className="text-sm text-gray-600 mt-1">What works, what doesn&apos;t, and what DOGE gets wrong</p>
+            </Link>
+            <Link href="/contractors" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+              <p className="font-bold text-gray-900">Top Federal Contractors</p>
+              <p className="text-sm text-gray-600 mt-1">The companies that dominate government contracts</p>
             </Link>
           </div>
         </div>

@@ -249,21 +249,21 @@ export default function Top10Page() {
           </p>
         </blockquote>
 
-        {/* Related */}
+        {/* Related Analysis */}
         <div className="border-t border-gray-200 mt-12 pt-8">
-          <h3 className="font-bold text-gray-900 mb-4">Continue Reading</h3>
+          <h3 className="font-bold text-gray-900 mb-4">Related Analysis</h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <Link href="/spending-analysis" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-              <p className="font-bold text-gray-900">Where Does $11.2T Go?</p>
-              <p className="text-sm text-gray-600 mt-1">The full federal budget breakdown</p>
+            <Link href="/contractors" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+              <p className="font-bold text-gray-900">Top Federal Contractors</p>
+              <p className="text-sm text-gray-600 mt-1">The companies that dominate government contracts</p>
+            </Link>
+            <Link href="/no-bid" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+              <p className="font-bold text-gray-900">No-Bid Contracts</p>
+              <p className="text-sm text-gray-600 mt-1">$74B awarded without competitive bidding</p>
             </Link>
             <Link href="/pentagon-spending" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-              <p className="font-bold text-gray-900">The Pentagon: $1.4T and Counting</p>
-              <p className="text-sm text-gray-600 mt-1">Defense spending deep dive</p>
-            </Link>
-            <Link href="/healthcare-spending" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-              <p className="font-bold text-gray-900">Healthcare: The Quiet Giant</p>
-              <p className="text-sm text-gray-600 mt-1">$2.6T in HHS spending examined</p>
+              <p className="font-bold text-gray-900">Pentagon Spending</p>
+              <p className="text-sm text-gray-600 mt-1">Deep dive into $1.4T in defense spending</p>
             </Link>
           </div>
         </div>

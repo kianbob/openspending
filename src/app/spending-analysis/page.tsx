@@ -251,21 +251,21 @@ export default function SpendingAnalysisPage() {
           <Link href="/trends" className="text-indigo-700 underline font-medium">See spending trends over the last decade →</Link>
         </p>
 
-        {/* Related */}
+        {/* Related Analysis */}
         <div className="border-t border-gray-200 mt-12 pt-8">
-          <h3 className="font-bold text-gray-900 mb-4">Continue Reading</h3>
+          <h3 className="font-bold text-gray-900 mb-4">Related Analysis</h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <Link href="/top-10" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-              <p className="font-bold text-gray-900">The 10 Companies That Run the Government</p>
-              <p className="text-sm text-gray-600 mt-1">Where $145B in contracts really goes</p>
+            <Link href="/trends" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+              <p className="font-bold text-gray-900">Spending Trends</p>
+              <p className="text-sm text-gray-600 mt-1">How federal spending has changed over the past decade</p>
             </Link>
-            <Link href="/pentagon-spending" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-              <p className="font-bold text-gray-900">The Pentagon: $1.4T and Counting</p>
-              <p className="text-sm text-gray-600 mt-1">Defense spending deep dive</p>
+            <Link href="/agencies" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+              <p className="font-bold text-gray-900">All Federal Agencies</p>
+              <p className="text-sm text-gray-600 mt-1">Browse spending data for every federal agency</p>
             </Link>
-            <Link href="/healthcare-spending" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-              <p className="font-bold text-gray-900">Healthcare: The Quiet Giant</p>
-              <p className="text-sm text-gray-600 mt-1">$2.6T in HHS spending examined</p>
+            <Link href="/waste" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+              <p className="font-bold text-gray-900">Government Waste</p>
+              <p className="text-sm text-gray-600 mt-1">The most egregious examples of wasteful spending</p>
             </Link>
           </div>
         </div>

@@ -51,6 +51,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LHTNSRWPK" />
+        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2LHTNSRWPK');` }} />
+      </head>
       <body
         className={`${inter.variable} ${playfair.variable} antialiased bg-white text-gray-900`}
       >
@@ -129,6 +133,19 @@ export default function RootLayout({
                   <Link href="/about" className="text-sm text-gray-400 hover:text-white transition-colors">About Us</Link>
                   <Link href="/downloads" className="text-sm text-gray-400 hover:text-white transition-colors">Data Downloads</Link>
                 </div>
+              </div>
+            </div>
+            <div className="mt-8">
+              <h4 className="font-semibold text-sm text-white uppercase tracking-wider">
+                Sister Sites
+              </h4>
+              <div className="mt-3 flex flex-wrap gap-4">
+                <a href="https://www.openfeds.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  OpenFeds — Federal Workforce Tracker
+                </a>
+                <a href="https://www.openmedicaid.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  OpenMedicaid — Medicaid Spending Tracker
+                </a>
               </div>
             </div>
             <div className="mt-10 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">

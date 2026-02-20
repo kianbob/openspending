@@ -4,7 +4,7 @@ import contractors from "@/../public/data/top-contractors.json";
 import states from "@/../public/data/spending-by-state.json";
 import industries from "@/../public/data/industry-details.json";
 
-const BASE_URL = "https://openspending.info";
+const BASE_URL = "https://openspending-app.vercel.app";
 
 function slugifyContractor(name: string): string {
   return name
