@@ -52,7 +52,7 @@ export default function InterestPage() {
         </h1>
         <ShareButtons
           title="The Interest Time Bomb — OpenSpending"
-          url="https://openspending-app.vercel.app/interest"
+          url="https://www.openspending.us/interest"
         />
       </div>
       <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>

@@ -63,9 +63,9 @@ export default function AgenciesPage() {
         "@type": "Dataset",
         "name": "Federal Agency Spending FY2025",
         "description": "Budget authority, obligations, and outlays for 97 federal agencies",
-        "url": "https://openspending-app.vercel.app/agencies",
+        "url": "https://www.openspending.us/agencies",
         "creator": { "@type": "Organization", "name": "OpenSpending" },
-        "distribution": { "@type": "DataDownload", "contentUrl": "https://openspending-app.vercel.app/data/agencies.json", "encodingFormat": "application/json" }
+        "distribution": { "@type": "DataDownload", "contentUrl": "https://www.openspending.us/data/agencies.json", "encodingFormat": "application/json" }
       }} />
       <Breadcrumbs items={[{ label: "Agencies" }]} />
       <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-2">

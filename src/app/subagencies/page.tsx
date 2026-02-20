@@ -48,9 +48,9 @@ export default function SubAgenciesPage() {
         "@type": "Dataset",
         "name": "Federal Sub-Agency Spending FY2025",
         "description": "Spending data for federal sub-agencies and bureaus",
-        "url": "https://openspending-app.vercel.app/subagencies",
+        "url": "https://www.openspending.us/subagencies",
         "creator": { "@type": "Organization", "name": "OpenSpending" },
-        "distribution": { "@type": "DataDownload", "contentUrl": "https://openspending-app.vercel.app/data/subagencies.json", "encodingFormat": "application/json" }
+        "distribution": { "@type": "DataDownload", "contentUrl": "https://www.openspending.us/data/subagencies.json", "encodingFormat": "application/json" }
       }} />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Sub-Agencies" }]} />
 
@@ -63,7 +63,7 @@ export default function SubAgenciesPage() {
       </p>
 
       <ShareButtons
-        url="https://openspending-app.vercel.app/subagencies"
+        url="https://www.openspending.us/subagencies"
         title="Where the Money Really Goes: Sub-Agency Spending"
       />
 

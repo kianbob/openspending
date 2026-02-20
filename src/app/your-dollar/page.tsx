@@ -248,7 +248,7 @@ export default function YourDollarPage() {
       </section>
 
       <ShareButtons
-        url="https://openspending-app.vercel.app/your-dollar"
+        url="https://www.openspending.us/your-dollar"
         title="Where Does $1 of Federal Spending Go?"
       />
     </div>

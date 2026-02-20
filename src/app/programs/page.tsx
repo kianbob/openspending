@@ -50,9 +50,9 @@ export default function ProgramsPage() {
         "@type": "Dataset",
         "name": "Federal Programs FY2025",
         "description": "Federal assistance programs ranked by total spending",
-        "url": "https://openspending-app.vercel.app/programs",
+        "url": "https://www.openspending.us/programs",
         "creator": { "@type": "Organization", "name": "OpenSpending" },
-        "distribution": { "@type": "DataDownload", "contentUrl": "https://openspending-app.vercel.app/data/federal-programs.json", "encodingFormat": "application/json" }
+        "distribution": { "@type": "DataDownload", "contentUrl": "https://www.openspending.us/data/federal-programs.json", "encodingFormat": "application/json" }
       }} />
       <Breadcrumbs items={[{ label: "Federal Programs" }]} />
 

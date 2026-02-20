@@ -61,7 +61,7 @@ export default function CountiesListingPage() {
         "@type": "Dataset",
         "name": "Federal Spending by County FY2025",
         "description": "Federal contract spending distributed by U.S. county",
-        "url": "https://openspending-app.vercel.app/counties",
+        "url": "https://www.openspending.us/counties",
         "creator": { "@type": "Organization", "name": "OpenSpending" }
       }} />
       <Breadcrumbs items={[{ label: "Counties" }]} />

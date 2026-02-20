@@ -55,7 +55,7 @@ export default async function ProductDetailPage({
         </h1>
         <ShareButtons
           title={`${psc.name} — ${formatDollars(psc.amount)} in federal spending`}
-          url={`https://openspending-app.vercel.app/products/${psc.code}`}
+          url={`https://www.openspending.us/products/${psc.code}`}
         />
       </div>
 

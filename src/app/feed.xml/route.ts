@@ -1,4 +1,4 @@
-const BASE_URL = "https://openspending-app.vercel.app";
+const BASE_URL = "https://www.openspending.us";
 
 const items = [
   {

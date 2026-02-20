@@ -2,7 +2,7 @@ import Link from "next/link";
 
 type Crumb = { label: string; href?: string };
 
-const BASE_URL = "https://openspending-app.vercel.app";
+const BASE_URL = "https://www.openspending.us";
 
 export function Breadcrumbs({ items }: { items: Crumb[] }) {
   const allItems: Crumb[] = [{ label: "Home", href: "/" }, ...items];

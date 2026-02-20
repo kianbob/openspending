@@ -147,7 +147,7 @@ export default function IndustryTrendsPage() {
         </h1>
         <ShareButtons
           title="Industry Winners & Losers: How COVID Reshaped Government Contracting — OpenSpending"
-          url="https://openspending-app.vercel.app/industry-trends"
+          url="https://www.openspending.us/industry-trends"
         />
       </div>
       <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>

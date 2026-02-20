@@ -153,7 +153,7 @@ export default function NationalDebtPage() {
         </h1>
         <ShareButtons
           title="The $36 Trillion Debt Clock — OpenSpending"
-          url="https://openspending-app.vercel.app/national-debt"
+          url="https://www.openspending.us/national-debt"
         />
       </div>
       <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>

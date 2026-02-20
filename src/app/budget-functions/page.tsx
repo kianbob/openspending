@@ -50,9 +50,9 @@ export default function BudgetFunctionsPage() {
         "@type": "Dataset",
         "name": "Federal Budget Functions FY2025",
         "description": "Federal spending organized by budget function categories",
-        "url": "https://openspending-app.vercel.app/budget-functions",
+        "url": "https://www.openspending.us/budget-functions",
         "creator": { "@type": "Organization", "name": "OpenSpending" },
-        "distribution": { "@type": "DataDownload", "contentUrl": "https://openspending-app.vercel.app/data/budget-functions.json", "encodingFormat": "application/json" }
+        "distribution": { "@type": "DataDownload", "contentUrl": "https://www.openspending.us/data/budget-functions.json", "encodingFormat": "application/json" }
       }} />
       <Breadcrumbs items={[{ label: "Budget Functions" }]} />
 

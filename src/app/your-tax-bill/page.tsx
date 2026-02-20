@@ -159,7 +159,7 @@ export default function YourTaxBillPage() {
         </h1>
         <ShareButtons
           title="Your Tax Bill: $33,135 Per Taxpayer in FY2025 — OpenSpending"
-          url="https://openspending-app.vercel.app/your-tax-bill"
+          url="https://www.openspending.us/your-tax-bill"
         />
       </div>
       <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>

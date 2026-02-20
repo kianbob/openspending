@@ -53,9 +53,9 @@ export default function ContractorsPage() {
         "@type": "Dataset",
         "name": "Top Federal Contractors FY2025",
         "description": "Federal contract awards ranked by total obligated amount",
-        "url": "https://openspending-app.vercel.app/contractors",
+        "url": "https://www.openspending.us/contractors",
         "creator": { "@type": "Organization", "name": "OpenSpending" },
-        "distribution": { "@type": "DataDownload", "contentUrl": "https://openspending-app.vercel.app/data/top-contractors-deduped.json", "encodingFormat": "application/json" }
+        "distribution": { "@type": "DataDownload", "contentUrl": "https://www.openspending.us/data/top-contractors-deduped.json", "encodingFormat": "application/json" }
       }} />
       <Breadcrumbs items={[{ label: "Contractors" }]} />
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">

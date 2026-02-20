@@ -135,7 +135,7 @@ export default function DogeRealityPage() {
         </h1>
         <ShareButtons
           title="The DOGE Reality Check: Spending Increased $390B Despite Cuts — OpenSpending"
-          url="https://openspending-app.vercel.app/doge-reality"
+          url="https://www.openspending.us/doge-reality"
         />
       </div>
       <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>

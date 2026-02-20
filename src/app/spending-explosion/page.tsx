@@ -108,7 +108,7 @@ export default function SpendingExplosionPage() {
         </h1>
         <ShareButtons
           title="The Spending Explosion: Federal Spending Grew 63% Since 2017 — OpenSpending"
-          url="https://openspending-app.vercel.app/spending-explosion"
+          url="https://www.openspending.us/spending-explosion"
         />
       </div>
       <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>

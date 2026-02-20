@@ -79,7 +79,7 @@ export default async function GrantRecipientPage({
         </h1>
         <ShareButtons
           title={`${r.displayName} — ${formatDollars(r.amount)} in federal grants`}
-          url={`https://openspending-app.vercel.app/grants/recipients/${r.slug}`}
+          url={`https://www.openspending.us/grants/recipients/${r.slug}`}
         />
       </div>
 

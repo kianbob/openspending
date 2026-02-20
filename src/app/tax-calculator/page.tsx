@@ -98,7 +98,7 @@ export default function TaxCalculatorPage() {
       '',
       `I personally paid ${formatCurrency(lockheedDollars)} to Lockheed Martin.`,
       '',
-      'Calculate yours: https://openspending-app.vercel.app/tax-calculator',
+      'Calculate yours: https://www.openspending.us/tax-calculator',
       'via OpenSpending',
     ];
 

@@ -77,7 +77,7 @@ export default function TrendsPage() {
             <h1 className="font-serif text-4xl md:text-5xl font-bold leading-tight">
               Federal Spending Over Time
             </h1>
-            <ShareButtons title="Federal Spending Trends FY2017-FY2025 — OpenSpending" url="https://openspending-app.vercel.app/trends" />
+            <ShareButtons title="Federal Spending Trends FY2017-FY2025 — OpenSpending" url="https://www.openspending.us/trends" />
           </div>
           <p className="text-sm text-indigo-300 mb-2">Published: February 2025</p>
           <p className="text-lg text-indigo-100 max-w-2xl">

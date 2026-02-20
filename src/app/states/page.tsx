@@ -47,9 +47,9 @@ export default function StatesPage() {
         "@type": "Dataset",
         "name": "Federal Contract Spending by State FY2025",
         "description": "Federal contract spending distributed across all 50 states and territories",
-        "url": "https://openspending-app.vercel.app/states",
+        "url": "https://www.openspending.us/states",
         "creator": { "@type": "Organization", "name": "OpenSpending" },
-        "distribution": { "@type": "DataDownload", "contentUrl": "https://openspending-app.vercel.app/data/spending-by-state.json", "encodingFormat": "application/json" }
+        "distribution": { "@type": "DataDownload", "contentUrl": "https://www.openspending.us/data/spending-by-state.json", "encodingFormat": "application/json" }
       }} />
       <Breadcrumbs items={[{ label: "States" }]} />
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 font-serif">

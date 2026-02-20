@@ -44,9 +44,9 @@ export default function IndustriesPage() {
         "@type": "Dataset",
         "name": "Federal Spending by Industry FY2025",
         "description": "Top industries receiving federal contract dollars, classified by NAICS code",
-        "url": "https://openspending-app.vercel.app/industries",
+        "url": "https://www.openspending.us/industries",
         "creator": { "@type": "Organization", "name": "OpenSpending" },
-        "distribution": { "@type": "DataDownload", "contentUrl": "https://openspending-app.vercel.app/data/industry-details.json", "encodingFormat": "application/json" }
+        "distribution": { "@type": "DataDownload", "contentUrl": "https://www.openspending.us/data/industry-details.json", "encodingFormat": "application/json" }
       }} />
       <Breadcrumbs items={[{ label: "Industries" }]} />
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 font-serif">

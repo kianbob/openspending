@@ -89,7 +89,7 @@ export default function RecipientsPage() {
             Not just contractors — state Medicaid agencies dominate the list.
           </p>
         </div>
-        <ShareButtons title="Top 42 Recipients of Federal Money — OpenSpending" url="https://openspending-app.vercel.app/recipients" />
+        <ShareButtons title="Top 42 Recipients of Federal Money — OpenSpending" url="https://www.openspending.us/recipients" />
       </div>
 
       {/* Key Insight */}

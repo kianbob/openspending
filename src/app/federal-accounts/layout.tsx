@@ -8,12 +8,12 @@ export const metadata: Metadata = {
     title: "Where Your Money Actually Goes: Federal Accounts",
     description:
       "4 federal accounts control $3.1 trillion. Money flows to accounts, not agencies.",
-    url: "https://openspending-app.vercel.app/federal-accounts",
+    url: "https://www.openspending.us/federal-accounts",
     siteName: "OpenSpending",
     type: "article",
     images: [
       {
-        url: "https://openspending-app.vercel.app/og-image.png",
+        url: "https://www.openspending.us/og-image.png",
         width: 1200,
         height: 630,
         alt: "OpenSpending — Federal Spending Tracker",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Where Your Money Actually Goes: Federal Accounts",
     description:
       "4 federal accounts control $3.1 trillion. Money flows to accounts, not agencies.",
-    images: ["https://openspending-app.vercel.app/og-image.png"],
+    images: ["https://www.openspending.us/og-image.png"],
   },
 };
 

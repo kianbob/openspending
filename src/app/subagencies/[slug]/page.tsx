@@ -36,7 +36,7 @@ export default async function SubAgencyDetailPage({ params }: { params: Promise<
   if (!entry) notFound();
 
   const pct = (entry.amount / TOTAL_FEDERAL) * 100;
-  const pageUrl = `https://openspending-app.vercel.app/subagencies/${slug}`;
+  const pageUrl = `https://www.openspending.us/subagencies/${slug}`;
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

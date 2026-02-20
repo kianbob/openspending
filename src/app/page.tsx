@@ -79,7 +79,7 @@ export default function HomePage() {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "OpenSpending",
-        "url": "https://openspending-app.vercel.app",
+        "url": "https://www.openspending.us",
         "description": "Track $11.2 trillion in federal spending"
       }} />
       {/* Hero */}

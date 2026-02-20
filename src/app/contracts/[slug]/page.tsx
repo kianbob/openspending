@@ -79,7 +79,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description: `${formatFullDollars(award.amount)} awarded to ${award.recipient}`,
-      url: `https://openspending-app.vercel.app/contracts/${slug}`,
+      url: `https://www.openspending.us/contracts/${slug}`,
     },
   };
 }
@@ -215,7 +215,7 @@ export default async function ContractDetailPage({
 
       <ShareButtons
         title={`${formatDollars(award.amount)} contract: ${heading}`}
-        url={`https://openspending-app.vercel.app/contracts/${slug}`}
+        url={`https://www.openspending.us/contracts/${slug}`}
       />
 
       <RelatedPages items={[

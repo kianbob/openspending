@@ -50,7 +50,7 @@ export default function ReportCardsPage() {
         </h1>
         <ShareButtons
           title="Federal Agency Report Cards — OpenSpending"
-          url="https://openspending-app.vercel.app/report-cards"
+          url="https://www.openspending.us/report-cards"
         />
       </div>
       <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>

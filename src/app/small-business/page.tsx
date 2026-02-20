@@ -26,7 +26,7 @@ export default function SmallBusinessPage() {
             The federal government is required to set aside contracts for small businesses. Here&apos;s who benefits.
           </p>
         </div>
-        <ShareButtons title="Small Business Winners: Who Gets the Contracts? — OpenSpending" url="https://openspending-app.vercel.app/small-business" />
+        <ShareButtons title="Small Business Winners: Who Gets the Contracts? — OpenSpending" url="https://www.openspending.us/small-business" />
       </div>
 
       {/* Key Insight */}

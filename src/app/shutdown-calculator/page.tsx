@@ -100,7 +100,7 @@ export default function ShutdownCalculatorPage() {
         </h1>
         <ShareButtons
           title="Government Shutdown Cost Calculator — OpenSpending"
-          url="https://openspending-app.vercel.app/shutdown-calculator"
+          url="https://www.openspending.us/shutdown-calculator"
         />
       </div>
       <p className="text-gray-500 text-lg mb-10">

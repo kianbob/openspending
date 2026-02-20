@@ -12,7 +12,7 @@ import countySpending from "@/../public/data/county-spending.json";
 import countriesRaw from "@/../public/data/spending-by-country.json";
 import federalPrograms from "@/../public/data/federal-programs.json";
 
-const BASE_URL = "https://openspending-app.vercel.app";
+const BASE_URL = "https://www.openspending.us";
 
 function slugifyCounty(name: string): string {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/g, "").replace(/^-+/, "");

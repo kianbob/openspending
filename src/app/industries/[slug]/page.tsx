@@ -70,7 +70,7 @@ export default async function IndustryDetailPage({
         </h1>
         <ShareButtons
           title={`${ind.name} — ${formatDollars(ind.amount)} in federal contracts`}
-          url={`https://openspending-app.vercel.app/industries/${ind.slug}`}
+          url={`https://www.openspending.us/industries/${ind.slug}`}
         />
       </div>
 

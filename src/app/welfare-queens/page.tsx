@@ -76,7 +76,7 @@ export default function WelfareQueensPage() {
         <h1 className="font-serif text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
           Which States Are Federal Welfare Queens?
         </h1>
-        <ShareButtons title="Which States Are Federal Welfare Queens? — OpenSpending" url="https://openspending-app.vercel.app/welfare-queens" />
+        <ShareButtons title="Which States Are Federal Welfare Queens? — OpenSpending" url="https://www.openspending.us/welfare-queens" />
       </div>
 
       <p className="text-sm text-gray-500 mb-8">Published February 2025 · Editorial Analysis</p>

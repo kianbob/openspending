@@ -25,9 +25,9 @@ export default function ProductsListingPage() {
         "@type": "Dataset",
         "name": "Federal Spending by Product & Service Code FY2025",
         "description": "Federal contract spending categorized by product and service codes",
-        "url": "https://openspending-app.vercel.app/products",
+        "url": "https://www.openspending.us/products",
         "creator": { "@type": "Organization", "name": "OpenSpending" },
-        "distribution": { "@type": "DataDownload", "contentUrl": "https://openspending-app.vercel.app/data/product-service-codes.json", "encodingFormat": "application/json" }
+        "distribution": { "@type": "DataDownload", "contentUrl": "https://www.openspending.us/data/product-service-codes.json", "encodingFormat": "application/json" }
       }} />
       <Breadcrumbs items={[{ label: "Products & Services" }]} />
 

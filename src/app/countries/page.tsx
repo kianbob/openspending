@@ -49,7 +49,7 @@ export default function CountriesPage() {
         "@type": "Dataset",
         "name": "U.S. Federal Spending by Country FY2025",
         "description": "Foreign aid and federal spending distributed by recipient country",
-        "url": "https://openspending-app.vercel.app/countries",
+        "url": "https://www.openspending.us/countries",
         "creator": { "@type": "Organization", "name": "OpenSpending" }
       }} />
       <Breadcrumbs items={[{ label: "Foreign Aid", href: "/foreign-aid" }, { label: "Countries" }]} />
