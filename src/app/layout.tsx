@@ -52,8 +52,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LHTNSRWPK" />
-        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2LHTNSRWPK');` }} />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYL9GQH0LC" />
+        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-PYL9GQH0LC');` }} />
       </head>
       <body
         className={`${inter.variable} ${playfair.variable} antialiased bg-white text-gray-900`}
