@@ -10,6 +10,18 @@ import agencyTrends from "@/../public/data/agency-trends.json";
 import agencySpending from "@/../public/data/agency-spending.json";
 import agencyContractorsData from "@/../public/data/agency-contractors.json";
 import contractorDetails from "@/../public/data/contractor-details.json";
+import agencyGrowth from "@/../public/data/agency-growth.json";
+
+type GrowthEntry = {
+  name: string;
+  fy2017: number;
+  fy2025: number;
+  growth_pct: number;
+  growth_dollars: number;
+};
+
+const growthData = agencyGrowth as GrowthEntry[];
+const growthRanked = [...growthData].sort((a, b) => b.growth_pct - a.growth_pct);
 
 export const dynamicParams = true;
 
@@ -132,6 +144,12 @@ export default async function AgencyDetailPage({
   const grants = "grants" in spending ? (spending.grants ?? 0) : 0;
   const budget = latest ? latest.budget : contracts + grants;
 
+  // Growth data
+  const growth = growthData.find((g) => g.name === spending.name) ?? null;
+  const growthRank = growth
+    ? growthRanked.findIndex((g) => g.name === spending.name) + 1
+    : null;
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumbs items={[{ label: "Agencies", href: "/agencies" }, { label: spending.name }]} />
@@ -161,7 +179,7 @@ export default async function AgencyDetailPage({
       )}
 
       {/* Stat cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+      <div className={`grid grid-cols-1 ${growth ? "sm:grid-cols-2 lg:grid-cols-4" : "sm:grid-cols-3"} gap-4 mb-10`}>
         <div className="bg-white rounded-xl border border-gray-200 p-5">
           <p className="text-xs font-medium text-gray-500 uppercase tracking-wide">
             {latest ? `Budget Authority (FY${latest.fy})` : "Total Spending"}

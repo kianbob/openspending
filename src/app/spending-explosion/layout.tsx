@@ -1,23 +1,10 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "The Spending Explosion: Federal Spending Grew 63% Since 2017 — OpenSpending",
-  description:
-    "Federal spending surged from $3.3 trillion to $5.3 trillion since 2017 — a 63% increase. See which agencies grew fastest and where your money is going.",
-  openGraph: {
-    title:
-      "The Spending Explosion: Federal Spending Grew 63% Since 2017 — OpenSpending",
-    description:
-      "Federal spending surged from $3.3 trillion to $5.3 trillion since 2017 — a 63% increase. See which agencies grew fastest and where your money is going.",
-    url: "/spending-explosion",
-  },
+  title: "The Spending Explosion: Federal Spending Grew 63% Since 2017 — OpenSpending",
+  description: "Federal spending grew from $3.3 trillion to $5.3 trillion in 8 years. Which agencies drove the increase?",
 };
 
-export default function SpendingExplosionLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return children;
 }

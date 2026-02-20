@@ -1,23 +1,10 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Government Shutdown Cost Calculator — OpenSpending",
-  description:
-    "Calculate the real cost of a government shutdown — $400M per day in direct costs, 800,000 workers furloughed, and billions in economic damage.",
-  openGraph: {
-    title:
-      "Government Shutdown Cost Calculator — OpenSpending",
-    description:
-      "Calculate the real cost of a government shutdown — $400M per day in direct costs, 800,000 workers furloughed, and billions in economic damage.",
-    url: "/shutdown-calculator",
-  },
+  title: "Government Shutdown Cost Calculator — OpenSpending",
+  description: "Calculate the cost of a government shutdown. How much does each day cost taxpayers?",
 };
 
-export default function ShutdownCalculatorLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return children;
 }
