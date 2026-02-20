@@ -3,6 +3,8 @@ import agencies from "@/../public/data/agencies.json";
 import contractors from "@/../public/data/top-contractors.json";
 import states from "@/../public/data/spending-by-state.json";
 import industries from "@/../public/data/industry-details.json";
+import awards from "@/../public/data/top-awards.json";
+import subagencies from "@/../public/data/subagencies.json";
 
 const BASE_URL = "https://openspending-app.vercel.app";
 
@@ -11,6 +13,10 @@ function slugifyContractor(name: string): string {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/-+$/g, "");
+}
+
+function slugifySubagency(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/g, "").replace(/^-+/, "");
 }
 
 function slugifyState(name: string): string {
@@ -86,9 +92,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const statePages = states.map((s) => `/states/${slugifyState(s.name)}`);
 
+  const subagencyPages = subagencies.map(
+    (s) => `/subagencies/${slugifySubagency(s.name)}`
+  );
+
   const industryPages = (industries as Array<{ slug: string }>).map(
     (i) => `/industries/${i.slug}`
   );
+
+  const contractPages = (awards as Array<{ awardId: string }>).map((a) => {
+    const slug = a.awardId.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/g, "").replace(/^-+/, "");
+    return `/contracts/${slug}`;
+  });
 
   return [
     ...staticPages.map((path) => ({
@@ -115,11 +130,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
+    ...subagencyPages.map((path) => ({
+      url: `${BASE_URL}${path}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
     ...industryPages.map((path) => ({
       url: `${BASE_URL}${path}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.6,
+    })),
+    ...contractPages.map((path) => ({
+      url: `${BASE_URL}${path}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
     })),
   ];
 }

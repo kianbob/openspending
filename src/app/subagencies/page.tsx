@@ -19,9 +19,14 @@ const top20 = sorted.slice(0, 20).map((s) => ({
   amount: s.amount,
 }));
 
+function slugify(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/g, "").replace(/^-+/, "");
+}
+
 const tableData = sorted.map((s, i) => ({
   rank: i + 1,
   name: s.name,
+  href: `/subagencies/${slugify(s.name)}`,
   amount: s.amount,
 }));
 
@@ -30,7 +35,7 @@ const next5Sum = sorted.slice(1, 6).reduce((s, a) => s + a.amount, 0);
 
 const columns = [
   { key: "rank", label: "#", align: "right" as const },
-  { key: "name", label: "Sub-Agency", format: "text" as const },
+  { key: "name", label: "Sub-Agency", format: "link" as const, linkKey: "href" },
   { key: "amount", label: "Spending", format: "dollars" as const, align: "right" as const },
 ];
 
