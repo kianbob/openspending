@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import agencies from "@/../public/data/agencies.json";
+import agencies from "@/../public/data/agency-spending.json";
 import budgetFunctionsData from "@/../public/data/budget-functions.json";
 import contractors from "@/../public/data/top-contractors.json";
 import states from "@/../public/data/spending-by-state.json";
