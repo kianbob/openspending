@@ -31,12 +31,21 @@ export const metadata: Metadata = {
     siteName: "OpenSpending",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "OpenSpending — Track $11.2 Trillion in Federal Spending",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "OpenSpending — Follow the Money",
     description:
       "Track $11.2 trillion in federal spending. Contracts, grants, agencies, and where your tax dollars really go.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
