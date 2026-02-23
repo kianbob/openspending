@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Your Tax Dollars — Tax Calculator | OpenSpending',
+  title: 'Where Do YOUR Tax Dollars Go? Calculator | OpenSpending',
   description:
-    'Enter your income and see exactly where the federal government spends your tax dollars. Interactive breakdown of Social Security, Defense, Medicare, and more.',
+    'Enter your salary and see the exact dollar amount you pay to Lockheed Martin, the Pentagon, and 10+ federal agencies. The breakdown will surprise you.',
   openGraph: {
-    title: 'Your Tax Dollars — Where Does Your Money Go?',
+    title: 'Where Do YOUR Tax Dollars Go? Calculator | OpenSpending',
     description:
-      'Enter your income and see exactly where the federal government spends your tax dollars.',
-    url: '/tax-calculator',
+      'Enter your salary and see the exact dollar amount you pay to Lockheed Martin, the Pentagon, and 10+ federal agencies. The breakdown will surprise you.',
+    url: 'https://www.openspending.us/tax-calculator',
   },
 };
 

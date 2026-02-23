@@ -4,13 +4,14 @@ import { ShareButtons } from "@/components/ShareButtons";
 import agencies from "@/../public/data/agency-report-cards.json";
 
 export const metadata = {
-  title: "Federal Agency Report Cards — OpenSpending",
+  title: "Federal Agency Report Cards: A to F Grades | OpenSpending",
   description:
-    "We graded 24 major federal agencies on budget growth, audit compliance, and financial accountability. See who passed and who failed.",
+    "The Pentagon has never passed an audit. NASA got 8 straight A's. We graded 24 agencies on growth, audits, and accountability.",
   openGraph: {
-    title: "Federal Agency Report Cards — OpenSpending",
+    title: "Federal Agency Report Cards: A to F Grades | OpenSpending",
     description:
-      "We graded 24 major federal agencies on budget growth, audit compliance, and financial accountability.",
+      "The Pentagon has never passed an audit. NASA got 8 straight A's. We graded 24 agencies on growth, audits, and accountability.",
+    url: "https://www.openspending.us/report-cards",
   },
 };
 

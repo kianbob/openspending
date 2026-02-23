@@ -105,7 +105,7 @@ export default function GrantRecipientsPage() {
       </div>
 
       <div className="mt-8 flex justify-between items-center">
-        <ShareButtons url="https://www.openspending.us/grants/recipients" />
+        <ShareButtons title="Top Federal Grant Recipients" url="https://www.openspending.us/grants/recipients" />
         <Link
           href="/grants"
           className="text-indigo-600 hover:text-indigo-800 font-medium text-sm"

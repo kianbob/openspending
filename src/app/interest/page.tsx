@@ -7,14 +7,21 @@ import { formatDollars } from "@/lib/format";
 import interestData from "@/../public/data/interest-debt.json";
 
 export const metadata = {
-  title: "The Interest Time Bomb: $952B and Counting — OpenSpending",
+  title: "$952B in Interest: The Debt Time Bomb | OpenSpending",
   description:
-    "Interest on the national debt hit $952B in FY2025 — now larger than the defense budget. See the data, the trajectory, and what it means for taxpayers.",
+    "Interest on the national debt hit $952B in FY2025 — now larger than the entire defense budget. See the trajectory and what it costs every taxpayer.",
   keywords: "interest on national debt, national debt interest payments, federal debt cost",
   openGraph: {
-    title: "The Interest Time Bomb: $952B and Counting",
+    title: "$952B in Interest: The Debt Time Bomb | OpenSpending",
     description:
-      "Interest on the national debt hit $952B in FY2025 — larger than the entire defense budget.",
+      "Interest on the national debt hit $952B in FY2025 — now larger than the entire defense budget.",
+    url: "https://www.openspending.us/interest",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "$952B in Interest: The Debt Time Bomb | OpenSpending",
+    description:
+      "Interest on the national debt hit $952B in FY2025 — now larger than the entire defense budget.",
   },
 };
 

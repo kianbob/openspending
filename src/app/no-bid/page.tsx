@@ -7,11 +7,12 @@ import { formatDollars, toTitleCase } from "@/lib/format";
 import noBidData from "@/../public/data/no-bid-contracts.json";
 
 export const metadata = {
-  title: "No-Bid Nation: $74B Without Competition — OpenSpending",
-  description: "$74B in sole-source federal contracts awarded without competitive bidding in FY2025. See who got the money.",
+  title: "No-Bid Contracts: $74B Without Competition | OpenSpending",
+  description: "Boeing got $17B without competing for it. The Pentagon awarded 40+ of the 50 largest sole-source contracts. See every deal — searchable by company.",
   openGraph: {
-    title: "No-Bid Nation: $74B Without Competition — OpenSpending",
-    description: "$74B in sole-source federal contracts awarded without competitive bidding in FY2025. See who got the money.",
+    title: "No-Bid Contracts: $74B Without Competition | OpenSpending",
+    description: "Boeing got $17B without competing for it. The Pentagon awarded 40+ of the 50 largest sole-source contracts. See every deal — searchable by company.",
+    url: "https://www.openspending.us/no-bid",
   },
 };
 

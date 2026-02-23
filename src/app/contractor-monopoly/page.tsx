@@ -8,14 +8,21 @@ import concentrationData from "@/../public/data/contractor-concentration.json";
 import contractorDetails from "@/../public/data/contractor-details.json";
 
 export const metadata = {
-  title: "The Contractor Monopoly: How 10 Companies Control Federal Spending — OpenSpending",
+  title: "10 Companies Control 64% of Federal Contracts | OpenSpending",
   description:
-    "The top 10 federal contractors hold 64% of all contract dollars. Exposed: the HHI index, agency dependency, and why competition is broken.",
+    "Exposed: just 10 contractors capture 64% of all federal contract dollars. See the HHI index, agency dependency data, and why competition is broken.",
   keywords: "federal contractor monopoly, government contractor concentration, federal spending",
   openGraph: {
-    title: "The Contractor Monopoly: How 10 Companies Control Federal Spending",
+    title: "10 Companies Control 64% of Federal Contracts | OpenSpending",
     description:
-      "The top 10 federal contractors hold 64% of all contract dollars. See who they are and why it matters.",
+      "Exposed: just 10 contractors capture 64% of all federal contract dollars. See who they are and why it matters.",
+    url: "https://www.openspending.us/contractor-monopoly",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "10 Companies Control 64% of Federal Contracts | OpenSpending",
+    description:
+      "Exposed: just 10 contractors capture 64% of all federal contract dollars. See who they are and why it matters.",
   },
 };
 

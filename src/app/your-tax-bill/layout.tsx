@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Your Tax Bill: $33,135 Per Taxpayer in FY2025 — OpenSpending",
+  title: "Your Tax Bill: $33,135 Per Taxpayer (FY2025) | OpenSpending",
   description:
-    "Every American taxpayer funded $33,135 in federal spending in FY2025. See where your money goes — from Social Security to defense to interest on the debt.",
+    "The government spent $33,135 per taxpayer in FY2025 — up 64% since 2017. See exactly where your share goes, from Social Security to debt interest.",
   openGraph: {
-    title: "Your Tax Bill: $33,135 Per Taxpayer in FY2025 — OpenSpending",
+    title: "Your Tax Bill: $33,135 Per Taxpayer (FY2025) | OpenSpending",
     description:
-      "Every American taxpayer funded $33,135 in federal spending in FY2025. See where your money goes.",
-    url: "/your-tax-bill",
+      "The government spent $33,135 per taxpayer in FY2025 — up 64% since 2017. See exactly where your share goes.",
+    url: "https://www.openspending.us/your-tax-bill",
   },
 };
 
