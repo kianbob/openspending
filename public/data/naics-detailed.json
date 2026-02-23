@@ -1,1 +1,497 @@
-[{"name": "Aircraft Manufacturing", "code": "336411", "amount": 61509903022.48}, {"name": "Facilities Support Services", "code": "561210", "amount": 59859954897.31}, {"name": "Engineering Services", "code": "541330", "amount": 52262839086.04}, {"name": "Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)", "code": "541715", "amount": 48424560565.75}, {"name": "Direct Health and Medical Insurance Carriers", "code": "524114", "amount": 47617583508.31}, {"name": "Ship Building and Repairing", "code": "336611", "amount": 37205540898.22}, {"name": "Guided Missile and Space Vehicle Manufacturing", "code": "336414", "amount": 33096599547.69}, {"name": "Computer Systems Design Services", "code": "541512", "amount": 31991733920.76}, {"name": "Commercial and Institutional Building Construction", "code": "236220", "amount": 30641822036.46}, {"name": "Other Computer Related Services", "code": "541519", "amount": 25074364988.81}, {"name": "Other Aircraft Parts and Auxiliary Equipment Manufacturing", "code": "336413", "amount": 19676616372.47}, {"name": "Pharmaceutical Preparation Manufacturing", "code": "325412", "amount": 18598983072.4}, {"name": "Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing", "code": "334511", "amount": 18424114052.64}, {"name": "All Other Professional, Scientific, and Technical Services", "code": "541990", "amount": 12635819983.72}, {"name": "Aircraft Engine and Engine Parts Manufacturing", "code": "336412", "amount": 11966205538.45}, {"name": "Administrative Management and General Management Consulting Services", "code": "541611", "amount": 11323916163.61}, {"name": "Custom Computer Programming Services", "code": "541511", "amount": 10360915930.54}, {"name": "Other Heavy and Civil Engineering Construction", "code": "237990", "amount": 10297301687.57}, {"name": "Ammunition (except Small Arms) Manufacturing", "code": "332993", "amount": 9048177463.03}, {"name": "Research and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)", "code": "541712", "amount": 9026134287.09}, {"name": "Research and Development in the Physical, Engineering, and Life Sciences", "code": "541710", "amount": 8575224695.25}, {"name": "Offices of Physicians (except Mental Health Specialists)", "code": "621111", "amount": 8485864727.07}, {"name": "Petroleum Refineries", "code": "324110", "amount": 8230885042.02}, {"name": "Other Support Activities for Air Transportation", "code": "488190", "amount": 7482365609.61}, {"name": "Remediation Services", "code": "562910", "amount": 6988276193.42}, {"name": "Military Armored Vehicle, Tank, and Tank Component Manufacturing", "code": "336992", "amount": 6525063511.28}, {"name": "Security Guards and Patrol Services", "code": "561612", "amount": 6201112740.47}, {"name": "Software Publishers", "code": "511210", "amount": 5967612738.0}, {"name": "Nonscheduled Chartered Freight Air Transportation", "code": "481212", "amount": 5024659232.03}, {"name": "Medicinal and Botanical Manufacturing", "code": "325411", "amount": 4961996401.6}, {"name": "Service Establishment Equipment and Supplies Merchant Wholesalers", "code": "423850", "amount": 4541611599.95}, {"name": "Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing", "code": "334220", "amount": 4470680750.52}, {"name": "All Other Miscellaneous Manufacturing", "code": "339999", "amount": 4297047181.11}, {"name": "Other Waste Collection", "code": "562119", "amount": 4031538758.51}, {"name": "Computer Facilities Management Services", "code": "541513", "amount": 3449437070.19}, {"name": "Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services", "code": "518210", "amount": 3276627111.84}, {"name": "Deep Sea Freight Transportation", "code": "483111", "amount": 3266729249.88}, {"name": "Electronic Computer Manufacturing", "code": "334111", "amount": 3237371306.69}, {"name": "Drugs and Druggists' Sundries Merchant Wholesalers", "code": "424210", "amount": 2838870437.46}, {"name": "Other Communications Equipment Manufacturing", "code": "334290", "amount": 2707286210.93}, {"name": "Other Guided Missile and Space Vehicle Parts and Auxiliary Equipment Manufacturing", "code": "336419", "amount": 2534209275.71}, {"name": "Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers", "code": "423450", "amount": 2453524351.45}, {"name": "Hazardous Waste Treatment and Disposal", "code": "562211", "amount": 2374428381.86}, {"name": "Power Boiler and Heat Exchanger Manufacturing", "code": "332410", "amount": 2192708069.16}, {"name": "Nonscheduled Chartered Passenger Air Transportation", "code": "481211", "amount": 2185527302.61}, {"name": "Other Scientific and Technical Consulting Services", "code": "541690", "amount": 2182529967.59}, {"name": "Wired Telecommunications Carriers", "code": "517110", "amount": 2169590651.15}, {"name": "Janitorial Services", "code": "561720", "amount": 2104190888.9}, {"name": "Process, Physical Distribution, and Logistics Consulting Services", "code": "541614", "amount": 2005642211.22}, {"name": "Truck Trailer Manufacturing", "code": "336212", "amount": 1936441064.95}, {"name": "Small Arms, Ordnance, and Ordnance Accessories Manufacturing", "code": "332994", "amount": 1846476435.98}, {"name": "All Other Support Services", "code": "561990", "amount": 1839929809.0}, {"name": "Guided Missile and Space Vehicle Propulsion Unit and Propulsion Unit Parts Manufacturing", "code": "336415", "amount": 1649576508.22}, {"name": "Explosives Manufacturing", "code": "325920", "amount": 1647883249.77}, {"name": "Surgical and Medical Instrument Manufacturing", "code": "339112", "amount": 1611478032.96}, {"name": "Electronic and Precision Equipment Repair and Maintenance", "code": "811210", "amount": 1591103852.55}, {"name": "Software Publishers", "code": "513210", "amount": 1534822352.07}, {"name": "Research and Development in Biotechnology (except Nanobiotechnology)", "code": "541714", "amount": 1514526034.39}, {"name": "All Other Miscellaneous Food Manufacturing", "code": "311999", "amount": 1489714805.68}, {"name": "Nonferrous Metal (except Aluminum) Smelting and Refining", "code": "331410", "amount": 1485771783.98}, {"name": "Automobile Manufacturing", "code": "336111", "amount": 1465310701.01}, {"name": "Other Electronic Component Manufacturing", "code": "334419", "amount": 1460442782.2}, {"name": "General Medical and Surgical Hospitals", "code": "622110", "amount": 1449247946.61}, {"name": "Other Electronic and Precision Equipment Repair and Maintenance", "code": "811219", "amount": 1391968997.56}, {"name": "Food Service Contractors", "code": "722310", "amount": 1378799528.41}, {"name": "Other Activities Related to Credit Intermediation", "code": "522390", "amount": 1371971781.93}, {"name": "Kidney Dialysis Centers", "code": "621492", "amount": 1344736447.03}, {"name": "Satellite Telecommunications", "code": "517410", "amount": 1316987658.47}, {"name": "Small Arms Ammunition Manufacturing", "code": "332992", "amount": 1303967569.51}, {"name": "Highway, Street, and Bridge Construction", "code": "237310", "amount": 1217984034.64}, {"name": "Surgical Appliance and Supplies Manufacturing", "code": "339113", "amount": 1188258161.4}, {"name": "Environmental Consulting Services", "code": "541620", "amount": 1188202846.29}, {"name": "Other Technical and Trade Schools", "code": "611519", "amount": 1180352058.15}, {"name": "Advertising Agencies", "code": "541810", "amount": 1160000992.52}, {"name": "Electric Power Distribution", "code": "221122", "amount": 1152258217.5}, {"name": "Fruit and Vegetable Canning", "code": "311421", "amount": 1124612234.05}, {"name": "Industrial Building Construction", "code": "236210", "amount": 1120123711.67}, {"name": "Construction Machinery Manufacturing", "code": "333120", "amount": 1085015001.74}, {"name": "Commercial and Service Industry Machinery Manufacturing", "code": "333310", "amount": 1081606784.53}, {"name": "Support Activities for Forestry", "code": "115310", "amount": 1078515000.22}, {"name": "Power and Communication Line and Related Structures Construction", "code": "237130", "amount": 1061496025.05}, {"name": "Commercial Bakeries", "code": "311812", "amount": 1060182338.17}, {"name": "Telemarketing Bureaus and Other Contact Centers", "code": "561422", "amount": 1059781805.05}, {"name": null, "code": null, "amount": 1057192611.19}, {"name": "Offices of Certified Public Accountants", "code": "541211", "amount": 1049857551.73}, {"name": "Plumbing, Heating, and Air-Conditioning Contractors", "code": "238220", "amount": 1028709065.7}, {"name": "Professional and Management Development Training", "code": "611430", "amount": 1004400272.66}, {"name": "Perishable Prepared Food Manufacturing", "code": "311991", "amount": 989736060.48}, {"name": "Flight Training", "code": "611512", "amount": 986239059.0}, {"name": "Water and Sewer Line and Related Structures Construction", "code": "237110", "amount": 974472782.34}, {"name": "Telecommunications Resellers", "code": "517310", "amount": 918037659.65}, {"name": "Temporary Help Services", "code": "561320", "amount": 882344140.21}, {"name": "All Other Telecommunications", "code": "517919", "amount": 872983329.17}, {"name": "Nursing Care Facilities (Skilled Nursing Facilities)", "code": "623110", "amount": 872120094.0}, {"name": "Analytical Laboratory Instrument Manufacturing", "code": "334516", "amount": 861930816.27}, {"name": "Irradiation Apparatus Manufacturing", "code": "334517", "amount": 855927033.44}, {"name": "Investigation and Personal Background Check Services", "code": "561611", "amount": 853994855.25}, {"name": "Other Management Consulting Services", "code": "541618", "amount": 841516144.31}, {"name": "Couriers and Express Delivery Services", "code": "492110", "amount": 840029351.68}, {"name": "Bare Printed Circuit Board Manufacturing", "code": "334412", "amount": 839216124.9}]
+[
+  {
+    "name": "Aircraft Manufacturing",
+    "code": "336411",
+    "amount": 61509903022.48
+  },
+  {
+    "name": "Facilities Support Services",
+    "code": "561210",
+    "amount": 59859954897.31
+  },
+  {
+    "name": "Engineering Services",
+    "code": "541330",
+    "amount": 52262839086.04
+  },
+  {
+    "name": "Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",
+    "code": "541715",
+    "amount": 48424560565.75
+  },
+  {
+    "name": "Direct Health and Medical Insurance Carriers",
+    "code": "524114",
+    "amount": 47617583508.31
+  },
+  {
+    "name": "Ship Building and Repairing",
+    "code": "336611",
+    "amount": 37205540898.22
+  },
+  {
+    "name": "Guided Missile and Space Vehicle Manufacturing",
+    "code": "336414",
+    "amount": 33096599547.69
+  },
+  {
+    "name": "Computer Systems Design Services",
+    "code": "541512",
+    "amount": 31991733920.76
+  },
+  {
+    "name": "Commercial and Institutional Building Construction",
+    "code": "236220",
+    "amount": 30641822036.46
+  },
+  {
+    "name": "Other Computer Related Services",
+    "code": "541519",
+    "amount": 25074364988.81
+  },
+  {
+    "name": "Other Aircraft Parts and Auxiliary Equipment Manufacturing",
+    "code": "336413",
+    "amount": 19676616372.47
+  },
+  {
+    "name": "Pharmaceutical Preparation Manufacturing",
+    "code": "325412",
+    "amount": 18598983072.4
+  },
+  {
+    "name": "Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing",
+    "code": "334511",
+    "amount": 18424114052.64
+  },
+  {
+    "name": "All Other Professional, Scientific, and Technical Services",
+    "code": "541990",
+    "amount": 12635819983.72
+  },
+  {
+    "name": "Aircraft Engine and Engine Parts Manufacturing",
+    "code": "336412",
+    "amount": 11966205538.45
+  },
+  {
+    "name": "Administrative Management and General Management Consulting Services",
+    "code": "541611",
+    "amount": 11323916163.61
+  },
+  {
+    "name": "Custom Computer Programming Services",
+    "code": "541511",
+    "amount": 10360915930.54
+  },
+  {
+    "name": "Other Heavy and Civil Engineering Construction",
+    "code": "237990",
+    "amount": 10297301687.57
+  },
+  {
+    "name": "Ammunition (except Small Arms) Manufacturing",
+    "code": "332993",
+    "amount": 9048177463.03
+  },
+  {
+    "name": "Research and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)",
+    "code": "541712",
+    "amount": 9026134287.09
+  },
+  {
+    "name": "Research and Development in the Physical, Engineering, and Life Sciences",
+    "code": "541710",
+    "amount": 8575224695.25
+  },
+  {
+    "name": "Offices of Physicians (except Mental Health Specialists)",
+    "code": "621111",
+    "amount": 8485864727.07
+  },
+  {
+    "name": "Petroleum Refineries",
+    "code": "324110",
+    "amount": 8230885042.02
+  },
+  {
+    "name": "Other Support Activities for Air Transportation",
+    "code": "488190",
+    "amount": 7482365609.61
+  },
+  {
+    "name": "Remediation Services",
+    "code": "562910",
+    "amount": 6988276193.42
+  },
+  {
+    "name": "Military Armored Vehicle, Tank, and Tank Component Manufacturing",
+    "code": "336992",
+    "amount": 6525063511.28
+  },
+  {
+    "name": "Security Guards and Patrol Services",
+    "code": "561612",
+    "amount": 6201112740.47
+  },
+  {
+    "name": "Software Publishers",
+    "code": "511210",
+    "amount": 5967612738
+  },
+  {
+    "name": "Nonscheduled Chartered Freight Air Transportation",
+    "code": "481212",
+    "amount": 5024659232.03
+  },
+  {
+    "name": "Medicinal and Botanical Manufacturing",
+    "code": "325411",
+    "amount": 4961996401.6
+  },
+  {
+    "name": "Service Establishment Equipment and Supplies Merchant Wholesalers",
+    "code": "423850",
+    "amount": 4541611599.95
+  },
+  {
+    "name": "Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing",
+    "code": "334220",
+    "amount": 4470680750.52
+  },
+  {
+    "name": "All Other Miscellaneous Manufacturing",
+    "code": "339999",
+    "amount": 4297047181.11
+  },
+  {
+    "name": "Other Waste Collection",
+    "code": "562119",
+    "amount": 4031538758.51
+  },
+  {
+    "name": "Computer Facilities Management Services",
+    "code": "541513",
+    "amount": 3449437070.19
+  },
+  {
+    "name": "Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",
+    "code": "518210",
+    "amount": 3276627111.84
+  },
+  {
+    "name": "Deep Sea Freight Transportation",
+    "code": "483111",
+    "amount": 3266729249.88
+  },
+  {
+    "name": "Electronic Computer Manufacturing",
+    "code": "334111",
+    "amount": 3237371306.69
+  },
+  {
+    "name": "Drugs and Druggists' Sundries Merchant Wholesalers",
+    "code": "424210",
+    "amount": 2838870437.46
+  },
+  {
+    "name": "Other Communications Equipment Manufacturing",
+    "code": "334290",
+    "amount": 2707286210.93
+  },
+  {
+    "name": "Other Guided Missile and Space Vehicle Parts and Auxiliary Equipment Manufacturing",
+    "code": "336419",
+    "amount": 2534209275.71
+  },
+  {
+    "name": "Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",
+    "code": "423450",
+    "amount": 2453524351.45
+  },
+  {
+    "name": "Hazardous Waste Treatment and Disposal",
+    "code": "562211",
+    "amount": 2374428381.86
+  },
+  {
+    "name": "Power Boiler and Heat Exchanger Manufacturing",
+    "code": "332410",
+    "amount": 2192708069.16
+  },
+  {
+    "name": "Nonscheduled Chartered Passenger Air Transportation",
+    "code": "481211",
+    "amount": 2185527302.61
+  },
+  {
+    "name": "Other Scientific and Technical Consulting Services",
+    "code": "541690",
+    "amount": 2182529967.59
+  },
+  {
+    "name": "Wired Telecommunications Carriers",
+    "code": "517110",
+    "amount": 2169590651.15
+  },
+  {
+    "name": "Janitorial Services",
+    "code": "561720",
+    "amount": 2104190888.9
+  },
+  {
+    "name": "Process, Physical Distribution, and Logistics Consulting Services",
+    "code": "541614",
+    "amount": 2005642211.22
+  },
+  {
+    "name": "Truck Trailer Manufacturing",
+    "code": "336212",
+    "amount": 1936441064.95
+  },
+  {
+    "name": "Small Arms, Ordnance, and Ordnance Accessories Manufacturing",
+    "code": "332994",
+    "amount": 1846476435.98
+  },
+  {
+    "name": "All Other Support Services",
+    "code": "561990",
+    "amount": 1839929809
+  },
+  {
+    "name": "Guided Missile and Space Vehicle Propulsion Unit and Propulsion Unit Parts Manufacturing",
+    "code": "336415",
+    "amount": 1649576508.22
+  },
+  {
+    "name": "Explosives Manufacturing",
+    "code": "325920",
+    "amount": 1647883249.77
+  },
+  {
+    "name": "Surgical and Medical Instrument Manufacturing",
+    "code": "339112",
+    "amount": 1611478032.96
+  },
+  {
+    "name": "Electronic and Precision Equipment Repair and Maintenance",
+    "code": "811210",
+    "amount": 1591103852.55
+  },
+  {
+    "name": "Software Publishers",
+    "code": "513210",
+    "amount": 1534822352.07
+  },
+  {
+    "name": "Research and Development in Biotechnology (except Nanobiotechnology)",
+    "code": "541714",
+    "amount": 1514526034.39
+  },
+  {
+    "name": "All Other Miscellaneous Food Manufacturing",
+    "code": "311999",
+    "amount": 1489714805.68
+  },
+  {
+    "name": "Nonferrous Metal (except Aluminum) Smelting and Refining",
+    "code": "331410",
+    "amount": 1485771783.98
+  },
+  {
+    "name": "Automobile Manufacturing",
+    "code": "336111",
+    "amount": 1465310701.01
+  },
+  {
+    "name": "Other Electronic Component Manufacturing",
+    "code": "334419",
+    "amount": 1460442782.2
+  },
+  {
+    "name": "General Medical and Surgical Hospitals",
+    "code": "622110",
+    "amount": 1449247946.61
+  },
+  {
+    "name": "Other Electronic and Precision Equipment Repair and Maintenance",
+    "code": "811219",
+    "amount": 1391968997.56
+  },
+  {
+    "name": "Food Service Contractors",
+    "code": "722310",
+    "amount": 1378799528.41
+  },
+  {
+    "name": "Other Activities Related to Credit Intermediation",
+    "code": "522390",
+    "amount": 1371971781.93
+  },
+  {
+    "name": "Kidney Dialysis Centers",
+    "code": "621492",
+    "amount": 1344736447.03
+  },
+  {
+    "name": "Satellite Telecommunications",
+    "code": "517410",
+    "amount": 1316987658.47
+  },
+  {
+    "name": "Small Arms Ammunition Manufacturing",
+    "code": "332992",
+    "amount": 1303967569.51
+  },
+  {
+    "name": "Highway, Street, and Bridge Construction",
+    "code": "237310",
+    "amount": 1217984034.64
+  },
+  {
+    "name": "Surgical Appliance and Supplies Manufacturing",
+    "code": "339113",
+    "amount": 1188258161.4
+  },
+  {
+    "name": "Environmental Consulting Services",
+    "code": "541620",
+    "amount": 1188202846.29
+  },
+  {
+    "name": "Other Technical and Trade Schools",
+    "code": "611519",
+    "amount": 1180352058.15
+  },
+  {
+    "name": "Advertising Agencies",
+    "code": "541810",
+    "amount": 1160000992.52
+  },
+  {
+    "name": "Electric Power Distribution",
+    "code": "221122",
+    "amount": 1152258217.5
+  },
+  {
+    "name": "Fruit and Vegetable Canning",
+    "code": "311421",
+    "amount": 1124612234.05
+  },
+  {
+    "name": "Industrial Building Construction",
+    "code": "236210",
+    "amount": 1120123711.67
+  },
+  {
+    "name": "Construction Machinery Manufacturing",
+    "code": "333120",
+    "amount": 1085015001.74
+  },
+  {
+    "name": "Commercial and Service Industry Machinery Manufacturing",
+    "code": "333310",
+    "amount": 1081606784.53
+  },
+  {
+    "name": "Support Activities for Forestry",
+    "code": "115310",
+    "amount": 1078515000.22
+  },
+  {
+    "name": "Power and Communication Line and Related Structures Construction",
+    "code": "237130",
+    "amount": 1061496025.05
+  },
+  {
+    "name": "Commercial Bakeries",
+    "code": "311812",
+    "amount": 1060182338.17
+  },
+  {
+    "name": "Telemarketing Bureaus and Other Contact Centers",
+    "code": "561422",
+    "amount": 1059781805.05
+  },
+  {
+    "name": "Offices of Certified Public Accountants",
+    "code": "541211",
+    "amount": 1049857551.73
+  },
+  {
+    "name": "Plumbing, Heating, and Air-Conditioning Contractors",
+    "code": "238220",
+    "amount": 1028709065.7
+  },
+  {
+    "name": "Professional and Management Development Training",
+    "code": "611430",
+    "amount": 1004400272.66
+  },
+  {
+    "name": "Perishable Prepared Food Manufacturing",
+    "code": "311991",
+    "amount": 989736060.48
+  },
+  {
+    "name": "Flight Training",
+    "code": "611512",
+    "amount": 986239059
+  },
+  {
+    "name": "Water and Sewer Line and Related Structures Construction",
+    "code": "237110",
+    "amount": 974472782.34
+  },
+  {
+    "name": "Telecommunications Resellers",
+    "code": "517310",
+    "amount": 918037659.65
+  },
+  {
+    "name": "Temporary Help Services",
+    "code": "561320",
+    "amount": 882344140.21
+  },
+  {
+    "name": "All Other Telecommunications",
+    "code": "517919",
+    "amount": 872983329.17
+  },
+  {
+    "name": "Nursing Care Facilities (Skilled Nursing Facilities)",
+    "code": "623110",
+    "amount": 872120094
+  },
+  {
+    "name": "Analytical Laboratory Instrument Manufacturing",
+    "code": "334516",
+    "amount": 861930816.27
+  },
+  {
+    "name": "Irradiation Apparatus Manufacturing",
+    "code": "334517",
+    "amount": 855927033.44
+  },
+  {
+    "name": "Investigation and Personal Background Check Services",
+    "code": "561611",
+    "amount": 853994855.25
+  },
+  {
+    "name": "Other Management Consulting Services",
+    "code": "541618",
+    "amount": 841516144.31
+  },
+  {
+    "name": "Couriers and Express Delivery Services",
+    "code": "492110",
+    "amount": 840029351.68
+  },
+  {
+    "name": "Bare Printed Circuit Board Manufacturing",
+    "code": "334412",
+    "amount": 839216124.9
+  }
+]

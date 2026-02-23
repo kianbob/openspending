@@ -1,1 +1,282 @@
-[{"name": "California", "amount": 485694956332.28, "code": "CA"}, {"name": "Florida", "amount": 324975352780.55, "code": "FL"}, {"name": "Texas", "amount": 311487972072.45, "code": "TX"}, {"name": "Pennsylvania", "amount": 281559119801.95, "code": "PA"}, {"name": "New York", "amount": 262127743411.04, "code": "NY"}, {"name": "Minnesota", "amount": 242100676317.55, "code": "MN"}, {"name": "Virginia", "amount": 213980265855.43, "code": "VA"}, {"name": "Indiana", "amount": 207060925748.51, "code": "IN"}, {"name": "Kentucky", "amount": 173279732302.68, "code": "KY"}, {"name": "Connecticut", "amount": 153597496670.1, "code": "CT"}, {"name": "South Carolina", "amount": 137105702315.0, "code": "SC"}, {"name": "Illinois", "amount": 134596987644.74, "code": "IL"}, {"name": "North Carolina", "amount": 129432140263.36, "code": "NC"}, {"name": "Ohio", "amount": 129043170919.91, "code": "OH"}, {"name": "Michigan", "amount": 126320569233.1, "code": "MI"}, {"name": "Tennessee", "amount": 121144319165.64, "code": "TN"}, {"name": "Wisconsin", "amount": 112969825629.9, "code": "WI"}, {"name": "Arizona", "amount": 112101274297.37, "code": "AZ"}, {"name": "Georgia", "amount": 105815642287.44, "code": "GA"}, {"name": "Maryland", "amount": 105632274473.85, "code": "MD"}, {"name": "Massachusetts", "amount": 103224819783.92, "code": "MA"}, {"name": "North Dakota", "amount": 98400812404.55, "code": "ND"}, {"name": "New Jersey", "amount": 96530237184.43, "code": "NJ"}, {"name": "Missouri", "amount": 93525637801.62, "code": "MO"}, {"name": "Washington", "amount": 89604684231.55, "code": "WA"}, {"name": "Alabama", "amount": 71547095560.64, "code": "AL"}, {"name": "Colorado", "amount": 70211468526.22, "code": "CO"}, {"name": "Louisiana", "amount": 59785185282.93, "code": "LA"}, {"name": "Oregon", "amount": 57180631773.26, "code": "OR"}, {"name": "Oklahoma", "amount": 50292711752.34, "code": "OK"}, {"name": "District Of Columbia", "amount": 49082629943.74, "code": "DC"}, {"name": "New Mexico", "amount": 41300687836.24, "code": "NM"}, {"name": "Mississippi", "amount": 38521205512.5, "code": "MS"}, {"name": "Puerto Rico", "amount": 38421796293.33, "code": "PR"}, {"name": "Iowa", "amount": 36550224554.15, "code": "IA"}, {"name": "Arkansas", "amount": 34909913092.81, "code": "AR"}, {"name": "Nevada", "amount": 34033318721.39, "code": "NV"}, {"name": "Kansas", "amount": 31022097405.02, "code": "KS"}, {"name": "Utah", "amount": 29025607506.5, "code": "UT"}, {"name": "Nebraska", "amount": 27730384620.79, "code": "NE"}, {"name": "West Virginia", "amount": 23818196830.18, "code": "WV"}, {"name": "Hawaii", "amount": 23255905585.42, "code": "HI"}, {"name": "Idaho", "amount": 22646527432.88, "code": "ID"}, {"name": "Maine", "amount": 22002964621.5, "code": "ME"}, {"name": "Alaska", "amount": 18439843054.21, "code": "AK"}, {"name": "New Hampshire", "amount": 16979475787.79, "code": "NH"}, {"name": "Montana", "amount": 15335339481.21, "code": "MT"}, {"name": "Rhode Island", "amount": 15140076964.95, "code": "RI"}, {"name": "Delaware", "amount": 12238468105.34, "code": "DE"}, {"name": "South Dakota", "amount": 11649259439.38, "code": "SD"}, {"name": "U.S. Virgin Islands", "amount": 10735923635.59, "code": "VI"}, {"name": "Vermont", "amount": 8855289827.0, "code": "VT"}, {"name": "Wyoming", "amount": 6990346391.53, "code": "WY"}, {"name": "Guam", "amount": 4853686250.79, "code": "GU"}, {"name": "American Samoa", "amount": 585824733.94, "code": "AS"}, {"name": null, "amount": 298920795.3, "code": null}, {"name": "Northern Mariana Islands", "amount": 196684474.29, "code": "MP"}, {"name": null, "amount": 104416562.77, "code": null}, {"name": null, "amount": 58157867.38, "code": null}, {"name": null, "amount": 15532357.1, "code": null}]
+[
+  {
+    "name": "California",
+    "amount": 485694956332.28,
+    "code": "CA"
+  },
+  {
+    "name": "Florida",
+    "amount": 324975352780.55,
+    "code": "FL"
+  },
+  {
+    "name": "Texas",
+    "amount": 311487972072.45,
+    "code": "TX"
+  },
+  {
+    "name": "Pennsylvania",
+    "amount": 281559119801.95,
+    "code": "PA"
+  },
+  {
+    "name": "New York",
+    "amount": 262127743411.04,
+    "code": "NY"
+  },
+  {
+    "name": "Minnesota",
+    "amount": 242100676317.55,
+    "code": "MN"
+  },
+  {
+    "name": "Virginia",
+    "amount": 213980265855.43,
+    "code": "VA"
+  },
+  {
+    "name": "Indiana",
+    "amount": 207060925748.51,
+    "code": "IN"
+  },
+  {
+    "name": "Kentucky",
+    "amount": 173279732302.68,
+    "code": "KY"
+  },
+  {
+    "name": "Connecticut",
+    "amount": 153597496670.1,
+    "code": "CT"
+  },
+  {
+    "name": "South Carolina",
+    "amount": 137105702315,
+    "code": "SC"
+  },
+  {
+    "name": "Illinois",
+    "amount": 134596987644.74,
+    "code": "IL"
+  },
+  {
+    "name": "North Carolina",
+    "amount": 129432140263.36,
+    "code": "NC"
+  },
+  {
+    "name": "Ohio",
+    "amount": 129043170919.91,
+    "code": "OH"
+  },
+  {
+    "name": "Michigan",
+    "amount": 126320569233.1,
+    "code": "MI"
+  },
+  {
+    "name": "Tennessee",
+    "amount": 121144319165.64,
+    "code": "TN"
+  },
+  {
+    "name": "Wisconsin",
+    "amount": 112969825629.9,
+    "code": "WI"
+  },
+  {
+    "name": "Arizona",
+    "amount": 112101274297.37,
+    "code": "AZ"
+  },
+  {
+    "name": "Georgia",
+    "amount": 105815642287.44,
+    "code": "GA"
+  },
+  {
+    "name": "Maryland",
+    "amount": 105632274473.85,
+    "code": "MD"
+  },
+  {
+    "name": "Massachusetts",
+    "amount": 103224819783.92,
+    "code": "MA"
+  },
+  {
+    "name": "North Dakota",
+    "amount": 98400812404.55,
+    "code": "ND"
+  },
+  {
+    "name": "New Jersey",
+    "amount": 96530237184.43,
+    "code": "NJ"
+  },
+  {
+    "name": "Missouri",
+    "amount": 93525637801.62,
+    "code": "MO"
+  },
+  {
+    "name": "Washington",
+    "amount": 89604684231.55,
+    "code": "WA"
+  },
+  {
+    "name": "Alabama",
+    "amount": 71547095560.64,
+    "code": "AL"
+  },
+  {
+    "name": "Colorado",
+    "amount": 70211468526.22,
+    "code": "CO"
+  },
+  {
+    "name": "Louisiana",
+    "amount": 59785185282.93,
+    "code": "LA"
+  },
+  {
+    "name": "Oregon",
+    "amount": 57180631773.26,
+    "code": "OR"
+  },
+  {
+    "name": "Oklahoma",
+    "amount": 50292711752.34,
+    "code": "OK"
+  },
+  {
+    "name": "District Of Columbia",
+    "amount": 49082629943.74,
+    "code": "DC"
+  },
+  {
+    "name": "New Mexico",
+    "amount": 41300687836.24,
+    "code": "NM"
+  },
+  {
+    "name": "Mississippi",
+    "amount": 38521205512.5,
+    "code": "MS"
+  },
+  {
+    "name": "Puerto Rico",
+    "amount": 38421796293.33,
+    "code": "PR"
+  },
+  {
+    "name": "Iowa",
+    "amount": 36550224554.15,
+    "code": "IA"
+  },
+  {
+    "name": "Arkansas",
+    "amount": 34909913092.81,
+    "code": "AR"
+  },
+  {
+    "name": "Nevada",
+    "amount": 34033318721.39,
+    "code": "NV"
+  },
+  {
+    "name": "Kansas",
+    "amount": 31022097405.02,
+    "code": "KS"
+  },
+  {
+    "name": "Utah",
+    "amount": 29025607506.5,
+    "code": "UT"
+  },
+  {
+    "name": "Nebraska",
+    "amount": 27730384620.79,
+    "code": "NE"
+  },
+  {
+    "name": "West Virginia",
+    "amount": 23818196830.18,
+    "code": "WV"
+  },
+  {
+    "name": "Hawaii",
+    "amount": 23255905585.42,
+    "code": "HI"
+  },
+  {
+    "name": "Idaho",
+    "amount": 22646527432.88,
+    "code": "ID"
+  },
+  {
+    "name": "Maine",
+    "amount": 22002964621.5,
+    "code": "ME"
+  },
+  {
+    "name": "Alaska",
+    "amount": 18439843054.21,
+    "code": "AK"
+  },
+  {
+    "name": "New Hampshire",
+    "amount": 16979475787.79,
+    "code": "NH"
+  },
+  {
+    "name": "Montana",
+    "amount": 15335339481.21,
+    "code": "MT"
+  },
+  {
+    "name": "Rhode Island",
+    "amount": 15140076964.95,
+    "code": "RI"
+  },
+  {
+    "name": "Delaware",
+    "amount": 12238468105.34,
+    "code": "DE"
+  },
+  {
+    "name": "South Dakota",
+    "amount": 11649259439.38,
+    "code": "SD"
+  },
+  {
+    "name": "U.S. Virgin Islands",
+    "amount": 10735923635.59,
+    "code": "VI"
+  },
+  {
+    "name": "Vermont",
+    "amount": 8855289827,
+    "code": "VT"
+  },
+  {
+    "name": "Wyoming",
+    "amount": 6990346391.53,
+    "code": "WY"
+  },
+  {
+    "name": "Guam",
+    "amount": 4853686250.79,
+    "code": "GU"
+  },
+  {
+    "name": "American Samoa",
+    "amount": 585824733.94,
+    "code": "AS"
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "amount": 196684474.29,
+    "code": "MP"
+  }
+]

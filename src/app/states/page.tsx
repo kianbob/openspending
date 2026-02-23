@@ -72,13 +72,13 @@ export default function StatesPage() {
           Why Virginia Leads
         </h2>
         <p className="text-indigo-800">
-          Virginia receives <span className="font-bold">{formatDollars(states[0].amount)}</span> in
+          Virginia receives <span className="font-bold">{formatDollars(states[0]?.amount ?? 0)}</span> in
           federal contracts — more than any other state. The reason: proximity to the Pentagon.
           Northern Virginia is home to the headquarters of major defense contractors, military
           installations, and the intelligence community. The D.C. metro area (Virginia, Maryland,
           and D.C. combined) captures over{" "}
           <span className="font-bold">
-            {formatDollars(states[0].amount + states[3].amount + states[6].amount)}
+            {formatDollars((states[0]?.amount ?? 0) + (states[3]?.amount ?? 0) + (states[6]?.amount ?? 0))}
           </span>{" "}
           in contracts — a concentration that raises questions about whether federal
           spending truly benefits the broader country.

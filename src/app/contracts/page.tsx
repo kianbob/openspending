@@ -25,7 +25,7 @@ const tableData = awards.map((a) => ({
   agency: a.agency,
   description: a.description,
   startDate: a.startDate,
-  href: `/contracts/${slugify(a.awardId)}`,
+  href: a.awardId ? `/contracts/${slugify(a.awardId)}` : '#',
 }));
 
 export default function ContractsPage() {
