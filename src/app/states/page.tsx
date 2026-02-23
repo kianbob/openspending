@@ -5,6 +5,7 @@ import { HorizontalBarChart } from "@/components/charts/HorizontalBarChart";
 import { SortableTable } from "@/components/SortableTable";
 import { formatDollars } from "@/lib/format";
 import states from "@/../public/data/spending-by-state.json";
+import StateHeatmap from "@/components/charts/StateHeatmapWrapper";
 
 export const metadata = {
   title: "Federal Spending by State: Who Gets the Most? | OpenSpending",
@@ -83,6 +84,19 @@ export default function StatesPage() {
           in contracts — a concentration that raises questions about whether federal
           spending truly benefits the broader country.
         </p>
+      </div>
+
+      {/* Spending Heatmap */}
+      <div className="mb-12">
+        <h2 className="text-xl font-bold text-gray-900 mb-2">
+          State Spending Heatmap
+        </h2>
+        <p className="text-gray-500 text-sm mb-4">
+          Sized by total contract spending. Darker colors indicate higher spending.
+        </p>
+        <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6">
+          <StateHeatmap />
+        </div>
       </div>
 
       {/* Bar Chart */}

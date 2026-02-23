@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SpendingGrowthChart from "@/components/charts/SpendingGrowthChartWrapper";
+import SpendingCategoryPie from "@/components/charts/SpendingCategoryPieWrapper";
 
 export const metadata: Metadata = {
   title: "Where Does $11.2 Trillion Actually Go? | OpenSpending",
@@ -79,6 +81,19 @@ export default function SpendingAnalysisPage() {
           </p>
         </blockquote>
 
+        {/* Spending Growth Chart */}
+        <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Federal Spending Growth: FY2017–FY2025</h2>
+
+        <p className="text-lg text-gray-700 leading-relaxed mb-6">
+          Total federal outlays have climbed relentlessly over the past decade, with a massive spike during
+          the COVID-era emergency spending of 2020–2021. Even after the pandemic, spending never returned
+          to pre-crisis levels.
+        </p>
+
+        <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6 my-8">
+          <SpendingGrowthChart />
+        </div>
+
         {/* Top 5 Agencies */}
         <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">The Big Five: Where the Money Concentrates</h2>
 
@@ -113,6 +128,19 @@ export default function SpendingAnalysisPage() {
         <p className="text-lg text-gray-700 leading-relaxed mb-6">
           <Link href="/agencies" className="text-indigo-700 underline font-medium">See all 97 agencies ranked by spending →</Link>
         </p>
+
+        {/* Spending Category Pie Chart */}
+        <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Where the Money Goes</h2>
+
+        <p className="text-lg text-gray-700 leading-relaxed mb-6">
+          Healthcare and Social Security dominate the federal budget, together accounting for more than
+          half of all spending. Defense, often the focus of political debate, represents a far smaller share
+          than most Americans realize.
+        </p>
+
+        <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6 my-8">
+          <SpendingCategoryPie />
+        </div>
 
         {/* Contracts vs Grants */}
         <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Contracts vs. Grants: Two Ways to Spend $2 Trillion</h2>

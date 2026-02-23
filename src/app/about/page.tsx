@@ -16,6 +16,17 @@ export default function AboutPage() {
         About OpenSpending
       </h1>
 
+      {/* Why This Exists */}
+      <section className="mb-12">
+        <div className="bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-xl p-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Why This Exists</h2>
+          <p className="text-gray-700 leading-relaxed mb-4 text-lg">The federal government spends over $11 trillion every year. That&apos;s $34,000 for every man, woman, and child in America — more than most families earn. Yet most Americans have no idea where it goes.</p>
+          <p className="text-gray-700 leading-relaxed mb-4 text-lg">We built OpenSpending because we believe transparency isn&apos;t optional — it&apos;s the foundation of accountability. The data is all public, published by the government itself on USASpending.gov. But it&apos;s buried in spreadsheets, hidden behind jargon, and scattered across dozens of agencies.</p>
+          <p className="text-gray-700 leading-relaxed mb-4 text-lg">We took that data and made it accessible. Every chart, every table, every analysis on this site exists for one reason: so you can see exactly where your tax dollars go, and decide for yourself whether it&apos;s money well spent.</p>
+          <p className="text-gray-700 leading-relaxed text-lg font-medium text-indigo-900">This is your money. You deserve to see it.</p>
+        </div>
+      </section>
+
       {/* Overview */}
       <section className="mb-12">
         <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -460,6 +471,13 @@ export default function AboutPage() {
             Browse All Datasets &rarr;
           </Link>
         </div>
+      </section>
+
+      {/* Update Frequency */}
+      <section className="mb-12">
+        <h2 className="text-xl font-bold text-gray-900 mb-4 border-b border-gray-200 pb-2">Update Frequency</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">Data is refreshed periodically from USASpending.gov. Federal spending data is updated daily by the Treasury Department, but we typically refresh our datasets monthly to ensure stability and accuracy. Major updates coincide with fiscal year milestones (quarterly and year-end).</p>
+        <p className="text-gray-700 leading-relaxed">Current data reflects <strong>Fiscal Year 2025</strong> (October 2024 – September 2025). Historical trends cover FY2017–FY2025.</p>
       </section>
 
       {/* Contact */}

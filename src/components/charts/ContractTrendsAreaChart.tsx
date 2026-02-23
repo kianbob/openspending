@@ -70,13 +70,35 @@ export function ContractTrendsAreaChart({
             stroke="#dc2626"
             strokeDasharray="4 4"
             label={{
-              value: "COVID",
+              value: "COVID Stimulus",
               position: "top",
               fill: "#dc2626",
               fontSize: 11,
             }}
           />
         )}
+        <ReferenceLine
+          x={2022}
+          stroke="#d97706"
+          strokeDasharray="4 4"
+          label={{
+            value: "Post-COVID Adjustment",
+            position: "top",
+            fill: "#d97706",
+            fontSize: 11,
+          }}
+        />
+        <ReferenceLine
+          x={2025}
+          stroke="#059669"
+          strokeDasharray="4 4"
+          label={{
+            value: "New High",
+            position: "top",
+            fill: "#059669",
+            fontSize: 11,
+          }}
+        />
         <Area
           type="monotone"
           dataKey="totalContracts"
