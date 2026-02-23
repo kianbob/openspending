@@ -161,6 +161,9 @@ export default function RootLayout({
                 <a href="https://www.openfeds.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
                   OpenFeds — Federal Workforce Tracker
                 </a>
+                <a href="https://www.openmedicare.us" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  OpenMedicare — Medicare Spending Tracker
+                </a>
                 <a href="https://www.openmedicaid.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
                   OpenMedicaid — Medicaid Spending Tracker
                 </a>
