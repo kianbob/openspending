@@ -42,6 +42,7 @@ export default function IndustriesPage() {
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "Dataset",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
         "name": "Federal Spending by Industry FY2025",
         "description": "Top industries receiving federal contract dollars, classified by NAICS code",
         "url": "https://www.openspending.us/industries",

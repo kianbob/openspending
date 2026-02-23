@@ -61,6 +61,7 @@ export default function AgenciesPage() {
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "Dataset",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
         "name": "Federal Agency Spending FY2025",
         "description": "Budget authority, obligations, and outlays for 97 federal agencies",
         "url": "https://www.openspending.us/agencies",

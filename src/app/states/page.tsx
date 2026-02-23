@@ -45,6 +45,7 @@ export default function StatesPage() {
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "Dataset",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
         "name": "Federal Contract Spending by State FY2025",
         "description": "Federal contract spending distributed across all 50 states and territories",
         "url": "https://www.openspending.us/states",

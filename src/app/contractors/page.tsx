@@ -51,6 +51,7 @@ export default function ContractorsPage() {
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "Dataset",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
         "name": "Top Federal Contractors FY2025",
         "description": "Federal contract awards ranked by total obligated amount",
         "url": "https://www.openspending.us/contractors",
