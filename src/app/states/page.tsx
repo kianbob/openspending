@@ -7,11 +7,17 @@ import { formatDollars } from "@/lib/format";
 import states from "@/../public/data/spending-by-state.json";
 
 export const metadata = {
-  title: "Federal Spending by State — OpenSpending",
-  description: "Which states receive the most federal contract dollars? All 50 states and territories ranked — Virginia leads by far.",
+  title: "Federal Spending by State: Who Gets the Most? | OpenSpending",
+  description: "Virginia gets more federal contracts than any state — thanks to the Pentagon next door. See all 50 states ranked by taxpayer dollars received.",
   openGraph: {
-    title: "Federal Spending by State — OpenSpending",
-    description: "Which states receive the most federal contract dollars? All 50 states and territories ranked — Virginia leads by far.",
+    title: "Federal Spending by State: Who Gets the Most? | OpenSpending",
+    description: "Virginia gets more federal contracts than any state — thanks to the Pentagon next door. See all 50 states ranked by taxpayer dollars received.",
+    url: "https://www.openspending.us/states",
+  },
+  twitter: {
+    card: "summary_large_image" as const,
+    title: "Federal Spending by State: Who Gets the Most? | OpenSpending",
+    description: "Virginia gets more federal contracts than any state — thanks to the Pentagon next door. See all 50 states ranked by taxpayer dollars received.",
   },
 };
 

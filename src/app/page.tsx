@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { TopContractorsChart } from "@/components/charts/TopContractorsChart";
@@ -6,6 +7,21 @@ import stats from "@/../public/data/stats.json";
 import contractors from "@/../public/data/top-contractors-deduped.json";
 import agencies from "@/../public/data/agencies.json";
 import stateDetailsData from "@/../public/data/state-details.json";
+
+export const metadata: Metadata = {
+  title: "Track Every Dollar the Government Spends | OpenSpending",
+  description: "$11.2 trillion. 97 agencies. 50 top contractors. See exactly where your tax dollars go — and how much Washington wastes every year.",
+  openGraph: {
+    title: "Track Every Dollar the Government Spends | OpenSpending",
+    description: "$11.2 trillion. 97 agencies. 50 top contractors. See exactly where your tax dollars go — and how much Washington wastes every year.",
+    url: "https://www.openspending.us",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Track Every Dollar the Government Spends | OpenSpending",
+    description: "$11.2 trillion. 97 agencies. 50 top contractors. See exactly where your tax dollars go — and how much Washington wastes every year.",
+  },
+};
 
 const topContractors = contractors.slice(0, 10);
 const topAgencies = agencies.slice(0, 5);

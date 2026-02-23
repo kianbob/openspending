@@ -11,11 +11,17 @@ import contractorTrends from "@/../public/data/contractor-trends.json";
 import stats from "@/../public/data/stats.json";
 
 export const metadata = {
-  title: "Top 50 Federal Contractors — OpenSpending",
-  description: "Who gets the most federal contract dollars? The 50 largest contractors ranked, from Lockheed Martin to Booz Allen.",
+  title: "Top 50 Government Contractors Exposed | OpenSpending",
+  description: "10 companies grab 64% of all federal contracts. See who gets billions in taxpayer money — ranked from Lockheed Martin ($34B) to Booz Allen.",
   openGraph: {
-    title: "Top 50 Federal Contractors — OpenSpending",
-    description: "Who gets the most federal contract dollars? The 50 largest contractors ranked, from Lockheed Martin to Booz Allen.",
+    title: "Top 50 Government Contractors Exposed | OpenSpending",
+    description: "10 companies grab 64% of all federal contracts. See who gets billions in taxpayer money — ranked from Lockheed Martin ($34B) to Booz Allen.",
+    url: "https://www.openspending.us/contractors",
+  },
+  twitter: {
+    card: "summary_large_image" as const,
+    title: "Top 50 Government Contractors Exposed | OpenSpending",
+    description: "10 companies grab 64% of all federal contracts. See who gets billions in taxpayer money — ranked from Lockheed Martin ($34B) to Booz Allen.",
   },
 };
 

@@ -9,11 +9,17 @@ import agencies from "@/../public/data/agencies.json";
 import agencySpending from "@/../public/data/agency-spending.json";
 
 export const metadata = {
-  title: "Federal Agencies — OpenSpending",
-  description: "All 97 federal agencies ranked by budget authority, obligations, and outlays.",
+  title: "97 Federal Agencies: Who Spends the Most? | OpenSpending",
+  description: "Exposed: how 97 federal agencies spend $11.2 trillion. Ranked by budget authority with contracts vs. grants breakdowns. Some numbers will shock you.",
   openGraph: {
-    title: "Federal Agencies — OpenSpending",
-    description: "All 97 federal agencies ranked by budget authority, obligations, and outlays.",
+    title: "97 Federal Agencies: Who Spends the Most? | OpenSpending",
+    description: "Exposed: how 97 federal agencies spend $11.2 trillion. Ranked by budget authority with contracts vs. grants breakdowns. Some numbers will shock you.",
+    url: "https://www.openspending.us/agencies",
+  },
+  twitter: {
+    card: "summary_large_image" as const,
+    title: "97 Federal Agencies: Who Spends the Most? | OpenSpending",
+    description: "Exposed: how 97 federal agencies spend $11.2 trillion. Ranked by budget authority with contracts vs. grants breakdowns. Some numbers will shock you.",
   },
 };
 
