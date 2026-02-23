@@ -64,6 +64,7 @@ function formatCurrencyWhole(amount: number): string {
 
 export default function TaxCalculatorPage() {
   const [incomeInput, setIncomeInput] = useState('');
+  const [submitted, setSubmitted] = useState(false);
   const [copied, setCopied] = useState(false);
 
   const income = useMemo(() => {
@@ -84,6 +85,13 @@ export default function TaxCalculatorPage() {
   const lockheedDollars = defenseDollars * LOCKHEED_DOD_SHARE;
 
   const effectiveRate = income > 0 ? (tax / income) * 100 : 0;
+
+  const hasResults = submitted && income > 0 && tax > 0;
+  const zeroTax = submitted && income > 0 && tax <= 0;
+
+  const handleCalculate = () => {
+    setSubmitted(true);
+  };
 
   const handleShare = async () => {
     if (tax <= 0) return;
@@ -122,8 +130,6 @@ export default function TaxCalculatorPage() {
       setTimeout(() => setCopied(false), 2500);
     }
   };
-
-  const hasResults = income > 0 && tax > 0;
 
   return (
     <div>
@@ -167,10 +173,15 @@ export default function TaxCalculatorPage() {
                 const raw = e.target.value.replace(/[^0-9]/g, '');
                 if (raw === '') {
                   setIncomeInput('');
+                  setSubmitted(false);
                   return;
                 }
                 const formatted = parseInt(raw, 10).toLocaleString('en-US');
                 setIncomeInput(formatted);
+                setSubmitted(false);
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') handleCalculate();
               }}
               placeholder="75,000"
               className="w-full pl-8 pr-4 py-4 text-2xl font-bold text-gray-900 border-2 border-gray-200 rounded-xl focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none"
@@ -179,6 +190,13 @@ export default function TaxCalculatorPage() {
           <p className="text-xs text-gray-400 mt-2">
             2024 brackets, single filer, standard deduction ({formatCurrencyWhole(STANDARD_DEDUCTION)})
           </p>
+          <button
+            onClick={handleCalculate}
+            disabled={income <= 0}
+            className="mt-4 w-full py-4 bg-indigo-700 text-white font-semibold text-lg rounded-xl hover:bg-indigo-800 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
+          >
+            Calculate My Tax Breakdown
+          </button>
         </div>
 
         {hasResults && (
@@ -381,7 +399,7 @@ export default function TaxCalculatorPage() {
           </>
         )}
 
-        {!hasResults && income > 0 && (
+        {zeroTax && (
           <div className="max-w-xl mx-auto text-center py-8">
             <p className="text-gray-500">
               With the standard deduction of {formatCurrencyWhole(STANDARD_DEDUCTION)},

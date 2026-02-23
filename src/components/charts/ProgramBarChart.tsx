@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import {
   BarChart,
   Bar,
@@ -9,7 +10,6 @@ import {
   ResponsiveContainer,
   Cell,
 } from "recharts";
-import Link from "next/link";
 
 interface Program {
   name: string;
@@ -36,16 +36,23 @@ const COLORS = [
 ];
 
 export function ProgramBarChart({ data }: { data: Program[] }) {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+
   const chartData = data.slice(0, 20).map((d) => ({
     ...d,
     shortName: shortName(d.name),
   }));
 
+  if (!mounted) {
+    return <div className="w-full h-[600px]" />;
+  }
+
   return (
-    <div className="w-full h-[600px]">
+    <div className="w-full h-[600px]" style={{ minWidth: 300 }}>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={chartData} layout="vertical" margin={{ left: 200, right: 40, top: 10, bottom: 10 }}>
-          <XAxis type="number" tickFormatter={formatBillions} />
+          <XAxis type="number" tickFormatter={formatBillions} domain={[0, "dataMax"]} />
           <YAxis
             type="category"
             dataKey="shortName"
@@ -54,7 +61,7 @@ export function ProgramBarChart({ data }: { data: Program[] }) {
           />
           <Tooltip
             formatter={(value: number | undefined) => [formatBillions(value ?? 0), "Amount"]}
-            labelFormatter={(label: any) => label}
+            labelFormatter={(label) => label}
           />
           <Bar dataKey="amount" radius={[0, 4, 4, 0]}>
             {chartData.map((_, i) => (

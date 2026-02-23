@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell,
@@ -8,46 +8,17 @@ import {
 } from "recharts";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ShareButtons } from "@/components/ShareButtons";
-
-interface StateData {
-  state: string;
-  name: string;
-  received: number;
-  paid: number;
-  ratio: number;
-  net: number;
-  net_per_capita: number;
-}
-
-interface DepData {
-  states: StateData[];
-  biggest_taker: { name: string; ratio: number };
-  biggest_donor: { name: string; ratio: number };
-  takers_count: number;
-  donors_count: number;
-}
+import depData from "@/../public/data/state-dependency.json";
 
 // Rough partisan lean for editorial context
 const redStates = new Set(["WV", "MS", "AL", "KY", "AK", "SC", "MT", "AR", "LA", "SD", "ND", "ID", "WY", "TN", "MO", "IN", "OK", "KS", "NE", "UT", "TX", "FL", "OH", "IA", "GA", "NC"]);
 const blueStates = new Set(["NJ", "CT", "MA", "NY", "CA", "WA", "MN", "IL", "CO", "OR", "MD", "VA", "NH", "HI", "DE", "RI", "VT", "ME", "NV", "NM"]);
 
+const data = depData;
+
 export default function WelfareQueensPage() {
-  const [data, setData] = useState<DepData | null>(null);
-
-  useEffect(() => {
-    fetch("/data/state-dependency.json").then(r => r.json()).then(setData);
-  }, []);
-
-  if (!data) {
-    return (
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="animate-pulse space-y-4">
-          <div className="h-8 bg-gray-200 rounded w-2/3" />
-          <div className="h-4 bg-gray-200 rounded w-1/2" />
-        </div>
-      </div>
-    );
-  }
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
 
   const states = data.states;
   const sorted = [...states].sort((a, b) => b.ratio - a.ratio);
@@ -153,20 +124,24 @@ export default function WelfareQueensPage() {
         </p>
 
         <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6 my-8">
-          <div style={{ width: "100%", height: 420 }}>
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={topTakers} layout="vertical" margin={{ left: 10, right: 30, top: 5, bottom: 5 }}>
-                <XAxis type="number" tickFormatter={v => `$${v.toFixed(1)}`} fontSize={12} tick={{ fill: "#6b7280" }} />
-                <YAxis type="category" dataKey="name" width={140} fontSize={11} tick={{ fill: "#374151" }} />
-                <Tooltip formatter={(v) => [`$${Number(v).toFixed(2)} per $1 paid`, "Ratio"]} contentStyle={{ backgroundColor: "#fff", border: "1px solid #e5e7eb", borderRadius: "8px", fontSize: "13px" }} />
-                <Bar dataKey="amount" radius={[0, 4, 4, 0]}>
-                  {topTakers.map((_, i) => (
-                    <Cell key={i} fill="#dc2626" fillOpacity={1 - i * 0.05} />
-                  ))}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
+          {mounted ? (
+            <div style={{ width: "100%", height: 420 }}>
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={topTakers} layout="vertical" margin={{ left: 10, right: 30, top: 5, bottom: 5 }}>
+                  <XAxis type="number" tickFormatter={v => `$${v.toFixed(1)}`} fontSize={12} tick={{ fill: "#6b7280" }} />
+                  <YAxis type="category" dataKey="name" width={140} fontSize={11} tick={{ fill: "#374151" }} />
+                  <Tooltip formatter={(v) => [`$${Number(v).toFixed(2)} per $1 paid`, "Ratio"]} contentStyle={{ backgroundColor: "#fff", border: "1px solid #e5e7eb", borderRadius: "8px", fontSize: "13px" }} />
+                  <Bar dataKey="amount" radius={[0, 4, 4, 0]}>
+                    {topTakers.map((_, i) => (
+                      <Cell key={i} fill="#dc2626" fillOpacity={1 - i * 0.05} />
+                    ))}
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          ) : (
+            <div style={{ height: 420 }} />
+          )}
           <p className="text-xs text-gray-500 mt-2">Federal dollars received per $1 in federal taxes paid</p>
         </div>
 
@@ -179,20 +154,24 @@ export default function WelfareQueensPage() {
         </p>
 
         <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6 my-8">
-          <div style={{ width: "100%", height: 420 }}>
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={topDonors} layout="vertical" margin={{ left: 10, right: 30, top: 5, bottom: 5 }}>
-                <XAxis type="number" tickFormatter={v => `$${v.toFixed(1)}`} fontSize={12} tick={{ fill: "#6b7280" }} />
-                <YAxis type="category" dataKey="name" width={140} fontSize={11} tick={{ fill: "#374151" }} />
-                <Tooltip formatter={(v) => [`$${Number(v).toFixed(2)} per $1 paid`, "Ratio"]} contentStyle={{ backgroundColor: "#fff", border: "1px solid #e5e7eb", borderRadius: "8px", fontSize: "13px" }} />
-                <Bar dataKey="amount" radius={[0, 4, 4, 0]}>
-                  {topDonors.map((_, i) => (
-                    <Cell key={i} fill="#16a34a" fillOpacity={1 - i * 0.05} />
-                  ))}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
+          {mounted ? (
+            <div style={{ width: "100%", height: 420 }}>
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={topDonors} layout="vertical" margin={{ left: 10, right: 30, top: 5, bottom: 5 }}>
+                  <XAxis type="number" tickFormatter={v => `$${v.toFixed(1)}`} fontSize={12} tick={{ fill: "#6b7280" }} />
+                  <YAxis type="category" dataKey="name" width={140} fontSize={11} tick={{ fill: "#374151" }} />
+                  <Tooltip formatter={(v) => [`$${Number(v).toFixed(2)} per $1 paid`, "Ratio"]} contentStyle={{ backgroundColor: "#fff", border: "1px solid #e5e7eb", borderRadius: "8px", fontSize: "13px" }} />
+                  <Bar dataKey="amount" radius={[0, 4, 4, 0]}>
+                    {topDonors.map((_, i) => (
+                      <Cell key={i} fill="#16a34a" fillOpacity={1 - i * 0.05} />
+                    ))}
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          ) : (
+            <div style={{ height: 420 }} />
+          )}
           <p className="text-xs text-gray-500 mt-2">Federal dollars received per $1 in federal taxes paid (lower = bigger donor)</p>
         </div>
 
@@ -247,33 +226,37 @@ export default function WelfareQueensPage() {
         </p>
 
         <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6 my-8">
-          <div style={{ width: "100%", height: 400 }}>
-            <ResponsiveContainer width="100%" height="100%">
-              <ScatterChart margin={{ left: 10, right: 30, top: 20, bottom: 10 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                <XAxis type="number" dataKey="paid" name="Taxes Paid" tickFormatter={v => `$${v}B`} fontSize={12} tick={{ fill: "#6b7280" }} label={{ value: "Federal Taxes Paid (Billions)", position: "bottom", fontSize: 11, fill: "#9ca3af" }} />
-                <YAxis type="number" dataKey="ratio" name="Ratio" tickFormatter={v => `$${v}`} fontSize={12} tick={{ fill: "#6b7280" }} label={{ value: "$ Received per $1 Paid", angle: -90, position: "insideLeft", fontSize: 11, fill: "#9ca3af" }} />
-                <ZAxis range={[40, 40]} />
-                <Tooltip
-                  content={({ payload }) => {
-                    if (!payload?.length) return null;
-                    const d = payload[0].payload;
-                    return (
-                      <div className="bg-white border border-gray-200 rounded-lg p-3 shadow-lg text-sm">
-                        <p className="font-bold">{d.name}</p>
-                        <p>Ratio: ${d.ratio} per $1</p>
-                        <p>Taxes Paid: ${d.paid.toFixed(0)}B</p>
-                        <p>Lean: {d.lean}</p>
-                      </div>
-                    );
-                  }}
-                />
-                <Scatter data={scatterData.filter(s => s.lean === "red")} fill="#dc2626" name="Red States" />
-                <Scatter data={scatterData.filter(s => s.lean === "blue")} fill="#2563eb" name="Blue States" />
-                <Scatter data={scatterData.filter(s => s.lean === "swing")} fill="#9ca3af" name="Swing States" />
-              </ScatterChart>
-            </ResponsiveContainer>
-          </div>
+          {mounted ? (
+            <div style={{ width: "100%", height: 400 }}>
+              <ResponsiveContainer width="100%" height="100%">
+                <ScatterChart margin={{ left: 10, right: 30, top: 20, bottom: 10 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                  <XAxis type="number" dataKey="paid" name="Taxes Paid" tickFormatter={v => `$${v}B`} fontSize={12} tick={{ fill: "#6b7280" }} label={{ value: "Federal Taxes Paid (Billions)", position: "bottom", fontSize: 11, fill: "#9ca3af" }} />
+                  <YAxis type="number" dataKey="ratio" name="Ratio" tickFormatter={v => `$${v}`} fontSize={12} tick={{ fill: "#6b7280" }} label={{ value: "$ Received per $1 Paid", angle: -90, position: "insideLeft", fontSize: 11, fill: "#9ca3af" }} />
+                  <ZAxis range={[40, 40]} />
+                  <Tooltip
+                    content={({ payload }) => {
+                      if (!payload?.length) return null;
+                      const d = payload[0].payload;
+                      return (
+                        <div className="bg-white border border-gray-200 rounded-lg p-3 shadow-lg text-sm">
+                          <p className="font-bold">{d.name}</p>
+                          <p>Ratio: ${d.ratio} per $1</p>
+                          <p>Taxes Paid: ${d.paid.toFixed(0)}B</p>
+                          <p>Lean: {d.lean}</p>
+                        </div>
+                      );
+                    }}
+                  />
+                  <Scatter data={scatterData.filter(s => s.lean === "red")} fill="#dc2626" name="Red States" />
+                  <Scatter data={scatterData.filter(s => s.lean === "blue")} fill="#2563eb" name="Blue States" />
+                  <Scatter data={scatterData.filter(s => s.lean === "swing")} fill="#9ca3af" name="Swing States" />
+                </ScatterChart>
+              </ResponsiveContainer>
+            </div>
+          ) : (
+            <div style={{ height: 400 }} />
+          )}
           <div className="flex gap-4 mt-2 text-xs text-gray-500">
             <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-full bg-red-600 inline-block" /> Red-leaning</span>
             <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-full bg-blue-600 inline-block" /> Blue-leaning</span>

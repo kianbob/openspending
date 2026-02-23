@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import {
   LineChart,
   Line,
@@ -32,6 +33,11 @@ export function AgencyComparisonLineChart({
   data: ChartRow[];
   agencies: string[];
 }) {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
+
+  if (!mounted) return <div style={{ height: 400 }} />;
+
   return (
     <ResponsiveContainer width="100%" height={400}>
       <LineChart

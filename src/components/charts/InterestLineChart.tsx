@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import {
   LineChart,
   Line,
@@ -24,6 +25,13 @@ const tooltipFormatter: any = (value: any, name: any) => [
 ];
 
 export function InterestLineChart({ data }: { data: DataPoint[] }) {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) {
+    return <div style={{ width: "100%", height: 350 }} />;
+  }
+
   return (
     <ResponsiveContainer width="100%" height={350}>
       <LineChart data={data} margin={{ top: 5, right: 20, bottom: 5, left: 20 }}>

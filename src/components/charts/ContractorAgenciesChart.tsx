@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import {
   BarChart,
   Bar,
@@ -17,7 +18,28 @@ interface AgencyDatum {
 }
 
 export function ContractorAgenciesChart({ data }: { data: AgencyDatum[] }) {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+
   const top = data.slice(0, 10);
+
+  if (top.length <= 1) {
+    const item = top[0];
+    return item ? (
+      <div className="flex items-center justify-between bg-gray-50 rounded-xl p-6">
+        <div>
+          <p className="text-sm text-gray-500 uppercase tracking-wide font-medium">Primary Agency</p>
+          <p className="text-lg font-bold text-gray-900 mt-1">{item.name}</p>
+        </div>
+        <p className="text-2xl font-bold text-indigo-600">{formatDollars(item.amount)}</p>
+      </div>
+    ) : null;
+  }
+
+  if (!mounted) {
+    return <div style={{ width: "100%", height: Math.max(300, top.length * 45) }} />;
+  }
+
   const height = Math.max(300, top.length * 45);
 
   return (

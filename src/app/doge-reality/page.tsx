@@ -69,10 +69,12 @@ const shrinkingPromise = [
 ];
 
 export default function DogeRealityPage() {
+  const [mounted, setMounted] = useState(false);
   const [dogeData, setDogeData] = useState<DogeData | null>(null);
   const [spendingData, setSpendingData] = useState<SpendingYear[] | null>(null);
 
   useEffect(() => {
+    setMounted(true);
     Promise.all([
       fetch("/data/doge-reality.json").then((r) => r.json()),
       fetch("/data/spending-growth.json").then((r) => r.json()),
@@ -198,7 +200,7 @@ export default function DogeRealityPage() {
           {shrinkingPromise.map((item, i) => {
             const widthPct = Math.max(
               (item.value / shrinkingPromise[0].value) * 100,
-              3
+              8
             );
             const isLast = i === shrinkingPromise.length - 1;
             return (
@@ -248,59 +250,63 @@ export default function DogeRealityPage() {
           invisible against this backdrop.
         </p>
         <div className="bg-white rounded-xl border border-gray-200 p-4">
-          <ResponsiveContainer width="100%" height={400}>
-            <LineChart
-              data={spendingData}
-              margin={{ left: 10, right: 30, top: 20, bottom: 5 }}
-            >
-              <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-              <XAxis
-                dataKey="fy"
-                fontSize={12}
-                tick={{ fill: "#6b7280" }}
-              />
-              <YAxis
-                tickFormatter={(v) => formatDollars(v)}
-                fontSize={12}
-                tick={{ fill: "#6b7280" }}
-              />
-              <Tooltip
-                // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                formatter={(value: any) => [
-                  formatDollars(Number(value) || 0),
-                  "Total Outlays",
-                ]}
-                contentStyle={{
-                  backgroundColor: "#fff",
-                  border: "1px solid #e5e7eb",
-                  borderRadius: "8px",
-                  fontSize: "13px",
-                }}
-              />
-              <Line
-                type="monotone"
-                dataKey="total"
-                stroke="#4f46e5"
-                strokeWidth={3}
-                dot={{ r: 5, fill: "#4f46e5" }}
-                name="Total Outlays"
-              />
-              {/* DOGE claimed savings annotation */}
-              <ReferenceLine
-                y={dogeData.reality.fy2025_spending - dogeData.claims.claimed_savings}
-                stroke="#ef4444"
-                strokeDasharray="4 4"
-                strokeWidth={1}
+          {mounted ? (
+            <ResponsiveContainer width="100%" height={400}>
+              <LineChart
+                data={spendingData}
+                margin={{ left: 10, right: 30, top: 20, bottom: 5 }}
               >
-                <Label
-                  value="DOGE claimed $55B saved (0.81%)"
-                  position="insideBottomRight"
-                  fill="#ef4444"
-                  fontSize={11}
+                <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                <XAxis
+                  dataKey="fy"
+                  fontSize={12}
+                  tick={{ fill: "#6b7280" }}
                 />
-              </ReferenceLine>
-            </LineChart>
-          </ResponsiveContainer>
+                <YAxis
+                  tickFormatter={(v) => formatDollars(v)}
+                  fontSize={12}
+                  tick={{ fill: "#6b7280" }}
+                />
+                <Tooltip
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                  formatter={(value: any) => [
+                    formatDollars(Number(value) || 0),
+                    "Total Outlays",
+                  ]}
+                  contentStyle={{
+                    backgroundColor: "#fff",
+                    border: "1px solid #e5e7eb",
+                    borderRadius: "8px",
+                    fontSize: "13px",
+                  }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey="total"
+                  stroke="#4f46e5"
+                  strokeWidth={3}
+                  dot={{ r: 5, fill: "#4f46e5" }}
+                  name="Total Outlays"
+                />
+                {/* DOGE claimed savings annotation */}
+                <ReferenceLine
+                  y={dogeData.reality.fy2025_spending - dogeData.claims.claimed_savings}
+                  stroke="#ef4444"
+                  strokeDasharray="4 4"
+                  strokeWidth={1}
+                >
+                  <Label
+                    value="DOGE claimed $55B saved (0.81%)"
+                    position="insideBottomRight"
+                    fill="#ef4444"
+                    fontSize={11}
+                  />
+                </ReferenceLine>
+              </LineChart>
+            </ResponsiveContainer>
+          ) : (
+            <div style={{ width: "100%", height: 400 }} />
+          )}
           <p className="text-center text-xs text-gray-400 mt-2">
             The red dashed line shows where spending would be with DOGE&apos;s
             claimed $55B in savings — barely visible against $5.3T in total
@@ -322,38 +328,42 @@ export default function DogeRealityPage() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white rounded-xl border border-gray-200 p-4 flex items-center justify-center">
-            <ResponsiveContainer width="100%" height={300}>
-              <PieChart>
-                <Pie
-                  data={budgetBreakdown}
-                  cx="50%"
-                  cy="50%"
-                  innerRadius={70}
-                  outerRadius={120}
-                  dataKey="value"
-                  stroke="#fff"
-                  strokeWidth={2}
-                  label={({ name, value }) => `${name}: ${value}%`}
-                >
-                  {budgetBreakdown.map((_, index) => (
-                    <Cell key={index} fill={BUDGET_COLORS[index]} />
-                  ))}
-                </Pie>
-                <Tooltip
-                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                  formatter={(value: any, name: any) => [
-                    `${value}%`,
-                    name,
-                  ]}
-                  contentStyle={{
-                    backgroundColor: "#fff",
-                    border: "1px solid #e5e7eb",
-                    borderRadius: "8px",
-                    fontSize: "13px",
-                  }}
-                />
-              </PieChart>
-            </ResponsiveContainer>
+            {mounted ? (
+              <ResponsiveContainer width="100%" height={300}>
+                <PieChart>
+                  <Pie
+                    data={budgetBreakdown}
+                    cx="50%"
+                    cy="50%"
+                    innerRadius={70}
+                    outerRadius={120}
+                    dataKey="value"
+                    stroke="#fff"
+                    strokeWidth={2}
+                    label={({ name, value }) => `${name}: ${value}%`}
+                  >
+                    {budgetBreakdown.map((_, index) => (
+                      <Cell key={index} fill={BUDGET_COLORS[index]} />
+                    ))}
+                  </Pie>
+                  <Tooltip
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                    formatter={(value: any, name: any) => [
+                      `${value}%`,
+                      name,
+                    ]}
+                    contentStyle={{
+                      backgroundColor: "#fff",
+                      border: "1px solid #e5e7eb",
+                      borderRadius: "8px",
+                      fontSize: "13px",
+                    }}
+                  />
+                </PieChart>
+              </ResponsiveContainer>
+            ) : (
+              <div style={{ width: "100%", height: 300 }} />
+            )}
           </div>
           <div className="space-y-4">
             <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-4">
@@ -401,46 +411,50 @@ export default function DogeRealityPage() {
           doesn&apos;t work.
         </p>
         <div className="bg-white rounded-xl border border-gray-200 p-4">
-          <ResponsiveContainer width="100%" height={350}>
-            <BarChart
-              data={programGrowth}
-              layout="vertical"
-              margin={{ left: 20, right: 30, top: 5, bottom: 5 }}
-            >
-              <CartesianGrid
-                strokeDasharray="3 3"
-                stroke="#e5e7eb"
-                horizontal={false}
-              />
-              <XAxis
-                type="number"
-                tickFormatter={(v) => `${v}%`}
-                fontSize={12}
-                tick={{ fill: "#6b7280" }}
-              />
-              <YAxis
-                type="category"
-                dataKey="name"
-                width={180}
-                fontSize={12}
-                tick={{ fill: "#6b7280" }}
-              />
-              <Tooltip
-                // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                formatter={(value: any, _name: any, props: any) => [
-                  `+${value}% (${formatDollars(props.payload.fy2020)} → ${formatDollars(props.payload.fy2025)})`,
-                  "Growth FY2020–FY2025",
-                ]}
-                contentStyle={{
-                  backgroundColor: "#fff",
-                  border: "1px solid #e5e7eb",
-                  borderRadius: "8px",
-                  fontSize: "13px",
-                }}
-              />
-              <Bar dataKey="growth" fill="#ef4444" radius={[0, 4, 4, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
+          {mounted ? (
+            <ResponsiveContainer width="100%" height={350}>
+              <BarChart
+                data={programGrowth}
+                layout="vertical"
+                margin={{ left: 20, right: 30, top: 5, bottom: 5 }}
+              >
+                <CartesianGrid
+                  strokeDasharray="3 3"
+                  stroke="#e5e7eb"
+                  horizontal={false}
+                />
+                <XAxis
+                  type="number"
+                  tickFormatter={(v) => `${v}%`}
+                  fontSize={12}
+                  tick={{ fill: "#6b7280" }}
+                />
+                <YAxis
+                  type="category"
+                  dataKey="name"
+                  width={180}
+                  fontSize={12}
+                  tick={{ fill: "#6b7280" }}
+                />
+                <Tooltip
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                  formatter={(value: any, _name: any, props: any) => [
+                    `+${value}% (${formatDollars(props.payload.fy2020)} → ${formatDollars(props.payload.fy2025)})`,
+                    "Growth FY2020–FY2025",
+                  ]}
+                  contentStyle={{
+                    backgroundColor: "#fff",
+                    border: "1px solid #e5e7eb",
+                    borderRadius: "8px",
+                    fontSize: "13px",
+                  }}
+                />
+                <Bar dataKey="growth" fill="#ef4444" radius={[0, 4, 4, 0]} />
+              </BarChart>
+            </ResponsiveContainer>
+          ) : (
+            <div style={{ width: "100%", height: 350 }} />
+          )}
         </div>
         <div className="bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-xl mt-4">
           <p className="text-amber-900">

@@ -32,11 +32,21 @@ const fy2025 = historical.find((h) => h.fy === 2025)!;
 const fy2017 = historical.find((h) => h.fy === 2017)!;
 
 // Prepare chart data with actual vs projected split
-const chartData = historical.map((h) => ({
-  fy: h.fy,
-  actual: h.fy <= 2025 ? h.interest : null,
-  projected: h.fy >= 2025 ? h.interest : null,
-}));
+const projections = interestData.projections;
+const chartData = [
+  ...historical.map((h) => ({
+    fy: h.fy,
+    actual: h.fy <= 2025 ? h.interest : null,
+    projected: h.fy >= 2025 ? h.interest : null,
+  })),
+  ...projections
+    .filter((p) => p.fy > 2025)
+    .map((p) => ({
+      fy: p.fy,
+      actual: null,
+      projected: p.interest,
+    })),
+];
 
 // Comparison bars
 const comparisonData = [

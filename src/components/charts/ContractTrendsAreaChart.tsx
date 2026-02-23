@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import {
   AreaChart,
   Area,
@@ -26,6 +27,11 @@ export function ContractTrendsAreaChart({
   height?: number;
   showCovidLine?: boolean;
 }) {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
+
+  if (!mounted) return <div style={{ height }} />;
+
   return (
     <ResponsiveContainer width="100%" height={height}>
       <AreaChart

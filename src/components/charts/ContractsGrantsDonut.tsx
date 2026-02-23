@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
 import { formatDollars } from "@/lib/format";
 
@@ -11,7 +12,10 @@ interface Props {
 const COLORS = ["#4f46e5", "#059669"]; // indigo-600, emerald-600
 
 export function ContractsGrantsDonut({ contracts, grants }: Props) {
-  if (contracts <= 0 || grants <= 0) return null;
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+
+  if (contracts <= 0 && grants <= 0) return null;
 
   const data = [
     { name: "Contracts", value: contracts },
@@ -19,6 +23,10 @@ export function ContractsGrantsDonut({ contracts, grants }: Props) {
   ];
 
   const total = contracts + grants;
+
+  if (!mounted) {
+    return <div style={{ width: "100%", height: 260 }} />;
+  }
 
   return (
     <div className="flex flex-col items-center">

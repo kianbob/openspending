@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import {
   BarChart,
   Bar,
@@ -30,9 +31,17 @@ export function HorizontalBarChart({
   formatValue?: never;
   valueFormat?: "dollars" | "ratio";
 }) {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+
   const fmt = valueFormat === "ratio" ? (v: number) => `$${v.toFixed(2)}` : formatDollars;
+
+  if (!mounted) {
+    return <div style={{ width: "100%", height }} />;
+  }
+
   return (
-    <div style={{ width: "100%", height }} role="img" aria-label="Horizontal bar chart of federal spending data">
+    <div style={{ width: "100%", minWidth: 300, height }} role="img" aria-label="Horizontal bar chart of federal spending data">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={data} layout="vertical" margin={{ left: 10, right: 30, top: 5, bottom: 5 }}>
           <XAxis
@@ -40,6 +49,7 @@ export function HorizontalBarChart({
             tickFormatter={(v) => fmt(v)}
             fontSize={12}
             tick={{ fill: "#6b7280" }}
+            domain={[0, "dataMax"]}
           />
           <YAxis
             type="category"

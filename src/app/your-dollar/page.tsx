@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   PieChart,
@@ -60,6 +60,8 @@ const EMOJIS: Record<string, string> = {
 };
 
 export default function YourDollarPage() {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
   const [taxAmount, setTaxAmount] = useState<string>("");
   const taxNum = parseFloat(taxAmount.replace(/[^0-9.]/g, "")) || 0;
 
@@ -120,29 +122,33 @@ export default function YourDollarPage() {
       <section className="mb-12">
         <h2 className="text-xl font-bold text-gray-900 mb-4">Spending Breakdown</h2>
         <div className="bg-white rounded-xl border border-gray-200 p-6">
-          <ResponsiveContainer width="100%" height={420}>
-            <PieChart>
-              <Pie
-                data={data.breakdown}
-                dataKey="cents"
-                nameKey="name"
-                cx="50%"
-                cy="50%"
-                innerRadius={80}
-                outerRadius={160}
-                paddingAngle={1}
-                label={({ name, cents }: any) => cents >= 3 ? `${(name ?? "").split(" ")[0]} ${cents}¢` : ""}
-                labelLine={false}
-              >
-                {data.breakdown.map((_, i) => (
-                  <Cell key={i} fill={COLORS[i % COLORS.length]} />
-                ))}
-              </Pie>
-              <Tooltip
-                formatter={(value: any, name: any) => [`${value}¢`, name]}
-              />
-            </PieChart>
-          </ResponsiveContainer>
+          {mounted ? (
+            <ResponsiveContainer width="100%" height={420}>
+              <PieChart>
+                <Pie
+                  data={data.breakdown}
+                  dataKey="cents"
+                  nameKey="name"
+                  cx="50%"
+                  cy="50%"
+                  innerRadius={80}
+                  outerRadius={160}
+                  paddingAngle={1}
+                  label={({ name, cents }: any) => cents >= 3 ? `${(name ?? "").split(" ")[0]} ${cents}¢` : ""}
+                  labelLine={false}
+                >
+                  {data.breakdown.map((_, i) => (
+                    <Cell key={i} fill={COLORS[i % COLORS.length]} />
+                  ))}
+                </Pie>
+                <Tooltip
+                  formatter={(value: any, name: any) => [`${value}¢`, name]}
+                />
+              </PieChart>
+            </ResponsiveContainer>
+          ) : (
+            <div style={{ width: "100%", height: 420 }} />
+          )}
         </div>
       </section>
 

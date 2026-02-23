@@ -23,7 +23,7 @@ const sorted = [...budgetFunctions].sort(
 );
 
 const chartData = sorted.map((f) => ({
-  name: f.name.length > 25 ? f.name.slice(0, 25) + "…" : f.name,
+  name: f.name,
   amount: f.years.fy2025,
 }));
 

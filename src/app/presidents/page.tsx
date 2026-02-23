@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ShareButtons } from "@/components/ShareButtons";
@@ -31,12 +32,31 @@ function fmtAxis(n: number): string {
   return `$${(n / 1e12).toFixed(1)}T`;
 }
 
-const chartData = data.yearly.map((y) => ({
-  fy: y.fy,
-  total: y.total,
-  president: y.president,
-  note: (y as { note?: string }).note,
-}));
+// Reshape data: one column per president so lines render independently
+const chartData = data.yearly.map((y) => {
+  const row: { fy: number; president: string; note?: string; Obama?: number; Trump?: number; Biden?: number; "Trump 2nd"?: number } = {
+    fy: y.fy,
+    president: y.president,
+    note: (y as { note?: string }).note,
+  };
+  row[y.president as keyof typeof row] = y.total as never;
+  return row;
+});
+
+// Add overlap points for continuity between presidential terms
+// Obama's last year (FY2016) value should also appear in Trump's column at FY2016
+// to connect the lines
+for (let i = 1; i < chartData.length; i++) {
+  const prev = chartData[i - 1];
+  const curr = chartData[i];
+  if (prev.president !== curr.president) {
+    // Copy the previous president's last value into the current president's column
+    const prevPres = prev.president as "Obama" | "Trump" | "Biden" | "Trump 2nd";
+    const currPres = curr.president as "Obama" | "Trump" | "Biden" | "Trump 2nd";
+    // The transition point: put the previous value in the current president's column on the prev row
+    (prev as Record<string, unknown>)[currPres] = (prev as Record<string, unknown>)[prevPres];
+  }
+}
 
 const timeline = [
   { year: 2009, event: "ARRA Stimulus ($831B)" },
@@ -46,6 +66,9 @@ const timeline = [
 ];
 
 export default function PresidentsPage() {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumbs items={[{ label: "Investigations" }, { label: "Presidential Spending" }]} />
@@ -69,36 +92,38 @@ export default function PresidentsPage() {
         <h2 className="font-serif text-xl font-bold text-gray-900 mb-4">
           Federal Spending FY2009–2025
         </h2>
-        <ResponsiveContainer width="100%" height={400}>
-          <LineChart data={chartData} margin={{ top: 5, right: 20, left: 10, bottom: 5 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-            <XAxis dataKey="fy" tick={{ fontSize: 12 }} />
-            <YAxis tickFormatter={fmtAxis} tick={{ fontSize: 12 }} />
-            <Tooltip
-              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-              formatter={(value: any) => [fmtT(Number(value)), "Spending"]}
-              labelFormatter={(label) => {
-                const item = chartData.find((d) => d.fy === label);
-                return `FY${label} (${item?.president})${item?.note ? ` — ${item.note}` : ""}`;
-              }}
-            />
-            <Legend />
-            {/* Render separate lines per president for color coding */}
-            {["Obama", "Trump", "Biden", "Trump 2nd"].map((pres) => (
-              <Line
-                key={pres}
-                data={chartData.filter((d) => d.president === pres)}
-                dataKey="total"
-                name={pres}
-                stroke={presidentColors[pres]}
-                strokeWidth={3}
-                dot={{ r: 4 }}
-                connectNulls={false}
+        {mounted ? (
+          <ResponsiveContainer width="100%" height={400}>
+            <LineChart data={chartData} margin={{ top: 5, right: 20, left: 10, bottom: 5 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+              <XAxis dataKey="fy" tick={{ fontSize: 12 }} />
+              <YAxis tickFormatter={fmtAxis} tick={{ fontSize: 12 }} />
+              <Tooltip
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                formatter={(value: any, name: any) => [fmtT(Number(value)), String(name)]}
+                labelFormatter={(label) => {
+                  const item = chartData.find((d) => d.fy === label);
+                  return `FY${label} (${item?.president})${item?.note ? ` — ${item.note}` : ""}`;
+                }}
               />
-            ))}
-            <ReferenceLine x={2020} stroke="#94a3b8" strokeDasharray="5 5" label={{ value: "COVID", position: "top", fontSize: 11 }} />
-          </LineChart>
-        </ResponsiveContainer>
+              <Legend />
+              {["Obama", "Trump", "Biden", "Trump 2nd"].map((pres) => (
+                <Line
+                  key={pres}
+                  dataKey={pres}
+                  name={pres}
+                  stroke={presidentColors[pres]}
+                  strokeWidth={3}
+                  dot={{ r: 4 }}
+                  connectNulls={false}
+                />
+              ))}
+              <ReferenceLine x={2020} stroke="#94a3b8" strokeDasharray="5 5" label={{ value: "COVID", position: "top", fontSize: 11 }} />
+            </LineChart>
+          </ResponsiveContainer>
+        ) : (
+          <div style={{ height: 400 }} />
+        )}
         <p className="text-xs text-gray-400 mt-2">
           Source: USASpending.gov API (FY2017+), Congressional Budget Office (pre-2017)
         </p>

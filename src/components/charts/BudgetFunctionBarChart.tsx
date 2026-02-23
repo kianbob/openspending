@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import {
   BarChart,
   Bar,
@@ -17,8 +18,15 @@ interface BarDatum {
 }
 
 export function BudgetFunctionBarChart({ data }: { data: BarDatum[] }) {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) {
+    return <div style={{ width: "100%", height: 600 }} />;
+  }
+
   return (
-    <div style={{ width: "100%", height: 600 }} role="img" aria-label="Horizontal bar chart of federal budget functions by FY2025 spending">
+    <div style={{ width: "100%", minWidth: 300, height: 600 }} role="img" aria-label="Horizontal bar chart of federal budget functions by FY2025 spending">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={data} layout="vertical" margin={{ left: 10, right: 30, top: 5, bottom: 5 }}>
           <XAxis
@@ -26,11 +34,12 @@ export function BudgetFunctionBarChart({ data }: { data: BarDatum[] }) {
             tickFormatter={(v) => formatDollars(v)}
             fontSize={12}
             tick={{ fill: "#6b7280" }}
+            domain={[0, "dataMax"]}
           />
           <YAxis
             type="category"
             dataKey="name"
-            width={180}
+            width={220}
             fontSize={11}
             tick={{ fill: "#374151" }}
           />
