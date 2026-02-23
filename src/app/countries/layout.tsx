@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Federal Spending by Country — OpenSpending",
+  title: "Federal Spending by Country | OpenSpending",
   description:
-    "Where U.S. tax dollars go internationally. Explore federal spending across 50 countries.",
+    "Billions in U.S. tax dollars flow overseas every year. See which 50+ countries receive the most federal spending in FY2025.",
 };
 
 export default function CountriesLayout({ children }: { children: React.ReactNode }) {

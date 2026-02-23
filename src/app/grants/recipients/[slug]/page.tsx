@@ -50,8 +50,8 @@ export async function generateMetadata({
   const { slug } = await params;
   const r = findBySlug(slug);
   if (!r) return { title: "Grant Recipient Not Found — OpenSpending" };
-  const title = `${r.displayName} — Federal Grant Recipient | OpenSpending`;
-  const description = `${r.displayName} received ${formatDollars(r.amount)} in federal grants, ranking #${r.rank} of the top 50 grant recipients.`;
+  const title = `${r.displayName} | Federal Grant Recipient | OpenSpending`;
+  const description = `${formatDollars(r.amount)} in federal grants to ${r.displayName} — ranked #${r.rank} of top 50 recipients. Follow the money.`;
   return { title, description, openGraph: { title, description } };
 }
 

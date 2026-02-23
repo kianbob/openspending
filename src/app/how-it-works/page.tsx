@@ -3,11 +3,11 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ShareButtons } from "@/components/ShareButtons";
 
 export const metadata = {
-  title: "How Government Contracts Actually Work — OpenSpending",
-  description: "A plain-English guide to how tax dollars flow from your paycheck to federal contractors — and why the system rarely works.",
+  title: "How Government Contracts Work | OpenSpending",
+  description: "A plain-English guide to how your tax dollars flow from paycheck to federal contractors — and why the system rarely works.",
   openGraph: {
-    title: "How Government Contracts Actually Work — OpenSpending",
-    description: "A plain-English guide to how tax dollars flow from your paycheck to federal contractors — and why the system rarely works.",
+    title: "How Government Contracts Work | OpenSpending",
+    description: "A plain-English guide to how your tax dollars flow from paycheck to federal contractors — and why the system rarely works.",
   },
 };
 

@@ -1,13 +1,13 @@
 import { SpendingCounter } from "@/components/SpendingCounter";
 
 export const metadata = {
-  title: "Spending by the Second: The Speed of Government Money — OpenSpending",
+  title: "Government Spending by the Second | OpenSpending",
   description:
     "The US government spends $169,013 every second. Watch it tick in real-time and see how fast $5.33 trillion/year really moves.",
   openGraph: {
-    title: "Spending by the Second: The Speed of Government Money",
+    title: "Government Spending by the Second | OpenSpending",
     description:
-      "Every second, the US government spends enough to buy a house. Watch the counter tick in real-time.",
+      "The feds spend $169,013 every second. Watch the real-time counter and see how fast $5.33 trillion/year moves.",
   },
 };
 

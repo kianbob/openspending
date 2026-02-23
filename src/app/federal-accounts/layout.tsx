@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Where Your Money Actually Goes: Federal Accounts — OpenSpending",
+  title: "4 Accounts Control $3.1 Trillion | OpenSpending",
   description:
-    "Money doesn't flow to agencies — it flows to accounts. 4 federal accounts control $3.1 trillion in autopilot spending. Social Security, Medicare, and Medicaid trust funds dominate.",
+    "Just 4 federal accounts control $3.1T in autopilot spending — no annual vote required. See where the money actually flows.",
   openGraph: {
-    title: "Where Your Money Actually Goes: Federal Accounts",
+    title: "4 Accounts Control $3.1 Trillion | OpenSpending",
     description:
-      "4 federal accounts control $3.1 trillion. Money flows to accounts, not agencies.",
+      "Just 4 federal accounts control $3.1T in autopilot spending — no annual vote required. See where the money actually flows.",
     url: "https://www.openspending.us/federal-accounts",
     siteName: "OpenSpending",
     type: "article",
@@ -16,15 +16,15 @@ export const metadata: Metadata = {
         url: "https://www.openspending.us/og-image.png",
         width: 1200,
         height: 630,
-        alt: "OpenSpending — Federal Spending Tracker",
+        alt: "OpenSpending | Federal Spending Tracker",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Where Your Money Actually Goes: Federal Accounts",
+    title: "4 Accounts Control $3.1 Trillion | OpenSpending",
     description:
-      "4 federal accounts control $3.1 trillion. Money flows to accounts, not agencies.",
+      "Just 4 federal accounts control $3.1T in autopilot spending — no annual vote required. See where the money actually flows.",
     images: ["https://www.openspending.us/og-image.png"],
   },
 };

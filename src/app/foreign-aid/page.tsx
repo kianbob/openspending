@@ -5,11 +5,11 @@ import { formatDollars } from "@/lib/format";
 import allCountries from "@/../public/data/spending-by-country.json";
 
 export const metadata = {
-  title: "Where U.S. Tax Dollars Go Abroad — OpenSpending",
-  description: "Billions in federal spending flow to foreign countries every year. See which nations receive the most U.S. tax dollars.",
+  title: "U.S. Foreign Aid by Country | OpenSpending",
+  description: "Billions sent abroad yearly as USAID's budget tripled to $50B. See the top 50 countries receiving your tax dollars.",
   openGraph: {
-    title: "Where U.S. Tax Dollars Go Abroad — OpenSpending",
-    description: "Billions in federal spending flow to foreign countries every year. See which nations receive the most U.S. tax dollars.",
+    title: "U.S. Foreign Aid by Country | OpenSpending",
+    description: "Billions sent abroad yearly as USAID's budget tripled to $50B. See the top 50 countries receiving your tax dollars.",
   },
 };
 

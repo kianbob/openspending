@@ -35,8 +35,8 @@ export async function generateMetadata({
   const { slug } = await params;
   const ind = findBySlug(slug);
   if (!ind) return { title: "Industry Not Found — OpenSpending" };
-  const title = `${ind.name} — Federal Spending by Industry | OpenSpending`;
-  const description = `The federal government spent ${formatDollars(ind.amount)} on ${ind.name} contracts, ranking #${ind.rank} of the top 50 industries (${ind.pctOfTotal}% of total).`;
+  const title = `${ind.name} | Federal Spending by Industry | OpenSpending`;
+  const description = `${formatDollars(ind.amount)} in federal contracts went to ${ind.name} — ranked #${ind.rank} of 50 industries (${ind.pctOfTotal}% of total). See the data.`;
   return {
     title,
     description,

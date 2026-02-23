@@ -4,13 +4,13 @@ import { GrantBarChart } from "@/components/GrantBarChart";
 import recipients from "@/../public/data/top-grant-recipients-detailed.json";
 
 export const metadata = {
-  title: "The Grant Machine: $1.24 Trillion to States — OpenSpending",
+  title: "Federal Grants: $1.24T to States | OpenSpending",
   description:
-    "Where $1.24 trillion in federal grants actually goes. Most federal grants are Medicaid transfers to states — California alone receives $112.5 billion.",
+    "Most federal \"grants\" are Medicaid transfers. California alone gets $112.5B. See the top 50 grant recipients for FY2025.",
   openGraph: {
-    title: "The Grant Machine: $1.24 Trillion to States & Organizations",
+    title: "Federal Grants: $1.24T to States | OpenSpending",
     description:
-      "Most federal grants are actually Medicaid transfers. California receives $112.5B — more than most countries' budgets.",
+      "Most federal \"grants\" are Medicaid transfers. California alone gets $112.5B. See the top 50 grant recipients for FY2025.",
   },
 };
 

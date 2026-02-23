@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "About — OpenSpending",
+  title: "About | OpenSpending",
   description:
-    "How we track federal spending, our data sources, methodology, and editorial perspective. Built by TheDataProject.ai.",
+    "See how we track $11.2T in federal spending across 60+ pages. Data sources, methodology, and our taxpayer accountability mission.",
 };
 
 export default function AboutPage() {

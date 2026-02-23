@@ -3,8 +3,8 @@ import { SortableTable } from "@/components/SortableTable";
 import awards from "@/../public/data/top-awards.json";
 
 export const metadata = {
-  title: "Largest Federal Contracts — OpenSpending",
-  description: "The 100 biggest individual federal contracts — many are no-bid, sole-source awards.",
+  title: "100 Largest Federal Contracts | OpenSpending",
+  description: "The 100 biggest federal contracts, many worth $30B+. See who got billions in no-bid, sole-source deals from your taxes.",
 };
 
 const columns = [

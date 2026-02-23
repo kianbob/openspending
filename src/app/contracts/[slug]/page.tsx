@@ -71,11 +71,11 @@ export async function generateMetadata({
   const award = awardBySlug.get(slug);
   if (!award) return { title: "Contract Not Found — OpenSpending" };
   const title = award.description
-    ? `${award.description.slice(0, 60)} — OpenSpending`
-    : `Contract ${award.awardId} — OpenSpending`;
+    ? `${award.description.slice(0, 50)} | OpenSpending`
+    : `Contract ${award.awardId} | OpenSpending`;
   return {
     title,
-    description: `${formatDollars(award.amount)} contract awarded to ${award.recipient} by ${award.agency}. One of the 100 largest federal contracts.`,
+    description: `${formatDollars(award.amount)} awarded to ${award.recipient} by ${award.agency}. One of the 100 largest federal contracts. See the details.`,
     openGraph: {
       title,
       description: `${formatFullDollars(award.amount)} awarded to ${award.recipient}`,

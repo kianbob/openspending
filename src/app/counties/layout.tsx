@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Federal Spending by County — OpenSpending",
+  title: "Federal Spending by County | OpenSpending",
   description:
-    "Explore federal spending flowing to counties across America.",
+    "See which U.S. counties get the most federal contract dollars. Searchable FY2025 data for every county in America.",
 };
 
 export default function CountiesLayout({ children }: { children: React.ReactNode }) {

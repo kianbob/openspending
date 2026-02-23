@@ -96,14 +96,15 @@ export async function generateMetadata({
   const entry = slugMap.get(slug);
   const name = entry?.name ?? "State";
   const amount = entry ? `$${(entry.totalAmount / 1e9).toFixed(1)}B` : "";
-  const title = entry ? `Federal Spending in ${name}: ${amount} — OpenSpending` : `${name} — Federal Spending — OpenSpending`;
+  const title = entry ? `${name}: ${amount} in Federal Contracts | OpenSpending` : `${name} Federal Spending | OpenSpending`;
   const description = entry
-    ? `${name} receives ${amount} in federal contracts, ranking #${entry.rank} nationwide. See why and where the money flows.`
-    : `Federal contract spending data for ${name}.`;
+    ? `${name} ranks #${entry.rank} with ${amount} in federal contracts. See top contractors, per-capita spending, and where the money goes.`
+    : `Federal contract spending data for ${name}. Follow the money.`;
   return {
     title,
     description,
-    openGraph: { title, description },
+    alternates: { canonical: `https://www.openspending.us/states/${slug}` },
+    openGraph: { title, description, url: `https://www.openspending.us/states/${slug}` },
   };
 }
 

@@ -6,14 +6,16 @@ import { formatDollars } from "@/lib/format";
 import dogeData from "@/../public/data/doge-reality.json";
 
 export const metadata = {
-  title: "Is DOGE Actually Saving Money? A Data-Driven Reality Check — OpenSpending",
+  title: "Is DOGE Actually Saving Money? The Data Says No | OpenSpending",
   description:
-    "DOGE claimed $55 billion in savings. Federal spending increased $392 billion. That's 0.81% of the budget. Here's what the data actually shows.",
+    "DOGE claimed $55B in savings. Spending rose $392B. That's 0.81% of the budget — a rounding error on a spending increase. See the full breakdown.",
   keywords: "DOGE savings real, DOGE government savings, has DOGE saved money, DOGE cuts 2025, DOGE spending cuts",
+  alternates: { canonical: "https://www.openspending.us/doge-savings-reality" },
   openGraph: {
-    title: "Is DOGE Actually Saving Money? A Data-Driven Reality Check",
+    title: "Is DOGE Actually Saving Money? The Data Says No | OpenSpending",
     description:
-      "DOGE claimed $55B in savings while spending increased $392B. The data tells a different story.",
+      "DOGE claimed $55B in savings. Spending rose $392B. That's 0.81% of the budget — a rounding error on a spending increase. See the full breakdown.",
+    url: "https://www.openspending.us/doge-savings-reality",
     type: "article",
   },
 };

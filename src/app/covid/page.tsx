@@ -7,11 +7,11 @@ import { formatDollars, toTitleCase } from "@/lib/format";
 import covidData from "@/../public/data/covid-spending.json";
 
 export const metadata = {
-  title: "$1.46 Trillion: The COVID Spending Tsunami — OpenSpending",
-  description: "$1.46T in COVID emergency spending — the largest emergency outlay in U.S. history. See which agencies and recipients got the money.",
+  title: "$1.46T COVID Spending Tsunami | OpenSpending",
+  description: "$1.46T spent with minimal oversight. HHS got $275B+, fraud in the hundreds of billions. See where every dollar went.",
   openGraph: {
-    title: "$1.46 Trillion: The COVID Spending Tsunami — OpenSpending",
-    description: "$1.46T in COVID emergency spending — the largest emergency outlay in U.S. history. See which agencies and recipients got the money.",
+    title: "$1.46T COVID Spending Tsunami | OpenSpending",
+    description: "$1.46T spent with minimal oversight. HHS got $275B+, fraud in the hundreds of billions. See where every dollar went.",
   },
 };
 

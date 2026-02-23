@@ -7,13 +7,13 @@ import pscData from "@/../public/data/product-service-codes.json";
 import naicsData from "@/../public/data/naics-detailed.json";
 
 export const metadata = {
-  title: "What Does the Government Buy? — OpenSpending",
+  title: "What Does the Government Buy? | OpenSpending",
   description:
-    "From fighter jets to managed healthcare, see exactly what the federal government spends hundreds of billions on — broken down by product codes and industry sectors.",
+    "Fighter jets, healthcare, IT contracts — see exactly what the feds spend hundreds of billions on, broken down by product and industry.",
   openGraph: {
-    title: "What Does the Government Buy? — OpenSpending",
+    title: "What Does the Government Buy? | OpenSpending",
     description:
-      "From fighter jets to managed healthcare, see exactly what the federal government spends hundreds of billions on — broken down by product codes and industry sectors.",
+      "Fighter jets, healthcare, IT contracts — see exactly what the feds spend hundreds of billions on, broken down by product and industry.",
   },
 };
 

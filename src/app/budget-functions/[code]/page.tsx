@@ -70,10 +70,10 @@ export async function generateMetadata({
   const fn = byCode.get(code);
   if (!fn) return { title: "Not Found — OpenSpending" };
   return {
-    title: `${fn.name} — Federal Budget Function — OpenSpending`,
-    description: `${fn.name}: ${formatDollars(fn.years.fy2025)} in FY2025, ranked #${fn.rank} of 18 budget functions. ${fn.growth_pct >= 0 ? "+" : ""}${fn.growth_pct.toFixed(0)}% growth since 2017.`,
+    title: `${fn.name} | Federal Budget Spending | OpenSpending`,
+    description: `${formatDollars(fn.years.fy2025)} in FY2025 for ${fn.name}. ${fn.growth_pct >= 0 ? "Up" : "Down"} ${Math.abs(fn.growth_pct).toFixed(0)}% since 2017. See trends and historical data.`,
     openGraph: {
-      title: `${fn.name} — Federal Budget Function — OpenSpending`,
+      title: `${fn.name} | Federal Budget Spending | OpenSpending`,
       description: `${fn.name}: ${formatDollars(fn.years.fy2025)} in FY2025. See historical spending trends.`,
     },
   };

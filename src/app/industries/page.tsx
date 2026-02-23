@@ -7,11 +7,11 @@ import { formatDollars } from "@/lib/format";
 import industries from "@/../public/data/industry-details.json";
 
 export const metadata = {
-  title: "Federal Spending by Industry — OpenSpending",
-  description: "Which industries get the most federal contract dollars? Top 50 ranked by NAICS code — dominated by defense and health.",
+  title: "Federal Spending by Industry | OpenSpending",
+  description: "Which industries get the most federal contract dollars? Top 50 ranked by NAICS code — defense and health dominate.",
   openGraph: {
-    title: "Federal Spending by Industry — OpenSpending",
-    description: "Which industries get the most federal contract dollars? Top 50 ranked by NAICS code — dominated by defense and health.",
+    title: "Federal Spending by Industry | OpenSpending",
+    description: "Which industries get the most federal contract dollars? Top 50 ranked by NAICS code — defense and health dominate.",
   },
 };
 

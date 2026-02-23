@@ -8,13 +8,13 @@ import { formatDollars } from "@/lib/format";
 import budgetFunctions from "@/../public/data/budget-functions.json";
 
 export const metadata = {
-  title: "Where Your Money Goes: Budget Functions — OpenSpending",
+  title: "Budget Functions | Where $10.3T Goes | OpenSpending",
   description:
-    "The federal budget is organized into 18 major categories. See how $10.3 trillion breaks down by function.",
+    "18 categories control $10.3T. Net Interest up 166%, Energy up 342%. See which budget functions are growing fastest.",
   openGraph: {
-    title: "Where Your Money Goes: Budget Functions — OpenSpending",
+    title: "Budget Functions | Where $10.3T Goes | OpenSpending",
     description:
-      "The federal budget is organized into 18 major categories. See how $10.3 trillion breaks down by function.",
+      "18 categories control $10.3T. Net Interest up 166%, Energy up 342%. See which budget functions are growing fastest.",
   },
 };
 

@@ -26,8 +26,8 @@ export async function generateMetadata({
   const { code } = await params;
   const psc = findByCode(code);
   if (!psc) return { title: "Product/Service Not Found — OpenSpending" };
-  const title = `${psc.name} (${psc.code}) — Federal Spending | OpenSpending`;
-  const description = `The federal government spent ${formatDollars(psc.amount)} on ${psc.name}, ranking #${psc.rank} of the top 100 product/service categories.`;
+  const title = `${psc.name} (${psc.code}) | Federal Spending | OpenSpending`;
+  const description = `${formatDollars(psc.amount)} spent on ${psc.name} — ranked #${psc.rank} of 100 federal product/service categories. See where your tax dollars go.`;
   return { title, description, openGraph: { title, description } };
 }
 

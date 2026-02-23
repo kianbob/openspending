@@ -119,14 +119,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const grants = entry && "grants" in entry.spending ? (entry.spending.grants ?? 0) : 0;
   const total = contracts + grants;
   const amount = total > 0 ? `$${(total / 1e9).toFixed(1)}B` : "";
-  const title = amount ? `${name}: ${amount} in Spending — OpenSpending` : `${name} — OpenSpending`;
+  const title = amount ? `${name}: ${amount} in FY2025 Spending | OpenSpending` : `${name} | OpenSpending`;
   const description = amount
-    ? `${name} spends ${amount} across contracts and grants. Budget trends, top contractors, and spending breakdowns.`
-    : `Budget trends, contracts, and grants for ${name}.`;
+    ? `How ${name} spends ${amount} of your money. See top contractors, budget trends since 2017, and contracts vs grants.`
+    : `Budget trends, top contractors, and grant data for ${name}. Follow the money.`;
   return {
     title,
     description,
-    openGraph: { title, description },
+    alternates: { canonical: `https://www.openspending.us/agencies/${slug}` },
+    openGraph: { title, description, url: `https://www.openspending.us/agencies/${slug}` },
   };
 }
 

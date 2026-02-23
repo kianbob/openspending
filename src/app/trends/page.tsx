@@ -8,11 +8,11 @@ import contractTrends from "@/../public/data/yearly-contract-trends.json";
 import agencyTrends from "@/../public/data/agency-trends.json";
 
 export const metadata = {
-  title: "Federal Spending Trends FY2017-FY2025 — OpenSpending",
-  description: "Nine years of federal contract and agency budget data. COVID spending spike, USAID growth, and why spending never goes back down.",
+  title: "Federal Spending Trends FY2017-2025 | OpenSpending",
+  description: "9 years of federal spending data in charts. See the COVID spike, USAID's budget explosion, and why spending never goes back down.",
   openGraph: {
-    title: "Federal Spending Trends FY2017-FY2025 — OpenSpending",
-    description: "Nine years of federal contract and agency budget data. COVID spending spike, USAID growth, and why spending never goes back down.",
+    title: "Federal Spending Trends FY2017-2025 | OpenSpending",
+    description: "9 years of federal spending data in charts. See the COVID spike, USAID's budget explosion, and why spending never goes back down.",
   },
 };
 

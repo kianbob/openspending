@@ -6,13 +6,13 @@ import allCounties from "@/../public/data/county-spending.json";
 import allDistricts from "@/../public/data/district-spending.json";
 
 export const metadata = {
-  title: "Follow the Money: County & District Spending — OpenSpending",
+  title: "County & District Spending | OpenSpending",
   description:
-    "Federal spending flows into every county and congressional district in America. See which counties and districts receive the most federal contract dollars.",
+    "Which counties and congressional districts get the most federal contract dollars? Search your area and follow the money.",
   openGraph: {
-    title: "Follow the Money: County & District Spending — OpenSpending",
+    title: "County & District Spending | OpenSpending",
     description:
-      "Federal spending flows into every county and congressional district in America. See which counties and districts receive the most federal contract dollars.",
+      "Which counties and congressional districts get the most federal contract dollars? Search your area and follow the money.",
   },
 };
 

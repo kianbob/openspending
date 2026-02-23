@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const entry = bySlug.get(slug);
   if (!entry) return { title: "Not Found" };
   return {
-    title: `${entry.name} – ${formatDollars(entry.amount)} in Federal Spending | OpenSpending`,
-    description: `${entry.name} received ${formatDollars(entry.amount)} in federal spending in FY2025, ranking #${entry.rank} among all sub-agencies tracked.`,
+    title: `${entry.name} | ${formatDollars(entry.amount)} Spending | OpenSpending`,
+    description: `${formatDollars(entry.amount)} in taxpayer money flows through ${entry.name}. Ranked #${entry.rank} of ${sorted.length} sub-agencies in FY2025.`,
   };
 }
 

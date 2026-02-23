@@ -32,8 +32,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!county) return { title: "County Not Found" };
   const name = toTitleCase(county.name);
   return {
-    title: `${name} — Federal Spending | OpenSpending`,
-    description: `${name} received ${formatDollars(county.amount)} in federal spending. Ranked #${county.rank} of ${slugMap.size} counties.`,
+    title: `${name} Federal Spending | OpenSpending`,
+    description: `See how ${formatDollars(county.amount)} in federal dollars flows to ${name}. Ranked #${county.rank} of ${slugMap.size} counties nationwide.`,
   };
 }
 

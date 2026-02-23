@@ -6,14 +6,16 @@ import { formatDollars } from "@/lib/format";
 import dollarData from "@/../public/data/dollar-breakdown.json";
 
 export const metadata = {
-  title: "Where Do Your Tax Dollars Go in 2025? A Complete Breakdown — OpenSpending",
+  title: "Where Your Tax Dollars Go in 2025 | OpenSpending",
   description:
-    "See exactly where every dollar of federal tax money goes in 2025. Medicare gets 18¢, Social Security 16¢, Defense 14¢, and Interest 12¢ of every dollar. Personalized breakdown included.",
+    "Medicare gets 18¢ of every dollar. Interest on debt gets 12¢ — more than veterans benefits. See the full cent-by-cent breakdown of federal spending.",
   keywords: "where do my tax dollars go, where do tax dollars go 2025, federal tax breakdown, tax dollar breakdown, federal budget breakdown 2025",
+  alternates: { canonical: "https://www.openspending.us/where-tax-dollars-go" },
   openGraph: {
-    title: "Where Do Your Tax Dollars Go in 2025? A Complete Breakdown",
+    title: "Where Your Tax Dollars Go in 2025 | OpenSpending",
     description:
-      "Medicare gets 18¢ of every dollar. Interest on debt gets 12¢ — more than veterans benefits. See the full breakdown.",
+      "Medicare gets 18¢ of every dollar. Interest on debt gets 12¢ — more than veterans benefits. See the full cent-by-cent breakdown of federal spending.",
+    url: "https://www.openspending.us/where-tax-dollars-go",
     type: "article",
   },
 };

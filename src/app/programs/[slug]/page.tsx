@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const program = slugMap.get(slug);
   if (!program) return { title: "Program Not Found — OpenSpending" };
   return {
-    title: `${program.name}: ${formatDollars(program.amount)} in Federal Spending — OpenSpending`,
-    description: `${program.name} (CFDA ${program.code}) receives ${formatDollars(program.amount)} in federal grants, ranking #${program.rank} of 200 programs tracked.`,
+    title: `${program.name} | ${formatDollars(program.amount)} | OpenSpending`,
+    description: `${formatDollars(program.amount)} goes to ${program.name} (CFDA ${program.code}). Ranked #${program.rank} of 200 federal programs. Follow the money.`,
     openGraph: {
-      title: `${program.name}: ${formatDollars(program.amount)} in Federal Spending`,
+      title: `${program.name} | ${formatDollars(program.amount)} in Federal Spending`,
       description: `Ranked #${program.rank} of 200 federal assistance programs. ${formatDollars(program.amount)} in annual spending.`,
     },
   };

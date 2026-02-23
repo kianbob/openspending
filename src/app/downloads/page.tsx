@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Data Downloads — OpenSpending",
-  description: "Download raw federal spending datasets. All JSON files sourced from USASpending.gov — free for research and journalism.",
+  title: "Data Downloads | OpenSpending",
+  description: "Download raw federal spending datasets as JSON. Sourced from USASpending.gov — free for research, journalism, and analysis.",
   openGraph: {
-    title: "Data Downloads — OpenSpending",
-    description: "Download raw federal spending datasets. All JSON files sourced from USASpending.gov — free for research and journalism.",
+    title: "Data Downloads | OpenSpending",
+    description: "Download raw federal spending datasets as JSON. Sourced from USASpending.gov — free for research, journalism, and analysis.",
   },
 };
 

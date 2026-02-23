@@ -87,14 +87,15 @@ export async function generateMetadata({
   const rawName = entry?.name ?? "Contractor";
   const name = toTitleCase(rawName);
   const amount = entry ? `$${(entry.totalAmount / 1e9).toFixed(1)}B` : "";
-  const title = entry ? `${name}: ${amount} in Federal Contracts — OpenSpending` : `${name} — Federal Contractor — OpenSpending`;
+  const title = entry ? `${name}: ${amount} in Federal Contracts | OpenSpending` : `${name} | OpenSpending`;
   const description = entry
-    ? `${name} received ${amount} in federal contracts (rank #${entry.rank}). See agencies served, spending trends, and largest contracts.`
-    : `Federal contract spending data for ${name}.`;
+    ? `${name} ranks #${entry.rank} with ${amount} in federal contracts. See which agencies pay them, spending trends, and biggest deals.`
+    : `Federal contract spending data for ${name}. Follow the money.`;
   return {
     title,
     description,
-    openGraph: { title, description },
+    alternates: { canonical: `https://www.openspending.us/contractors/${slug}` },
+    openGraph: { title, description, url: `https://www.openspending.us/contractors/${slug}` },
   };
 }
 

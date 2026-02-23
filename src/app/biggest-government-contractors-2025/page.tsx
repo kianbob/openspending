@@ -6,14 +6,16 @@ import { formatDollars, toTitleCase } from "@/lib/format";
 import contractorsRaw from "@/../public/data/top-contractors-deduped.json";
 
 export const metadata = {
-  title: "The 10 Companies That Get the Most Government Money in 2025 — OpenSpending",
+  title: "Top 10 Government Contractors in 2025 | OpenSpending",
   description:
-    "Lockheed Martin received $58.8B in federal contracts in FY2025. The top 10 contractors hold 23.5% of all government contracts. See who they are.",
+    "Lockheed Martin: $58.8B. The top 10 hold 23.5% of all federal contracts — nearly all defense. See who gets your money and how much.",
   keywords: "biggest government contractors, top government contractors 2025, who gets the most government contracts, federal contractors list",
+  alternates: { canonical: "https://www.openspending.us/biggest-government-contractors-2025" },
   openGraph: {
-    title: "The 10 Companies That Get the Most Government Money in 2025",
+    title: "Top 10 Government Contractors in 2025 | OpenSpending",
     description:
-      "Lockheed Martin: $58.8B. The top 10 hold 23.5% of all contracts. All defense. Here's the full list.",
+      "Lockheed Martin: $58.8B. The top 10 hold 23.5% of all federal contracts — nearly all defense. See who gets your money and how much.",
+    url: "https://www.openspending.us/biggest-government-contractors-2025",
     type: "article",
   },
 };

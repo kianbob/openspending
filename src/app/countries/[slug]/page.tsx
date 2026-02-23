@@ -31,10 +31,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!country) return {};
   const name = toTitleCase(country.name);
   return {
-    title: `U.S. Spending in ${name} — FY2025 | OpenSpending`,
-    description: `The United States directed ${formatDollars(country.amount)} in federal spending to ${name} in FY2025. Explore contracts, grants, and aid.`,
+    title: `U.S. Spending in ${name} FY2025 | OpenSpending`,
+    description: `${formatDollars(country.amount)} in U.S. tax dollars sent to ${name} in FY2025. See the full breakdown of contracts, grants, and foreign aid.`,
     openGraph: {
-      title: `U.S. Spending in ${name}`,
+      title: `U.S. Spending in ${name} | OpenSpending`,
       description: `${formatDollars(country.amount)} in federal spending to ${name} in FY2025.`,
     },
   };
