@@ -14,12 +14,6 @@ const items = [
       "Just 10 companies receive $145 billion — 18.7% of all federal contracts. Who they are, what they do, and why this concentration persists.",
   },
   {
-    path: "/pentagon-spending",
-    title: "The Pentagon: $1.4 Trillion and Counting",
-    description:
-      "Deep dive into Department of Defense spending — budget trajectory, top contractors, the F-35 cost explosion, and why DOD has never passed an audit.",
-  },
-  {
     path: "/healthcare-spending",
     title: "Healthcare: The Quiet Giant",
     description:
@@ -156,12 +150,6 @@ const items = [
     title: "Where Do Your Tax Dollars Go in 2025? A Complete Breakdown",
     description:
       "Medicare gets 18¢ of every dollar. Interest on debt gets 12¢ — more than veterans benefits. See the full breakdown of where your federal taxes go.",
-  },
-  {
-    path: "/doge-savings-reality",
-    title: "Is DOGE Actually Saving Money? A Data-Driven Reality Check",
-    description:
-      "DOGE claimed $55B in savings while federal spending increased $392B. That's 0.81% of the budget. Here's what the data shows.",
   },
   {
     path: "/biggest-government-contractors-2025",

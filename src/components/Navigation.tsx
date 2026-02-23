@@ -25,7 +25,7 @@ const dropdowns: DropdownSection[] = [
       { href: '/subagencies', title: 'Sub-Agencies', desc: 'Where the money really goes' },
       { href: '/industries', title: 'Industries', desc: 'By NAICS sector' },
       { href: '/programs', title: 'Programs', desc: '200 assistance programs ranked' },
-      { href: '/countries', title: 'Countries', desc: 'Spending by country' },
+      { href: '/international-spending', title: 'International Spending', desc: 'Spending by country' },
       { href: '/counties', title: 'Counties', desc: 'Federal spending by county' },
       { href: '/products', title: 'Products & Services', desc: 'Top 100 PSC categories' },
       { href: '/grants', title: 'Grants', desc: '$1.24T to states & orgs' },

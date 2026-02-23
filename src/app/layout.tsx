@@ -101,7 +101,7 @@ export default function RootLayout({
                   <Link href="/what-they-buy" className="text-sm text-gray-400 hover:text-white transition-colors">What They Buy</Link>
                   <Link href="/local-spending" className="text-sm text-gray-400 hover:text-white transition-colors">Local Spending</Link>
                   <Link href="/counties" className="text-sm text-gray-400 hover:text-white transition-colors">Counties</Link>
-                  <Link href="/countries" className="text-sm text-gray-400 hover:text-white transition-colors">Countries</Link>
+                  <Link href="/international-spending" className="text-sm text-gray-400 hover:text-white transition-colors">Countries</Link>
                   <Link href="/products" className="text-sm text-gray-400 hover:text-white transition-colors">Products</Link>
                   <Link href="/grants/recipients" className="text-sm text-gray-400 hover:text-white transition-colors">Grant Recipients</Link>
                 </div>
@@ -129,7 +129,6 @@ export default function RootLayout({
                 <div className="mt-3 flex flex-col gap-2">
                   <Link href="/investigations" className="text-sm text-gray-400 hover:text-white transition-colors">All Investigations</Link>
                   <Link href="/spending-analysis" className="text-sm text-gray-400 hover:text-white transition-colors">Spending Analysis</Link>
-                  <Link href="/pentagon-spending" className="text-sm text-gray-400 hover:text-white transition-colors">Pentagon Spending</Link>
                   <Link href="/pentagon-deep-dive" className="text-sm text-gray-400 hover:text-white transition-colors">Pentagon Deep Dive</Link>
                   <Link href="/healthcare-spending" className="text-sm text-gray-400 hover:text-white transition-colors">Healthcare Spending</Link>
                   <Link href="/contractor-monopoly" className="text-sm text-gray-400 hover:text-white transition-colors">Contractor Monopoly</Link>

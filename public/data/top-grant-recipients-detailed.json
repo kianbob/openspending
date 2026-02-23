@@ -1,1 +1,202 @@
-[{"name": "HEALTH CARE SERVICES, CALIFORNIA DEPARTMENT OF", "amount": 112537529310.06}, {"name": "NYS DEPARTMENT OF HEALTH", "amount": 76532128561.15}, {"name": "HEALTH & HUMAN SVC COMMN TX", "amount": 33831638432.84}, {"name": "PA DEPARTMENT OF HUMAN SERVICES", "amount": 32277538113.24}, {"name": "NORTH CAROLINA DEPARTMENT OF HEALTH & HUMAN SERVICES", "amount": 28521952384.2}, {"name": "OHIO DEPARTMENT OF MEDICAID", "amount": 27720813210.0}, {"name": "FLORIDA AGENCY FOR HEALTH CARE ADMINISTRATION", "amount": 22833739885.0}, {"name": "ILLINOIS DEPARTMENT OF HEALTHCARE & FAMILY SERVICES", "amount": 21833018561.57}, {"name": "MICHIGAN DEPARTMENT OF HEALTH AND HUMAN SERVICES", "amount": 21652955534.48}, {"name": "HUMAN SERVICES, NEW JERSEY DEPARTMENT OF", "amount": 18440341711.36}, {"name": "VA DEPARTMENT OF MEDICAL ASSISTANCE SERVICE", "amount": 17161803330.0}, {"name": "HEALTH SERVICES KENTUCKY CABINET FOR", "amount": 17078190816.45}, {"name": "THE COMMONWEALTH OF MASSACHUSETTS", "amount": 16788734353.38}, {"name": "INDIANA FAMILY AND SOCIAL SERV", "amount": 16747978323.34}, {"name": "ARIZONA HEALTH CARE COST CONTAINMENT SYSTEM", "amount": 16396625089.9}, {"name": "NATIONAL RAILROAD PASSENGER CORPORATION", "amount": 15170692422.38}, {"name": "LOUSIANA DEPARTMENT OF HEALTH", "amount": 14631899538.0}, {"name": "DEPARTMENT OF SOCIAL & HEALTH SERVICES", "amount": 13979332122.9}, {"name": "OREGON HEALTH AUTHORITY", "amount": 13912160491.51}, {"name": "MINNESOTA DEPARTMENT OF HUMAN SERVICES", "amount": 13134048471.08}, {"name": "DEPARTMENT OF SOCIAL SERVICES MISSO", "amount": 13049900732.43}, {"name": "GEORGIA DEPARTMENT OF COMMUNITY HEALTH", "amount": 12995910496.12}, {"name": "FINANCE & ADMINISTRATION TENNESSEE DEPAR", "amount": 11929970653.0}, {"name": "MARYLAND DEPARTMENT OF HEALTH", "amount": 11775498336.32}, {"name": "STATE OF COLORADO - DEPT OF HEALTH CARE POLICY & FINANCING", "amount": 9985084021.82}, {"name": "STATE OF WISCONSIN DEPARTMENT OF HEALTH SERVICES", "amount": 9754720921.29}, {"name": "GOVERNMENT OF THE VIRGIN ISLANDS", "amount": 9682011745.5}, {"name": "DEPARTMENT OF SOCIAL SERVICES CALIFORNIA", "amount": 9490197452.25}, {"name": "DEPARTMENT OF HUMAN SERVICES NEW MEXICO", "amount": 8643724981.86}, {"name": "OKLAHOMA HEALTH CARE AUTHORITY", "amount": 7881392176.0}, {"name": "DEPARTMENT OF SOCIAL SERVICES CONNECTICUT", "amount": 7836801018.26}, {"name": "DEPARTMENT OF HEALTH HUMAN SERVICES", "amount": 7717121176.11}, {"name": "DEPARTMENT OF EDUCATION CALIFORNIA", "amount": 7510324992.0}, {"name": "IA DEPARTMENT OF HUMAN SERVICES", "amount": 7476964268.7}, {"name": "HUMAN SERVICES, ARKANSAS DEPARTMENT OF", "amount": 7200092468.08}, {"name": "ALABAMA MEDICAID AGENCY", "amount": 6627202730.36}, {"name": "DEPARTMENT OF TRANSPORTATION CALIFORNIA", "amount": 6266515227.29}, {"name": "NEVADA DEPARTMENT OF HEALTH & HUMAN SERVICES", "amount": 6114182366.87}, {"name": "OFFICE OF EMERGENCY SERVICES", "amount": 6073718769.22}, {"name": "MISSISSIPPI DIVISION OF MEDICAID", "amount": 5998337714.0}, {"name": "TEXAS DEPARTMENT OF TRANSPORTATION", "amount": 5974924275.21}, {"name": "HEALTH AND HUMAN RESOURCES, WEST VIRGINIA DEPARTMENT OF", "amount": 4695295959.67}, {"name": "NEW YORK STATE EDUCATION DEPARTMENT", "amount": 4640299365.67}, {"name": "KANSAS DEPARTMENT OF HEALTH & ENVIRONMENT", "amount": 4558132387.3}, {"name": "STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT", "amount": 4392051748.42}, {"name": "NEW YORK STATE OFFICE OF TEMPORARY & DISABILITY ASSISTANCE", "amount": 4156921905.44}, {"name": "HEALTH AND HUMAN SERVICES, MAINE DEPARTMENT OF", "amount": 3989311009.61}, {"name": "TX EDUCATION AGENCY", "amount": 3946324090.71}, {"name": "NEBRASKA DEPARTMENT OF HEALTH & HUMAN SERVICES", "amount": 3935742238.76}, {"name": "PUERTO RICO DEPARTMENT OF HEALTH", "amount": 3723029624.99}]
+[
+  {
+    "name": "Health Care Services, California Department of",
+    "amount": 112537529310.06
+  },
+  {
+    "name": "NYS Department of Health",
+    "amount": 76532128561.15
+  },
+  {
+    "name": "Health & Human Svc Commn TX",
+    "amount": 33831638432.84
+  },
+  {
+    "name": "PA Department of Human Services",
+    "amount": 32277538113.24
+  },
+  {
+    "name": "North Carolina Department of Health & Human Services",
+    "amount": 28521952384.2
+  },
+  {
+    "name": "Ohio Department of Medicaid",
+    "amount": 27720813210
+  },
+  {
+    "name": "Florida Agency for Health Care Administration",
+    "amount": 22833739885
+  },
+  {
+    "name": "Illinois Department of Healthcare & Family Services",
+    "amount": 21833018561.57
+  },
+  {
+    "name": "Michigan Department of Health and Human Services",
+    "amount": 21652955534.48
+  },
+  {
+    "name": "Human Services, New Jersey Department of",
+    "amount": 18440341711.36
+  },
+  {
+    "name": "VA Department of Medical Assistance Service",
+    "amount": 17161803330
+  },
+  {
+    "name": "Health Services Kentucky Cabinet for",
+    "amount": 17078190816.45
+  },
+  {
+    "name": "The Commonwealth of Massachusetts",
+    "amount": 16788734353.38
+  },
+  {
+    "name": "Indiana Family and Social Serv",
+    "amount": 16747978323.34
+  },
+  {
+    "name": "Arizona Health Care Cost Containment System",
+    "amount": 16396625089.9
+  },
+  {
+    "name": "National Railroad Passenger Corporation",
+    "amount": 15170692422.38
+  },
+  {
+    "name": "Lousiana Department of Health",
+    "amount": 14631899538
+  },
+  {
+    "name": "Department of Social & Health Services",
+    "amount": 13979332122.9
+  },
+  {
+    "name": "Oregon Health Authority",
+    "amount": 13912160491.51
+  },
+  {
+    "name": "Minnesota Department of Human Services",
+    "amount": 13134048471.08
+  },
+  {
+    "name": "Department of Social Services Misso",
+    "amount": 13049900732.43
+  },
+  {
+    "name": "Georgia Department of Community Health",
+    "amount": 12995910496.12
+  },
+  {
+    "name": "Finance & Administration Tennessee Depar",
+    "amount": 11929970653
+  },
+  {
+    "name": "Maryland Department of Health",
+    "amount": 11775498336.32
+  },
+  {
+    "name": "State of Colorado - DEPT of Health Care Policy & Financing",
+    "amount": 9985084021.82
+  },
+  {
+    "name": "State of Wisconsin Department of Health Services",
+    "amount": 9754720921.29
+  },
+  {
+    "name": "Government of the Virgin Islands",
+    "amount": 9682011745.5
+  },
+  {
+    "name": "Department of Social Services California",
+    "amount": 9490197452.25
+  },
+  {
+    "name": "Department of Human Services New Mexico",
+    "amount": 8643724981.86
+  },
+  {
+    "name": "Oklahoma Health Care Authority",
+    "amount": 7881392176
+  },
+  {
+    "name": "Department of Social Services Connecticut",
+    "amount": 7836801018.26
+  },
+  {
+    "name": "Department of Health Human Services",
+    "amount": 7717121176.11
+  },
+  {
+    "name": "Department of Education California",
+    "amount": 7510324992
+  },
+  {
+    "name": "IA Department of Human Services",
+    "amount": 7476964268.7
+  },
+  {
+    "name": "Human Services, Arkansas Department of",
+    "amount": 7200092468.08
+  },
+  {
+    "name": "Alabama Medicaid Agency",
+    "amount": 6627202730.36
+  },
+  {
+    "name": "Department of Transportation California",
+    "amount": 6266515227.29
+  },
+  {
+    "name": "Nevada Department of Health & Human Services",
+    "amount": 6114182366.87
+  },
+  {
+    "name": "Office of Emergency Services",
+    "amount": 6073718769.22
+  },
+  {
+    "name": "Mississippi Division of Medicaid",
+    "amount": 5998337714
+  },
+  {
+    "name": "Texas Department of Transportation",
+    "amount": 5974924275.21
+  },
+  {
+    "name": "Health and Human Resources, West Virginia Department of",
+    "amount": 4695295959.67
+  },
+  {
+    "name": "New York State Education Department",
+    "amount": 4640299365.67
+  },
+  {
+    "name": "Kansas Department of Health & Environment",
+    "amount": 4558132387.3
+  },
+  {
+    "name": "State of Florida Division of Emergency Management",
+    "amount": 4392051748.42
+  },
+  {
+    "name": "New York State Office of Temporary & Disability Assistance",
+    "amount": 4156921905.44
+  },
+  {
+    "name": "Health and Human Services, Maine Department of",
+    "amount": 3989311009.61
+  },
+  {
+    "name": "TX Education Agency",
+    "amount": 3946324090.71
+  },
+  {
+    "name": "Nebraska Department of Health & Human Services",
+    "amount": 3935742238.76
+  },
+  {
+    "name": "Puerto Rico Department of Health",
+    "amount": 3723029624.99
+  }
+]

@@ -56,7 +56,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/waste",
     "/downloads",
     "/spending-analysis",
-    "/pentagon-spending",
     "/healthcare-spending",
     "/top-10",
     "/doge-reality",
@@ -83,7 +82,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/efficiency",
     "/industry-trends",
     "/investigations",
-    "/countries",
     "/counties",
     "/products",
     "/tax-calculator",
@@ -96,7 +94,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/presidents",
     "/earmarks",
     "/where-tax-dollars-go",
-    "/doge-savings-reality",
     "/biggest-government-contractors-2025",
   ];
 
