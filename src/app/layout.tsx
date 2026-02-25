@@ -81,6 +81,20 @@ export default function RootLayout({
             }),
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "OpenSpending",
+              url: "https://www.openspending.us",
+              description: "Track $11.2 trillion in federal spending across 97 agencies, 50 states, and thousands of contractors. Independent data journalism built on USASpending.gov data.",
+              publisher: { "@type": "Organization", name: "TheDataProject.ai", url: "https://thedataproject.ai" },
+              potentialAction: { "@type": "SearchAction", target: { "@type": "EntryPoint", urlTemplate: "https://www.openspending.us/search?q={search_term_string}" }, "query-input": "required name=search_term_string" },
+            }),
+          }}
+        />
         <Navigation />
         <main>{children}</main>
         <footer className="bg-gray-900 mt-16">
