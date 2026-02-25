@@ -167,6 +167,9 @@ export default function RootLayout({
                 <a href="https://www.openmedicaid.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
                   OpenMedicaid — Medicaid Spending Tracker
                 </a>
+                <a href="https://www.openlobby.us" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  OpenLobby — Federal Lobbying Tracker
+                </a>
               </div>
             </div>
             <div className="mt-10 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
