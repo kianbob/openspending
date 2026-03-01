@@ -193,6 +193,9 @@ export default function RootLayout({
                 <a href="https://www.opensubsidies.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
                   OpenSubsidies — Farm Subsidy Tracker
                 </a>
+                <a href="https://www.warcosts.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  WarCosts — War Spending Tracker
+                </a>
               </div>
             </div>
             <div className="mt-10 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
