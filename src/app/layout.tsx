@@ -199,6 +199,9 @@ export default function RootLayout({
                 <a href="https://www.openprescriber.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
                   OpenPrescriber — Medicare Part D Data
                 </a>
+                <a href="https://www.opencrime.us" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  OpenCrime — FBI Crime Data
+                </a>
               </div>
             </div>
             <div className="mt-10 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
