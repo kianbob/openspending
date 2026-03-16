@@ -246,6 +246,42 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Featured Analysis */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-6">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+              📊 Analysis &amp; Deep Dives
+            </h2>
+            <p className="text-gray-500 mt-2">
+              Data-driven analysis of where your tax dollars go — and where they&apos;re wasted.
+            </p>
+          </div>
+          <Link href="/analysis" className="text-indigo-600 hover:text-indigo-800 font-medium text-sm mt-4 md:mt-0">
+            View all analysis →
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            { slug: "where-your-taxes-go", emoji: "💰", title: "Where Your Taxes Go", stat: "$10.1T", desc: "Cent-by-cent breakdown of every federal dollar", color: "border-indigo-500" },
+            { slug: "national-debt-crisis", emoji: "💣", title: "The $34T Time Bomb", stat: "$1.25T interest", desc: "Interest on the debt now exceeds the defense budget", color: "border-red-500" },
+            { slug: "wasteful-spending", emoji: "🗑️", title: "$247B Waste Machine", stat: "1% recovered", desc: "Improper payments, fraud, and zero accountability", color: "border-red-500" },
+            { slug: "covid-spending", emoji: "🦠", title: "$6T COVID Spending", stat: "$400B+ fraud", desc: "PPP fraud, EIDL abuse, and trillions in waste", color: "border-amber-500" },
+            { slug: "contractor-spending", emoji: "🏢", title: "$700B to Contractors", stat: "5 companies", desc: "Defense oligopoly, no-bid deals, revolving door", color: "border-indigo-500" },
+            { slug: "spending-per-capita", emoji: "👤", title: "$20K+ Per American", stat: "+110% since 2017", desc: "Federal spending per person has doubled", color: "border-purple-500" },
+          ].map((a) => (
+            <Link key={a.slug} href={`/analysis/${a.slug}`} className={`block bg-white rounded-xl border border-gray-200 border-l-4 ${a.color} p-6 hover:shadow-lg transition-all group`}>
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-2xl">{a.emoji}</span>
+                <span className="text-xs font-mono text-indigo-600 bg-indigo-50 px-2 py-1 rounded">{a.stat}</span>
+              </div>
+              <h3 className="font-bold text-gray-900 group-hover:text-indigo-700">{a.title}</h3>
+              <p className="text-sm text-gray-500 mt-1">{a.desc}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* Top 10 Contractors */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-6">

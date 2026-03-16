@@ -95,6 +95,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/earmarks",
     "/where-tax-dollars-go",
     "/biggest-government-contractors-2025",
+    "/analysis",
+    "/analysis/where-your-taxes-go",
+    "/analysis/defense-vs-education",
+    "/analysis/wasteful-spending",
+    "/analysis/national-debt-crisis",
+    "/analysis/covid-spending",
+    "/analysis/earmarks-return",
+    "/analysis/agency-budgets-explained",
+    "/analysis/state-federal-funding",
+    "/analysis/contractor-spending",
+    "/analysis/spending-per-capita",
+    "/tools/tax-calculator",
+    "/tools/agency-compare",
   ];
 
   function slugifyProgram(name: string): string {
