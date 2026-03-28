@@ -172,39 +172,22 @@ export default function RootLayout({
                 Sister Sites
               </h4>
               <div className="mt-3 flex flex-wrap gap-4">
-                <a href="https://www.openfeds.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  OpenFeds — Federal Workforce Tracker
-                </a>
-                <a href="https://www.openmedicare.us" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  OpenMedicare — Medicare Spending Tracker
-                </a>
-                <a href="https://www.openmedicaid.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  OpenMedicaid — Medicaid Spending Tracker
-                </a>
-                <a href="https://www.openimmigration.us" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  OpenImmigration — Immigration Court Tracker
-                </a>
-                <a href="https://www.openlobby.us" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  OpenLobby — Federal Lobbying Tracker
-                </a>
-                <a href="https://www.vaccinewatch.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  VaccineWatch — Vaccine Safety Data
-                </a>
-                <a href="https://www.opensubsidies.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  OpenSubsidies — Farm Subsidy Tracker
-                </a>
-                <a href="https://www.warcosts.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  WarCosts — War Spending Tracker
-                </a>
-                <a href="https://www.openprescriber.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  OpenPrescriber — Medicare Part D Data
-                </a>
-                <a href="https://www.opencrime.us" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  OpenCrime — FBI Crime Data
-                </a>
-                <a href="https://www.givescope.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  GiveScope — Nonprofit Spending Tracker
-                </a>
+                <a href="https://www.openfeds.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">OpenFeds</a>
+                <a href="https://www.openmedicare.us" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">OpenMedicare</a>
+                <a href="https://www.openmedicaid.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">OpenMedicaid</a>
+                <a href="https://www.openimmigration.us" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">OpenImmigration</a>
+                <a href="https://www.openlobby.us" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">OpenLobby</a>
+                <a href="https://www.vaccinewatch.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">VaccineWatch</a>
+                <a href="https://www.warcosts.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">WarCosts</a>
+                <a href="https://www.openprescriber.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">OpenPrescriber</a>
+                <a href="https://www.opencrime.us" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">OpenCrime</a>
+                <a href="https://www.givescope.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">GiveScope</a>
+                <a href="https://www.spacgraveyard.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">SPACGraveyard</a>
+                <a href="https://www.tarifftax.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">TariffTax</a>
+                <a href="https://www.aiexposure.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">AI Exposure</a>
+                <a href="https://www.shelterscope.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">ShelterScope</a>
+                <a href="https://www.openspending.us" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">OpenSpending</a>
+                <a href="https://thedataproject.ai" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">TheDataProject.ai</a>
               </div>
             </div>
             <div className="mt-10 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
