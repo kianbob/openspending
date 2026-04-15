@@ -185,7 +185,7 @@ export default function RootLayout({
                 <a href="https://www.spacgraveyard.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">SPACGraveyard</a>
                 <a href="https://www.tarifftax.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">TariffTax</a>
                 <a href="https://www.aiexposure.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">AI Exposure</a>
-                <a href="https://www.shelterscope.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">ShelterScope</a>
+                <a href="https://www.autopilotwatch.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">AutoPilotWatch</a>                <a href="https://www.shelterscope.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">ShelterScope</a>
                 <a href="https://thedataproject.ai" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">TheDataProject.ai</a>
               </div>
             </div>
