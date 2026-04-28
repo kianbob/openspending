@@ -9,17 +9,17 @@ import agencies from "@/../public/data/agencies.json";
 import agencySpending from "@/../public/data/agency-spending.json";
 
 export const metadata = {
-  title: "97 Federal Agencies: Who Spends the Most? | OpenSpending",
-  description: "Exposed: how 97 federal agencies spend $11.2 trillion. Ranked by budget authority with contracts vs. grants breakdowns. Some numbers will shock you.",
+  title: "All 97 Federal Agencies Ranked by Spending | OpenSpending",
+  description: "How 97 federal agencies divide $11.2 trillion. Ranked by budget with contracts vs. grants breakdowns. Compare HHS, DoD, VA, and every agency.",
   openGraph: {
-    title: "97 Federal Agencies: Who Spends the Most? | OpenSpending",
-    description: "Exposed: how 97 federal agencies spend $11.2 trillion. Ranked by budget authority with contracts vs. grants breakdowns. Some numbers will shock you.",
+    title: "All 97 Federal Agencies Ranked by Spending | OpenSpending",
+    description: "How 97 federal agencies divide $11.2 trillion. Ranked by budget with contracts vs. grants breakdowns. Compare HHS, DoD, VA, and every agency.",
     url: "https://www.openspending.us/agencies",
   },
   twitter: {
     card: "summary_large_image" as const,
-    title: "97 Federal Agencies: Who Spends the Most? | OpenSpending",
-    description: "Exposed: how 97 federal agencies spend $11.2 trillion. Ranked by budget authority with contracts vs. grants breakdowns. Some numbers will shock you.",
+    title: "All 97 Federal Agencies Ranked by Spending | OpenSpending",
+    description: "How 97 federal agencies divide $11.2 trillion. Ranked by budget with contracts vs. grants breakdowns. Compare HHS, DoD, VA, and every agency.",
   },
 };
 

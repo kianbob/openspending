@@ -11,17 +11,17 @@ import contractorTrends from "@/../public/data/contractor-trends.json";
 import stats from "@/../public/data/stats.json";
 
 export const metadata = {
-  title: "Top 50 Government Contractors Exposed | OpenSpending",
-  description: "10 companies grab 64% of all federal contracts. See who gets billions in taxpayer money — ranked from Lockheed Martin ($34B) to Booz Allen.",
+  title: "Top 50 Government Contractors — Ranked by Federal Dollars Received",
+  description: "Lockheed Martin ($34B), Optum ($22B), General Dynamics ($21B). See all 50 top government contractors ranked, with contract breakdowns by agency.",
   openGraph: {
-    title: "Top 50 Government Contractors Exposed | OpenSpending",
-    description: "10 companies grab 64% of all federal contracts. See who gets billions in taxpayer money — ranked from Lockheed Martin ($34B) to Booz Allen.",
+    title: "Top 50 Government Contractors — Ranked by Federal Dollars Received",
+    description: "Lockheed Martin ($34B), Optum ($22B), General Dynamics ($21B). See all 50 top government contractors ranked, with contract breakdowns by agency.",
     url: "https://www.openspending.us/contractors",
   },
   twitter: {
     card: "summary_large_image" as const,
-    title: "Top 50 Government Contractors Exposed | OpenSpending",
-    description: "10 companies grab 64% of all federal contracts. See who gets billions in taxpayer money — ranked from Lockheed Martin ($34B) to Booz Allen.",
+    title: "Top 50 Government Contractors — Ranked by Federal Dollars Received",
+    description: "Lockheed Martin ($34B), Optum ($22B), General Dynamics ($21B). See all 50 top government contractors ranked, with contract breakdowns by agency.",
   },
 };
 

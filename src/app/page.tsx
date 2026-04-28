@@ -9,17 +9,17 @@ import agencies from "@/../public/data/agencies.json";
 import stateDetailsData from "@/../public/data/state-details.json";
 
 export const metadata: Metadata = {
-  title: "Track Every Dollar the Government Spends | OpenSpending",
-  description: "$11.2 trillion. 97 agencies. 50 top contractors. See exactly where your tax dollars go — and how much Washington wastes every year.",
+  title: "Where Does $11.2 Trillion in Federal Spending Go? | OpenSpending",
+  description: "97 agencies. 50 top government contractors. $233–521B wasted yearly. Search contracts, track grants, and see exactly where your tax dollars end up.",
   openGraph: {
-    title: "Track Every Dollar the Government Spends | OpenSpending",
-    description: "$11.2 trillion. 97 agencies. 50 top contractors. See exactly where your tax dollars go — and how much Washington wastes every year.",
+    title: "Where Does $11.2 Trillion in Federal Spending Go? | OpenSpending",
+    description: "97 agencies. 50 top government contractors. $233–521B wasted yearly. Search contracts, track grants, and see exactly where your tax dollars end up.",
     url: "https://www.openspending.us",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Track Every Dollar the Government Spends | OpenSpending",
-    description: "$11.2 trillion. 97 agencies. 50 top contractors. See exactly where your tax dollars go — and how much Washington wastes every year.",
+    title: "Where Does $11.2 Trillion in Federal Spending Go? | OpenSpending",
+    description: "97 agencies. 50 top government contractors. $233–521B wasted yearly. Search contracts, track grants, and see exactly where your tax dollars end up.",
   },
 };
 

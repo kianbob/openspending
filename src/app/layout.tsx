@@ -16,17 +16,17 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "OpenSpending | Follow the Money",
+  title: "OpenSpending — Where Your $11.2 Trillion in Tax Dollars Actually Goes",
   description:
-    "Track $11.2 trillion in federal spending. See which contractors, agencies, and states get your tax dollars — and how much is wasted.",
+    "Search $11.2T in federal spending across 97 agencies and 50+ top government contractors. Track contracts, grants, waste, and follow the money. Updated daily.",
   metadataBase: new URL("https://www.openspending.us"),
   alternates: {
     canonical: "./",
   },
   openGraph: {
-    title: "OpenSpending | Follow the Money",
+    title: "OpenSpending — Where Your $11.2 Trillion in Tax Dollars Actually Goes",
     description:
-      "Track $11.2 trillion in federal spending. See which contractors, agencies, and states get your tax dollars — and how much is wasted.",
+      "Search $11.2T in federal spending across 97 agencies and 50+ top government contractors. Track contracts, grants, waste, and follow the money. Updated daily.",
     url: "https://www.openspending.us",
     siteName: "OpenSpending",
     type: "website",
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "OpenSpending | Follow the Money",
+    title: "OpenSpending — Where Your $11.2 Trillion in Tax Dollars Actually Goes",
     description:
-      "Track $11.2 trillion in federal spending. See which contractors, agencies, and states get your tax dollars — and how much is wasted.",
+      "Search $11.2T in federal spending across 97 agencies and 50+ top government contractors. Track contracts, grants, waste, and follow the money. Updated daily.",
     images: ["/og-image.png"],
   },
   robots: {
