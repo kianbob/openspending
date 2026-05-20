@@ -9,7 +9,7 @@ import agencies from "@/../public/data/agencies.json";
 import stateDetailsData from "@/../public/data/state-details.json";
 
 export const metadata: Metadata = {
-  title: "Where Does $11.2 Trillion in Federal Spending Go? | OpenSpending",
+  title: "US Federal Spending — $11.2 Trillion Breakdown",
   description: "97 agencies. 50 top government contractors. $233–521B wasted yearly. Search contracts, track grants, and see exactly where your tax dollars end up.",
   openGraph: {
     title: "Where Does $11.2 Trillion in Federal Spending Go? | OpenSpending",

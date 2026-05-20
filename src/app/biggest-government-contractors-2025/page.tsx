@@ -6,7 +6,7 @@ import { formatDollars, toTitleCase } from "@/lib/format";
 import contractorsRaw from "@/../public/data/top-contractors-deduped.json";
 
 export const metadata = {
-  title: "Top Government Contractors 2025: Who Gets the Most Federal Money?",
+  title: "Top Government Contractors 2025 — Rankings",
   description:
     "Lockheed Martin leads at $58.8B. Just 10 companies hold 23.5% of all federal contracts. See the full ranked list with dollar amounts and agencies.",
   keywords: "top government contractors, biggest government contractors 2025, who gets the most government contracts, federal contractors ranked, largest federal contractors",

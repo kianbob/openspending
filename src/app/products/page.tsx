@@ -10,7 +10,7 @@ type PSC = { name: string; code: string; amount: number };
 const data = (products as PSC[]).map((p, i) => ({ ...p, rank: i + 1 }));
 
 export const metadata: Metadata = {
-  title: "Products & Services — Federal Spending by Category | OpenSpending",
+  title: "Federal Spending by Category — Products & Services",
   description:
     "Explore the top 100 federal product and service categories by spending, from aircraft and healthcare to IT services and construction.",
 };

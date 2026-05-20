@@ -9,7 +9,7 @@ import { SubAgencyBarChart } from "@/components/charts/SubAgencyBarChart";
 import subagencies from "@/../public/data/subagencies.json";
 
 export const metadata: Metadata = {
-  title: "Where the Money Really Goes: Sub-Agency Spending | OpenSpending",
+  title: "Sub-Agency Federal Spending Breakdown",
   description:
     "Parent agencies get the headlines. These are the offices actually writing the checks. Explore spending across 100+ federal sub-agencies.",
 };

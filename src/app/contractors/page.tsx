@@ -11,7 +11,7 @@ import contractorTrends from "@/../public/data/contractor-trends.json";
 import stats from "@/../public/data/stats.json";
 
 export const metadata = {
-  title: "Top 50 Government Contractors — Ranked by Federal Dollars Received",
+  title: "Top 50 Government Contractors by Revenue",
   description: "Lockheed Martin ($34B), Optum ($22B), General Dynamics ($21B). See all 50 top government contractors ranked, with contract breakdowns by agency.",
   openGraph: {
     title: "Top 50 Government Contractors — Ranked by Federal Dollars Received",

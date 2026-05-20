@@ -12,7 +12,7 @@ function slugify(name: string): string {
 }
 
 export const metadata = {
-  title: "Federal Programs: Where $1.24 Trillion in Grants Goes — OpenSpending",
+  title: "Federal Programs — $1.24T in Grants",
   description:
     "200 federal assistance programs tracked — from Medicaid ($666B) to school lunch. See how $1.24 trillion in federal grants is distributed across programs.",
   openGraph: {
