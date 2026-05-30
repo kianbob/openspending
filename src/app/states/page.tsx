@@ -8,17 +8,17 @@ import states from "@/../public/data/spending-by-state.json";
 import StateHeatmap from "@/components/charts/StateHeatmapWrapper";
 
 export const metadata = {
-  title: "Federal Spending by State: Who Gets the Most? | OpenSpending",
-  description: "Virginia gets more federal contracts than any state — thanks to the Pentagon next door. See all 50 states ranked by taxpayer dollars received.",
+  title: "Federal Spending by State: All 50 States Ranked (2025) | OpenSpending",
+  description: "Virginia leads with $83B+ in contracts — thanks to the Pentagon next door. California, Texas, and D.C. round out the top. See all 50 states ranked with heatmap.",
   openGraph: {
     title: "Federal Spending by State: Who Gets the Most? | OpenSpending",
-    description: "Virginia gets more federal contracts than any state — thanks to the Pentagon next door. See all 50 states ranked by taxpayer dollars received.",
+    description: "Virginia leads with $83B+ in contracts — thanks to the Pentagon next door. California, Texas, and D.C. round out the top. See all 50 states ranked with heatmap.",
     url: "https://www.openspending.us/states",
   },
   twitter: {
     card: "summary_large_image" as const,
-    title: "Federal Spending by State: Who Gets the Most? | OpenSpending",
-    description: "Virginia gets more federal contracts than any state — thanks to the Pentagon next door. See all 50 states ranked by taxpayer dollars received.",
+    title: "Federal Spending by State: All 50 States Ranked (2025) | OpenSpending",
+    description: "Virginia leads with $83B+ in contracts — thanks to the Pentagon next door. California, Texas, and D.C. round out the top. See all 50 states ranked with heatmap.",
   },
 };
 
@@ -119,10 +119,39 @@ export default function StatesPage() {
         defaultSortKey="amount"
       />
 
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Which state receives the most federal contract spending?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Virginia receives the most federal contract spending, largely due to its proximity to the Pentagon and the concentration of defense contractors and military installations in Northern Virginia.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How much does the federal government spend on contracts by state?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: `The federal government distributed ${formatDollars(allTotal)} in contracts across all 50 states and territories in FY2025. The D.C. metro area (Virginia, Maryland, and D.C.) captures a disproportionate share due to proximity to federal agencies.`,
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* Explore More */}
       <div className="mt-12">
         <h2 className="font-serif text-2xl font-bold text-gray-900 mb-4">Explore More</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <Link href="/agencies" className="block border border-gray-200 rounded-xl p-6 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors">
             <h3 className="font-bold text-gray-900 mb-1">Agency Budgets</h3>
             <p className="text-gray-600 text-sm">See how 97 federal agencies spend their budgets — from Defense to Education.</p>
@@ -130,6 +159,10 @@ export default function StatesPage() {
           <Link href="/contractors" className="block border border-gray-200 rounded-xl p-6 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors">
             <h3 className="font-bold text-gray-900 mb-1">Top Contractors</h3>
             <p className="text-gray-600 text-sm">The 50 companies receiving the most federal contract dollars.</p>
+          </Link>
+          <Link href="/state-dependency" className="block border border-gray-200 rounded-xl p-6 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors">
+            <h3 className="font-bold text-gray-900 mb-1">State Dependency</h3>
+            <p className="text-gray-600 text-sm">Which states take more from the feds than they give back?</p>
           </Link>
         </div>
       </div>

@@ -11,17 +11,17 @@ import contractorTrends from "@/../public/data/contractor-trends.json";
 import stats from "@/../public/data/stats.json";
 
 export const metadata = {
-  title: "Top 50 Government Contractors by Revenue",
-  description: "Lockheed Martin ($34B), Optum ($22B), General Dynamics ($21B). See all 50 top government contractors ranked, with contract breakdowns by agency.",
+  title: "Top 50 Government Contractors by Revenue (2025) | OpenSpending",
+  description: "Lockheed Martin ($34B), Optum ($22B), General Dynamics ($21B) — the top 10 alone get 64% of all contracts. See all 50 ranked with trends and agency breakdowns.",
   openGraph: {
     title: "Top 50 Government Contractors — Ranked by Federal Dollars Received",
-    description: "Lockheed Martin ($34B), Optum ($22B), General Dynamics ($21B). See all 50 top government contractors ranked, with contract breakdowns by agency.",
+    description: "Lockheed Martin ($34B), Optum ($22B), General Dynamics ($21B) — the top 10 alone get 64% of all contracts. See all 50 ranked with trends and agency breakdowns.",
     url: "https://www.openspending.us/contractors",
   },
   twitter: {
     card: "summary_large_image" as const,
-    title: "Top 50 Government Contractors — Ranked by Federal Dollars Received",
-    description: "Lockheed Martin ($34B), Optum ($22B), General Dynamics ($21B). See all 50 top government contractors ranked, with contract breakdowns by agency.",
+    title: "Top 50 Government Contractors — Ranked by Federal Dollars (2025)",
+    description: "Lockheed Martin ($34B), Optum ($22B), General Dynamics ($21B) — the top 10 alone get 64% of all contracts. See all 50 ranked with trends and agency breakdowns.",
   },
 };
 
@@ -128,6 +128,43 @@ export default function ContractorsPage() {
         <ContractorTrends data={contractorTrends} />
       </div>
 
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Who is the largest government contractor?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Lockheed Martin is the largest federal contractor, receiving approximately $34 billion in government contracts in FY2025, primarily from the Department of Defense for weapons systems and defense technology.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How much do the top 10 government contractors receive?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: `The top 10 federal contractors receive ${formatDollars(top10Total)} — about ${formatPercent((top10Total / stats.totalContracts) * 100)} of all federal contracts. This concentration raises questions about competition and taxpayer value.`,
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How are government contracts awarded?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Government contracts are awarded through competitive bidding, sole-source awards, or no-bid contracts. About one in three large contracts is awarded without competitive bidding. See our How Contracts Work and No-Bid Nation pages for details.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* Explore More */}
       <div className="mt-12 bg-gray-50 rounded-xl border border-gray-200 p-8 text-center">
         <h2 className="font-serif text-2xl font-bold text-gray-900 mb-3">
@@ -150,6 +187,12 @@ export default function ContractorsPage() {
             No-Bid Contracts
           </Link>
           <Link
+            href="/contractor-monopoly"
+            className="px-5 py-2.5 bg-indigo-600 text-white rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
+          >
+            Contractor Monopoly
+          </Link>
+          <Link
             href="/waste"
             className="px-5 py-2.5 bg-white text-indigo-700 border border-indigo-200 rounded-lg text-sm font-medium hover:bg-indigo-50 transition-colors"
           >
@@ -160,6 +203,12 @@ export default function ContractorsPage() {
             className="px-5 py-2.5 bg-white text-indigo-700 border border-indigo-200 rounded-lg text-sm font-medium hover:bg-indigo-50 transition-colors"
           >
             Agencies
+          </Link>
+          <Link
+            href="/industries"
+            className="px-5 py-2.5 bg-white text-indigo-700 border border-indigo-200 rounded-lg text-sm font-medium hover:bg-indigo-50 transition-colors"
+          >
+            Industries
           </Link>
         </div>
       </div>

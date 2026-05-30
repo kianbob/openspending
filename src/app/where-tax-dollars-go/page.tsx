@@ -8,8 +8,8 @@ import dollarData from "@/../public/data/dollar-breakdown.json";
 export const metadata = {
   title: "Where Your Tax Dollars Go in 2025 | OpenSpending",
   description:
-    "Medicare gets 18¢ of every dollar. Interest on debt gets 12¢ — more than veterans benefits. See the full cent-by-cent breakdown of federal spending.",
-  keywords: "where do my tax dollars go, where do tax dollars go 2025, federal tax breakdown, tax dollar breakdown, federal budget breakdown 2025",
+    "Medicare: 18¢. Defense: 11¢. Interest on debt: 12¢ — more than veterans get. See exactly where every cent of your tax dollar goes in 2025, with a personalized breakdown.",
+  keywords: "where do my tax dollars go, where do tax dollars go 2025, federal tax breakdown, tax dollar breakdown, federal budget breakdown 2025, tax dollar cent breakdown",
   alternates: { canonical: "https://www.openspending.us/where-tax-dollars-go" },
   openGraph: {
     title: "Where Your Tax Dollars Go in 2025 | OpenSpending",
@@ -185,6 +185,43 @@ export default function WhereTaxDollarsGoPage() {
           </Link>
         </div>
       </div>
+
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Where do my tax dollars go?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: `The federal government spent ${formatDollars(totalBudget)} in FY2025. The biggest categories are Medicare (18¢ of every dollar), Social Security (16¢), National Defense (11¢), and Net Interest on debt (12¢). Nearly two-thirds of spending is mandatory — Congress doesn't vote on it each year.`,
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How much does the average taxpayer pay in federal taxes?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: `The average federal tax burden is about $${perTaxpayer.toLocaleString()} per taxpayer in FY2025. For someone earning $75,000 with an effective rate of ~22%, that's roughly $16,500 in federal taxes.`,
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Does the US spend more on interest than veterans benefits?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. The federal government now spends 12¢ of every tax dollar on interest payments — more than three times what goes to veterans benefits (4¢). Interest costs have more than doubled since 2020.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
 
       <SourceCitation />
     </div>

@@ -8,11 +8,11 @@ import contractTrends from "@/../public/data/yearly-contract-trends.json";
 import agencyTrends from "@/../public/data/agency-trends.json";
 
 export const metadata = {
-  title: "Federal Spending Trends FY2017-2025 | OpenSpending",
-  description: "9 years of federal spending data in charts. See the COVID spike, USAID's budget explosion, and why spending never goes back down.",
+  title: "Federal Spending Trends FY2017-2025: 9 Years of Data | OpenSpending",
+  description: "Federal contract spending grew 63%+ since 2017. COVID spiked it, USAID's budget tripled, and spending never came back down. See the charts and data.",
   openGraph: {
     title: "Federal Spending Trends FY2017-2025 | OpenSpending",
-    description: "9 years of federal spending data in charts. See the COVID spike, USAID's budget explosion, and why spending never goes back down.",
+    description: "Federal contract spending grew 63%+ since 2017. COVID spiked it, USAID's budget tripled, and spending never came back down. See the charts and data.",
   },
 };
 
@@ -79,7 +79,7 @@ export default function TrendsPage() {
             </h1>
             <ShareButtons title="Federal Spending Trends FY2017-FY2025 — OpenSpending" url="https://www.openspending.us/trends" />
           </div>
-          <p className="text-sm text-indigo-300 mb-2">Published: February 2025</p>
+          <p className="text-sm text-indigo-300 mb-2">Updated: May 2025</p>
           <p className="text-lg text-indigo-100 max-w-2xl">
             Nine years of contract and budget data reveal a government that keeps
             growing — with COVID as the accelerant and no sign of slowing down.
@@ -236,6 +236,35 @@ export default function TrendsPage() {
               </Link>
             ))}
           </div>
+
+          {/* FAQ Schema */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "How much has federal spending increased since 2017?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: `Federal contract spending has grown ${contractGrowthPct}% from ${formatDollars(fy2017Contracts)} in FY2017 to ${formatDollars(fy2025Contracts)} in FY2025. Total federal budget growth has been even larger when including mandatory programs.`,
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Did federal spending go down after COVID?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "No. While emergency COVID programs wound down, baseline contract spending never returned to pre-pandemic levels. FY2025 hit a new all-time high \u2014 a classic ratchet effect where emergency spending becomes the new normal.",
+                    },
+                  },
+                ],
+              }),
+            }}
+          />
         </div>
       </section>
     </div>

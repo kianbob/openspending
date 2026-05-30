@@ -9,17 +9,17 @@ import agencies from "@/../public/data/agencies.json";
 import agencySpending from "@/../public/data/agency-spending.json";
 
 export const metadata = {
-  title: "All 97 Federal Agencies Ranked by Spending | OpenSpending",
-  description: "How 97 federal agencies divide $11.2 trillion. Ranked by budget with contracts vs. grants breakdowns. Compare HHS, DoD, VA, and every agency.",
+  title: "All 97 Federal Agencies Ranked by Spending (2025) | OpenSpending",
+  description: "See how 97 federal agencies split $11.2 trillion in FY2025. HHS leads at $2.4T, DoD at $886B. Sortable rankings with contracts vs. grants breakdowns for every agency.",
   openGraph: {
     title: "All 97 Federal Agencies Ranked by Spending | OpenSpending",
-    description: "How 97 federal agencies divide $11.2 trillion. Ranked by budget with contracts vs. grants breakdowns. Compare HHS, DoD, VA, and every agency.",
+    description: "See how 97 federal agencies split $11.2 trillion in FY2025. HHS leads at $2.4T, DoD at $886B. Sortable rankings with contracts vs. grants breakdowns for every agency.",
     url: "https://www.openspending.us/agencies",
   },
   twitter: {
     card: "summary_large_image" as const,
-    title: "All 97 Federal Agencies Ranked by Spending | OpenSpending",
-    description: "How 97 federal agencies divide $11.2 trillion. Ranked by budget with contracts vs. grants breakdowns. Compare HHS, DoD, VA, and every agency.",
+    title: "All 97 Federal Agencies Ranked by Spending (2025) | OpenSpending",
+    description: "See how 97 federal agencies split $11.2 trillion in FY2025. HHS leads at $2.4T, DoD at $886B. Sortable rankings with contracts vs. grants breakdowns for every agency.",
   },
 };
 
@@ -173,6 +173,62 @@ export default function AgenciesPage() {
         data={tableData}
         defaultSortKey="budgetAuthority"
       />
+
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "How many federal agencies are there?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "There are 97 federal agencies tracked on OpenSpending, ranging from cabinet departments like the Department of Defense to independent agencies like NASA and the EPA.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Which federal agency spends the most money?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The Department of Health and Human Services (HHS) has the largest budget authority, primarily driven by Medicare and Medicaid spending. The Department of Defense is the second-largest.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is the difference between contracts and grants?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Federal contracts pay companies for goods and services (like weapons systems or IT). Grants distribute money to states, universities, and nonprofits for specific purposes (like research or healthcare). Some agencies like DoD are contract-heavy, while others like HHS distribute mostly through grants.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* Related Pages */}
+      <div className="mt-12">
+        <h2 className="font-serif text-2xl font-bold text-gray-900 mb-4">Related</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <Link href="/contractors" className="block border border-gray-200 rounded-xl p-6 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors">
+            <h3 className="font-bold text-gray-900 mb-1">Top Contractors</h3>
+            <p className="text-gray-600 text-sm">The 50 companies receiving the most federal contract dollars.</p>
+          </Link>
+          <Link href="/states" className="block border border-gray-200 rounded-xl p-6 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors">
+            <h3 className="font-bold text-gray-900 mb-1">Spending by State</h3>
+            <p className="text-gray-600 text-sm">Which states get the most federal money?</p>
+          </Link>
+          <Link href="/trends" className="block border border-gray-200 rounded-xl p-6 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors">
+            <h3 className="font-bold text-gray-900 mb-1">Spending Trends</h3>
+            <p className="text-gray-600 text-sm">9 years of federal spending data — see how budgets have changed.</p>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

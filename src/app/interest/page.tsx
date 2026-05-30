@@ -7,9 +7,9 @@ import { formatDollars } from "@/lib/format";
 import interestData from "@/../public/data/interest-debt.json";
 
 export const metadata = {
-  title: "$952B in Interest: The Debt Time Bomb | OpenSpending",
+  title: "$952B in Interest: The Debt Time Bomb (2025) | OpenSpending",
   description:
-    "Interest on the national debt hit $952B in FY2025 — now larger than the entire defense budget. See the trajectory and what it costs every taxpayer.",
+    "Interest on the national debt hit $952B in FY2025 — up 262% since 2017 and now larger than defense. That's $6,267 per taxpayer just to service past borrowing.",
   keywords: "interest on national debt, national debt interest payments, federal debt cost",
   openGraph: {
     title: "$952B in Interest: The Debt Time Bomb | OpenSpending",
@@ -72,7 +72,7 @@ export default function InterestPage() {
           url="https://www.openspending.us/interest"
         />
       </div>
-      <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: May 2025</p>
       <p className="text-gray-500 text-lg mb-8">
         Interest on the national debt hit <strong className="text-gray-900">{formatDollars(fy2025.interest)}</strong> in
         FY2025 — now <strong className="text-gray-900">larger than the entire defense budget</strong>.
@@ -232,6 +232,43 @@ export default function InterestPage() {
           </Link>
         </div>
       </div>
+
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "How much does the US pay in interest on the national debt?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: `The US paid ${formatDollars(fy2025.interest)} in interest on the national debt in FY2025. That's $${fy2025.per_taxpayer.toLocaleString()} per taxpayer and ${fy2025.interest_pct_of_revenue}% of all federal revenue.`,
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Is interest on the national debt larger than the defense budget?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. In FY2025, interest payments on the national debt exceeded the entire defense budget for the first time, making it one of the largest line items in the federal budget.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How fast is interest on the national debt growing?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Interest on the national debt has grown 262% since FY2017. The CBO projects it will reach $1.35 trillion by 2030 — a 42% increase from current levels.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

@@ -202,7 +202,7 @@ export default function ProgramGrowthPage() {
           url="https://www.openspending.us/program-growth"
         />
       </div>
-      <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: May 2025</p>
       <p className="text-gray-500 text-lg mb-10">
         23 federal programs tracked from FY2019 to FY2025 — {programsOver100}{" "}
         grew over 100%. Total spending on these programs surged{" "}

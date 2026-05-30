@@ -51,7 +51,7 @@ export default function EarmarksPage() {
           url="https://www.openspending.us/earmarks"
         />
       </div>
-      <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: May 2025</p>
       <p className="text-gray-500 text-lg mb-10">
         Banned in 2011, back in 2021. Congressional pork is alive and well.
       </p>

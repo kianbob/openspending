@@ -32,7 +32,7 @@ export default function HowItWorksPage() {
         </h1>
         <ShareButtons title="How Government Contracts Actually Work — OpenSpending" url="https://www.openspending.us/how-it-works" />
       </div>
-      <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: May 2025</p>
       <p className="text-gray-500 text-lg mb-10">
         Your money, their contracts.
       </p>

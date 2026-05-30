@@ -54,7 +54,7 @@ export default function ForeignAidPage() {
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 font-serif">
         Where U.S. Tax Dollars Go Abroad
       </h1>
-      <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: May 2025</p>
       <p className="text-gray-500 text-lg mb-8">
         {formatDollars(foreignTotal)} in federal spending flows to foreign countries.
         Here&apos;s where your money goes.

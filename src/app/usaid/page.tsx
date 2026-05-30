@@ -63,7 +63,7 @@ export default function UsaidPage() {
         </h1>
         <ShareButtons title="USAID: From $15B to $50B in 6 Years — OpenSpending" url="https://www.openspending.us/usaid" />
       </div>
-      <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: May 2025</p>
       <p className="text-gray-500 text-lg mb-8">
         {formatDollars(totalAll)} in USAID awards (FY2020–2025). The 50 largest
         grants and 50 largest contracts — who got the money?

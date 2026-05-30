@@ -150,7 +150,7 @@ export default function IndustryTrendsPage() {
           url="https://www.openspending.us/industry-trends"
         />
       </div>
-      <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: May 2025</p>
       <p className="text-gray-500 text-lg mb-10">
         COVID reshaped government spending. Healthcare insurance contracts
         tripled. Meanwhile, the government is buying fewer computers.

@@ -82,7 +82,7 @@ export default function PresidentsPage() {
           url="https://www.openspending.us/presidents"
         />
       </div>
-      <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: May 2025</p>
       <p className="text-gray-500 text-lg mb-10">
         Neither party is fiscally conservative. The data proves it.
       </p>

@@ -108,7 +108,7 @@ export default function ContractorMonopolyPage() {
           url="https://www.openspending.us/contractor-monopoly"
         />
       </div>
-      <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: May 2025</p>
       <p className="text-gray-500 text-lg mb-8">
         Just 10 companies capture {Math.round(top10Pct)}% of every federal contract dollar.
         Here&apos;s how concentration, lobbying, and no-bid deals created a government contracting cartel.

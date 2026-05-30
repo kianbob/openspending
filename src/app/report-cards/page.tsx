@@ -54,7 +54,7 @@ export default function ReportCardsPage() {
           url="https://www.openspending.us/report-cards"
         />
       </div>
-      <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: May 2025</p>
       <p className="text-gray-500 text-lg mb-10">
         We graded 24 major agencies on growth, audit compliance, and financial accountability.
       </p>
