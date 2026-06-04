@@ -110,6 +110,24 @@ const articles: Record<string, Article> = {
     metaDescription: "Federal spending per American: $20,000+ per person, $63,000+ per taxpayer. Breakdown by category and growth over time.",
     category: "Per Capita",
   },
+  "federal-spending-trends-2026": {
+    slug: "federal-spending-trends-2026",
+    title: "Federal Spending Trends 2026: Where the Money Is Going",
+    subtitle: "A $7.2 trillion budget, record interest payments, and an entitlement crisis nobody wants to talk about. Here's the FY2026 spending picture.",
+    publishedDate: "2026-06-03",
+    readTime: "12 min read",
+    metaDescription: "Federal spending trends 2026: $7.2T budget breakdown, record $1.4T interest payments, entitlement growth, and what it means for taxpayers.",
+    category: "Budget Overview",
+  },
+  "government-waste-efficiency-2026": {
+    slug: "government-waste-efficiency-2026",
+    title: "Government Waste & Efficiency in 2026: Are We Getting Better?",
+    subtitle: "DOGE promised to cut trillions. Improper payments hit $281 billion. The Pentagon still can't pass an audit. A 2026 accountability report card.",
+    publishedDate: "2026-06-03",
+    readTime: "13 min read",
+    metaDescription: "Government waste and efficiency 2026: $281B in improper payments, DOGE results, Pentagon audit failures, and the accountability gap.",
+    category: "Waste & Accountability",
+  },
 };
 
 const articleSlugs = Object.keys(articles);
@@ -1766,6 +1784,482 @@ function SpendingPerCapita() {
   );
 }
 
+function FederalSpendingTrends2026() {
+  const breakdown = [
+    { name: "Medicare", amount: 2010000000000, pct: 17.9 },
+    { name: "Social Security", amount: 1810000000000, pct: 16.1 },
+    { name: "Net Interest", amount: 1400000000000, pct: 12.5 },
+    { name: "National Defense", amount: 1490000000000, pct: 13.3 },
+    { name: "Health (Medicaid, etc.)", amount: 1230000000000, pct: 11.0 },
+    { name: "Income Security", amount: 920000000000, pct: 8.2 },
+    { name: "Veterans Benefits", amount: 385000000000, pct: 3.4 },
+    { name: "Education", amount: 330000000000, pct: 2.9 },
+    { name: "Transportation", amount: 190000000000, pct: 1.7 },
+    { name: "Everything Else", amount: 1435000000000, pct: 12.8 },
+  ];
+  const maxVal = breakdown[0].amount;
+
+  return (
+    <>
+      <Paragraph>
+        The federal government is on track to spend approximately <strong>$7.2 trillion</strong> in
+        FY2026 — a new record, and roughly double what it spent a decade ago. If you&apos;re a taxpayer,
+        your share is now approaching <strong>$68,000</strong>. That&apos;s not a typo.
+      </Paragraph>
+
+      <Paragraph>
+        The 2026 budget tells a story of a government that grows on autopilot. Mandatory spending
+        continues its relentless climb, interest on the debt is now the third-largest line item,
+        and discretionary spending — the part Congress actually votes on — is getting squeezed from
+        both sides.
+      </Paragraph>
+
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 my-8">
+        <StatCard label="Total FY2026 Spending" value="$7.2T" sub="+6.7% from FY2025" color="indigo" />
+        <StatCard label="Per Taxpayer" value="~$68,000" sub="Up from $63K in FY2025" color="red" />
+        <StatCard label="Deficit" value="~$2.1T" sub="Borrowing 29 cents per dollar" color="red" />
+        <StatCard label="Debt-to-GDP" value="128%" sub="Highest since WWII" color="amber" />
+      </div>
+
+      <SectionHeading>The Big Picture: FY2026 at a Glance</SectionHeading>
+
+      <Paragraph>
+        Here&apos;s where every dollar goes in FY2026:
+      </Paragraph>
+
+      <div className="my-8 space-y-1">
+        {breakdown.map((item) => (
+          <BarVisual key={item.name} label={item.name} value={item.amount} maxValue={maxVal} amount={`${formatDollars(item.amount)} (${item.pct}%)`} />
+        ))}
+      </div>
+
+      <Paragraph>
+        The biggest shift from FY2025: <strong>interest on the national debt</strong> has climbed to
+        $1.4 trillion, now rivaling defense spending dollar-for-dollar. Two years ago, interest was
+        half what it is now. The debt isn&apos;t just a future problem — it&apos;s eating the budget today.
+      </Paragraph>
+
+      <SectionHeading>Entitlements: The Unstoppable Engine</SectionHeading>
+
+      <Paragraph>
+        Medicare and Social Security alone account for <strong>$3.82 trillion</strong> — more than
+        half of the entire budget. Both programs are growing faster than GDP, faster than inflation,
+        and faster than revenue. The math is simple: 10,000 Baby Boomers retire every day, and
+        each one starts drawing benefits from both programs.
+      </Paragraph>
+
+      <DataTable
+        headers={["Program", "FY2023", "FY2025", "FY2026", "Growth"]}
+        rows={[
+          ["Medicare", "$1.60T", "$1.84T", "$2.01T", "+26% in 3 years"],
+          ["Social Security", "$1.42T", "$1.67T", "$1.81T", "+27% in 3 years"],
+          ["Medicaid & Health", "$1.02T", "$1.15T", "$1.23T", "+21% in 3 years"],
+          ["Net Interest", "$659B", "$1.25T", "$1.40T", "+112% in 3 years"],
+        ]}
+      />
+
+      <Paragraph>
+        The Social Security trust fund is now projected to be depleted by <strong>2033</strong>.
+        Medicare&apos;s Hospital Insurance trust fund could run dry by <strong>2031</strong>. When
+        those deadlines hit, beneficiaries face automatic cuts of 20-25% unless Congress acts.
+        Neither party has introduced legislation to fix either program.
+      </Paragraph>
+
+      <CalloutBox emoji="⏰" title="The 2033 Cliff" color="red">
+        <p>Social Security depletion is now 7 years away. Every year Congress delays makes the fix
+        more painful: larger benefit cuts, larger tax increases, or both. The CBO estimates that
+        fixing Social Security today would require either a 25% benefit cut or a 33% payroll
+        tax increase — and the longer we wait, the worse those numbers get.</p>
+      </CalloutBox>
+
+      <SectionHeading>Defense Spending: $1.49 Trillion and Rising</SectionHeading>
+
+      <Paragraph>
+        Total national defense spending in FY2026 is approximately <strong>$1.49 trillion</strong>,
+        including the Pentagon base budget, nuclear weapons programs, intelligence, and defense-related
+        activities across agencies. The Pentagon&apos;s base budget alone is roughly $920 billion.
+      </Paragraph>
+
+      <Paragraph>
+        The increase reflects growing concerns about China&apos;s military expansion in the Pacific,
+        continued support for allies in Europe and the Indo-Pacific, and investments in next-generation
+        technologies like hypersonic weapons, AI-enabled systems, and space capabilities. The B-21
+        Raider stealth bomber entered low-rate production, adding billions to the procurement budget.
+      </Paragraph>
+
+      <SectionHeading>The Interest Crisis Is Here</SectionHeading>
+
+      <Paragraph>
+        At <strong>$1.4 trillion</strong>, net interest on the national debt is now larger than any
+        single discretionary program. It buys nothing — no roads, no schools, no defense. It&apos;s
+        pure debt service, the cost of decades of bipartisan fiscal irresponsibility.
+      </Paragraph>
+
+      <Paragraph>
+        To put it in perspective: interest payments in FY2026 exceed the <em>entire federal budget</em> of
+        FY2002. We now spend more servicing past debt than the government spent on everything — defense,
+        Social Security, Medicare, all of it — just 24 years ago.
+      </Paragraph>
+
+      <DataTable
+        headers={["Year", "Interest Cost", "% of Revenue", "Context"]}
+        rows={[
+          ["FY2019", "$375B", "10.8%", "Pre-COVID baseline"],
+          ["FY2023", "$659B", "14.9%", "Rates rising"],
+          ["FY2025", "$1,251B", "~25%", "One-quarter of revenue"],
+          ["FY2026", "$1,400B", "~27%", "Over a quarter of revenue"],
+          ["FY2030 (proj.)", "$1,800B+", "~32%", "Approaching one-third"],
+        ]}
+      />
+
+      <SectionHeading>Revenue: Where the Money Comes From</SectionHeading>
+
+      <Paragraph>
+        Federal revenue in FY2026 is projected at approximately <strong>$5.1 trillion</strong> —
+        a healthy number that&apos;s still $2.1 trillion short of what the government plans to spend.
+        Revenue has actually grown steadily, up from $3.5 trillion in FY2019. The problem isn&apos;t
+        that the government doesn&apos;t collect enough — it&apos;s that spending grows faster than
+        revenue no matter how much comes in.
+      </Paragraph>
+
+      <DataTable
+        headers={["Source", "Amount", "% of Revenue"]}
+        rows={[
+          ["Individual Income Tax", "$2.65T", "52%"],
+          ["Payroll Taxes", "$1.65T", "32%"],
+          ["Corporate Income Tax", "$430B", "8%"],
+          ["Excise, Customs, Other", "$370B", "7%"],
+        ]}
+      />
+
+      <CalloutBox emoji="📊" title="The Revenue Myth" color="amber">
+        <p>Politicians often frame the deficit as a revenue problem. But federal revenue hit a record
+        $5.1 trillion in FY2026. The government has never collected more money. The deficit exists
+        because spending grows even faster. Since 2019, revenue is up 46% while spending is up 102%.
+        That&apos;s not a revenue problem — it&apos;s a spending problem.</p>
+      </CalloutBox>
+
+      <SectionHeading>Discretionary Spending: Getting Squeezed</SectionHeading>
+
+      <Paragraph>
+        The part of the budget Congress actually controls through annual appropriations — discretionary
+        spending — is being squeezed by the growth of entitlements and interest. Non-defense
+        discretionary spending (education, infrastructure, science, justice, etc.) is essentially
+        flat in real terms, meaning it&apos;s slowly shrinking as a share of the economy.
+      </Paragraph>
+
+      <Paragraph>
+        This is the hidden cost of the entitlement and debt crisis: every dollar consumed by
+        autopilot programs and interest payments is a dollar unavailable for infrastructure,
+        research, education, and everything else the government does. The budget is slowly
+        becoming nothing more than an insurance company with an army.
+      </Paragraph>
+
+      <SectionHeading>What Changed from 2025 to 2026</SectionHeading>
+
+      <div className="my-6 space-y-3">
+        <div className="flex justify-between items-center p-3 bg-gray-50 rounded">
+          <span className="text-gray-700">National debt crossed <strong>$37 trillion</strong></span>
+          <span className="font-bold text-red-600">📈</span>
+        </div>
+        <div className="flex justify-between items-center p-3 bg-gray-50 rounded">
+          <span className="text-gray-700">Interest payments surpassed $1.4T</span>
+          <span className="font-bold text-red-600">📈</span>
+        </div>
+        <div className="flex justify-between items-center p-3 bg-gray-50 rounded">
+          <span className="text-gray-700">Medicare crossed $2 trillion for first time</span>
+          <span className="font-bold text-red-600">📈</span>
+        </div>
+        <div className="flex justify-between items-center p-3 bg-gray-50 rounded">
+          <span className="text-gray-700">DOGE and efficiency efforts launched (see <Link href="/analysis/government-waste-efficiency-2026" className="text-indigo-600 hover:underline">our accountability analysis</Link>)</span>
+          <span className="font-bold text-amber-600">🔍</span>
+        </div>
+        <div className="flex justify-between items-center p-3 bg-gray-50 rounded">
+          <span className="text-gray-700">Defense budget expanded to $1.49T amid Pacific tensions</span>
+          <span className="font-bold text-red-600">📈</span>
+        </div>
+      </div>
+
+      <SectionHeading>The Bottom Line</SectionHeading>
+
+      <Paragraph>
+        FY2026 is more of the same, only bigger. The government spends more, borrows more, and
+        kicks the entitlement can further down the road. Interest costs are consuming an ever-larger
+        share of revenue. Mandatory spending is on autopilot. And the deficit — $2.1 trillion — is
+        the kind of number that used to be reserved for wartime or economic crises.
+      </Paragraph>
+
+      <Paragraph>
+        The structural problem is clear: spending is growing at 6-8% per year while revenue grows
+        at 3-4%. That gap compounds. Every year it&apos;s not addressed, the eventual reckoning gets
+        worse. The question isn&apos;t whether the math catches up — it&apos;s when, and how painful
+        the adjustment will be.
+      </Paragraph>
+
+      <Paragraph>
+        Explore the numbers yourself: check our <Link href="/agencies" className="text-indigo-600 hover:underline">agency-by-agency breakdown</Link>,
+        see <Link href="/analysis/where-your-taxes-go" className="text-indigo-600 hover:underline">where your taxes go</Link>,
+        or use our <Link href="/tools/tax-calculator" className="text-indigo-600 hover:underline">tax calculator</Link> to
+        see your personal share.
+      </Paragraph>
+    </>
+  );
+}
+
+function GovernmentWasteEfficiency2026() {
+  return (
+    <>
+      <Paragraph>
+        Every year, the federal government wastes hundreds of billions of dollars through improper
+        payments, fraud, failed programs, and sheer bureaucratic inertia. In FY2026, improper payments
+        alone are projected to hit <strong>$281 billion</strong> — up from $247 billion just two years
+        ago. Despite headline-grabbing efficiency initiatives, the waste machine grinds on.
+      </Paragraph>
+
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 my-8">
+        <StatCard label="Improper Payments" value="$281B" sub="FY2026 estimate" color="red" />
+        <StatCard label="Pentagon Audit" value="Failed" sub="8th consecutive failure" color="red" />
+        <StatCard label="GAO High-Risk Areas" value="37" sub="Some since 1990" color="amber" />
+        <StatCard label="Recovery Rate" value="~1.2%" sub="Of improper payments" color="amber" />
+      </div>
+
+      <SectionHeading>The DOGE Experiment: What Actually Happened?</SectionHeading>
+
+      <Paragraph>
+        The Department of Government Efficiency (DOGE), launched with ambitious promises to slash
+        trillions in wasteful spending, has been the most talked-about efficiency initiative since
+        the Grace Commission under Reagan. The promises were bold: $2 trillion in cuts. The results
+        have been more modest — but not insignificant.
+      </Paragraph>
+
+      <Paragraph>
+        By mid-2026, DOGE-affiliated efforts have identified approximately <strong>$160 billion</strong> in
+        potential savings through contract cancellations, headcount reductions, and program
+        consolidations. How much of that translates to actual, sustained savings is disputed.
+        Government accounting is complex — canceling a contract doesn&apos;t always save the
+        projected amount, and some &quot;savings&quot; were programs that were winding down anyway.
+      </Paragraph>
+
+      <DataTable
+        headers={["DOGE Initiative", "Claimed Savings", "Status"]}
+        rows={[
+          ["Federal workforce reduction", "$35B/year", "Ongoing — attrition + buyouts"],
+          ["IT contract consolidation", "$22B", "In progress — some contracts rebid"],
+          ["Duplicate program elimination", "$18B", "Partially implemented"],
+          ["Lease/real estate rationalization", "$12B", "Slow — long-term leases"],
+          ["Fraud detection improvements", "$8B", "Early stage"],
+          ["Regulatory streamlining", "Unquantified", "Ongoing"],
+        ]}
+      />
+
+      <CalloutBox emoji="⚖️" title="Fair Assessment" color="amber">
+        <p>DOGE deserves credit for putting government efficiency on the front page and forcing agencies
+        to justify their budgets. But the $2 trillion target was always aspirational math. Real
+        government reform is slow, messy, and runs headlong into Congress, unions, and
+        entrenched interests. The gap between what&apos;s promised in a press conference and what
+        survives the legislative process is vast.</p>
+      </CalloutBox>
+
+      <SectionHeading>Improper Payments: $281 Billion and Growing</SectionHeading>
+
+      <Paragraph>
+        Improper payments — money sent to the wrong person, in the wrong amount, or for the wrong
+        reason — continue to climb. The government&apos;s own estimates peg FY2026 improper payments
+        at <strong>$281 billion</strong>, up from $247 billion in FY2024. The usual suspects
+        dominate the list:
+      </Paragraph>
+
+      <DataTable
+        headers={["Program", "Improper Payment Rate", "Amount", "Years Flagged"]}
+        rows={[
+          ["Medicaid", "22.4%", "$93B", "Since 2003"],
+          ["Medicare", "7.9%", "$51B", "Since 1990"],
+          ["Earned Income Tax Credit", "31.6%", "$23B", "Since 2002"],
+          ["Unemployment Insurance", "18.9%", "$15B", "Since 2020"],
+          ["SNAP (Food Stamps)", "11.2%", "$12B", "Since 2018"],
+          ["All Other Programs", "Various", "$87B", "Various"],
+        ]}
+      />
+
+      <Paragraph>
+        Medicaid alone accounts for <strong>$93 billion</strong> in improper payments — a rate of
+        22.4%. That means nearly one in four Medicaid dollars is paid incorrectly. States administer
+        the program with minimal federal oversight, and the shared funding structure means states
+        have little incentive to crack down: for every dollar of waste they prevent, they only
+        &quot;save&quot; 10-50 cents (the rest would have been federal money).
+      </Paragraph>
+
+      <SectionHeading>The Pentagon: Audit Failure #8</SectionHeading>
+
+      <Paragraph>
+        In late 2025, the Department of Defense failed its eighth consecutive comprehensive audit.
+        Auditors were unable to account for <strong>over $4 trillion in assets</strong>. The Pentagon
+        remains the only federal agency that has never received a clean audit opinion.
+      </Paragraph>
+
+      <Paragraph>
+        To be fair, progress has been made: more sub-agencies passed their individual audits in 2025
+        than in any prior year. But the overall picture remains dismal. The world&apos;s largest
+        military organization, with a budget approaching $1 trillion, cannot tell auditors where
+        its money goes. Any private company in this situation would face criminal charges.
+      </Paragraph>
+
+      <CalloutBox emoji="🎖️" title="The Audit Double Standard" color="red">
+        <p>Every publicly traded company in America must pass an annual financial audit or face SEC
+        enforcement, delisting, and potential criminal prosecution. The Pentagon has failed eight
+        consecutive audits and its reward is a bigger budget each year. Federal employees at other
+        agencies have been fired for far less. The accountability gap is staggering.</p>
+      </CalloutBox>
+
+      <SectionHeading>Federal Workforce: Right-Sizing or Gutting?</SectionHeading>
+
+      <Paragraph>
+        The federal civilian workforce has shrunk by an estimated <strong>120,000 positions</strong> since
+        early 2025 through a combination of hiring freezes, early retirement offers, and
+        reorganizations. The administration frames this as right-sizing a bloated bureaucracy.
+        Critics argue essential services are being degraded.
+      </Paragraph>
+
+      <Paragraph>
+        The truth, as usual, is somewhere in between. Some agencies were genuinely overstaffed for
+        their current mission. Others — particularly the IRS, VA, and Social Security Administration —
+        were already understaffed and are now struggling to serve the public. The problem with
+        across-the-board cuts is that they don&apos;t distinguish between a redundant program
+        analyst and a VA claims processor with a 6-month backlog.
+      </Paragraph>
+
+      <DataTable
+        headers={["Agency", "Headcount Change", "Impact Assessment"]}
+        rows={[
+          ["IRS", "-15,000", "Audit rate declining; refund delays"],
+          ["VA", "-8,000", "Claims backlog growing"],
+          ["SSA", "-6,000", "Longer wait times, office closures"],
+          ["EPA", "-5,000", "Enforcement actions down 40%"],
+          ["HHS", "-12,000", "Mixed — some redundancy existed"],
+          ["DOD (civilian)", "-20,000", "Contractor costs may increase"],
+        ]}
+      />
+
+      <SectionHeading>The GAO High-Risk List: 2026 Update</SectionHeading>
+
+      <Paragraph>
+        The Government Accountability Office&apos;s High-Risk List — the definitive catalog of
+        federal programs most vulnerable to waste, fraud, and mismanagement — now includes
+        <strong> 37 areas</strong>. Some highlights (or lowlights):
+      </Paragraph>
+
+      <div className="my-6 space-y-3">
+        <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-400">
+          <p className="font-bold text-gray-900">DOD Weapon Systems — 36 years on the list</p>
+          <p className="text-sm text-gray-700">$2+ trillion in lifetime cost overruns. The F-35 alone has exceeded its original budget by $700+ billion. Programs routinely miss deadlines by 5-10 years.</p>
+        </div>
+        <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-400">
+          <p className="font-bold text-gray-900">Medicare — 36 years on the list</p>
+          <p className="text-sm text-gray-700">$51 billion in annual improper payments. Medicare Advantage overbilling alone costs $15-20 billion per year as insurers systematically upcode patient diagnoses.</p>
+        </div>
+        <div className="bg-amber-50 rounded-lg p-4 border-l-4 border-amber-400">
+          <p className="font-bold text-gray-900">IT Modernization — 11 years on the list</p>
+          <p className="text-sm text-gray-700">The government spends $110+ billion/year on IT. An estimated 80% goes to maintaining legacy systems, some dating to the 1960s. Modernization projects fail at alarming rates.</p>
+        </div>
+        <div className="bg-amber-50 rounded-lg p-4 border-l-4 border-amber-400">
+          <p className="font-bold text-gray-900">Government-wide Personnel Management — 25 years</p>
+          <p className="text-sm text-gray-700">Critical skills gaps across cybersecurity, data science, and acquisitions. The average federal employee age is 47. Recruitment of younger talent is failing.</p>
+        </div>
+      </div>
+
+      <SectionHeading>What Would Real Efficiency Look Like?</SectionHeading>
+
+      <Paragraph>
+        Critics and reformers across the political spectrum generally agree on several
+        common-sense improvements:
+      </Paragraph>
+
+      <div className="my-6 space-y-4">
+        <div className="flex gap-3">
+          <span className="text-green-600 font-bold text-lg">1.</span>
+          <div>
+            <p className="font-bold text-gray-900">Fix Improper Payments</p>
+            <p className="text-sm text-gray-600">Just reducing Medicaid and Medicare improper payment rates by half would save $70+ billion per year. Modern data analytics and identity verification could catch most of it.</p>
+          </div>
+        </div>
+        <div className="flex gap-3">
+          <span className="text-green-600 font-bold text-lg">2.</span>
+          <div>
+            <p className="font-bold text-gray-900">Competitive Contracting</p>
+            <p className="text-sm text-gray-600">Eliminate no-bid contracts except in genuine emergencies. Studies show competitive bidding saves 20-30%. On $779 billion in contracts, that&apos;s $50-75 billion.</p>
+          </div>
+        </div>
+        <div className="flex gap-3">
+          <span className="text-green-600 font-bold text-lg">3.</span>
+          <div>
+            <p className="font-bold text-gray-900">IT Modernization</p>
+            <p className="text-sm text-gray-600">Stop spending 80% of the IT budget on 60-year-old systems. A one-time investment in modernization would generate long-term savings and better security.</p>
+          </div>
+        </div>
+        <div className="flex gap-3">
+          <span className="text-green-600 font-bold text-lg">4.</span>
+          <div>
+            <p className="font-bold text-gray-900">Pentagon Financial Accountability</p>
+            <p className="text-sm text-gray-600">Tie budget increases to audit progress. No clean audit, no budget increase. The private sector manages this; so can the Pentagon.</p>
+          </div>
+        </div>
+        <div className="flex gap-3">
+          <span className="text-green-600 font-bold text-lg">5.</span>
+          <div>
+            <p className="font-bold text-gray-900">Sunset Clauses for New Programs</p>
+            <p className="text-sm text-gray-600">Require every new program to justify its existence after 5-10 years. Government programs almost never end — even when their mission is complete.</p>
+          </div>
+        </div>
+      </div>
+
+      <CalloutBox emoji="💡" title="The Low-Hanging Fruit" color="green">
+        <p>Conservative estimates suggest that addressing improper payments, competitive contracting,
+        and IT modernization alone could save <strong>$150-200 billion per year</strong> without
+        cutting a single program or firing a single person providing direct services. The problem
+        has never been a lack of ideas — it&apos;s a lack of political will.</p>
+      </CalloutBox>
+
+      <SectionHeading>The Accountability Scorecard</SectionHeading>
+
+      <DataTable
+        headers={["Metric", "FY2024", "FY2026", "Trend"]}
+        rows={[
+          ["Improper Payments", "$247B", "$281B", "⬆️ Worse"],
+          ["Pentagon Audit", "Failed (#7)", "Failed (#8)", "⬆️ Worse"],
+          ["GAO High-Risk Areas", "37", "37", "➡️ Same"],
+          ["Federal Workforce", "2.2M", "~2.1M", "⬇️ Smaller"],
+          ["No-Bid Contracts", "$74B", "~$68B", "⬇️ Slightly better"],
+          ["IT Legacy Systems", "80% of budget", "78% of budget", "➡️ Marginal"],
+          ["Recovery of Waste", "~1%", "~1.2%", "➡️ Marginal"],
+        ]}
+      />
+
+      <SectionHeading>The Bottom Line</SectionHeading>
+
+      <Paragraph>
+        Government waste in 2026 is worse by the numbers, despite unprecedented attention
+        to the problem. Improper payments are up, the Pentagon still can&apos;t pass an audit,
+        and the same programs that were flagged for waste 30 years ago are still wasting money today.
+      </Paragraph>
+
+      <Paragraph>
+        DOGE and related efficiency efforts have made marginal progress and deserve credit for
+        forcing the conversation. But real reform requires Congress to change laws, restructure
+        programs, and accept political pain — something neither party has shown the appetite to do.
+        Until then, the waste machine grinds on, consuming $281 billion a year in improper payments
+        alone, while the Pentagon loses track of trillions and nobody gets fired.
+      </Paragraph>
+
+      <Paragraph>
+        The question for taxpayers is simple: is $68,000 per year buying you $68,000 worth of
+        government? Explore the data: see the <Link href="/analysis/federal-spending-trends-2026" className="text-indigo-600 hover:underline">full FY2026 spending breakdown</Link>,
+        dive into <Link href="/analysis/wasteful-spending" className="text-indigo-600 hover:underline">the $247 billion waste machine</Link>,
+        or check how <Link href="/analysis/contractor-spending" className="text-indigo-600 hover:underline">$700+ billion flows to private contractors</Link>.
+      </Paragraph>
+    </>
+  );
+}
+
 /* ────────────────────────────────────────────────────────────────────────────
    ARTICLE RENDERER
    ──────────────────────────────────────────────────────────────────────────── */
@@ -1781,6 +2275,8 @@ const articleComponents: Record<string, () => React.JSX.Element> = {
   "state-federal-funding": StateFederalFunding,
   "contractor-spending": ContractorSpending,
   "spending-per-capita": SpendingPerCapita,
+  "federal-spending-trends-2026": FederalSpendingTrends2026,
+  "government-waste-efficiency-2026": GovernmentWasteEfficiency2026,
 };
 
 export default async function AnalysisArticlePage({ params }: { params: Promise<{ slug: string }> }) {

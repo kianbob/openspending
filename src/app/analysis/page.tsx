@@ -104,6 +104,24 @@ const articles = [
     stat: "28 years of dysfunction",
     color: "border-gray-500",
   },
+  {
+    slug: "federal-spending-trends-2026",
+    title: "Federal Spending Trends 2026",
+    description: "A $7.2 trillion budget, record interest payments, and an entitlement crisis nobody wants to talk about.",
+    category: "Budget Overview",
+    emoji: "📈",
+    stat: "$7.2T in FY2026",
+    color: "border-indigo-500",
+  },
+  {
+    slug: "government-waste-efficiency-2026",
+    title: "Government Waste & Efficiency 2026",
+    description: "DOGE promised trillions in cuts. Improper payments hit $281B. The Pentagon still can't pass an audit. A 2026 report card.",
+    category: "Waste & Accountability",
+    emoji: "🔍",
+    stat: "$281B wasted",
+    color: "border-red-500",
+  },
 ];
 
 export default function AnalysisIndexPage() {
@@ -121,9 +139,9 @@ export default function AnalysisIndexPage() {
             No spin, no partisanship — just the numbers and what they mean.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <span className="inline-flex items-center gap-1 bg-white/10 text-sm px-3 py-1 rounded-full">📊 10 Deep-Dive Articles</span>
-            <span className="inline-flex items-center gap-1 bg-white/10 text-sm px-3 py-1 rounded-full">💰 $10.1T Analyzed</span>
-            <span className="inline-flex items-center gap-1 bg-white/10 text-sm px-3 py-1 rounded-full">📅 Updated March 2025</span>
+            <span className="inline-flex items-center gap-1 bg-white/10 text-sm px-3 py-1 rounded-full">📊 12 Deep-Dive Articles</span>
+            <span className="inline-flex items-center gap-1 bg-white/10 text-sm px-3 py-1 rounded-full">💰 $7.2T Analyzed</span>
+            <span className="inline-flex items-center gap-1 bg-white/10 text-sm px-3 py-1 rounded-full">📅 Updated June 2026</span>
           </div>
         </div>
       </header>
