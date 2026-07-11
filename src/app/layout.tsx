@@ -63,7 +63,8 @@ export default function RootLayout({
       <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYL9GQH0LC" />
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-PYL9GQH0LC');` }} />
-      </head>
+        <meta name="google-adsense-account" content="ca-pub-9872374508496229" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9872374508496229" crossOrigin="anonymous"></script>      </head>
       <body
         className={`${inter.variable} ${playfair.variable} antialiased bg-white text-gray-900`}
       >
