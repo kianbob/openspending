@@ -350,7 +350,7 @@ export default function PentagonDeepDivePage() {
         {/* Related Analysis */}
         <div className="border-t border-gray-200 mt-12 pt-8">
           <h3 className="font-bold text-gray-900 mb-4">Related Analysis</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Link href="/pentagon-spending" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
               <p className="font-bold text-gray-900">Pentagon Spending Overview</p>
               <p className="text-sm text-gray-600 mt-1">The $1.4 trillion defense machine</p>
@@ -366,6 +366,14 @@ export default function PentagonDeepDivePage() {
             <Link href="/no-bid" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
               <p className="font-bold text-gray-900">No-Bid Nation</p>
               <p className="text-sm text-gray-600 mt-1">$74B awarded without competitive bidding</p>
+            </Link>
+            <Link href="/iran-war-costs" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+              <p className="font-bold text-gray-900">Iran War Costs</p>
+              <p className="text-sm text-gray-600 mt-1">$42B military conflict breakdown</p>
+            </Link>
+            <Link href="/federal-budget-2026" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+              <p className="font-bold text-gray-900">Federal Budget 2026</p>
+              <p className="text-sm text-gray-600 mt-1">Where your $6.9 trillion in tax dollars goes</p>
             </Link>
           </div>
         </div>

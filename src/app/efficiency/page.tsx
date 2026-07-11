@@ -29,8 +29,8 @@ const statCards = [
   },
   {
     label: "Improper Payments",
-    value: "$162B",
-    sub: "in FY2024 alone across 68 programs",
+    value: "$175B",
+    sub: "in FY2025 alone across 72 programs",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function EfficiencyPage() {
         </h1>
         <ShareButtons title="Government Efficiency & Accountability — OpenSpending" url="https://www.openspending.us/efficiency" />
       </div>
-      <p className="text-sm text-gray-500 mb-2">Updated: May 2025</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: July 2026</p>
       <p className="text-gray-500 text-lg mb-10">
         The data makes the case that the status quo cannot continue.
       </p>
@@ -167,6 +167,28 @@ export default function EfficiencyPage() {
         </div>
       </section>
 
+      {/* DOGE Progress */}
+      <section className="mb-14">
+        <h2 className="text-xl font-bold text-gray-900 mb-4">
+          DOGE: Early Results
+        </h2>
+        <div className="bg-white rounded-xl border border-gray-200 p-6 mb-4">
+          <p className="text-gray-600 mb-3">
+            The Department of Government Efficiency has produced its first independently verified results:
+            roughly <Link href="/doge-spending-cuts" className="text-indigo-600 hover:text-indigo-800 underline">$36 billion in confirmed savings</Link> through
+            mid-2026, with 120,000 federal positions eliminated and over 340 programs cut or consolidated.
+            It is the most significant efficiency effort since the Grace Commission — and unlike that effort,
+            it has executive authority to implement changes directly.
+          </p>
+          <p className="text-gray-600">
+            The verified savings represent about 0.5% of the total federal budget — meaningful but modest
+            against a $1.9 trillion deficit. The structural drivers of spending growth (Social Security,
+            Medicare, interest on debt) remain untouched by executive action. But DOGE has demonstrated
+            that billions in waste exist and can be eliminated. That alone justifies the effort.
+          </p>
+        </div>
+      </section>
+
       {/* Spending Growth */}
       <section className="mb-14">
         <h2 className="text-xl font-bold text-gray-900 mb-4">
@@ -176,7 +198,8 @@ export default function EfficiencyPage() {
           <p className="text-gray-600 mb-3">
             Federal contract spending has grown 38% since FY2020 — a period that
             includes the COVID emergency surge. But even after the emergency
-            ended, spending did not return to pre-pandemic levels. This is the
+            ended, spending did not return to pre-pandemic levels. The <Link href="/iran-war-costs" className="text-indigo-600 hover:text-indigo-800 underline">Iran
+            conflict added another $42 billion</Link> in supplemental spending in 2025-2026. This is the
             ratchet effect: every crisis becomes the new baseline. Emergency
             spending becomes permanent spending. Temporary programs become
             permanent programs. And the budget only moves in one direction.
@@ -240,6 +263,18 @@ export default function EfficiencyPage() {
           <Link href="/spending-analysis" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
             <p className="font-bold text-gray-900">Full Budget Breakdown</p>
             <p className="text-sm text-gray-600 mt-1">Where $11.2 trillion in federal spending goes</p>
+          </Link>
+          <Link href="/doge-spending-cuts" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+            <p className="font-bold text-gray-900">DOGE Spending Cuts</p>
+            <p className="text-sm text-gray-600 mt-1">$36B in verified savings through mid-2026</p>
+          </Link>
+          <Link href="/federal-budget-2026" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+            <p className="font-bold text-gray-900">Federal Budget 2026</p>
+            <p className="text-sm text-gray-600 mt-1">Where your $6.9 trillion in tax dollars goes</p>
+          </Link>
+          <Link href="/iran-war-costs" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+            <p className="font-bold text-gray-900">Iran War Costs</p>
+            <p className="text-sm text-gray-600 mt-1">$42B military conflict breakdown</p>
           </Link>
         </div>
       </div>

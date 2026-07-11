@@ -16,17 +16,17 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "OpenSpending — Where Your $11.2 Trillion in Tax Dollars Actually Goes",
+  title: "OpenSpending — Where Your $11.5 Trillion in Tax Dollars Actually Goes",
   description:
-    "Search $11.2T in federal spending across 97 agencies and 50+ top government contractors. Track contracts, grants, waste, and follow the money. Updated daily.",
+    "Search $11.5T in federal spending across 97 agencies and 50+ top government contractors. Track contracts, grants, waste, and follow the money. Updated daily.",
   metadataBase: new URL("https://www.openspending.us"),
   alternates: {
     canonical: "./",
   },
   openGraph: {
-    title: "OpenSpending — Where Your $11.2 Trillion in Tax Dollars Actually Goes",
+    title: "OpenSpending — Where Your $11.5 Trillion in Tax Dollars Actually Goes",
     description:
-      "Search $11.2T in federal spending across 97 agencies and 50+ top government contractors. Track contracts, grants, waste, and follow the money. Updated daily.",
+      "Search $11.5T in federal spending across 97 agencies and 50+ top government contractors. Track contracts, grants, waste, and follow the money. Updated daily.",
     url: "https://www.openspending.us",
     siteName: "OpenSpending",
     type: "website",
@@ -36,15 +36,15 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "OpenSpending — Track $11.2 Trillion in Federal Spending",
+        alt: "OpenSpending — Track $11.5 Trillion in Federal Spending",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "OpenSpending — Where Your $11.2 Trillion in Tax Dollars Actually Goes",
+    title: "OpenSpending — Where Your $11.5 Trillion in Tax Dollars Actually Goes",
     description:
-      "Search $11.2T in federal spending across 97 agencies and 50+ top government contractors. Track contracts, grants, waste, and follow the money. Updated daily.",
+      "Search $11.5T in federal spending across 97 agencies and 50+ top government contractors. Track contracts, grants, waste, and follow the money. Updated daily.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function RootLayout({
               "@type": "WebSite",
               name: "OpenSpending",
               url: "https://www.openspending.us",
-              description: "Track $11.2 trillion in federal spending across 97 agencies, 50 states, and thousands of contractors. Independent data journalism built on USASpending.gov data.",
+              description: "Track $11.5 trillion in federal spending across 97 agencies, 50 states, and thousands of contractors. Independent data journalism built on USASpending.gov data.",
               publisher: { "@type": "Organization", name: "TheDataProject.ai", url: "https://thedataproject.ai" },
               potentialAction: { "@type": "SearchAction", target: { "@type": "EntryPoint", urlTemplate: "https://www.openspending.us/search?q={search_term_string}" }, "query-input": "required name=search_term_string" },
             }),
@@ -135,6 +135,8 @@ export default function RootLayout({
                   <Link href="/state-dependency" className="text-sm text-gray-400 hover:text-white transition-colors">State Dependency</Link>
                   <Link href="/covid" className="text-sm text-gray-400 hover:text-white transition-colors">COVID Spending</Link>
                   <Link href="/monthly-pulse" className="text-sm text-gray-400 hover:text-white transition-colors">Monthly Pulse</Link>
+                  <Link href="/doge-spending-cuts" className="text-sm text-gray-400 hover:text-white transition-colors">DOGE Spending Cuts</Link>
+                  <Link href="/federal-budget-2026" className="text-sm text-gray-400 hover:text-white transition-colors">Federal Budget 2026</Link>
                 </div>
               </div>
               <div>
@@ -151,6 +153,7 @@ export default function RootLayout({
                   <Link href="/welfare-queens" className="text-sm text-gray-400 hover:text-white transition-colors">Welfare Queens</Link>
                   <Link href="/no-bid" className="text-sm text-gray-400 hover:text-white transition-colors">No-Bid Nation</Link>
                   <Link href="/waste" className="text-sm text-gray-400 hover:text-white transition-colors">Waste &amp; Fraud</Link>
+                  <Link href="/iran-war-costs" className="text-sm text-gray-400 hover:text-white transition-colors">Iran War Costs</Link>
                 </div>
               </div>
               <div>
@@ -211,7 +214,7 @@ export default function RootLayout({
                 TheDataProject.ai
               </a>
               <br />
-              <span className="text-gray-600">Data current through FY2025</span>
+              <span className="text-gray-600">Data current through FY2026</span>
             </div>
           </div>
         </footer>

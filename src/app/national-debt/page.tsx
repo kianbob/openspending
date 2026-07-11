@@ -519,6 +519,15 @@ export default function NationalDebtPage() {
               $33,135 per taxpayer — where every dollar goes
             </p>
           </Link>
+          <Link
+            href="/federal-budget-2026"
+            className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors"
+          >
+            <p className="font-bold text-gray-900">Federal Budget 2026</p>
+            <p className="text-sm text-gray-600 mt-1">
+              $6.9T in spending, $1.9T deficit — the full picture
+            </p>
+          </Link>
         </div>
       </div>
     </div>
