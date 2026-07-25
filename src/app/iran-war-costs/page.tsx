@@ -4,7 +4,7 @@ import { ShareButtons } from "@/components/ShareButtons";
 
 export const metadata = {
   title: "Iran War Costs: $42 Billion and Counting — OpenSpending",
-  description: "Total U.S. military spending on the Iran conflict reached $42 billion before the June 2026 peace deal. Breakdown by naval operations, air strikes, troop deployments, and intelligence.",
+  description: "Total U.S. military spending on the Iran conflict reached $42 billion before the June 2026 peace deal. Plus the $87.6B supplemental request to replenish the Pentagon. Full breakdown by category.",
   openGraph: {
     title: "Iran War Costs: $42 Billion and Counting — OpenSpending",
     description: "Total U.S. military spending on the Iran conflict: $42B+ across naval ops, air strikes, troop deployments, and intelligence operations.",
@@ -83,7 +83,7 @@ const faqSchema = {
       name: "How did the Iran conflict affect the federal deficit?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The $42 billion in Iran conflict spending was largely funded through supplemental appropriations, adding directly to the federal deficit. In the context of the $886 billion FY2026 defense budget, it represents about a 5% increase in military spending — significant but not the primary driver of the projected $1.9 trillion deficit.",
+        text: "The $42 billion in Iran conflict spending was largely funded through supplemental appropriations, adding directly to the federal deficit. In June 2026, the White House requested an additional $87.6 billion supplemental — $67.1 billion for the DoD — to replenish munitions and rebuild readiness.",
       },
     },
     {
@@ -236,18 +236,20 @@ export default function IranWarCostsPage() {
           <p className="text-gray-600 mb-3">
             The <Link href="/pentagon-deep-dive" className="text-indigo-600 hover:text-indigo-800 underline">FY2026 defense budget</Link> was
             already $886 billion before supplemental war funding. Iran conflict costs pushed actual military spending
-            over $920 billion — making it the most expensive year for defense in American history, even adjusted for
-            inflation.
+            over $950 billion — making it the most expensive year for defense in American history.
           </p>
           <p className="text-gray-600 mb-3">
-            Supplemental war funding sits outside the normal budget process, which means it doesn&apos;t compete with
-            other spending priorities. Congress approved it through emergency appropriations — a mechanism that bypasses
-            the usual budget caps. This is how wars get funded without forcing trade-offs: by adding to the deficit.
+            On June 24, 2026, the White House submitted an{" "}
+            <Link href="/iran-supplemental" className="text-indigo-600 hover:text-indigo-800 underline">$87.6 billion supplemental
+            request</Link> to Congress. Of that, $67.1 billion is earmarked for the DoD — covering munitions
+            procurement ($21B), operational readiness, classified programs, fuel costs ($1.5B), and National Guard
+            support. OMB Director Russell Vought estimated that about $30 billion covers direct Iran war costs;
+            the rest funds broader Pentagon priorities for future conflicts.
           </p>
           <p className="text-gray-600">
-            With the peace deal in place, costs are winding down. But residual expenses — force repositioning,
-            equipment maintenance, munitions restocking — will continue into FY2027. The Pentagon estimates
-            $5-8 billion in wind-down costs over the next 18 months.
+            Supplemental war funding sits outside the normal budget process, bypassing the usual budget caps.
+            With the peace deal in place, direct war costs are winding down. But restocking depleted munitions
+            and rebuilding readiness will cost billions more through FY2027.
           </p>
         </div>
       </section>
@@ -284,9 +286,9 @@ export default function IranWarCostsPage() {
             <p className="font-bold text-gray-900">National Debt</p>
             <p className="text-sm text-gray-600 mt-1">$36 trillion and growing</p>
           </Link>
-          <Link href="/federal-budget-2026" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
-            <p className="font-bold text-gray-900">Federal Budget 2026</p>
-            <p className="text-sm text-gray-600 mt-1">Where your $6.9 trillion in tax dollars goes</p>
+          <Link href="/iran-supplemental" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+            <p className="font-bold text-gray-900">$87.6B Supplemental Request</p>
+            <p className="text-sm text-gray-600 mt-1">War costs, farm aid, Ebola — full breakdown</p>
           </Link>
         </div>
       </div>

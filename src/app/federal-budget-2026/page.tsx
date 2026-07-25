@@ -3,29 +3,29 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ShareButtons } from "@/components/ShareButtons";
 
 export const metadata = {
-  title: "Federal Budget 2026: Where Your Tax Dollars Go — OpenSpending",
-  description: "The FY2026 federal budget is $6.9 trillion with a projected deficit of $1.9 trillion. Breakdown by category: Social Security, Medicare, Defense, Interest, and more.",
+  title: "Federal Budget 2026: Where $7.7 Trillion in Tax Dollars Actually Goes — OpenSpending",
+  description: "The FY2026 federal budget totals $7.7 trillion in projected spending with a $1.8 trillion deficit. Includes the $87.6B Iran war supplemental request. Full breakdown by category.",
   openGraph: {
-    title: "Federal Budget 2026: Where Your Tax Dollars Go — OpenSpending",
-    description: "The FY2026 federal budget: $6.9T in spending, $1.9T deficit. Where every dollar goes, category by category.",
+    title: "Federal Budget 2026: Where $7.7 Trillion in Tax Dollars Actually Goes — OpenSpending",
+    description: "FY2026 federal spending hits $7.7T with $1.8T deficit. Includes $87.6B Iran supplemental. Category-by-category breakdown.",
   },
 };
 
 const statCards = [
   {
     label: "Total Federal Spending",
-    value: "$6.9T",
-    sub: "FY2026 projected outlays",
+    value: "$7.7T",
+    sub: "FY2026 projected outlays (incl. supplementals)",
   },
   {
     label: "Federal Revenue",
-    value: "$5.0T",
+    value: "$5.9T",
     sub: "taxes, fees, and other income",
   },
   {
     label: "Deficit",
-    value: "$1.9T",
-    sub: "borrowed to cover the gap",
+    value: "$1.8T",
+    sub: "~$5,268 per American, borrowed to cover the gap",
   },
   {
     label: "Interest on Debt",
@@ -38,7 +38,7 @@ const budgetCategories = [
   { category: "Social Security", fy2026: "$1.50T", fy2025: "$1.42T", change: "+5.6%", pct: "21.7%", notes: "Mandatory; driven by COLA adjustments and retiring baby boomers" },
   { category: "Medicare", fy2026: "$1.00T", fy2025: "$0.94T", change: "+6.4%", pct: "14.5%", notes: "Mandatory; healthcare cost inflation and enrollment growth" },
   { category: "Interest on Debt", fy2026: "$0.90T", fy2025: "$0.82T", change: "+9.8%", pct: "13.0%", notes: "Fastest-growing category; driven by higher rates and growing principal" },
-  { category: "Defense", fy2026: "$0.886T", fy2025: "$0.858T", change: "+3.3%", pct: "12.8%", notes: "Excludes supplemental Iran conflict funding (~$42B additional)" },
+  { category: "Defense", fy2026: "$0.886T", fy2025: "$0.858T", change: "+3.3%", pct: "12.8%", notes: "Base budget only; $87.6B supplemental requested (incl. $67.1B for DoD, ~$30B Iran war costs)" },
   { category: "Health/Medicaid", fy2026: "$0.70T", fy2025: "$0.67T", change: "+4.5%", pct: "10.1%", notes: "Federal share of Medicaid, CHIP, ACA subsidies" },
   { category: "Income Security", fy2026: "$0.60T", fy2025: "$0.58T", change: "+3.4%", pct: "8.7%", notes: "SNAP, housing assistance, EITC, unemployment, disability" },
   { category: "Veterans Benefits", fy2026: "$0.35T", fy2025: "$0.33T", change: "+6.1%", pct: "5.1%", notes: "VA healthcare, disability compensation, PACT Act costs rising" },
@@ -55,7 +55,7 @@ const faqSchema = {
       name: "How much does the federal government spend in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The federal government is projected to spend approximately $6.9 trillion in FY2026, up from $6.75 trillion in FY2025. Revenue is approximately $5.0 trillion, leaving a deficit of about $1.9 trillion.",
+        text: "The federal government is projected to spend approximately $7.7 trillion in FY2026, while collecting $5.9 trillion in revenues — a projected deficit of $1.8 trillion, or roughly $5,268 per American.",
       },
     },
     {
@@ -79,7 +79,7 @@ const faqSchema = {
       name: "What is the federal deficit in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The projected federal deficit for FY2026 is approximately $1.9 trillion — the government spends $6.9 trillion but only collects $5.0 trillion in revenue. This deficit adds directly to the national debt, which has crossed $36 trillion.",
+        text: "The projected federal deficit for FY2026 is approximately $1.8 trillion — the government is projected to spend $7.7 trillion but collect $5.9 trillion in revenue. This deficit adds directly to the national debt, which has crossed $36 trillion.",
       },
     },
     {
@@ -95,7 +95,7 @@ const faqSchema = {
       name: "How much does the military cost in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The base defense budget is $886 billion. When including supplemental funding for the Iran conflict (~$42 billion), actual military spending exceeds $920 billion — the highest in American history. Defense represents about 12.8% of total federal spending.",
+        text: "The base defense budget is $886 billion. The White House requested $87.6 billion in supplemental spending in June 2026, including $67.1 billion for the DoD. About $30 billion covers direct Iran war costs. Total military spending exceeds $950 billion — the highest in American history.",
       },
     },
   ],
@@ -120,7 +120,7 @@ export default function FederalBudget2026Page() {
       </div>
       <p className="text-sm text-gray-500 mb-2">Updated: July 2026</p>
       <p className="text-gray-500 text-lg mb-10">
-        $6.9 trillion in spending. $5.0 trillion in revenue. $1.9 trillion in new debt. Here&apos;s where it all goes.
+        $7.7 trillion in projected spending. $5.9 trillion in revenue. $1.8 trillion in new debt — roughly $5,268 per American. Plus an $87.6 billion supplemental request. Here&apos;s where it all goes.
       </p>
 
       {/* Stat Cards */}
@@ -137,8 +137,10 @@ export default function FederalBudget2026Page() {
       {/* Lead Editorial Callout */}
       <div className="bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-xl mb-14">
         <p className="text-amber-900">
-          The federal government will borrow $1.9 trillion this year — roughly $5.2 billion every single day.
+          The federal government will borrow $1.8 trillion this year — roughly $4.9 billion every single day.
           Interest on past borrowing now costs $900 billion annually, nearly matching the entire defense budget.
+          And in June, the White House asked Congress for another $87.6 billion in supplemental spending — mostly
+          to replenish the Pentagon after the Iran war, but also for farm aid, Ebola response, and infrastructure.
           We are approaching the point where the cost of past spending exceeds the cost of current defense.
           That is not a political talking point. It is a mathematical certainty.
         </p>
@@ -200,7 +202,7 @@ export default function FederalBudget2026Page() {
           <p className="text-amber-900">
             <span className="font-bold">$900 billion</span> in interest payments — $2.5 billion every single day,
             buying absolutely nothing. This is the price of decades of deficit spending, and it will only get worse
-            as long as the government borrows $1.9 trillion per year.
+            as long as the government borrows $1.8 trillion per year.
           </p>
         </div>
       </section>
@@ -236,13 +238,16 @@ export default function FederalBudget2026Page() {
           <p className="text-gray-600 mb-3">
             The base defense budget of $886 billion represents a 3.3% increase over FY2025. But that number
             understates actual military spending. The <Link href="/iran-war-costs" className="text-indigo-600 hover:text-indigo-800 underline">Iran
-            conflict</Link> added roughly $42 billion through supplemental appropriations, pushing total military
-            spending above $920 billion — the highest in American history.
+            conflict</Link> cost roughly $30 billion in direct war expenses. And in June 2026, the White House
+            submitted an{" "}<Link href="/iran-supplemental" className="text-indigo-600 hover:text-indigo-800 underline">$87.6 billion
+            supplemental request</Link> — $67.1 billion for the DoD alone — to replenish munitions, fund classified
+            programs, and rebuild military readiness. Total military spending now exceeds $950 billion.
           </p>
           <p className="text-gray-600">
-            With the June 2026 peace deal, supplemental war funding will decline. But the base budget continues
-            to grow, driven by personnel costs, equipment modernization, and the strategic competition with China
-            that both parties agree requires sustained investment. The{" "}
+            About one-third of the supplemental covers direct Iran war costs. The rest funds broader Pentagon priorities:
+            munitions procurement, cybersecurity and autonomy programs, and readiness for future conflicts. With the
+            June 2026 peace deal, direct war costs should decline — but the supplemental reveals how much the conflict
+            depleted U.S. military stocks. The{" "}
             <Link href="/pentagon-deep-dive" className="text-indigo-600 hover:text-indigo-800 underline">Pentagon deep dive</Link> examines
             where those dollars go in detail.
           </p>
@@ -254,8 +259,8 @@ export default function FederalBudget2026Page() {
         <h2 className="text-xl font-bold text-gray-900 mb-4">The Revenue Side</h2>
         <div className="bg-white rounded-xl border border-gray-200 p-6 mb-4">
           <p className="text-gray-600 mb-3">
-            Federal revenue is projected at $5.0 trillion in FY2026 — a record in dollar terms but insufficient
-            to cover $6.9 trillion in spending. The largest revenue sources: individual income taxes (~$2.6T),
+            Federal revenue is projected at $5.9 trillion in FY2026 — a record in dollar terms but insufficient
+            to cover $7.7 trillion in spending. The largest revenue sources: individual income taxes (~$2.6T),
             payroll taxes (~$1.7T), corporate taxes (~$0.45T), and excise/customs/other (~$0.25T).
           </p>
           <p className="text-gray-600">
@@ -283,7 +288,7 @@ export default function FederalBudget2026Page() {
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <p className="text-gray-600 mb-3">
             The <Link href="/national-debt" className="text-indigo-600 hover:text-indigo-800 underline">national debt</Link> is growing
-            by $1.9 trillion per year. Interest is consuming $900 billion. Mandatory spending is on autopilot.
+            by $1.8 trillion per year. Interest is consuming $900 billion. Mandatory spending is on autopilot.
             And the deficit is projected to grow, not shrink, over the next decade.
           </p>
           <p className="text-gray-600 mb-3">
@@ -313,7 +318,11 @@ export default function FederalBudget2026Page() {
           </Link>
           <Link href="/iran-war-costs" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
             <p className="font-bold text-gray-900">Iran War Costs</p>
-            <p className="text-sm text-gray-600 mt-1">$42B military conflict breakdown</p>
+            <p className="text-sm text-gray-600 mt-1">$30B+ direct military conflict breakdown</p>
+          </Link>
+          <Link href="/iran-supplemental" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+            <p className="font-bold text-gray-900">$87.6B Supplemental Request</p>
+            <p className="text-sm text-gray-600 mt-1">War costs, farm aid, Ebola — where the money goes</p>
           </Link>
         </div>
       </div>
