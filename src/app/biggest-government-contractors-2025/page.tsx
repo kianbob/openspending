@@ -230,6 +230,10 @@ export default function BiggestContractorsPage() {
             <p className="font-bold text-gray-900">No-Bid Nation</p>
             <p className="text-sm text-gray-600 mt-1">$74B in contracts awarded without competition</p>
           </Link>
+          <a href="https://permitcore.io" target="_blank" rel="noopener noreferrer" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
+            <p className="font-bold text-gray-900">PermitCore</p>
+            <p className="text-sm text-gray-600 mt-1">Explore construction permit data and building contractor intelligence</p>
+          </a>
         </div>
       </div>
 

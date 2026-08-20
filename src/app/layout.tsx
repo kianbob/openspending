@@ -191,6 +191,7 @@ export default function RootLayout({
                 <a href="https://www.aiexposure.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">AI Exposure</a>
                 <a href="https://www.theailobby.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">The AI Lobby</a>
                 <a href="https://www.autopilotwatch.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">AutoPilotWatch</a>                <a href="https://www.shelterscope.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">ShelterScope</a>
+                <a href="https://permitcore.io" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">PermitCore</a>
                 <a href="https://thedataproject.ai" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">TheDataProject.ai</a>
               </div>
             </div>
