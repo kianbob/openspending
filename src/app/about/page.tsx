@@ -315,6 +315,15 @@ export default function AboutPage() {
             <span className="font-semibold text-indigo-600">PermitCore</span>
             <span className="text-gray-700"> — Construction permit intelligence and building permit data</span>
           </a>
+          <a
+            href="https://americanfactbook.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors"
+          >
+            <span className="font-semibold text-indigo-600">American Factbook</span>
+            <span className="text-gray-700"> — Data-driven American facts and statistics</span>
+          </a>
         </div>
       </section>
 

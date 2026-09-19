@@ -192,6 +192,7 @@ export default function RootLayout({
                 <a href="https://www.autopilotwatch.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">AutoPilotWatch</a>                <a href="https://www.shelterscope.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">ShelterScope</a>
                 <a href="https://permitcore.io" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">PermitCore</a>
                 <a href="https://thedataproject.ai" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">TheDataProject.ai</a>
+                <a href="https://americanfactbook.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">American Factbook</a>
               </div>
             </div>
             <div className="mt-10 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
