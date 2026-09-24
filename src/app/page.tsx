@@ -109,6 +109,7 @@ export default function HomePage() {
               <p className="text-lg text-indigo-100 mb-6">
                 Independent, data-driven analysis of how the federal government
                 spends your money. Every contract. Every grant. Every agency.
+                For detailed agency-by-agency breakdowns, see the <a href="https://americanfactbook.org/spending" className="text-indigo-200 underline hover:text-white">American Factbook spending tracker</a>.
               </p>
               <div className="flex flex-wrap gap-3 mb-4">
                 <Link
