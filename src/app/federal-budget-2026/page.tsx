@@ -37,7 +37,7 @@ const statCards = [
 const budgetCategories = [
   { category: "Social Security", fy2026: "$1.50T", fy2025: "$1.42T", change: "+5.6%", pct: "21.7%", notes: "Mandatory; driven by COLA adjustments and retiring baby boomers" },
   { category: "Medicare", fy2026: "$1.00T", fy2025: "$0.94T", change: "+6.4%", pct: "14.5%", notes: "Mandatory; healthcare cost inflation and enrollment growth" },
-  { category: "Interest on Debt", fy2026: "$0.90T", fy2025: "$0.82T", change: "+9.8%", pct: "13.0%", notes: "Fastest-growing category; driven by higher rates and growing principal" },
+  { category: "Interest on Debt", fy2026: "$1.05T", fy2025: "$0.88T", change: "+19.3%", pct: "13.5%", notes: "Exceeded $1T for first time; fastest-growing category driven by higher rates and $40T+ debt" },
   { category: "Defense", fy2026: "$0.886T", fy2025: "$0.858T", change: "+3.3%", pct: "12.8%", notes: "Base budget only; $87.6B supplemental requested (incl. $67.1B for DoD, ~$30B Iran war costs)" },
   { category: "Health/Medicaid", fy2026: "$0.70T", fy2025: "$0.67T", change: "+4.5%", pct: "10.1%", notes: "Federal share of Medicaid, CHIP, ACA subsidies" },
   { category: "Income Security", fy2026: "$0.60T", fy2025: "$0.58T", change: "+3.4%", pct: "8.7%", notes: "SNAP, housing assistance, EITC, unemployment, disability" },
@@ -79,7 +79,7 @@ const faqSchema = {
       name: "What is the federal deficit in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The projected federal deficit for FY2026 is approximately $1.8 trillion — the government is projected to spend $7.8 trillion but collect $5.9 trillion in revenue. This deficit adds directly to the national debt, which has crossed $36 trillion.",
+        text: "The federal deficit for FY2026 is tracking to approximately $2.1 trillion — the government is spending roughly $7.3 trillion but collecting $5.2 trillion in revenue. This deficit adds directly to the national debt, which has crossed $40 trillion.",
       },
     },
     {
@@ -118,7 +118,7 @@ export default function FederalBudget2026Page() {
         </h1>
         <ShareButtons title="Federal Budget 2026 — OpenSpending" url="https://www.openspending.us/federal-budget-2026" />
       </div>
-      <p className="text-sm text-gray-500 mb-2">Updated: July 2026</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: September 2026</p>
       <p className="text-gray-500 text-lg mb-10">
         $7.8 trillion in projected spending. $5.9 trillion in revenue. $1.8 trillion in new debt — roughly $5,268 per American. Plus an $87.6 billion supplemental request. Here&apos;s where it all goes.
       </p>

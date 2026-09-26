@@ -59,6 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/healthcare-spending",
     "/top-10",
     "/doge-reality",
+    "/doge-aftermath",
     "/your-tax-bill",
     "/spending-explosion",
     "/global-comparison",

@@ -37,6 +37,7 @@ const dropdowns: DropdownSection[] = [
       { href: '/trends', title: 'Spending Trends', desc: 'Year-over-year analysis' },
       { href: '/budget-functions', title: 'Budget Functions', desc: '18 major spending categories' },
       { href: '/doge-reality', title: 'DOGE Reality Check', desc: 'Claims vs actual spending data' },
+      { href: '/doge-aftermath', title: 'DOGE Aftermath', desc: 'What happened after the cuts' },
       { href: '/spending-explosion', title: 'Spending Explosion', desc: 'Which agencies grew fastest' },
       { href: '/your-tax-bill', title: 'Your Tax Bill', desc: '$33,135 per taxpayer breakdown' },
       { href: '/global-comparison', title: 'US vs The World', desc: 'How American spending compares globally' },

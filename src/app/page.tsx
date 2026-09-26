@@ -70,8 +70,9 @@ const interactiveTools = [
 
 const deepDiveCards = [
   { emoji: "\u{1F50D}", title: "DOGE Reality Check", href: "/doge-reality", description: "$215B claimed, $36B verified — the post-mortem" },
+  { emoji: "\u{1F4C9}", title: "DOGE Aftermath", href: "/doge-aftermath", description: "271K workers cut, $6.7B to pay them to leave, deficit still grew" },
   { emoji: "\u{1F5FA}\uFE0F", title: "State Dependency", href: "/state-dependency", description: "Which states take more than they give?" },
-  { emoji: "\u{1F4A3}", title: "Interest Time Bomb", href: "/interest", description: "$952B in interest \u2014 now larger than defense" },
+  { emoji: "\u{1F4A3}", title: "Interest Time Bomb", href: "/interest", description: "$1T+ in interest \u2014 now the #2 budget item" },
   { emoji: "\u{1F3E2}", title: "Contractor Monopoly", href: "/contractor-monopoly", description: "10 companies hold 64% of all contracts" },
   { emoji: "✈️", title: "Pentagon Deep Dive", href: "/pentagon-deep-dive", description: "The Pentagon's blank check — never audited" },
   { emoji: "🌍", title: "Foreign Aid Deep Dive", href: "/foreign-aid-deep-dive", description: "Where does foreign aid actually go?" },

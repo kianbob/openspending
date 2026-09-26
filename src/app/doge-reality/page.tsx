@@ -574,12 +574,12 @@ export default function DogeRealityPage() {
             </p>
           </Link>
           <Link
-            href="/efficiency"
+            href="/doge-aftermath"
             className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors"
           >
-            <p className="font-bold text-gray-900">Government Efficiency</p>
+            <p className="font-bold text-gray-900">DOGE Aftermath</p>
             <p className="text-sm text-gray-600 mt-1">
-              What works, what doesn&apos;t, and what DOGE gets wrong
+              271K workers cut, $6.7B to pay them to leave
             </p>
           </Link>
           <Link
