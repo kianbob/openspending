@@ -3,7 +3,7 @@
     "original_target": 2000000000000,
     "revised_target": 1000000000000,
     "final_target": 150000000000,
-    "claimed_savings": 55000000000
+    "claimed_savings": 215000000000
   },
   "reality": {
     "fy2024_spending": 4942295489065.919,
@@ -16,7 +16,7 @@
   },
   "context": {
     "total_budget_fy2025": 6750000000000,
-    "claimed_savings_pct_of_budget": 0.81,
+    "claimed_savings_pct_of_budget": 3.19,
     "mandatory_spending_pct": 63,
     "interest_pct": 13,
     "discretionary_pct": 24

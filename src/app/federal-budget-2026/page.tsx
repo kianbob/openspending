@@ -3,18 +3,18 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ShareButtons } from "@/components/ShareButtons";
 
 export const metadata = {
-  title: "Federal Budget 2026: Where $7.7 Trillion in Tax Dollars Actually Goes — OpenSpending",
-  description: "The FY2026 federal budget totals $7.7 trillion in projected spending with a $1.8 trillion deficit. Includes the $87.6B Iran war supplemental request. Full breakdown by category.",
+  title: "Federal Budget 2026: Where $7.8 Trillion in Tax Dollars Actually Goes — OpenSpending",
+  description: "The FY2026 federal budget totals $7.8 trillion in projected spending with a $1.8 trillion deficit. Includes the $87.6B Iran war supplemental request. Full breakdown by category.",
   openGraph: {
-    title: "Federal Budget 2026: Where $7.7 Trillion in Tax Dollars Actually Goes — OpenSpending",
-    description: "FY2026 federal spending hits $7.7T with $1.8T deficit. Includes $87.6B Iran supplemental. Category-by-category breakdown.",
+    title: "Federal Budget 2026: Where $7.8 Trillion in Tax Dollars Actually Goes — OpenSpending",
+    description: "FY2026 federal spending hits $7.8T with $1.8T deficit. Includes $87.6B Iran supplemental. Category-by-category breakdown.",
   },
 };
 
 const statCards = [
   {
     label: "Total Federal Spending",
-    value: "$7.7T",
+    value: "$7.8T",
     sub: "FY2026 projected outlays (incl. supplementals)",
   },
   {
@@ -55,7 +55,7 @@ const faqSchema = {
       name: "How much does the federal government spend in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The federal government is projected to spend approximately $7.7 trillion in FY2026, while collecting $5.9 trillion in revenues — a projected deficit of $1.8 trillion, or roughly $5,268 per American.",
+        text: "The federal government is projected to spend approximately $7.8 trillion in FY2026, while collecting $5.9 trillion in revenues — a projected deficit of $1.8 trillion, or roughly $5,268 per American.",
       },
     },
     {
@@ -79,7 +79,7 @@ const faqSchema = {
       name: "What is the federal deficit in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The projected federal deficit for FY2026 is approximately $1.8 trillion — the government is projected to spend $7.7 trillion but collect $5.9 trillion in revenue. This deficit adds directly to the national debt, which has crossed $36 trillion.",
+        text: "The projected federal deficit for FY2026 is approximately $1.8 trillion — the government is projected to spend $7.8 trillion but collect $5.9 trillion in revenue. This deficit adds directly to the national debt, which has crossed $36 trillion.",
       },
     },
     {
@@ -120,7 +120,7 @@ export default function FederalBudget2026Page() {
       </div>
       <p className="text-sm text-gray-500 mb-2">Updated: July 2026</p>
       <p className="text-gray-500 text-lg mb-10">
-        $7.7 trillion in projected spending. $5.9 trillion in revenue. $1.8 trillion in new debt — roughly $5,268 per American. Plus an $87.6 billion supplemental request. Here&apos;s where it all goes.
+        $7.8 trillion in projected spending. $5.9 trillion in revenue. $1.8 trillion in new debt — roughly $5,268 per American. Plus an $87.6 billion supplemental request. Here&apos;s where it all goes.
       </p>
 
       {/* Stat Cards */}
@@ -260,7 +260,7 @@ export default function FederalBudget2026Page() {
         <div className="bg-white rounded-xl border border-gray-200 p-6 mb-4">
           <p className="text-gray-600 mb-3">
             Federal revenue is projected at $5.9 trillion in FY2026 — a record in dollar terms but insufficient
-            to cover $7.7 trillion in spending. The largest revenue sources: individual income taxes (~$2.6T),
+            to cover $7.8 trillion in spending. The largest revenue sources: individual income taxes (~$2.6T),
             payroll taxes (~$1.7T), corporate taxes (~$0.45T), and excise/customs/other (~$0.25T).
           </p>
           <p className="text-gray-600">

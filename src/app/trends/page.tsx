@@ -79,7 +79,7 @@ export default function TrendsPage() {
             </h1>
             <ShareButtons title="Federal Spending Trends FY2017-FY2025 — OpenSpending" url="https://www.openspending.us/trends" />
           </div>
-          <p className="text-sm text-indigo-300 mb-2">Updated: May 2025</p>
+          <p className="text-sm text-indigo-300 mb-2">Updated: September 2026</p>
           <p className="text-lg text-indigo-100 max-w-2xl">
             Nine years of contract and budget data reveal a government that keeps
             growing — with COVID as the accelerant and no sign of slowing down.

@@ -3,19 +3,24 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ShareButtons } from "@/components/ShareButtons";
 
 export const metadata = {
-  title: "DOGE Spending Cuts: What's Actually Been Cut in 2025-2026 — OpenSpending",
-  description: "Tracking verified savings from the Department of Government Efficiency (DOGE): ~$160B claimed, ~$36B independently verified. Federal workforce reductions, program eliminations, and agency-by-agency breakdown.",
+  title: "DOGE Spending Cuts: Final Scorecard After July 2026 Sunset — OpenSpending",
+  description: "The Department of Government Efficiency sunset July 4, 2026 claiming $215B in savings. GAO found $110B unsubstantiated. $36B independently verified. Full breakdown.",
   openGraph: {
-    title: "DOGE Spending Cuts: What's Actually Been Cut in 2025-2026 — OpenSpending",
-    description: "Tracking verified savings from DOGE: ~$160B claimed, ~$36B independently verified through mid-2026.",
+    title: "DOGE Spending Cuts: Final Scorecard After July 2026 Sunset — OpenSpending",
+    description: "DOGE claimed $215B in savings before sunset. GAO found $110B unsubstantiated. $36B independently verified. The full post-mortem.",
   },
 };
 
 const statCards = [
   {
-    label: "Claimed Savings",
-    value: "$160B",
-    sub: "total DOGE-claimed savings through mid-2026",
+    label: "DOGE Claimed",
+    value: "$215B",
+    sub: "total savings claimed at July 4 sunset",
+  },
+  {
+    label: "GAO Unsubstantiated",
+    value: "$110B",
+    sub: "incorrect or lacking evidence per GAO audit",
   },
   {
     label: "Verified Savings",
@@ -23,14 +28,9 @@ const statCards = [
     sub: "independently confirmed by GAO & CBO",
   },
   {
-    label: "Positions Eliminated",
-    value: "120,000",
-    sub: "through attrition, buyouts, and RIFs",
-  },
-  {
-    label: "Programs Cut",
-    value: "340+",
-    sub: "programs eliminated, consolidated, or restructured",
+    label: "Workers Rehired",
+    value: "25,000+",
+    sub: "reinstated after agencies deemed them essential",
   },
 ];
 
@@ -53,7 +53,7 @@ const faqSchema = {
       name: "How much has DOGE actually saved taxpayers?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Through mid-2026, DOGE claims approximately $160 billion in savings. Independent verification by the GAO and CBO confirms roughly $36 billion in concrete, measurable savings. The gap reflects differences in accounting methodology — DOGE counts projected future savings and cost avoidance, while auditors count only realized reductions.",
+        text: "DOGE claimed $215 billion in savings before sunsetting on July 4, 2026. The GAO found $110 billion of those claims were incorrect or unsubstantiated. Independent verification confirms roughly $36 billion in concrete, realized savings. Politico's analysis of $32.7 billion in contract savings verified only $1.4 billion.",
       },
     },
     {
@@ -61,7 +61,7 @@ const faqSchema = {
       name: "How many federal employees have been affected by DOGE cuts?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Approximately 120,000 federal positions have been eliminated through a combination of attrition (not replacing departing employees), voluntary buyouts, and reduction-in-force (RIF) actions. The federal civilian workforce has shrunk from roughly 2.2 million to about 2.08 million.",
+        text: "Approximately 120,000 positions were initially targeted, but courts ordered reinstatements at 18 agencies covering over 24,000 workers. By mid-2026, approximately 25,000 fired workers had been rehired after agencies deemed them essential. The net reduction is significantly smaller than initially claimed, and the churn was costly.",
       },
     },
     {
@@ -112,13 +112,14 @@ export default function DogeSpendingCutsPage() {
       {/* Hero */}
       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-2">
         <h1 className="font-serif text-3xl md:text-4xl font-bold text-gray-900">
-          DOGE Spending Cuts: What&apos;s Actually Been Cut
+          DOGE Spending Cuts: The Final Scorecard
         </h1>
         <ShareButtons title="DOGE Spending Cuts — OpenSpending" url="https://www.openspending.us/doge-spending-cuts" />
       </div>
-      <p className="text-sm text-gray-500 mb-2">Updated: July 2026</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: September 2026</p>
       <p className="text-gray-500 text-lg mb-10">
-        Separating the headlines from the spreadsheets. Here&apos;s what DOGE has actually cut — and what the auditors confirm.
+        DOGE officially sunset on July 4, 2026. Here&apos;s the final scorecard — what was actually saved,
+        what the auditors found, and what happens next.
       </p>
 
       {/* Stat Cards */}
@@ -147,21 +148,22 @@ export default function DogeSpendingCutsPage() {
         <h2 className="text-xl font-bold text-gray-900 mb-4">The Big Picture</h2>
         <div className="bg-white rounded-xl border border-gray-200 p-6 mb-4">
           <p className="text-gray-600 mb-3">
-            Through mid-2026, the Department of Government Efficiency claims approximately $160 billion in total
-            savings. Independent verification by the Government Accountability Office (GAO) and Congressional
-            Budget Office (CBO) confirms roughly $36 billion in concrete, realized savings. That gap deserves
-            context, not dismissal.
+            DOGE officially sunset on July 4, 2026, claiming $215 billion in total savings — but issuing no
+            final report. The GAO&apos;s August 2026 audit found that $110 billion of those claimed savings from
+            contract, grant, and lease cancellations were either incorrect or lacked supporting evidence.
+            Independent verification confirms roughly $36 billion in concrete, realized savings.
           </p>
           <p className="text-gray-600 mb-3">
-            DOGE counts projected future savings, cost avoidance (contracts not renewed, positions not filled), and
-            efficiency gains from IT modernization. Auditors count only money that has already stopped being spent.
-            Both numbers are real — they just measure different things. The verified $36 billion alone would rank as
-            one of the largest spending reductions in modern federal history.
+            Elon Musk departed the initiative eight months before its scheduled end. DOGE&apos;s &quot;wall of
+            receipts&quot; acknowledged that posted savings represented only about 30% of their total claims —
+            meaning 70% of the $215 billion was never even documented publicly. The Politico analysis of $32.7
+            billion in contract savings found only $1.4 billion was verifiable — less than 5% of what was claimed.
           </p>
           <p className="text-gray-600">
-            For perspective: $36 billion is more than the entire annual budget of the Department of Energy. It&apos;s
-            roughly what the federal government spends on NASA. The fact that this much waste could be identified and
-            eliminated in 18 months tells you how much room there was to cut.
+            The verified $36 billion still ranks as one of the largest spending reductions in modern federal
+            history — more than the annual budget of the Department of Energy. But the gap between $215 billion
+            claimed and $36 billion verified tells you everything about the difference between headlines and
+            accounting.
           </p>
         </div>
       </section>
@@ -171,27 +173,29 @@ export default function DogeSpendingCutsPage() {
         <h2 className="text-xl font-bold text-gray-900 mb-4">Workforce Right-Sizing</h2>
         <div className="bg-white rounded-xl border border-gray-200 p-6 mb-4">
           <p className="text-gray-600 mb-3">
-            Approximately 120,000 federal positions have been eliminated since DOGE began operations. The breakdown:
-            roughly 55,000 through natural attrition (not replacing employees who left), 40,000 through voluntary
-            buyout programs, and 25,000 through reduction-in-force (RIF) actions. The federal civilian workforce
-            has dropped from approximately 2.2 million to about 2.08 million.
+            The workforce story became DOGE&apos;s most complicated legacy. Approximately 120,000 positions were
+            initially targeted, but the aftermath was messy: courts ordered reinstatements at 18 agencies covering
+            over 24,000 workers. By mid-2026, approximately 25,000 fired federal workers had been rehired after
+            agencies determined they were essential to operations.
           </p>
           <p className="text-gray-600 mb-3">
-            Critics frame every reduction as a crisis. But the federal workforce grew by over 80,000 positions
-            between 2020 and 2024 alone — many tied to pandemic-era programs that have long since ended. Returning
-            to roughly 2019 staffing levels is not gutting the government. It&apos;s removing the bloat that
-            accumulated during an emergency that&apos;s been over for years.
+            A September 2026 GAO report revealed that federal employees were paid billions through deferred
+            resignation programs to not work — and many agencies later had to replace the same workers they
+            paid to leave. The Partnership for Public Service identified over 20,000 new hires by June 2026
+            in the same types of positions that had been cut.
           </p>
           <p className="text-gray-600">
-            The voluntary buyout programs were notably generous: up to $40,000 in separation incentives plus
-            extended benefits. Most employees who left chose to leave. The narrative of mass firings doesn&apos;t
-            match the data.
+            The net workforce reduction is real but smaller than advertised, and the churn was expensive. When
+            you pay people to leave and then pay different people to do the same jobs, the &quot;savings&quot;
+            evaporate. The lesson: blanket workforce cuts without understanding which positions are essential
+            creates more waste, not less.
           </p>
         </div>
         <div className="bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-xl">
           <p className="text-amber-900">
-            <span className="font-bold">79%</span> of workforce reductions came through attrition and voluntary
-            buyouts — not layoffs. The government shrank mostly by letting people leave and not replacing them.
+            <span className="font-bold">25,000+</span> workers were rehired or reinstated by court order after
+            agencies realized they were essential. The deferred resignation program cost billions — paying
+            people to leave, then paying new people to do the same work.
           </p>
         </div>
       </section>
@@ -281,29 +285,31 @@ export default function DogeSpendingCutsPage() {
         </div>
       </section>
 
-      {/* The Road Ahead */}
+      {/* After DOGE */}
       <section className="mb-14">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">The Road Ahead</h2>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">After DOGE: What Now?</h2>
         <div className="bg-white rounded-xl border border-gray-200 p-6 mb-4">
           <p className="text-gray-600 mb-3">
-            The biggest savings are still ahead — and they require Congress. Entitlement reform, defense procurement
-            overhaul, and structural changes to how the government budgets and audits spending all need legislation.
-            DOGE has shown what executive action can accomplish; the question is whether Congress has the appetite to
-            go further.
+            With DOGE sunset, the question is whether any of its structural changes stick. Some will: federal
+            real estate consolidation, IT modernization, and procurement reforms have bipartisan support and
+            don&apos;t require DOGE to continue. The USAID restructuring under the State Department is likely
+            permanent. But without ongoing executive pressure, the natural tendency of government is to grow
+            back.
           </p>
           <p className="text-gray-600">
-            The <Link href="/federal-budget-2026" className="text-indigo-600 hover:text-indigo-800 underline">FY2026 budget</Link> reflects
-            some DOGE influence — discretionary spending is roughly flat in real terms for the first time in years. But
-            mandatory spending continues to grow on autopilot, driven by demographics and existing law. Until Congress
-            addresses the structural drivers, even aggressive efficiency efforts can only trim around the edges of a
-            $6.9 trillion budget.
+            The <Link href="/federal-budget-2026" className="text-indigo-600 hover:text-indigo-800 underline">FY2026 budget</Link> is
+            projected at $7.8 trillion — up from $6.75 trillion in FY2025. Mandatory spending continues growing
+            on autopilot. Interest on the debt is approaching $1 trillion. The problems DOGE was created to
+            solve are bigger than ever, and they require Congress to address the structural drivers that no
+            executive initiative can touch.
           </p>
         </div>
         <div className="bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-xl">
           <p className="text-amber-900">
-            DOGE has proven that billions can be saved through executive action alone. But the trillion-dollar
-            problems — Social Security solvency, Medicare cost growth, $900 billion in annual interest payments —
-            require legislation. The real test is whether this momentum translates into Congressional action.
+            DOGE proved that $36 billion in real waste exists and can be cut. But it also proved that cutting
+            headcount without structural reform creates expensive churn. The trillion-dollar problems —
+            Social Security solvency, Medicare cost growth, $900+ billion in annual interest — still require
+            Congressional action that no executive initiative can substitute for.
           </p>
         </div>
       </section>

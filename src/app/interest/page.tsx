@@ -72,7 +72,7 @@ export default function InterestPage() {
           url="https://www.openspending.us/interest"
         />
       </div>
-      <p className="text-sm text-gray-500 mb-2">Updated: May 2025</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: September 2026</p>
       <p className="text-gray-500 text-lg mb-8">
         Interest on the national debt hit <strong className="text-gray-900">{formatDollars(fy2025.interest)}</strong> in
         FY2025 — now <strong className="text-gray-900">larger than the entire defense budget</strong>.

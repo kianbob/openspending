@@ -64,8 +64,8 @@ const BUDGET_COLORS = ["#4f46e5", "#f59e0b", "#10b981"]; // indigo, amber, emera
 const shrinkingPromise = [
   { label: "Original Promise", value: 2000000000000, display: "$2 Trillion" },
   { label: "Revised Down", value: 1000000000000, display: "$1 Trillion" },
-  { label: "Revised Again", value: 150000000000, display: "$150 Billion" },
-  { label: "Claimed Savings", value: 55000000000, display: "$55 Billion" },
+  { label: "Final Claim (Sunset)", value: 215000000000, display: "$215 Billion" },
+  { label: "GAO Verified", value: 36000000000, display: "$36 Billion" },
 ];
 
 export default function DogeRealityPage() {
@@ -140,10 +140,11 @@ export default function DogeRealityPage() {
           url="https://www.openspending.us/doge-reality"
         />
       </div>
-      <p className="text-sm text-gray-500 mb-2">Published: February 2025</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: September 2026</p>
       <p className="text-gray-500 text-lg mb-10">
-        DOGE promised $2 trillion in savings. Federal spending increased $392
-        billion. The data tells the real story.
+        DOGE promised $2 trillion in savings, sunset on July 4, 2026 claiming
+        $215 billion. GAO found $110 billion unsubstantiated. Federal spending
+        increased. The data tells the full story.
       </p>
 
       {/* Stat Cards */}
@@ -154,24 +155,24 @@ export default function DogeRealityPage() {
           <p className="text-sm text-gray-500 mt-1">Original savings target</p>
         </div>
         <div className="bg-white rounded-xl border border-gray-200 p-6">
-          <p className="text-sm text-gray-500 mb-1">Revised To</p>
-          <p className="text-2xl font-bold text-amber-600">$150 Billion</p>
+          <p className="text-sm text-gray-500 mb-1">Final Claim</p>
+          <p className="text-2xl font-bold text-amber-600">$215 Billion</p>
           <p className="text-sm text-gray-500 mt-1">
-            Then claimed $55B actually saved
+            Claimed at July 4 sunset — no final report
           </p>
         </div>
         <div className="bg-white rounded-xl border border-gray-200 p-6">
-          <p className="text-sm text-gray-500 mb-1">Reality</p>
-          <p className="text-2xl font-bold text-red-600">+$392 Billion</p>
+          <p className="text-sm text-gray-500 mb-1">GAO Audit</p>
+          <p className="text-2xl font-bold text-red-600">$110B Unverified</p>
           <p className="text-sm text-gray-500 mt-1">
-            Spending increased FY2024→FY2025
+            Incorrect or lacking supporting evidence
           </p>
         </div>
         <div className="bg-white rounded-xl border border-gray-200 p-6">
-          <p className="text-sm text-gray-500 mb-1">$55B Claimed = </p>
-          <p className="text-2xl font-bold text-gray-900">0.81%</p>
+          <p className="text-sm text-gray-500 mb-1">Verified Savings</p>
+          <p className="text-2xl font-bold text-emerald-600">$36 Billion</p>
           <p className="text-sm text-gray-500 mt-1">
-            Of the $6.75T federal budget
+            Independently confirmed by GAO &amp; CBO
           </p>
         </div>
       </div>
@@ -192,9 +193,10 @@ export default function DogeRealityPage() {
           The Shrinking Promise
         </h2>
         <p className="text-gray-600 mb-6">
-          DOGE&apos;s savings targets dropped 97.25% from announcement to
-          reality. From $2 trillion to $55 billion claimed — and even that
-          number doesn&apos;t survive scrutiny.
+          DOGE&apos;s savings targets shrank dramatically from announcement to
+          sunset. From $2 trillion promised to $215 billion claimed at shutdown —
+          and the GAO found $110 billion of that was unsubstantiated. Only $36
+          billion survived independent verification.
         </p>
         <div className="space-y-3 mb-6">
           {shrinkingPromise.map((item, i) => {
@@ -246,8 +248,8 @@ export default function DogeRealityPage() {
         </h2>
         <p className="text-gray-600 mb-6">
           Federal outlays grew from $3.3 trillion in FY2017 to $5.3 trillion in
-          FY2025 — a 64% increase. DOGE&apos;s claimed $55B in savings is
-          invisible against this backdrop.
+          FY2025 and are projected at $7.8 trillion for FY2026. DOGE&apos;s verified
+          $36B in savings is invisible against this backdrop.
         </p>
         <div className="bg-white rounded-xl border border-gray-200 p-4">
           {mounted ? (
@@ -296,7 +298,7 @@ export default function DogeRealityPage() {
                   strokeWidth={1}
                 >
                   <Label
-                    value="DOGE claimed $55B saved (0.81%)"
+                    value="DOGE verified $36B (0.5%)"
                     position="insideBottomRight"
                     fill="#ef4444"
                     fontSize={11}
@@ -309,7 +311,7 @@ export default function DogeRealityPage() {
           )}
           <p className="text-center text-xs text-gray-400 mt-2">
             The red dashed line shows where spending would be with DOGE&apos;s
-            claimed $55B in savings — barely visible against $5.3T in total
+            verified $36B in savings — barely visible against trillions in total
             outlays.
           </p>
         </div>
@@ -484,14 +486,15 @@ export default function DogeRealityPage() {
           </div>
           <div className="bg-white rounded-xl border border-gray-200 p-6">
             <h3 className="font-semibold text-gray-900 mb-2">
-              Cato Institute: &quot;DOGE Did Not Reduce Spending&quot;
+              GAO: $110 Billion in Claims Were Unsubstantiated
             </h3>
             <p className="text-gray-600 text-sm">
-              The Cato Institute — a libertarian think tank sympathetic to
-              spending cuts — concluded that DOGE did not reduce federal
-              spending. This is not a partisan critique. The people most
-              ideologically aligned with DOGE&apos;s mission looked at the data
-              and said it didn&apos;t work.
+              The Government Accountability Office&apos;s August 2026 audit found
+              that $110 billion of DOGE&apos;s claimed savings from contracts,
+              grants, and leases were either incorrect or lacked supporting
+              evidence. Politico independently found that of $32.7 billion in
+              contract savings they could verify, only $1.4 billion — less than
+              5% — was real.
             </p>
           </div>
           <div className="bg-white rounded-xl border border-gray-200 p-6">
@@ -508,14 +511,14 @@ export default function DogeRealityPage() {
           </div>
           <div className="bg-white rounded-xl border border-gray-200 p-6">
             <h3 className="font-semibold text-gray-900 mb-2">
-              $55B = 0.81% of the Federal Budget
+              25,000+ Workers Rehired After Being Cut
             </h3>
             <p className="text-gray-600 text-sm">
-              Even taking DOGE&apos;s claimed $55 billion at face value — which
-              the data does not support — it represents less than 1% of the
-              $6.75 trillion federal budget. The original promise of $2 trillion
-              was 36x larger. The gap between promise and delivery is not a
-              rounding error.
+              Courts ordered reinstatements at 18 agencies. By mid-2026,
+              approximately 25,000 fired federal workers had been rehired as
+              essential. Agencies paid billions through deferred resignation
+              programs, then hired replacements for the same roles. The
+              workforce churn may have cost more than it saved.
             </p>
           </div>
         </div>
@@ -533,16 +536,19 @@ export default function DogeRealityPage() {
             problem deserves serious, structural reform.
           </p>
           <p className="text-gray-600 mb-3">
-            But DOGE&apos;s approach — cutting headcount, canceling grants,
-            generating headlines — did not actually reduce spending. The
+            DOGE&apos;s approach — cutting headcount, canceling grants,
+            generating headlines — did not bend the spending trajectory. The
             mandatory programs that drive 76% of the budget continued growing on
-            autopilot, as they always do. The interest on the debt kept
-            compounding. And the discretionary savings were dwarfed by the
-            structural growth.
+            autopilot. Interest on the debt kept compounding. And many workforce
+            cuts boomeranged: courts reinstated 24,000+ workers, agencies rehired
+            25,000+, and the deferred resignation program cost billions paying
+            people to leave — only for agencies to hire replacements.
           </p>
           <p className="text-gray-600">
-            Credit where due: DOGE raised public awareness of government waste.
-            That matters. But awareness without structural reform is theater.
+            Credit where due: DOGE identified $36 billion in real, verifiable waste
+            and raised public awareness of government inefficiency. But the $215
+            billion headline was inflated — the GAO confirmed $110 billion was
+            unsubstantiated — and the workforce churn created new costs.
           </p>
         </div>
         <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-6">

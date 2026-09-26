@@ -46,7 +46,7 @@ export default function EfficiencyPage() {
         </h1>
         <ShareButtons title="Government Efficiency & Accountability — OpenSpending" url="https://www.openspending.us/efficiency" />
       </div>
-      <p className="text-sm text-gray-500 mb-2">Updated: July 2026</p>
+      <p className="text-sm text-gray-500 mb-2">Updated: September 2026</p>
       <p className="text-gray-500 text-lg mb-10">
         The data makes the case that the status quo cannot continue.
       </p>
@@ -167,24 +167,33 @@ export default function EfficiencyPage() {
         </div>
       </section>
 
-      {/* DOGE Progress */}
+      {/* DOGE: The Final Scorecard */}
       <section className="mb-14">
         <h2 className="text-xl font-bold text-gray-900 mb-4">
-          DOGE: Early Results
+          DOGE: The Final Scorecard
         </h2>
         <div className="bg-white rounded-xl border border-gray-200 p-6 mb-4">
           <p className="text-gray-600 mb-3">
-            The Department of Government Efficiency has produced its first independently verified results:
-            roughly <Link href="/doge-spending-cuts" className="text-indigo-600 hover:text-indigo-800 underline">$36 billion in confirmed savings</Link> through
-            mid-2026, with 120,000 federal positions eliminated and over 340 programs cut or consolidated.
-            It is the most significant efficiency effort since the Grace Commission — and unlike that effort,
-            it has executive authority to implement changes directly.
+            The Department of Government Efficiency officially sunset on July 4, 2026, after an 18-month
+            mandate. DOGE claimed <Link href="/doge-spending-cuts" className="text-indigo-600 hover:text-indigo-800 underline">$215 billion
+            in total savings</Link> — but issued no final report. Elon Musk departed the initiative eight months
+            before its scheduled end. The GAO found that $110 billion of DOGE&apos;s claimed savings from
+            contract, grant, and lease cancellations were either incorrect or lacked supporting evidence.
+          </p>
+          <p className="text-gray-600 mb-3">
+            The workforce reductions told a messy story. Courts ordered reinstatements at 18 agencies
+            covering over 24,000 workers. By mid-2026, approximately 25,000 fired federal workers had been
+            rehired after agencies determined they were essential. A September 2026 GAO report found that
+            federal employees were paid billions through deferred resignation programs to not work — and
+            many agencies later had to replace the same workers they paid to leave.
           </p>
           <p className="text-gray-600">
-            The verified savings represent about 0.5% of the total federal budget — meaningful but modest
-            against a $1.9 trillion deficit. The structural drivers of spending growth (Social Security,
-            Medicare, interest on debt) remain untouched by executive action. But DOGE has demonstrated
-            that billions in waste exist and can be eliminated. That alone justifies the effort.
+            The independently verified savings — roughly $36 billion confirmed by GAO and CBO — remain
+            meaningful. That is more than the entire annual budget of the Department of Energy. But it
+            represents about 0.5% of the total federal budget, and the structural drivers of spending
+            growth (Social Security, Medicare, interest on debt) remain untouched. DOGE demonstrated that
+            waste exists and can be cut — but also that cutting headcount without structural reform
+            creates its own waste.
           </p>
         </div>
       </section>
@@ -240,10 +249,12 @@ export default function EfficiencyPage() {
             spent wisely — and the data suggests it often is not.
           </p>
           <p className="text-gray-600">
-            Whether DOGE succeeds or fails, the underlying problem remains: the
+            Now that DOGE has sunset, the underlying problem remains: the
             federal government is too large and too opaque to manage without
-            structural reform. Efficiency is not about ideology — it is about
-            competence. And the numbers speak for themselves.
+            structural reform. DOGE proved that waste exists and can be cut —
+            $36 billion in verified savings is real. But it also showed that
+            efficiency theater is not the same as structural reform. The numbers
+            speak for themselves.
           </p>
         </div>
       </section>
@@ -266,11 +277,11 @@ export default function EfficiencyPage() {
           </Link>
           <Link href="/doge-spending-cuts" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
             <p className="font-bold text-gray-900">DOGE Spending Cuts</p>
-            <p className="text-sm text-gray-600 mt-1">$36B in verified savings through mid-2026</p>
+            <p className="text-sm text-gray-600 mt-1">$215B claimed, $36B verified — the final scorecard</p>
           </Link>
           <Link href="/federal-budget-2026" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
             <p className="font-bold text-gray-900">Federal Budget 2026</p>
-            <p className="text-sm text-gray-600 mt-1">Where your $6.9 trillion in tax dollars goes</p>
+            <p className="text-sm text-gray-600 mt-1">Where your $7.8 trillion in tax dollars goes</p>
           </Link>
           <Link href="/iran-war-costs" className="block p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors">
             <p className="font-bold text-gray-900">Iran War Costs</p>
