@@ -76,6 +76,7 @@ export default function HealthcareSpendingPage() {
           Together, Medicare and Medicaid account for roughly $1.5 trillion — about 58% of all HHS spending.
           The remaining $1.1 trillion covers the NIH ($48B), CDC ($18B), the ACA marketplace subsidies,
           children&apos;s health programs (CHIP), substance abuse funding, and hundreds of smaller programs.
+          For state-by-state spending comparisons, see the <a href="https://americanfactbook.org/spending" className="text-indigo-600 underline hover:text-indigo-800">American Factbook spending tracker</a>.
         </p>
 
         <p className="text-lg text-gray-700 leading-relaxed mb-6">

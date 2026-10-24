@@ -143,6 +143,7 @@ export default function FederalBudget2026Page() {
           to replenish the Pentagon after the Iran war, but also for farm aid, Ebola response, and infrastructure.
           We are approaching the point where the cost of past spending exceeds the cost of current defense.
           That is not a political talking point. It is a mathematical certainty.
+          Explore how these budget categories compare across states at the <a href="https://americanfactbook.org/spending" className="text-indigo-600 underline hover:text-indigo-800">American Factbook spending dashboard</a>.
         </p>
       </div>
 

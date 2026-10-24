@@ -527,6 +527,14 @@ export default async function AgencyDetailPage({
         >
           View on USASpending.gov &rarr;
         </a>
+        <a
+          href={`https://americanfactbook.org/spending/state`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-400 hover:text-indigo-600 text-sm transition-colors"
+        >
+          Compare state spending on American Factbook &rarr;
+        </a>
       </div>
 
       <SourceCitation />
